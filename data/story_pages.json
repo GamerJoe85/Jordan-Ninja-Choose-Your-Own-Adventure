@@ -1,0 +1,247 @@
+{
+  "pages": [
+    {
+      "page_id": "act1_start",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scar.png",
+      "story_text": "Jordan kneels in the cold ash, the Fire Clan ruins glowing behind him. Dawn breaks over the ridge, and he makes a silent vow to train until the truth is exposed.",
+      "choices": [
+        {
+          "label": "Begin the forge of discipline",
+          "effects": {},
+          "next_page_id": "act2_start"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_start",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_forge.png",
+      "story_text": "Training scars the body and sharpens intent. Choose Jordan's discipline before returning to the present.",
+      "choices": [
+        {
+          "label": "Reflex discipline",
+          "effects": {
+            "set_discipline": "Reflex"
+          },
+          "next_page_id": "act2_items"
+        },
+        {
+          "label": "Focus discipline",
+          "effects": {
+            "set_discipline": "Focus"
+          },
+          "next_page_id": "act2_items"
+        },
+        {
+          "label": "Steel discipline",
+          "effects": {
+            "set_discipline": "Steel"
+          },
+          "next_page_id": "act2_items"
+        },
+        {
+          "label": "Shadow discipline",
+          "effects": {
+            "set_discipline": "Shadow"
+          },
+          "next_page_id": "act2_items"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_items",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_prep.png",
+      "story_text": "Jordan packs exactly three starting items. This prototype uses deterministic loadouts that map to Bible-compliant items.",
+      "choices": [
+        {
+          "label": "Loadout A: Grappling Hook & Line, Smoke Bomb, Throwing Knives",
+          "effects": {
+            "add_starting_item": "Grappling Hook & Line"
+          },
+          "next_page_id": "act2_items_hook"
+        },
+        {
+          "label": "Loadout B: Grappling Hook & Line, Oil Flask, Weighted Chain",
+          "effects": {
+            "add_starting_item": "Grappling Hook & Line"
+          },
+          "next_page_id": "act2_items_chain"
+        },
+        {
+          "label": "Loadout C: Grappling Hook & Line, Health Herb, Clean Bandage",
+          "effects": {
+            "add_starting_item": "Grappling Hook & Line"
+          },
+          "next_page_id": "act2_items_recovery"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_items_hook",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_prep.png",
+      "story_text": "Jordan fastens stealth tools for silent movement.",
+      "choices": [
+        {
+          "label": "Continue to infiltration",
+          "effects": {
+            "add_starting_items": [
+              "Smoke Bomb",
+              "Throwing Knives"
+            ]
+          },
+          "next_page_id": "act3_start"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_items_chain",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_prep.png",
+      "story_text": "Jordan braces for direct control of terrain and balance.",
+      "choices": [
+        {
+          "label": "Continue to infiltration",
+          "effects": {
+            "add_starting_items": [
+              "Oil Flask",
+              "Weighted Chain"
+            ]
+          },
+          "next_page_id": "act3_start"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_items_recovery",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_prep.png",
+      "story_text": "Jordan chooses survival medicine for long pursuit.",
+      "choices": [
+        {
+          "label": "Continue to infiltration",
+          "effects": {
+            "add_starting_items": [
+              "Health Herb",
+              "Clean Bandage"
+            ]
+          },
+          "next_page_id": "act3_start"
+        }
+      ]
+    },
+    {
+      "page_id": "act3_start",
+      "act_id": "act_3",
+      "image_path": "res://assets/images/act3_village.png",
+      "story_text": "The Fire Clan village rises in angular basalt tiers with glowing heat veins beneath the stone. Jordan chooses his point of infiltration.",
+      "choices": [
+        {
+          "label": "Rooftops (high risk mobility)",
+          "effects": {
+            "set_hook_state": "Damaged",
+            "set_flag": {
+              "detected": true
+            }
+          },
+          "next_page_id": "act4_start"
+        },
+        {
+          "label": "Shadow streets (stealth route)",
+          "effects": {
+            "add_found_item": "Reinforced Line Segment"
+          },
+          "next_page_id": "act4_start"
+        },
+        {
+          "label": "Sewer channels (hazard route)",
+          "effects": {
+            "change_health": -1,
+            "set_flag": {
+              "cavern_found": true
+            }
+          },
+          "next_page_id": "act4_start"
+        }
+      ]
+    },
+    {
+      "page_id": "act4_start",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_duel.png",
+      "story_text": "The Fire Master meets Jordan in human form, sees the clan symbol, and tests him in two hard exchanges before retreating toward the volcano. The truth lands hard: Fire did not strike alone.",
+      "choices": [
+        {
+          "label": "Pursue to the volcano",
+          "effects": {},
+          "next_page_id": "act5_start"
+        }
+      ]
+    },
+    {
+      "page_id": "act5_start",
+      "act_id": "act_5",
+      "image_path": "res://assets/images/act5_ascent.png",
+      "story_text": "A chasm splits the ascent. Narrow ledges crumble, heat climbs, and every route is explicit. No luck will save a bad decision.",
+      "choices": [
+        {
+          "label": "Traverse ledge carefully",
+          "requirements": {
+            "health_at_least": "Healthy"
+          },
+          "effects": {},
+          "next_page_id": "act6_start"
+        },
+        {
+          "label": "Cross with Grappling Hook (Good)",
+          "requirements": {
+            "hook_state_is": "Good",
+            "has_item": "Grappling Hook & Line"
+          },
+          "effects": {},
+          "next_page_id": "act6_start"
+        },
+        {
+          "label": "Cross with damaged hook + Reinforced Line auto-repair",
+          "requirements": {
+            "hook_state_is": "Damaged",
+            "has_item": "Reinforced Line Segment"
+          },
+          "effects": {
+            "set_hook_state": "Good",
+            "consume_found_item": "Reinforced Line Segment"
+          },
+          "next_page_id": "act6_start"
+        },
+        {
+          "label": "Search alternate path (Focus route to hidden cavern)",
+          "requirements": {
+            "discipline_is": "Focus"
+          },
+          "effects": {
+            "set_flag": {
+              "cavern_found": true
+            },
+            "add_found_item": "Meditation Token"
+          },
+          "next_page_id": "act6_start"
+        }
+      ]
+    },
+    {
+      "page_id": "act6_start",
+      "act_id": "act_6",
+      "image_path": "res://assets/images/act6_transformation.png",
+      "story_text": "In the ritual chamber, the wounded Master accepts spirit infusion. Ember cracks crawl across his form as heat distorts the air. Jordan enters the final exchange with condition, hook state, and item prep fully visible.",
+      "choices": [
+        {
+          "label": "Prototype End: Restart from The Scar",
+          "effects": {},
+          "next_page_id": "act1_start"
+        }
+      ]
+    }
+  ]
+}
