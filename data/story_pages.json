@@ -3,242 +3,433 @@
     {
       "page_id": "act1_start",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_01_overlook.png",
-      "story_text": "Jordan stands on a jagged volcanic ridge above the Fire Clan village. Lava veins glow below stone streets while guards patrol under a red-orange sky.",
+      "image_path": "res://assets/images/act1_p01_overlook.png",
+      "story_text": "Page 1 \u2014 Overlook Fire Clan Village.",
       "choices": [
         {
-          "label": "Hold position and watch",
+          "label": "Continue",
           "effects": {},
-          "next_page_id": "act1_02_eyes"
+          "next_page_id": "act1_p02_eyes"
         }
       ]
     },
     {
-      "page_id": "act1_02_eyes",
+      "page_id": "act1_p02_eyes",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_02_eyes.png",
-      "story_text": "Extreme close-up: fire reflects in Jordan's eyes, and memory drags him backward.",
+      "image_path": "res://assets/images/act1_p02_eyes.png",
+      "story_text": "Page 2 \u2014 Close-up Eyes.",
       "choices": [
         {
-          "label": "Enter the memory",
+          "label": "Remember",
           "effects": {},
-          "next_page_id": "act1_03_first_flame"
+          "next_page_id": "act1_p03_flashback"
         }
       ]
     },
     {
-      "page_id": "act1_03_first_flame",
+      "page_id": "act1_p03_flashback",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_03_first_flame.png",
-      "story_text": "His clan village burns: circular architecture, flowing symbols, fleeing villagers, distant silhouettes.",
+      "image_path": "res://assets/images/act1_p03_flashback.png",
+      "story_text": "Page 3 \u2014 Flashback Village Burning.",
       "choices": [
         {
-          "label": "Run forward",
+          "label": "Continue",
           "effects": {},
-          "next_page_id": "act1_04_too_late"
+          "next_page_id": "act1_p04_ash"
         }
       ]
     },
     {
-      "page_id": "act1_04_too_late",
+      "page_id": "act1_p04_ash",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_04_too_late.png",
-      "story_text": "Young Jordan drops to his knees in ash beside a cracked clan stone.",
+      "image_path": "res://assets/images/act1_p04_ash.png",
+      "story_text": "Page 4 \u2014 Kneeling in Ash.",
       "choices": [
         {
           "label": "Stand",
           "effects": {},
-          "next_page_id": "act1_05_vow"
+          "next_page_id": "act1_p05_vow"
         }
       ]
     },
     {
-      "page_id": "act1_05_vow",
+      "page_id": "act1_p05_vow",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_05_vow.png",
-      "story_text": "Jordan rises through smoke and swears a controlled, silent vow.",
+      "image_path": "res://assets/images/act1_p05_vow.png",
+      "story_text": "Page 5 \u2014 Vow.",
       "choices": [
         {
-          "label": "Enter Discipline Hall",
+          "label": "Train",
           "effects": {},
-          "next_page_id": "act1_06_discipline_hall"
+          "next_page_id": "act1_p06_discipline"
         }
       ]
     },
     {
-      "page_id": "act1_06_discipline_hall",
+      "page_id": "act1_p06_discipline",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_06_discipline_hall.png",
-      "story_text": "Four banners hang in torchlight. Choose Jordan's discipline.",
+      "image_path": "res://assets/images/act1_p06_discipline.png",
+      "story_text": "Page 6 \u2014 Choose Discipline.",
       "choices": [
         {
           "label": "Reflex",
           "effects": {
             "set_discipline": "Reflex"
           },
-          "next_page_id": "act1_07_reflex"
+          "next_page_id": "act1_p07_training"
         },
         {
           "label": "Focus",
           "effects": {
             "set_discipline": "Focus"
           },
-          "next_page_id": "act1_07_focus"
+          "next_page_id": "act1_p07_training"
         },
         {
           "label": "Steel",
           "effects": {
             "set_discipline": "Steel"
           },
-          "next_page_id": "act1_07_steel"
+          "next_page_id": "act1_p07_training"
         },
         {
           "label": "Shadow",
           "effects": {
             "set_discipline": "Shadow"
           },
-          "next_page_id": "act1_07_shadow"
+          "next_page_id": "act1_p07_training"
         }
       ]
     },
     {
-      "page_id": "act1_07_reflex",
+      "page_id": "act1_p07_training",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_07_reflex.png",
-      "story_text": "Fast sparring and near-miss blades harden Jordan's reflex timing.",
+      "image_path": "res://assets/images/act1_p07_training.png",
+      "story_text": "Page 7 \u2014 Training Scene (discipline-specific).",
       "choices": [
         {
-          "label": "Go to equipment mat",
+          "label": "Prepare",
           "effects": {},
-          "next_page_id": "act1_08_equipment"
+          "next_page_id": "act1_p08_pick1_a"
         }
       ]
     },
     {
-      "page_id": "act1_07_focus",
+      "page_id": "act1_p08_pick1_a",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_07_focus.png",
-      "story_text": "Jordan meditates under pounding water, still in chaos.",
+      "image_path": "res://assets/images/act1_p08_pick1_a.png",
+      "story_text": "Page 8 \u2014 Pick 1 of 3 (menu A).",
       "choices": [
         {
-          "label": "Go to equipment mat",
-          "effects": {},
-          "next_page_id": "act1_08_equipment"
-        }
-      ]
-    },
-    {
-      "page_id": "act1_07_steel",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_07_steel.png",
-      "story_text": "Jordan absorbs repeated impact and stays planted.",
-      "choices": [
-        {
-          "label": "Go to equipment mat",
-          "effects": {},
-          "next_page_id": "act1_08_equipment"
-        }
-      ]
-    },
-    {
-      "page_id": "act1_07_shadow",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_07_shadow.png",
-      "story_text": "Jordan disappears between pillars while the instructor searches.",
-      "choices": [
-        {
-          "label": "Go to equipment mat",
-          "effects": {},
-          "next_page_id": "act1_08_equipment"
-        }
-      ]
-    },
-    {
-      "page_id": "act1_08_equipment",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_08_equipment.png",
-      "story_text": "Tools are spread across the mat. Choose exactly three starting items.",
-      "choices": [
-        {
-          "label": "Set A: Hook, Smoke Bomb, Throwing Knives",
+          "label": "Rope",
           "effects": {
-            "add_starting_items": [
-              "Grappling Hook & Line",
-              "Smoke Bomb",
-              "Throwing Knives"
-            ]
+            "add_starting_item": "Rope"
           },
-          "next_page_id": "act1_09_return"
+          "next_page_id": "act1_p08_pick2_a"
         },
         {
-          "label": "Set B: Hook, Blow Dart, Oil Flask",
+          "label": "Smoke Bomb",
           "effects": {
-            "add_starting_items": [
-              "Grappling Hook & Line",
-              "Blow Dart",
-              "Oil Flask"
-            ]
+            "add_starting_item": "Smoke Bomb"
           },
-          "next_page_id": "act1_09_return"
+          "next_page_id": "act1_p08_pick2_a"
         },
         {
-          "label": "Set C: Hook, Health Herb, Clean Bandage",
+          "label": "Blow Dart",
           "effects": {
-            "add_starting_items": [
-              "Grappling Hook & Line",
-              "Health Herb",
-              "Clean Bandage"
-            ]
+            "add_starting_item": "Blow Dart"
           },
-          "next_page_id": "act1_09_return"
-        }
-      ]
-    },
-    {
-      "page_id": "act1_09_return",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_09_return.png",
-      "story_text": "Memory breaks. Jordan is back on the overlook, now equipped.",
-      "choices": [
+          "next_page_id": "act1_p08_pick2_a"
+        },
         {
-          "label": "Study village entries",
+          "label": "More items",
           "effects": {},
-          "next_page_id": "act1_10_route_view"
+          "next_page_id": "act1_p08_pick1_b"
         }
       ]
     },
     {
-      "page_id": "act1_10_route_view",
+      "page_id": "act1_p08_pick1_b",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_10_route_view.png",
-      "story_text": "Three entry routes appear: rooftops, streets, and drainage.",
+      "image_path": "res://assets/images/act1_p08_pick1_b.png",
+      "story_text": "Page 8 \u2014 Pick 1 of 3 (menu B).",
       "choices": [
         {
-          "label": "Choose Rooftop Infiltration",
+          "label": "Oil Flask",
+          "effects": {
+            "add_starting_item": "Oil Flask"
+          },
+          "next_page_id": "act1_p08_pick2_a"
+        },
+        {
+          "label": "Bandage",
+          "effects": {
+            "add_starting_item": "Bandage"
+          },
+          "next_page_id": "act1_p08_pick2_a"
+        },
+        {
+          "label": "Throwing Stars",
+          "effects": {
+            "add_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act1_p08_pick2_a"
+        },
+        {
+          "label": "Health Herb",
+          "effects": {
+            "add_starting_item": "Health Herb"
+          },
+          "next_page_id": "act1_p08_pick2_a"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p08_pick2_a",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p08_pick2_a.png",
+      "story_text": "Page 8 \u2014 Pick 2 of 3 (menu A).",
+      "choices": [
+        {
+          "label": "Rope",
+          "effects": {
+            "add_starting_item": "Rope"
+          },
+          "next_page_id": "act1_p08_pick3_a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Smoke Bomb",
+          "effects": {
+            "add_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act1_p08_pick3_a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Blow Dart",
+          "effects": {
+            "add_starting_item": "Blow Dart"
+          },
+          "next_page_id": "act1_p08_pick3_a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "More items",
+          "effects": {},
+          "next_page_id": "act1_p08_pick2_b",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p08_pick2_b",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p08_pick2_b.png",
+      "story_text": "Page 8 \u2014 Pick 2 of 3 (menu B).",
+      "choices": [
+        {
+          "label": "Oil Flask",
+          "effects": {
+            "add_starting_item": "Oil Flask"
+          },
+          "next_page_id": "act1_p08_pick3_a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Bandage",
+          "effects": {
+            "add_starting_item": "Bandage"
+          },
+          "next_page_id": "act1_p08_pick3_a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Throwing Stars",
+          "effects": {
+            "add_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act1_p08_pick3_a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Health Herb",
+          "effects": {
+            "add_starting_item": "Health Herb"
+          },
+          "next_page_id": "act1_p08_pick3_a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p08_pick3_a",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p08_pick3_a.png",
+      "story_text": "Page 8 \u2014 Pick 3 of 3 (menu A).",
+      "choices": [
+        {
+          "label": "Rope",
+          "effects": {
+            "add_starting_item": "Rope"
+          },
+          "next_page_id": "act1_p08_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Smoke Bomb",
+          "effects": {
+            "add_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act1_p08_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Blow Dart",
+          "effects": {
+            "add_starting_item": "Blow Dart"
+          },
+          "next_page_id": "act1_p08_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "More items",
+          "effects": {},
+          "next_page_id": "act1_p08_pick3_b",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p08_pick3_b",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p08_pick3_b.png",
+      "story_text": "Page 8 \u2014 Pick 3 of 3 (menu B).",
+      "choices": [
+        {
+          "label": "Oil Flask",
+          "effects": {
+            "add_starting_item": "Oil Flask"
+          },
+          "next_page_id": "act1_p08_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Bandage",
+          "effects": {
+            "add_starting_item": "Bandage"
+          },
+          "next_page_id": "act1_p08_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Throwing Stars",
+          "effects": {
+            "add_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act1_p08_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Health Herb",
+          "effects": {
+            "add_starting_item": "Health Herb"
+          },
+          "next_page_id": "act1_p08_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p08_confirm",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p08_confirm.png",
+      "story_text": "Page 8 \u2014 Confirm Loadout.",
+      "choices": [
+        {
+          "label": "Confirm Loadout",
+          "effects": {},
+          "next_page_id": "act1_p09_return"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p09_return",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p09_return.png",
+      "story_text": "Page 9 \u2014 Return to Present.",
+      "choices": [
+        {
+          "label": "Study Village",
+          "effects": {},
+          "next_page_id": "act1_p10_route"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p10_route",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p10_route.png",
+      "story_text": "Page 10 \u2014 Choose Infiltration Route.",
+      "choices": [
+        {
+          "label": "A) Rooftops",
           "effects": {
             "set_flag": {
-              "route_rooftop": true
+              "detected": false
             }
           },
-          "next_page_id": "act2_roof_a1"
+          "next_page_id": "act2_p11a"
         },
         {
-          "label": "Choose Street Infiltration",
+          "label": "B) Streets",
           "effects": {
             "set_flag": {
-              "route_street": true
+              "detected": false
             }
           },
-          "next_page_id": "act2_street_b1"
+          "next_page_id": "act2_p11b"
         },
         {
-          "label": "Choose Sewer Infiltration",
+          "label": "C) Sewer",
           "effects": {
             "set_flag": {
-              "route_sewer": true
+              "detected": false
             }
           },
-          "next_page_id": "act2_sewer_c1"
+          "next_page_id": "act2_p11c"
         }
       ]
     },
@@ -246,66 +437,65 @@
       "page_id": "act2_start",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_start.png",
-      "story_text": "Act II: Infiltration. Choose your route into Fire Clan territory.",
+      "story_text": "Act II start route choice.",
       "choices": [
         {
-          "label": "Rooftop Path",
+          "label": "A) Rooftops",
           "effects": {
             "set_flag": {
-              "route_rooftop": true
+              "detected": false
             }
           },
-          "next_page_id": "act2_roof_a1"
+          "next_page_id": "act2_p11a"
         },
         {
-          "label": "Street Path",
+          "label": "B) Streets",
           "effects": {
             "set_flag": {
-              "route_street": true
+              "detected": false
             }
           },
-          "next_page_id": "act2_street_b1"
+          "next_page_id": "act2_p11b"
         },
         {
-          "label": "Sewer Path",
+          "label": "C) Sewer",
           "effects": {
             "set_flag": {
-              "route_sewer": true
+              "detected": false
             }
           },
-          "next_page_id": "act2_sewer_c1"
+          "next_page_id": "act2_p11c"
         }
       ]
     },
     {
-      "page_id": "act2_roof_a1",
+      "page_id": "act2_p11a",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_roof_a1.png",
-      "story_text": "Jordan scales the upper structure toward beam lines.",
+      "image_path": "res://assets/images/act2_p11a.png",
+      "story_text": "Page 11A \u2014 Climb to First Roof.",
       "choices": [
         {
-          "label": "Use rope for smooth climb",
-          "effects": {
-            "set_flag": {
-              "used_rope_climb": true
-            }
-          },
-          "next_page_id": "act2_roof_a2"
+          "label": "Rope owned: safe climb",
+          "effects": {},
+          "next_page_id": "act2_p12a",
+          "requirements": {
+            "has_item": "Rope"
+          }
         },
         {
-          "label": "Climb without rope (slow, strained)",
+          "label": "No rope: strain (-1)",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act2_roof_a2"
+          "next_page_id": "act2_p12a"
         }
       ]
     },
     {
-      "page_id": "act2_roof_a2",
+      "page_id": "act2_p12a",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_roof_a2.png",
-      "story_text": "An elevated guard patrols a narrow beam.",
+      "image_path": "res://assets/images/act2_p12a.png",
+      "story_text": "Page 12A \u2014 Beam Patrol Encounter.",
       "choices": [
         {
           "label": "Silent takedown",
@@ -314,188 +504,169 @@
               "detected": false
             }
           },
-          "next_page_id": "act2_roof_a3"
+          "next_page_id": "act2_p13a"
         },
         {
           "label": "Avoid and wait",
-          "effects": {},
-          "next_page_id": "act2_roof_a3"
-        },
-        {
-          "label": "Use Smoke Bomb",
           "effects": {
-            "remove_starting_item": "Smoke Bomb"
+            "set_flag": {
+              "detected": false
+            }
           },
-          "next_page_id": "act2_roof_a3",
-          "requirements": {
-            "has_item": "Smoke Bomb"
-          }
+          "next_page_id": "act2_p13a"
         },
         {
           "label": "Direct attack",
           "effects": {},
-          "next_page_id": "act2_roof_a2_fight"
+          "next_page_id": "act2_p12a_direct"
+        },
+        {
+          "label": "Use smoke bomb",
+          "effects": {
+            "remove_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act2_p13a",
+          "requirements": {
+            "has_item": "Smoke Bomb"
+          }
         }
       ]
     },
     {
-      "page_id": "act2_roof_a2_fight",
+      "page_id": "act2_p12a_direct",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_roof_a2_fight.png",
-      "story_text": "The beam fight is quick and unstable.",
+      "image_path": "res://assets/images/act2_p12a_direct.png",
+      "story_text": "Direct attack deterministic outcome.",
       "choices": [
         {
-          "label": "Win aggressively (Healthy+)",
-          "effects": {
-            "set_flag": {
-              "detected": true
-            }
-          },
-          "next_page_id": "act2_roof_a3",
+          "label": "Health >= Healthy: win",
+          "effects": {},
+          "next_page_id": "act2_p13a",
           "requirements": {
             "health_at_least": "Healthy"
           }
         },
         {
-          "label": "Scrape through while wounded",
+          "label": "Wounded/Critical: lose 1 tier",
           "effects": {
-            "change_health": -1,
-            "set_flag": {
-              "detected": true
-            }
+            "change_health": -1
           },
-          "next_page_id": "act2_roof_a3",
+          "next_page_id": "act2_p13a",
           "requirements": {
             "health_at_most": "Wounded"
           }
         },
         {
-          "label": "Stabilize with rope during clash",
+          "label": "Use rope to stabilize (hook Damaged)",
           "effects": {
-            "set_hook_state": "Damaged",
-            "set_flag": {
-              "detected": true
-            }
+            "set_hook_state": "Damaged"
           },
-          "next_page_id": "act2_roof_a3",
+          "next_page_id": "act2_p13a",
           "requirements": {
-            "has_item": "Grappling Hook & Line"
+            "has_item": "Rope"
           }
         }
       ]
     },
     {
-      "page_id": "act2_roof_a3",
+      "page_id": "act2_p13a",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_roof_a3.png",
-      "story_text": "Loose tiles collapse underfoot.",
+      "image_path": "res://assets/images/act2_p13a.png",
+      "story_text": "Page 13A \u2014 Roof Instability.",
       "choices": [
         {
-          "label": "Grab beam",
+          "label": "Jump gap (Reflex safe)",
           "effects": {},
-          "next_page_id": "act2_roof_a4"
-        },
-        {
-          "label": "Use rope under pressure",
-          "effects": {
-            "set_hook_state": "Damaged"
-          },
-          "next_page_id": "act2_roof_a4",
-          "requirements": {
-            "has_item": "Grappling Hook & Line"
-          }
-        },
-        {
-          "label": "Leap to next roof",
-          "effects": {},
-          "next_page_id": "act2_roof_a4",
+          "next_page_id": "act2_p14a",
           "requirements": {
             "discipline_is": "Reflex"
           }
         },
         {
-          "label": "Leap anyway (no Reflex)",
+          "label": "Jump gap (no Reflex: -1)",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act2_roof_a4"
+          "next_page_id": "act2_p14a"
+        },
+        {
+          "label": "Use rope",
+          "effects": {
+            "set_hook_state": "Damaged"
+          },
+          "next_page_id": "act2_p14a",
+          "requirements": {
+            "has_item": "Rope"
+          }
+        },
+        {
+          "label": "Climb down",
+          "effects": {},
+          "next_page_id": "act2_p14a"
         }
       ]
     },
     {
-      "page_id": "act2_roof_a4",
+      "page_id": "act2_p14a",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_roof_a4.png",
-      "story_text": "A rooftop cache sits near a broken chimney.",
+      "image_path": "res://assets/images/act2_p14a.png",
+      "story_text": "Page 14A \u2014 Rooftop Cache.",
       "choices": [
         {
-          "label": "Take cache item (Caltrops)",
+          "label": "Not detected: find Throwing Stars",
           "effects": {
-            "add_found_item": "Caltrops"
+            "add_starting_item": "Throwing Stars"
           },
-          "next_page_id": "act2_roof_a5",
+          "next_page_id": "act2_p25_core",
           "requirements": {
             "flag_false": "detected"
           }
         },
         {
-          "label": "Cache was empty / move on",
+          "label": "Continue to Village Core",
           "effects": {},
-          "next_page_id": "act2_roof_a5"
+          "next_page_id": "act2_p25_core"
         }
       ]
     },
     {
-      "page_id": "act2_roof_a5",
+      "page_id": "act2_p11b",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_roof_a5.png",
-      "story_text": "Jordan drops into the inner courtyard from above.",
+      "image_path": "res://assets/images/act2_p11b.png",
+      "story_text": "Page 11B \u2014 Torchlit Path.",
       "choices": [
         {
-          "label": "Advance to Village Core",
+          "label": "Stick to shadows (Shadow safe)",
           "effects": {},
-          "next_page_id": "act2_village_core"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_street_b1",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_street_b1.png",
-      "story_text": "Torchlit archways and patrol loops control the street.",
-      "choices": [
-        {
-          "label": "Stick to shadows",
-          "effects": {},
-          "next_page_id": "act2_street_b2",
+          "next_page_id": "act2_p12b",
           "requirements": {
             "discipline_is": "Shadow"
           }
         },
         {
-          "label": "Stick to shadows (not Shadow discipline)",
+          "label": "Stick to shadows (not Shadow: detected)",
           "effects": {
             "set_flag": {
               "detected": true
             }
           },
-          "next_page_id": "act2_street_b2"
+          "next_page_id": "act2_p12b"
         },
         {
-          "label": "Walk confidently",
+          "label": "Walk confidently (detected)",
           "effects": {
             "set_flag": {
               "detected": true
             }
           },
-          "next_page_id": "act2_street_b2"
+          "next_page_id": "act2_p12b"
         },
         {
-          "label": "Use Blow Dart on lookout",
+          "label": "Use blow dart",
           "effects": {
             "remove_starting_item": "Blow Dart"
           },
-          "next_page_id": "act2_street_b2",
+          "next_page_id": "act2_p12b",
           "requirements": {
             "has_item": "Blow Dart"
           }
@@ -503,35 +674,268 @@
       ]
     },
     {
-      "page_id": "act2_street_b2",
+      "page_id": "act2_p12b",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_street_b2.png",
-      "story_text": "Patrol intercept at a narrow bend.",
+      "image_path": "res://assets/images/act2_p12b.png",
+      "story_text": "Page 12B \u2014 Patrol Intercept.",
       "choices": [
         {
-          "label": "Slip through unseen",
+          "label": "Detected + Healthy: win",
           "effects": {},
-          "next_page_id": "act2_street_b3",
+          "next_page_id": "act2_p13b",
           "requirements": {
-            "flag_false": "detected"
+            "flag_true": "detected",
+            "health_at_least": "Healthy"
           }
         },
         {
-          "label": "Forced minor combat",
+          "label": "Detected + low health: -1",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act2_street_b3",
+          "next_page_id": "act2_p13b",
           "requirements": {
-            "flag_true": "detected"
+            "flag_true": "detected",
+            "health_at_most": "Wounded"
           }
         },
         {
-          "label": "Use oil flask distraction",
+          "label": "Not detected: safe pass",
+          "effects": {},
+          "next_page_id": "act2_p13b",
+          "requirements": {
+            "flag_false": "detected"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p13b",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p13b.png",
+      "story_text": "Page 13B \u2014 Side Alley.",
+      "choices": [
+        {
+          "label": "Investigate (find Cavern Clue)",
+          "effects": {
+            "add_found_item": "Cavern Clue"
+          },
+          "next_page_id": "act2_p14b"
+        },
+        {
+          "label": "Ignore",
+          "effects": {},
+          "next_page_id": "act2_p14b"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p14b",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p14b.png",
+      "story_text": "Page 14B \u2014 Inner Gate.",
+      "choices": [
+        {
+          "label": "Wait",
+          "effects": {},
+          "next_page_id": "act2_p25_core"
+        },
+        {
+          "label": "Force entry (-1)",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act2_p25_core"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p11c",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p11c.png",
+      "story_text": "Page 11C \u2014 Drainage Tunnel.",
+      "choices": [
+        {
+          "label": "Move carefully",
+          "effects": {},
+          "next_page_id": "act2_p12c"
+        },
+        {
+          "label": "Rush + rope used (hook Damaged)",
+          "effects": {
+            "set_hook_state": "Damaged"
+          },
+          "next_page_id": "act2_p12c",
+          "requirements": {
+            "has_item": "Rope"
+          }
+        },
+        {
+          "label": "Rush without rope",
+          "effects": {},
+          "next_page_id": "act2_p12c"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p12c",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p12c.png",
+      "story_text": "Page 12C \u2014 Flooded Chamber (choose one).",
+      "choices": [
+        {
+          "label": "Take Dirty Bandage",
+          "effects": {
+            "add_found_item": "Dirty Bandage"
+          },
+          "next_page_id": "act2_p13c"
+        },
+        {
+          "label": "Take Cavern Clue",
+          "effects": {
+            "add_found_item": "Cavern Clue"
+          },
+          "next_page_id": "act2_p13c"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p13c",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p13c.png",
+      "story_text": "Page 13C \u2014 Sewer Creature.",
+      "choices": [
+        {
+          "label": "Health >= Healthy: win",
+          "effects": {},
+          "next_page_id": "act2_p14c",
+          "requirements": {
+            "health_at_least": "Healthy"
+          }
+        },
+        {
+          "label": "Else: lose 1 tier",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act2_p14c",
+          "requirements": {
+            "health_at_most": "Wounded"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p14c",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p14c.png",
+      "story_text": "Page 14C \u2014 Tunnel Exit.",
+      "choices": [
+        {
+          "label": "Enter Village Core",
+          "effects": {},
+          "next_page_id": "act2_p25_core"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p25_core",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p25_core.png",
+      "story_text": "Page 25 \u2014 Village Core Confrontation.",
+      "choices": [
+        {
+          "label": "Engage",
+          "effects": {},
+          "next_page_id": "act3_p26"
+        }
+      ]
+    },
+    {
+      "page_id": "act3_start",
+      "act_id": "act_3",
+      "image_path": "res://assets/images/act3_p25_confrontation.png",
+      "story_text": "Act III start \u2014 Fire Master appears.",
+      "choices": [
+        {
+          "label": "Engage",
+          "effects": {},
+          "next_page_id": "act3_p26"
+        }
+      ]
+    },
+    {
+      "page_id": "act3_p26",
+      "act_id": "act_3",
+      "image_path": "res://assets/images/act3_p26.png",
+      "story_text": "Page 26 \u2014 Exchange 1 (Shuriken).",
+      "choices": [
+        {
+          "label": "Dodge",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act3_p27"
+        },
+        {
+          "label": "Deflect",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act3_p27"
+        },
+        {
+          "label": "Counter",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act3_p27"
+        },
+        {
+          "label": "Tool use",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act3_p27"
+        }
+      ]
+    },
+    {
+      "page_id": "act3_p27",
+      "act_id": "act_3",
+      "image_path": "res://assets/images/act3_p27.png",
+      "story_text": "Page 27 \u2014 Exchange 2 (Ash kick + blade).",
+      "choices": [
+        {
+          "label": "Step in",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act3_p28"
+        },
+        {
+          "label": "Retreat",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act3_p28"
+        },
+        {
+          "label": "Smoke bomb",
+          "effects": {
+            "remove_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act3_p28",
+          "requirements": {
+            "has_item": "Smoke Bomb"
+          }
+        },
+        {
+          "label": "Oil flask",
           "effects": {
             "remove_starting_item": "Oil Flask"
           },
-          "next_page_id": "act2_street_b3",
+          "next_page_id": "act3_p28",
           "requirements": {
             "has_item": "Oil Flask"
           }
@@ -539,330 +943,62 @@
       ]
     },
     {
-      "page_id": "act2_street_b3",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_street_b3.png",
-      "story_text": "A side alley opens beside collapsed masonry.",
-      "choices": [
-        {
-          "label": "Investigate alley (find sewer clue)",
-          "effects": {
-            "set_flag": {
-              "cavern_clue": true
-            }
-          },
-          "next_page_id": "act2_street_b4"
-        },
-        {
-          "label": "Stay on main path",
-          "effects": {},
-          "next_page_id": "act2_street_b4"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_street_b4",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_street_b4.png",
-      "story_text": "Inner gate obstruction blocks direct passage.",
-      "choices": [
-        {
-          "label": "Wait for guard shift",
-          "effects": {},
-          "next_page_id": "act2_street_b5"
-        },
-        {
-          "label": "Force entry",
-          "effects": {
-            "change_health": -1,
-            "set_flag": {
-              "detected": true
-            }
-          },
-          "next_page_id": "act2_street_b5"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_street_b5",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_street_b5.png",
-      "story_text": "Jordan enters the village core lane.",
-      "choices": [
-        {
-          "label": "Advance to Village Core",
-          "effects": {},
-          "next_page_id": "act2_village_core"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_sewer_c1",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_sewer_c1.png",
-      "story_text": "Steam and darkness swallow the drainage channel.",
-      "choices": [
-        {
-          "label": "Move carefully",
-          "effects": {},
-          "next_page_id": "act2_sewer_c2"
-        },
-        {
-          "label": "Move quickly",
-          "effects": {
-            "set_hook_state": "Damaged"
-          },
-          "next_page_id": "act2_sewer_c2",
-          "requirements": {
-            "has_item": "Grappling Hook & Line"
-          }
-        }
-      ]
-    },
-    {
-      "page_id": "act2_sewer_c2",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_sewer_c2.png",
-      "story_text": "In a flooded chamber you can only take one lead.",
-      "choices": [
-        {
-          "label": "Take Dirty Bandage",
-          "effects": {
-            "add_found_item": "Dirty Bandage",
-            "set_flag": {
-              "dirty_bandage_found": true
-            }
-          },
-          "next_page_id": "act2_sewer_c3"
-        },
-        {
-          "label": "Take cavern clue",
-          "effects": {
-            "set_flag": {
-              "cavern_clue": true
-            }
-          },
-          "next_page_id": "act2_sewer_c3"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_sewer_c3",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_sewer_c3.png",
-      "story_text": "A sewer creature ambushes at close range.",
-      "choices": [
-        {
-          "label": "Healthy: instant kill",
-          "effects": {},
-          "next_page_id": "act2_sewer_c4",
-          "requirements": {
-            "health_at_least": "Healthy"
-          }
-        },
-        {
-          "label": "Wounded exchange",
-          "effects": {
-            "change_health": -1
-          },
-          "next_page_id": "act2_sewer_c4",
-          "requirements": {
-            "health_at_most": "Wounded"
-          }
-        },
-        {
-          "label": "Critical scramble (severe risk)",
-          "effects": {},
-          "next_page_id": "act2_sewer_c3_critical",
-          "requirements": {
-            "health_at_most": "Critical"
-          }
-        }
-      ]
-    },
-    {
-      "page_id": "act2_sewer_c3_critical",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_sewer_c3_critical.png",
-      "story_text": "Critical condition leaves no margin in the ambush.",
-      "choices": [
-        {
-          "label": "Severe hit and escape",
-          "effects": {
-            "change_health": -1
-          },
-          "next_page_id": "act2_sewer_c4"
-        },
-        {
-          "label": "Overwhelmed in tunnel",
-          "effects": {},
-          "next_page_id": "ending_defeat"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_sewer_c4",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_sewer_c4.png",
-      "story_text": "Jordan reaches the tunnel exit and inner wall access.",
-      "choices": [
-        {
-          "label": "Climb to core approach",
-          "effects": {},
-          "next_page_id": "act2_sewer_c5"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_sewer_c5",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_sewer_c5.png",
-      "story_text": "He enters the village core through interior drainage stone.",
-      "choices": [
-        {
-          "label": "Advance to Village Core",
-          "effects": {},
-          "next_page_id": "act2_village_core"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_village_core",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_village_core.png",
-      "story_text": "All infiltration routes reconverge at the Village Core confrontation point.",
-      "choices": [
-        {
-          "label": "Face the Fire Master",
-          "effects": {},
-          "next_page_id": "act3_start"
-        }
-      ]
-    },
-    {
-      "page_id": "act3_start",
+      "page_id": "act3_p28",
       "act_id": "act_3",
-      "image_path": "res://assets/images/act3_01_master_appears.png",
-      "story_text": "The Fire Master appears in human form, calm and ready. He expected Jordan.",
+      "image_path": "res://assets/images/act3_p28.png",
+      "story_text": "Page 28 \u2014 Final Clash.",
       "choices": [
         {
-          "label": "Engage",
+          "label": "Health >= Wounded: wound Master",
           "effects": {},
-          "next_page_id": "act3_02_exchange1"
-        }
-      ]
-    },
-    {
-      "page_id": "act3_02_exchange1",
-      "act_id": "act_3",
-      "image_path": "res://assets/images/act3_02_exchange1.png",
-      "story_text": "Exchange 1: shuriken burst from multiple angles.",
-      "choices": [
-        {
-          "label": "Dodge",
-          "effects": {},
-          "next_page_id": "act3_03_exchange2",
-          "requirements": {
-            "discipline_is": "Reflex"
-          }
-        },
-        {
-          "label": "Deflect",
-          "effects": {},
-          "next_page_id": "act3_03_exchange2",
-          "requirements": {
-            "discipline_is": "Steel"
-          }
-        },
-        {
-          "label": "Counter",
-          "effects": {},
-          "next_page_id": "act3_03_exchange2",
-          "requirements": {
-            "health_at_least": "Healthy"
-          }
-        },
-        {
-          "label": "Wrong read - take a hit",
-          "effects": {
-            "change_health": -1
-          },
-          "next_page_id": "act3_03_exchange2"
-        }
-      ]
-    },
-    {
-      "page_id": "act3_03_exchange2",
-      "act_id": "act_3",
-      "image_path": "res://assets/images/act3_03_exchange2.png",
-      "story_text": "Exchange 2: the Master lunges and kicks ash to blind.",
-      "choices": [
-        {
-          "label": "Step inside range",
-          "effects": {},
-          "next_page_id": "act3_04_exchange3",
-          "requirements": {
-            "discipline_is": "Steel"
-          }
-        },
-        {
-          "label": "Retreat and reset angle",
-          "effects": {},
-          "next_page_id": "act3_04_exchange3",
-          "requirements": {
-            "health_at_least": "Healthy"
-          }
-        },
-        {
-          "label": "Use Smoke",
-          "effects": {
-            "remove_starting_item": "Smoke Bomb"
-          },
-          "next_page_id": "act3_04_exchange3",
-          "requirements": {
-            "has_item": "Smoke Bomb"
-          }
-        },
-        {
-          "label": "Wrong timing - lose footing",
-          "effects": {
-            "change_health": -1
-          },
-          "next_page_id": "act3_04_exchange3"
-        }
-      ]
-    },
-    {
-      "page_id": "act3_04_exchange3",
-      "act_id": "act_3",
-      "image_path": "res://assets/images/act3_04_exchange3.png",
-      "story_text": "Exchange 3 final clash.",
-      "choices": [
-        {
-          "label": "Wound the Master (Wounded+)",
-          "effects": {},
-          "next_page_id": "act3_05_retreat",
+          "next_page_id": "act3_p29",
           "requirements": {
             "health_at_least": "Wounded"
           }
         },
         {
-          "label": "Critical struggle, press anyway",
+          "label": "Critical route: extra loss",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act3_05_retreat",
+          "next_page_id": "act3_p29",
           "requirements": {
             "health_at_most": "Critical"
+          }
+        },
+        {
+          "label": "Focus one-time stability advantage",
+          "effects": {
+            "set_flag": {
+              "used_focus_path": true
+            }
+          },
+          "next_page_id": "act3_p29",
+          "requirements": {
+            "discipline_is": "Focus",
+            "flag_false": "used_focus_path"
+          }
+        },
+        {
+          "label": "Steel absorbs one hit",
+          "effects": {
+            "set_flag": {
+              "used_steel_guard": true
+            }
+          },
+          "next_page_id": "act3_p29",
+          "requirements": {
+            "discipline_is": "Steel",
+            "flag_false": "used_steel_guard"
           }
         }
       ]
     },
     {
-      "page_id": "act3_05_retreat",
+      "page_id": "act3_p29",
       "act_id": "act_3",
-      "image_path": "res://assets/images/act3_05_retreat.png",
-      "story_text": "Wounded, the Master retreats toward the mountain ascent.",
+      "image_path": "res://assets/images/act3_p29.png",
+      "story_text": "Page 29 \u2014 Master flees toward volcano.",
       "choices": [
         {
           "label": "Pursue",
@@ -874,276 +1010,219 @@
     {
       "page_id": "act4_start",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_01_route_choice.png",
-      "story_text": "Mountain Ascent route choice.",
+      "image_path": "res://assets/images/act4_p30.png",
+      "story_text": "Page 30 \u2014 Choose Route.",
       "choices": [
         {
-          "label": "Cliffside Path",
-          "effects": {
-            "set_flag": {
-              "route_cliffside": true
-            }
-          },
-          "next_page_id": "act4_cliff_a1"
+          "label": "A) Cliffside Path",
+          "effects": {},
+          "next_page_id": "act4_p31a"
         },
         {
-          "label": "Ash Forest",
-          "effects": {
-            "set_flag": {
-              "route_ash_forest": true
-            }
-          },
-          "next_page_id": "act4_forest_b1"
+          "label": "B) Ash Forest",
+          "effects": {},
+          "next_page_id": "act4_p31b"
         },
         {
-          "label": "Hidden Tunnel",
-          "effects": {
-            "set_flag": {
-              "route_hidden_tunnel": true
-            }
-          },
-          "next_page_id": "act4_tunnel_c1",
+          "label": "C) Hidden Tunnel (requires Cavern Clue)",
+          "effects": {},
+          "next_page_id": "act4_p31c",
           "requirements": {
-            "flag_true": "cavern_clue"
+            "has_item": "Cavern Clue"
           }
         }
       ]
     },
     {
-      "page_id": "act4_cliff_a1",
+      "page_id": "act4_p31a",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_cliff_a1.png",
-      "story_text": "Narrow ledges and strong wind test every step.",
+      "image_path": "res://assets/images/act4_p31a.png",
+      "story_text": "Page 31A \u2014 Narrow Ledge.",
       "choices": [
         {
-          "label": "Use rope conservatively",
+          "label": "Move slowly",
           "effects": {},
-          "next_page_id": "act4_cliff_a2",
+          "next_page_id": "act4_p32a"
+        },
+        {
+          "label": "Use rope",
+          "effects": {},
+          "next_page_id": "act4_p32a",
           "requirements": {
-            "has_item": "Grappling Hook & Line"
+            "has_item": "Rope"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act4_p32a",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p32a.png",
+      "story_text": "Page 32A \u2014 Rival Ninja Ambush.",
+      "choices": [
+        {
+          "label": "Fight (if Wounded: -1)",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act4_p33a",
+          "requirements": {
+            "health_at_most": "Wounded"
           }
         },
         {
-          "label": "Swing too hard with rope",
+          "label": "Avoid",
+          "effects": {},
+          "next_page_id": "act4_p33a"
+        },
+        {
+          "label": "Use tool",
+          "effects": {
+            "remove_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act4_p33a",
+          "requirements": {
+            "has_item": "Throwing Stars"
+          }
+        },
+        {
+          "label": "Use rope mid-fight (hook Damaged)",
           "effects": {
             "set_hook_state": "Damaged"
           },
-          "next_page_id": "act4_cliff_a2",
+          "next_page_id": "act4_p33a",
           "requirements": {
-            "has_item": "Grappling Hook & Line"
+            "has_item": "Rope"
           }
-        },
-        {
-          "label": "No rope traverse",
-          "effects": {},
-          "next_page_id": "act4_cliff_a2"
         }
       ]
     },
     {
-      "page_id": "act4_cliff_a2",
+      "page_id": "act4_p33a",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_cliff_a2.png",
-      "story_text": "A rival ninja ambushes along the cliff shelf.",
+      "image_path": "res://assets/images/act4_p33a.png",
+      "story_text": "Page 33A \u2014 Rockslide.",
       "choices": [
         {
-          "label": "Engage",
+          "label": "Good line",
+          "effects": {},
+          "next_page_id": "act5_start"
+        },
+        {
+          "label": "Wrong line (-1)",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act4_cliff_a3"
-        },
-        {
-          "label": "Avoid and slide past",
-          "effects": {},
-          "next_page_id": "act4_cliff_a3"
-        },
-        {
-          "label": "Use tool to disengage",
-          "effects": {
-            "remove_starting_item": "Flash Powder"
-          },
-          "next_page_id": "act4_cliff_a3",
-          "requirements": {
-            "has_item": "Flash Powder"
-          }
+          "next_page_id": "act5_start"
         }
       ]
     },
     {
-      "page_id": "act4_cliff_a3",
+      "page_id": "act4_p31b",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_cliff_a3.png",
-      "story_text": "Rockslide breaks the path.",
+      "image_path": "res://assets/images/act4_p31b.png",
+      "story_text": "Page 31B \u2014 Thick Ash.",
       "choices": [
         {
-          "label": "Jump",
+          "label": "Shadow pass",
           "effects": {},
-          "next_page_id": "act4_reconverge"
-        },
-        {
-          "label": "Anchor rope",
-          "effects": {},
-          "next_page_id": "act4_reconverge",
-          "requirements": {
-            "has_item": "Grappling Hook & Line"
-          }
-        },
-        {
-          "label": "Brace and absorb impact",
-          "effects": {
-            "change_health": -1
-          },
-          "next_page_id": "act4_reconverge"
-        }
-      ]
-    },
-    {
-      "page_id": "act4_forest_b1",
-      "act_id": "act_4",
-      "image_path": "res://assets/images/act4_forest_b1.png",
-      "story_text": "Thick ash limits visibility in the forest slope.",
-      "choices": [
-        {
-          "label": "Move as Shadow",
-          "effects": {},
-          "next_page_id": "act4_forest_b2",
+          "next_page_id": "act4_p32b",
           "requirements": {
             "discipline_is": "Shadow"
           }
         },
         {
-          "label": "Push forward through ash",
+          "label": "Not Shadow: detected",
           "effects": {
             "set_flag": {
               "detected": true
             }
           },
-          "next_page_id": "act4_forest_b2"
+          "next_page_id": "act4_p32b"
         }
       ]
     },
     {
-      "page_id": "act4_forest_b2",
+      "page_id": "act4_p32b",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_forest_b2.png",
-      "story_text": "A Fire Scout intercepts on charred roots.",
+      "image_path": "res://assets/images/act4_p32b.png",
+      "story_text": "Page 32B \u2014 Fire Scout.",
       "choices": [
         {
-          "label": "Minor fight",
+          "label": "Win while Healthy+",
+          "effects": {},
+          "next_page_id": "act5_start",
+          "requirements": {
+            "health_at_least": "Healthy"
+          }
+        },
+        {
+          "label": "Wounded route: -1",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act4_forest_b3"
-        },
-        {
-          "label": "Use Blow Dart",
-          "effects": {
-            "remove_starting_item": "Blow Dart"
-          },
-          "next_page_id": "act4_forest_b3",
+          "next_page_id": "act5_start",
           "requirements": {
-            "has_item": "Blow Dart"
-          }
-        },
-        {
-          "label": "Disengage with Smoke",
-          "effects": {
-            "remove_starting_item": "Smoke Bomb"
-          },
-          "next_page_id": "act4_forest_b3",
-          "requirements": {
-            "has_item": "Smoke Bomb"
+            "health_at_most": "Wounded"
           }
         }
       ]
     },
     {
-      "page_id": "act4_forest_b3",
+      "page_id": "act4_p31c",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_forest_b3.png",
-      "story_text": "Scorched clearing opens to the upper mountain route.",
+      "image_path": "res://assets/images/act4_p31c.png",
+      "story_text": "Page 31C \u2014 Lava Tube safe route.",
       "choices": [
         {
-          "label": "Reconverge",
+          "label": "Continue",
           "effects": {},
-          "next_page_id": "act4_reconverge"
+          "next_page_id": "act4_p32c"
         }
       ]
     },
     {
-      "page_id": "act4_tunnel_c1",
+      "page_id": "act4_p32c",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_tunnel_c1.png",
-      "story_text": "Hidden lava-tube entrance provides a safer climb lane.",
+      "image_path": "res://assets/images/act4_p32c.png",
+      "story_text": "Page 32C \u2014 Hidden Cavern entrance.",
       "choices": [
         {
-          "label": "Proceed through tunnel",
+          "label": "Enter Hidden Cavern",
           "effects": {},
-          "next_page_id": "act4_tunnel_c2"
-        }
-      ]
-    },
-    {
-      "page_id": "act4_tunnel_c2",
-      "act_id": "act_4",
-      "image_path": "res://assets/images/act4_tunnel_c2.png",
-      "story_text": "Cavern access branch opens from tunnel wall.",
-      "choices": [
-        {
-          "label": "Take optional cavern access now",
-          "effects": {},
-          "next_page_id": "act5_hidden_cavern_reward"
-        },
-        {
-          "label": "Skip and reconverge",
-          "effects": {},
-          "next_page_id": "act4_reconverge"
-        }
-      ]
-    },
-    {
-      "page_id": "act4_reconverge",
-      "act_id": "act_4",
-      "image_path": "res://assets/images/act4_reconverge.png",
-      "story_text": "All ascent routes reconverge near the volcano exterior crossing.",
-      "choices": [
-        {
-          "label": "Enter Volcano Exterior",
-          "effects": {},
-          "next_page_id": "act5_start"
+          "next_page_id": "act5_p35"
         }
       ]
     },
     {
       "page_id": "act5_start",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_01_crossing_choice.png",
-      "story_text": "Volcano exterior crossing choice.",
+      "image_path": "res://assets/images/act5_p40.png",
+      "story_text": "Page 40 \u2014 Crossing Choice.",
       "choices": [
         {
-          "label": "Grappling Hook Across Lava",
+          "label": "Grappling Hook",
           "effects": {},
-          "next_page_id": "act5_hook_path",
+          "next_page_id": "act5_p40_hook",
           "requirements": {
-            "has_item": "Grappling Hook & Line"
+            "has_item": "Rope"
           }
         },
         {
           "label": "Narrow Ledge",
           "effects": {},
-          "next_page_id": "act5_ledge_path"
+          "next_page_id": "act5_p41"
         }
       ]
     },
     {
-      "page_id": "act5_hook_path",
+      "page_id": "act5_p40_hook",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_hook_path.png",
-      "story_text": "The volcano trembles as the line takes load.",
+      "image_path": "res://assets/images/act5_p40_hook.png",
+      "story_text": "Grappling Hook outcome during quake.",
       "choices": [
         {
-          "label": "Hook is Good: cross safely",
+          "label": "Hook Good -> continue",
           "effects": {},
           "next_page_id": "act6_start",
           "requirements": {
@@ -1151,7 +1230,19 @@
           }
         },
         {
-          "label": "Hook Damaged: line snaps, instant death",
+          "label": "Repair with Reinforced Line (once)",
+          "effects": {
+            "set_hook_state": "Good",
+            "consume_found_item": "Reinforced Line"
+          },
+          "next_page_id": "act6_start",
+          "requirements": {
+            "hook_state_is": "Damaged",
+            "has_item": "Reinforced Line"
+          }
+        },
+        {
+          "label": "Hook Damaged -> rope snaps (death)",
           "effects": {},
           "next_page_id": "ending_defeat",
           "requirements": {
@@ -1161,10 +1252,10 @@
       ]
     },
     {
-      "page_id": "act5_ledge_path",
+      "page_id": "act5_p41",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_ledge_path.png",
-      "story_text": "Jordan edges along the narrow stone lip as tremors intensify.",
+      "image_path": "res://assets/images/act5_p41.png",
+      "story_text": "Page 41 \u2014 Volcano shaking.",
       "choices": [
         {
           "label": "Reflex auto-recover",
@@ -1175,58 +1266,58 @@
           }
         },
         {
-          "label": "Slip with cavern clue: fall to hidden cavern",
+          "label": "Fall",
           "effects": {},
-          "next_page_id": "act5_hidden_cavern_reward",
+          "next_page_id": "act5_p42"
+        }
+      ]
+    },
+    {
+      "page_id": "act5_p42",
+      "act_id": "act_5",
+      "image_path": "res://assets/images/act5_p42.png",
+      "story_text": "Page 42 \u2014 Fall outcome.",
+      "choices": [
+        {
+          "label": "Has Cavern Clue -> Hidden Cavern",
+          "effects": {},
+          "next_page_id": "act5_p35",
           "requirements": {
-            "flag_true": "cavern_clue"
+            "has_item": "Cavern Clue"
           }
         },
         {
-          "label": "Slip without clue: fatal fall",
+          "label": "No clue -> death",
           "effects": {},
           "next_page_id": "ending_defeat"
         }
       ]
     },
     {
-      "page_id": "act5_hidden_cavern_reward",
+      "page_id": "act5_p35",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_hidden_cavern_reward.png",
-      "story_text": "Hidden cavern: choose one reward.",
+      "image_path": "res://assets/images/act5_p35.png",
+      "story_text": "Page 35 \u2014 Hidden Cavern reward (choose one).",
       "choices": [
         {
-          "label": "Take Reinforced Line",
+          "label": "Reinforced Line",
           "effects": {
-            "add_found_item": "Reinforced Line Segment"
+            "add_found_item": "Reinforced Line"
           },
-          "next_page_id": "act5_after_cavern"
+          "next_page_id": "act6_start"
         },
         {
-          "label": "Take Ancient Sigil",
+          "label": "Ancient Sigil",
           "effects": {
             "add_found_item": "Ancient Sigil"
           },
-          "next_page_id": "act5_after_cavern"
+          "next_page_id": "act6_start"
         },
         {
-          "label": "Use Healing Spring (+1 tier)",
+          "label": "Healing Spring (+1 tier)",
           "effects": {
             "change_health": 1
           },
-          "next_page_id": "act5_after_cavern"
-        }
-      ]
-    },
-    {
-      "page_id": "act5_after_cavern",
-      "act_id": "act_5",
-      "image_path": "res://assets/images/act5_after_cavern.png",
-      "story_text": "Jordan exits the cavern and resumes the approach.",
-      "choices": [
-        {
-          "label": "Enter ritual chamber",
-          "effects": {},
           "next_page_id": "act6_start"
         }
       ]
@@ -1234,75 +1325,62 @@
     {
       "page_id": "act6_start",
       "act_id": "act_6",
-      "image_path": "res://assets/images/act6_fusion_1.png",
-      "story_text": "The Master accepts Fire Spirit infusion. The mountain shakes and heat pressure spikes.",
+      "image_path": "res://assets/images/act6_p45.png",
+      "story_text": "Page 45 \u2014 Fusion cutscene. Master fuses with Fire Spirit.",
       "choices": [
         {
-          "label": "Enter final chamber",
+          "label": "Continue",
           "effects": {},
-          "next_page_id": "act6_fusion_2"
+          "next_page_id": "act7_p46"
         }
       ]
     },
     {
-      "page_id": "act6_fusion_2",
-      "act_id": "act_6",
-      "image_path": "res://assets/images/act6_fusion_2.png",
-      "story_text": "Fusion stabilizes into disciplined chaos. Jordan steps in for the final battle.",
-      "choices": [
-        {
-          "label": "Begin final battle",
-          "effects": {},
-          "next_page_id": "act7_start"
-        }
-      ]
-    },
-    {
-      "page_id": "act7_start",
+      "page_id": "act7_p46",
       "act_id": "act_7",
-      "image_path": "res://assets/images/act7_01_confrontation.png",
-      "story_text": "Spirit-Infused Master confrontation begins.",
+      "image_path": "res://assets/images/act7_p46.png",
+      "story_text": "Page 46 \u2014 Final confrontation.",
       "choices": [
         {
           "label": "Exchange 1",
           "effects": {},
-          "next_page_id": "act7_exchange1"
+          "next_page_id": "act7_p47"
         }
       ]
     },
     {
-      "page_id": "act7_exchange1",
+      "page_id": "act7_p47",
       "act_id": "act_7",
-      "image_path": "res://assets/images/act7_02_exchange1.png",
-      "story_text": "Exchange 1 tests footing and timing.",
+      "image_path": "res://assets/images/act7_p47.png",
+      "story_text": "Page 47 \u2014 Exchange 1.",
       "choices": [
         {
-          "label": "Disciplined response",
+          "label": "Clean execution",
           "effects": {},
-          "next_page_id": "act7_exchange2",
+          "next_page_id": "act7_p48",
           "requirements": {
             "health_at_least": "Healthy"
           }
         },
         {
-          "label": "Take pressure and continue",
+          "label": "Wrong: -1",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act7_exchange2"
+          "next_page_id": "act7_p48"
         }
       ]
     },
     {
-      "page_id": "act7_exchange2",
+      "page_id": "act7_p48",
       "act_id": "act_7",
-      "image_path": "res://assets/images/act7_03_exchange2.png",
-      "story_text": "Exchange 2 scales with current condition.",
+      "image_path": "res://assets/images/act7_p48.png",
+      "story_text": "Page 48 \u2014 Exchange 2.",
       "choices": [
         {
-          "label": "Use Ancient Sigil advantage",
+          "label": "Ancient Sigil auto advantage",
           "effects": {},
-          "next_page_id": "act7_exchange3",
+          "next_page_id": "act7_p49",
           "requirements": {
             "has_item": "Ancient Sigil"
           }
@@ -1310,81 +1388,113 @@
         {
           "label": "Standard exchange",
           "effects": {},
-          "next_page_id": "act7_exchange3"
+          "next_page_id": "act7_p49"
+        },
+        {
+          "label": "Wrong: -1",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act7_p49"
         }
       ]
     },
     {
-      "page_id": "act7_exchange3",
+      "page_id": "act7_p49",
       "act_id": "act_7",
-      "image_path": "res://assets/images/act7_04_exchange3.png",
-      "story_text": "Exchange 3 decides the chapter.",
+      "image_path": "res://assets/images/act7_p49.png",
+      "story_text": "Page 49 \u2014 Final exchange.",
       "choices": [
         {
-          "label": "Clean Victory",
+          "label": "Health >= Wounded -> Victory",
           "effects": {},
-          "next_page_id": "ending_clean_victory",
-          "requirements": {
-            "health_at_least": "Healthy"
-          }
-        },
-        {
-          "label": "Hard-Fought Victory",
-          "effects": {},
-          "next_page_id": "ending_hard_fought",
+          "next_page_id": "act7_p50",
           "requirements": {
             "health_at_least": "Wounded"
           }
         },
         {
-          "label": "Mutual Destruction",
+          "label": "Critical -> likely defeat",
           "effects": {},
-          "next_page_id": "ending_mutual_destruction",
+          "next_page_id": "ending_defeat",
+          "requirements": {
+            "health_at_most": "Critical"
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act7_p50",
+      "act_id": "act_7",
+      "image_path": "res://assets/images/act7_p50.png",
+      "story_text": "Page 50 \u2014 Ending Branch.",
+      "choices": [
+        {
+          "label": "Clean victory",
+          "effects": {},
+          "next_page_id": "ending_clean",
+          "requirements": {
+            "health_at_least": "Healthy",
+            "flag_false": "detected"
+          }
+        },
+        {
+          "label": "Hard-fought victory",
+          "effects": {},
+          "next_page_id": "ending_hard",
+          "requirements": {
+            "health_at_least": "Wounded"
+          }
+        },
+        {
+          "label": "Mutual destruction",
+          "effects": {},
+          "next_page_id": "ending_mutual",
           "requirements": {
             "health_at_most": "Critical"
           }
         },
         {
-          "label": "Collapse before finishing",
+          "label": "Defeat",
           "effects": {},
           "next_page_id": "ending_defeat"
         }
       ]
     },
     {
-      "page_id": "ending_clean_victory",
+      "page_id": "ending_clean",
       "act_id": "act_7",
-      "image_path": "res://assets/images/ending_clean_victory.png",
-      "story_text": "Jordan wins with controlled balance and survives the chamber.",
+      "image_path": "res://assets/images/ending_clean.png",
+      "story_text": "Ending: Clean victory.",
       "choices": [
         {
-          "label": "Restart from Act I",
+          "label": "Restart required",
           "effects": {},
           "next_page_id": "act1_start"
         }
       ]
     },
     {
-      "page_id": "ending_hard_fought",
+      "page_id": "ending_hard",
       "act_id": "act_7",
-      "image_path": "res://assets/images/ending_hard_fought.png",
-      "story_text": "Jordan wins, battered and scarred, but standing.",
+      "image_path": "res://assets/images/ending_hard.png",
+      "story_text": "Ending: Hard-fought victory.",
       "choices": [
         {
-          "label": "Restart from Act I",
+          "label": "Restart required",
           "effects": {},
           "next_page_id": "act1_start"
         }
       ]
     },
     {
-      "page_id": "ending_mutual_destruction",
+      "page_id": "ending_mutual",
       "act_id": "act_7",
-      "image_path": "res://assets/images/ending_mutual_destruction.png",
-      "story_text": "Both fighters fall in the final surge as the chamber collapses.",
+      "image_path": "res://assets/images/ending_mutual.png",
+      "story_text": "Ending: Mutual destruction.",
       "choices": [
         {
-          "label": "Restart from Act I",
+          "label": "Restart required",
           "effects": {},
           "next_page_id": "act1_start"
         }
@@ -1394,10 +1504,10 @@
       "page_id": "ending_defeat",
       "act_id": "act_7",
       "image_path": "res://assets/images/ending_defeat.png",
-      "story_text": "Jordan fails this run. The path must be attempted again.",
+      "story_text": "Ending: Defeat. Restart required.",
       "choices": [
         {
-          "label": "Restart from Act I",
+          "label": "Restart required",
           "effects": {},
           "next_page_id": "act1_start"
         }
