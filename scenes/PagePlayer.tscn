@@ -1,6 +1,20 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/page_player.gd" id="1"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_story"]
+bg_color = Color(0, 0, 0, 0.5)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_choice"]
+bg_color = Color(0, 0, 0, 0.45)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="PagePlayer" type="Control"]
 layout_mode = 3
@@ -31,24 +45,35 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 16
-theme_override_constants/margin_top = 14
+theme_override_constants/margin_top = 72
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 14
 
 [node name="MainVBox" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/separation = 10
+theme_override_constants/separation = 12
 
-[node name="StoryText" type="RichTextLabel" parent="MarginContainer/MainVBox"]
+[node name="StoryPanel" type="PanelContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_story")
+
+[node name="StoryText" type="RichTextLabel" parent="MarginContainer/MainVBox/StoryPanel"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 280)
+custom_minimum_size = Vector2(0, 300)
 layout_mode = 2
 bbcode_enabled = false
 fit_content = false
+theme_override_colors/default_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0.95)
 theme_override_font_sizes/normal_font_size = 36
 
-[node name="ChoiceContainer" type="VBoxContainer" parent="MarginContainer/MainVBox"]
+[node name="ChoicePanel" type="PanelContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_choice")
+
+[node name="ChoiceContainer" type="VBoxContainer" parent="MarginContainer/MainVBox/ChoicePanel"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_vertical = 1
