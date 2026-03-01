@@ -1,6 +1,6 @@
 extends Node
 
-const HEALTH_ORDER := ["Dying", "Critical", "Wounded", "Healthy", "Prime"]
+const HEALTH_ORDER: Array[String] = ["Dying", "Critical", "Wounded", "Healthy", "Prime"]
 
 var health_tier: String = "Prime"
 var discipline: String = ""
@@ -51,22 +51,22 @@ func set_health_tier(new_tier: String) -> void:
 		health_tier = new_tier
 
 func change_health_tier(delta: int) -> void:
-	var index := HEALTH_ORDER.find(health_tier)
+	var index: int = HEALTH_ORDER.find(health_tier)
 	if index == -1:
 		index = HEALTH_ORDER.size() - 1
-	var next_index := clamp(index + delta, 0, HEALTH_ORDER.size() - 1)
+	var next_index: int = int(clamp(index + delta, 0, HEALTH_ORDER.size() - 1))
 	health_tier = HEALTH_ORDER[next_index]
 
 func health_at_least(target_tier: String) -> bool:
-	var current_index := HEALTH_ORDER.find(health_tier)
-	var target_index := HEALTH_ORDER.find(target_tier)
+	var current_index: int = HEALTH_ORDER.find(health_tier)
+	var target_index: int = HEALTH_ORDER.find(target_tier)
 	if current_index == -1 or target_index == -1:
 		return false
 	return current_index >= target_index
 
 func health_at_most(target_tier: String) -> bool:
-	var current_index := HEALTH_ORDER.find(health_tier)
-	var target_index := HEALTH_ORDER.find(target_tier)
+	var current_index: int = HEALTH_ORDER.find(health_tier)
+	var target_index: int = HEALTH_ORDER.find(target_tier)
 	if current_index == -1 or target_index == -1:
 		return false
 	return current_index <= target_index

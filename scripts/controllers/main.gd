@@ -12,7 +12,7 @@ extends Control
 @onready var page_player: PagePlayer = %PagePlayer
 @onready var active_act_label: Label = %ActiveActLabel
 
-var active_act: Node
+var active_act: Node = null
 
 func _ready() -> void:
 	GameState.reset()
@@ -24,12 +24,11 @@ func start_act(act_id: String) -> void:
 		return
 	if active_act != null:
 		active_act.queue_free()
-	var act_scene: PackedScene = load(act_scene_paths[act_id])
+	var act_scene: PackedScene = load(str(act_scene_paths[act_id]))
 	active_act = act_scene.instantiate()
 	add_child(active_act)
-	if active_act.has_method("get"):
-		active_act_label.text = "Current Act: %s" % active_act.get("act_id")
-	var start_page_id: String = active_act.get("start_page_id")
+	active_act_label.text = "Current Act: %s" % str(active_act.get("act_id"))
+	var start_page_id: String = str(active_act.get("start_page_id"))
 	page_player.play_page(start_page_id)
 
 func _on_page_changed(_page_id: String, act_id: String) -> void:
