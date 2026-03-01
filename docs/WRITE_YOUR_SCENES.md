@@ -60,3 +60,18 @@ Example:
 python -m json.tool data/story_pages.json > /tmp/story_pages.pretty.json
 python scripts/tools/validate_story_data.py
 ```
+
+
+## If images still do not show
+
+Check these 4 things:
+
+1. File is really inside `assets/images/`.
+2. Path starts with `res://assets/images/`.
+3. File extension matches (`.png`, `.jpg`, `.jpeg`, or `.webp`).
+4. `page_id` image override is mapped to the right page.
+
+Good news: runtime now tries fallback filenames too:
+
+- `res://assets/images/<page_id>.png` (and jpg/jpeg/webp)
+- legacy format like `act1_05_vow.png` for page id `act1_p05_vow`

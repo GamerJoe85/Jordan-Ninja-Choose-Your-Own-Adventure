@@ -65,11 +65,46 @@ func apply_image(page_id: String, image_path: String) -> void:
 	if image_override_map.has(page_id):
 		background_rect.texture = image_override_map[page_id]
 		return
-	var normalized_path: String = _normalize_image_path(image_path)
-	if normalized_path.is_empty() or not ResourceLoader.exists(normalized_path):
+	var resolved_path: String = _resolve_image_path(page_id, image_path)
+	if resolved_path.is_empty():
 		background_rect.texture = null
+		push_warning("No image found for page_id '%s'. Checked JSON path and fallback filenames in res://assets/images/." % page_id)
 		return
-	background_rect.texture = load(normalized_path)
+	background_rect.texture = load(resolved_path)
+
+
+func _resolve_image_path(page_id: String, raw_path: String) -> String:
+	var normalized_path: String = _normalize_image_path(raw_path)
+	if not normalized_path.is_empty() and ResourceLoader.exists(normalized_path):
+		return normalized_path
+	for candidate in _image_fallback_candidates(page_id):
+		if ResourceLoader.exists(candidate):
+			return candidate
+	return ""
+
+
+func _image_fallback_candidates(page_id: String) -> PackedStringArray:
+	var candidates: PackedStringArray = PackedStringArray()
+	candidates.append("res://assets/images/%s.png" % page_id)
+	candidates.append("res://assets/images/%s.webp" % page_id)
+	candidates.append("res://assets/images/%s.jpg" % page_id)
+	candidates.append("res://assets/images/%s.jpeg" % page_id)
+
+	# Legacy compatibility: act1_p05_vow -> act1_05_vow
+	var legacy_id: String = page_id
+	if page_id.begins_with("act"):
+		var under_index: int = page_id.find("_")
+		if under_index != -1:
+			var head: String = page_id.substr(0, under_index + 1)
+			var tail: String = page_id.substr(under_index + 1)
+			if tail.begins_with("p"):
+				legacy_id = head + tail.substr(1)
+	if legacy_id != page_id:
+		candidates.append("res://assets/images/%s.png" % legacy_id)
+		candidates.append("res://assets/images/%s.webp" % legacy_id)
+		candidates.append("res://assets/images/%s.jpg" % legacy_id)
+		candidates.append("res://assets/images/%s.jpeg" % legacy_id)
+	return candidates
 
 
 func _normalize_image_path(raw_path: String) -> String:
