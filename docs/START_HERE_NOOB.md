@@ -34,6 +34,8 @@ Copy all artwork into:
 
 Need a full page-by-page list? Open `docs/IMAGE_ASSIGNMENT_CHECKLIST.md`.
 
+Need to edit your own text + images for every scene? Open `docs/WRITE_YOUR_SCENES.md`.
+
 Two ways:
 
 ### Option A: JSON path
