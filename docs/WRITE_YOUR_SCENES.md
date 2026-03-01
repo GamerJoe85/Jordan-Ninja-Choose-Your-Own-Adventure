@@ -75,3 +75,15 @@ Good news: runtime now tries fallback filenames too:
 
 - `res://assets/images/<page_id>.png` (and jpg/jpeg/webp)
 - legacy format like `act1_05_vow.png` for page id `act1_p05_vow`
+
+
+## Portrait + Landscape consistency
+
+Project settings now use a **portrait design viewport** (`1080x1920`) with stretch mode `viewport` and aspect `keep`.
+
+What this means:
+
+- Portrait: fills naturally.
+- Landscape: same layout is preserved with side bars instead of stretching/cropping the UI layout.
+
+So gameplay UI stays consistent across rotation.
