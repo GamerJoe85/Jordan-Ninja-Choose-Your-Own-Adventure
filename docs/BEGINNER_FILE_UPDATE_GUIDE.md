@@ -4,6 +4,8 @@ This guide answers: **"Do I need to upload everything every time?"**
 
 Short answer: **No**. Only changed files need to be updated.
 
+Need a full reset walkthrough? See `docs/START_HERE_NOOB.md`.
+
 ## Easiest workflow (recommended)
 
 1. Keep one project folder on your computer.
