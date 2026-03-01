@@ -136,8 +136,8 @@ func build_choices(choices: Array) -> void:
 		var button: Button = Button.new()
 		button.text = str(choice.get("label", "Continue"))
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		button.custom_minimum_size = Vector2(0, 88)
-		button.add_theme_font_size_override("font_size", 28)
+		button.custom_minimum_size = Vector2(0, 64)
+		button.add_theme_font_size_override("font_size", 22)
 		button.pressed.connect(_on_choice_selected.bind(choice))
 		choice_container.add_child(button)
 		shown += 1
@@ -199,7 +199,7 @@ func apply_effects(effects: Dictionary) -> void:
 func refresh_hud() -> void:
 	health_value.text = GameState.health_tier
 	discipline_value.text = "Unselected" if GameState.discipline.is_empty() else GameState.discipline
-	var inventory_text: String = "Starting: %s\nFound: %s" % [
+	var inventory_text: String = "Start: %s | Found: %s" % [
 		", ".join(GameState.starting_items) if not GameState.starting_items.is_empty() else "None",
 		", ".join(GameState.found_items) if not GameState.found_items.is_empty() else "None"
 	]
