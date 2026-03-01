@@ -21,7 +21,7 @@ grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 1
 stretch_mode = 5
-modulate = Color(1, 1, 1, 0.6)
+modulate = Color(1, 1, 1, 0.9)
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -31,26 +31,31 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/margin_left = 20
-theme_override_constants/margin_top = 20
+theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 20
-theme_override_constants/margin_bottom = 20
+theme_override_constants/margin_bottom = 16
 
 [node name="MainVBox" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-theme_override_constants/separation = 12
+size_flags_vertical = 3
+theme_override_constants/separation = 8
 
 [node name="StoryText" type="RichTextLabel" parent="MarginContainer/MainVBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 180)
+custom_minimum_size = Vector2(0, 210)
 layout_mode = 2
 bbcode_enabled = false
 fit_content = false
-theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/normal_font_size = 30
 
 [node name="ChoiceContainer" type="VBoxContainer" parent="MarginContainer/MainVBox"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_constants/separation = 8
+
+[node name="Spacer" type="Control" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+size_flags_vertical = 3
 
 [node name="HUDPanel" type="PanelContainer" parent="MarginContainer/MainVBox"]
 layout_mode = 2
@@ -58,50 +63,50 @@ size_flags_vertical = 1
 
 [node name="HUDGrid" type="GridContainer" parent="MarginContainer/MainVBox/HUDPanel"]
 layout_mode = 2
-columns = 2
-theme_override_constants/h_separation = 10
-theme_override_constants/v_separation = 6
+columns = 4
+theme_override_constants/h_separation = 12
+theme_override_constants/v_separation = 4
 
 [node name="HealthLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Condition"
 
 [node name="HealthValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Prime"
 
 [node name="DisciplineLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Discipline"
 
 [node name="DisciplineValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Unselected"
 
 [node name="InventoryLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Inventory"
 
 [node name="InventoryValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 16
+theme_override_font_sizes/font_size = 14
 text = "Starting: None\nFound: None"
 
 [node name="HookLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Hook State"
 
 [node name="HookValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 18
+theme_override_font_sizes/font_size = 16
 text = "Good"

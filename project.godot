@@ -15,5 +15,5 @@ window/size/viewport_height=1920
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
 window/stretch/scale=1.0
-window/dpi/allow_hidpi=false
+window/dpi/allow_hidpi=true
 window/handheld/orientation="sensor"
