@@ -79,3 +79,8 @@ In this repository, put your story images here:
 - `assets/images/` (Godot path: `res://assets/images/`)
 
 If you do not see it in Godot's FileSystem panel, click **Scan** or restart the editor after pulling latest files.
+
+
+## I do not know which photo goes where
+
+Use `docs/IMAGE_ASSIGNMENT_CHECKLIST.md`. It lists every `page_id` and its expected image path in one table.

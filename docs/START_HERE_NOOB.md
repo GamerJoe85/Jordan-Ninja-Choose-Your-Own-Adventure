@@ -32,6 +32,8 @@ Copy all artwork into:
 
 ## 5) Assign image for first page (quickest proof)
 
+Need a full page-by-page list? Open `docs/IMAGE_ASSIGNMENT_CHECKLIST.md`.
+
 Two ways:
 
 ### Option A: JSON path
