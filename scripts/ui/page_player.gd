@@ -65,10 +65,28 @@ func apply_image(page_id: String, image_path: String) -> void:
 	if image_override_map.has(page_id):
 		background_rect.texture = image_override_map[page_id]
 		return
-	if image_path.is_empty() or not ResourceLoader.exists(image_path):
+	var normalized_path: String = _normalize_image_path(image_path)
+	if normalized_path.is_empty() or not ResourceLoader.exists(normalized_path):
 		background_rect.texture = null
 		return
-	background_rect.texture = load(image_path)
+	background_rect.texture = load(normalized_path)
+
+
+func _normalize_image_path(raw_path: String) -> String:
+	var cleaned: String = raw_path.strip_edges()
+	if cleaned.is_empty():
+		return cleaned
+	if cleaned.contains("res://"):
+		var start_index: int = cleaned.find("res://")
+		cleaned = cleaned.substr(start_index)
+	var stop_chars: PackedStringArray = PackedStringArray(["`", "|", " "])
+	var stop_index: int = cleaned.length()
+	for stop_char in stop_chars:
+		var found_index: int = cleaned.find(stop_char)
+		if found_index != -1 and found_index < stop_index:
+			stop_index = found_index
+	cleaned = cleaned.substr(0, stop_index).strip_edges()
+	return cleaned
 
 func build_choices(choices: Array) -> void:
 	for child in choice_container.get_children():

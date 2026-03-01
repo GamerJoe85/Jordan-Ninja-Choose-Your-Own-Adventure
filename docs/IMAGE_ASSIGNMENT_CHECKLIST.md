@@ -6,6 +6,7 @@ How to use:
 1. Put your files in `assets/images/`.
 2. For each row below, create/add the file shown in **Expected JSON image_path** OR set an Inspector override for that `page_id`.
 3. Mark the checkbox when done.
+4. **Copy only the `res://...png` path** (not the full table row with pipes/backticks).
 
 | Done | page_id | act_id | Expected JSON image_path |
 |---|---|---|---|
