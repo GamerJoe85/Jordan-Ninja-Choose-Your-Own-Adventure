@@ -4,12 +4,12 @@
       "page_id": "act1_start",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p01_overlook.png",
-      "story_text": "Jordan stands on a rocky cliff and looks at the Fire Clan village below.",
+      "story_text": "Jordan knelt on the jagged cliff. Below him, the Fire Clan village glowed like a bed of angry embers. It had taken years of searching, but he had finally found them.",
       "choices": [
         {
           "label": "Continue",
-          "effects": {},
-          "next_page_id": "act1_p02_eyes"
+          "next_page_id": "act1_p02_eyes",
+          "effects": {}
         }
       ]
     },
@@ -17,12 +17,12 @@
       "page_id": "act1_p02_eyes",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p02_eyes.png",
-      "story_text": "Close-up on Jordan's eyes. He remembers what happened long ago.",
+      "story_text": "He narrowed his eyes as the wind kicked up hot ash. The scent of woodsmoke filled the air. To anyone else, it was just a fire, but to Jordan, it was the smell of the night his world ended.",
       "choices": [
         {
           "label": "Remember",
-          "effects": {},
-          "next_page_id": "act1_p03_flashback"
+          "next_page_id": "act1_p03_flashback",
+          "effects": {}
         }
       ]
     },
@@ -30,12 +30,12 @@
       "page_id": "act1_p03_flashback",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p03_flashback.png",
-      "story_text": "His home village is on fire. People are running in fear.",
+      "story_text": "The orange glow in his eyes blurred into a memory of his own home. He saw the red banners of the Fire Clan waving through the sparks. He saw his people scattered and his village turned to gray dust.",
       "choices": [
         {
           "label": "Continue",
-          "effects": {},
-          "next_page_id": "act1_p04_ash"
+          "next_page_id": "act1_p04_ash",
+          "effects": {}
         }
       ]
     },
@@ -43,12 +43,12 @@
       "page_id": "act1_p04_ash",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p04_ash.png",
-      "story_text": "Jordan kneels in ash and dust.",
+      "story_text": "A younger Jordan knelt in the ruins of his home. The heat was unbearable, but his heart felt cold. In that moment, surrounded by smoke, he made a silent promise to find the people who did this.",
       "choices": [
         {
-          "label": "Stand",
-          "effects": {},
-          "next_page_id": "act1_p05_vow"
+          "label": "The Vow",
+          "next_page_id": "act1_p05_vow",
+          "effects": {}
         }
       ]
     },
@@ -56,12 +56,12 @@
       "page_id": "act1_p05_vow",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p05_vow.png",
-      "story_text": "He stands up and makes a promise to get stronger.",
+      "story_text": "Jordan stood up from the ash. He knew that to get justice, he could not stay a frightened child. He sought out a mysterious hermit living in the frozen peaks\u2014a man who had been exiled from the Fire Clan long ago.",
       "choices": [
         {
-          "label": "Train",
-          "effects": {},
-          "next_page_id": "act1_p06_discipline"
+          "label": "Choose Discipline",
+          "next_page_id": "act1_p06_discipline",
+          "effects": {}
         }
       ]
     },
@@ -69,7 +69,7 @@
       "page_id": "act1_p06_discipline",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p06_discipline.png",
-      "story_text": "Choose Jordan's fighting style.",
+      "story_text": "Jordan traveled to the hidden mountains to find the Exile. Which secret skill did he spend the next years perfecting?\n\nReflex: Training to move with the speed of a strike.\nFocus: Training to stay calm under immense pressure.\nSteel: Training to toughen his body like armor.\nShadow: Training to become one with the dark.",
       "choices": [
         {
           "label": "Reflex",
@@ -105,12 +105,12 @@
       "page_id": "act1_p07_training",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p07_training.png",
-      "story_text": "Jordan trains hard to prepare for the mission.",
+      "story_text": "For years, Jordan practiced under the watchful eye of the Exile. He learned the movements and ancient techniques of the very clan that destroyed his home. He would use their own power against them.",
       "choices": [
         {
-          "label": "Prepare",
-          "effects": {},
-          "next_page_id": "act1_p08_pick1_a"
+          "label": "Continue Training",
+          "next_page_id": "act1_p08_pick1_a",
+          "effects": {}
         }
       ]
     },
@@ -118,7 +118,7 @@
       "page_id": "act1_p08_pick1_a",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_pick1_a.png",
-      "story_text": "Choose item 1 of 3.",
+      "story_text": "He learned how to repair his gear and combine items to make them stronger. He knew that a broken hook or a blunt sword could mean the end of his journey. He was finally ready.\n\nChoose item 1 of 3.",
       "choices": [
         {
           "label": "Rope",
@@ -152,7 +152,7 @@
       "page_id": "act1_p08_pick1_b",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_pick1_b.png",
-      "story_text": "Choose item 1 of 3.",
+      "story_text": "He learned how to repair his gear and combine items to make them stronger. He knew that a broken hook or a blunt sword could mean the end of his journey. He was finally ready.\n\nChoose item 1 of 3.",
       "choices": [
         {
           "label": "Oil Flask",
@@ -188,7 +188,7 @@
       "page_id": "act1_p08_pick2_a",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_pick2_a.png",
-      "story_text": "Choose item 2 of 3.",
+      "story_text": "Before leaving the Exile, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 2 of 3.",
       "choices": [
         {
           "label": "Rope",
@@ -234,7 +234,7 @@
       "page_id": "act1_p08_pick2_b",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_pick2_b.png",
-      "story_text": "Choose item 2 of 3.",
+      "story_text": "Before leaving the Exile, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 2 of 3.",
       "choices": [
         {
           "label": "Oil Flask",
@@ -282,7 +282,7 @@
       "page_id": "act1_p08_pick3_a",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_pick3_a.png",
-      "story_text": "Choose item 3 of 3.",
+      "story_text": "Before leaving the Exile, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 3 of 3.",
       "choices": [
         {
           "label": "Rope",
@@ -328,7 +328,7 @@
       "page_id": "act1_p08_pick3_b",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_pick3_b.png",
-      "story_text": "Choose item 3 of 3.",
+      "story_text": "Before leaving the Exile, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 3 of 3.",
       "choices": [
         {
           "label": "Oil Flask",
@@ -376,12 +376,15 @@
       "page_id": "act1_p08_confirm",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_confirm.png",
-      "story_text": "You picked 3 starting items.",
+      "story_text": "Before leaving the Exile, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully:\n\n(Choose 3 Individually: Rope, Smoke Bomb, Blow Dart, Oil Flask, Bandage, Throwing Stars, or Health Herb).",
       "choices": [
         {
           "label": "Confirm Loadout",
-          "effects": {},
-          "next_page_id": "act1_p09_return"
+          "next_page_id": "act1_p09_return",
+          "requirements": {
+            "starting_items_count": 3
+          },
+          "effects": {}
         }
       ]
     },
@@ -389,12 +392,12 @@
       "page_id": "act1_p09_return",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p09_return.png",
-      "story_text": "Jordan is back in the present, ready to move.",
+      "story_text": "Jordan snapped back to the present day. He was back on the cliff, the weight of his gear feeling familiar. He looked at his hands\u2014they were strong now. The boy from the ash was gone.",
       "choices": [
         {
-          "label": "Study Village",
-          "effects": {},
-          "next_page_id": "act1_p10_route"
+          "label": "Study the Village",
+          "next_page_id": "act1_p10_route",
+          "effects": {}
         }
       ]
     },
@@ -402,34 +405,12 @@
       "page_id": "act1_p10_route",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p10_route.png",
-      "story_text": "Pick how Jordan will enter the village.",
+      "story_text": "Jordan took one more breath and studied the Fire Clan village below. He traced the paths, the rooftops, and the shadows in silence. The mission was about to begin.",
       "choices": [
         {
-          "label": "A) Rooftops",
-          "effects": {
-            "set_flag": {
-              "detected": false
-            }
-          },
-          "next_page_id": "act2_p11a"
-        },
-        {
-          "label": "B) Streets",
-          "effects": {
-            "set_flag": {
-              "detected": false
-            }
-          },
-          "next_page_id": "act2_p11b"
-        },
-        {
-          "label": "C) Sewer",
-          "effects": {
-            "set_flag": {
-              "detected": false
-            }
-          },
-          "next_page_id": "act2_p11c"
+          "label": "Continue",
+          "next_page_id": "act2_start",
+          "effects": {}
         }
       ]
     },
