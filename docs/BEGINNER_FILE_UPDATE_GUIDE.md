@@ -68,3 +68,12 @@ You can now set per-page images directly on the `PagePlayer` node in the Inspect
    - assign the `image` texture you want.
 
 At runtime, `PagePlayer` uses your Inspector override image first. If no override exists, it falls back to `image_path` from JSON.
+
+
+## Where this folder is in your repo
+
+In this repository, put your story images here:
+
+- `assets/images/` (Godot path: `res://assets/images/`)
+
+If you do not see it in Godot's FileSystem panel, click **Scan** or restart the editor after pulling latest files.
