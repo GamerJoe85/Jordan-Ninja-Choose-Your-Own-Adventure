@@ -1,5 +1,15 @@
 # Fire Chapter Project Architecture (Godot 4.6)
 
+## Quick plain-language map (for beginners)
+
+- `project.godot`: the **project file** Godot opens.
+- `scenes/*.tscn`: the **screens** you see (menu, gameplay UI, act wrappers).
+- `scripts/**/*.gd`: the **logic** that makes buttons, choices, and state work.
+- `data/story_pages.json`: the **story database** (all pages + choices).
+- `docs/*`: human-readable notes and setup guides.
+
+If a change only touches `scripts/` or `data/`, you do **not** need to rebuild the whole project. Update only changed files (or pull latest with Git).
+
 ## Folder structure
 
 - `project.godot`
