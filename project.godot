@@ -14,6 +14,6 @@ window/size/viewport_width=1080
 window/size/viewport_height=1920
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
-window/stretch/scale=1.0
+window/stretch/scale=1.15
 window/dpi/allow_hidpi=true
 window/handheld/orientation="sensor"

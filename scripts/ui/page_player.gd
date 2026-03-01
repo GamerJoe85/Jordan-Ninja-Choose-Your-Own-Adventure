@@ -136,8 +136,8 @@ func build_choices(choices: Array) -> void:
 		var button: Button = Button.new()
 		button.text = str(choice.get("label", "Continue"))
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		button.custom_minimum_size = Vector2(0, 56)
-		button.add_theme_font_size_override("font_size", 26)
+		button.custom_minimum_size = Vector2(0, 72)
+		button.add_theme_font_size_override("font_size", 30)
 		button.pressed.connect(_on_choice_selected.bind(choice))
 		choice_container.add_child(button)
 		shown += 1
@@ -201,5 +201,5 @@ func refresh_hud() -> void:
 	discipline_value.text = "Unselected" if GameState.discipline.is_empty() else GameState.discipline
 	var start_items_text: String = ", ".join(GameState.starting_items) if not GameState.starting_items.is_empty() else "None"
 	var found_items_text: String = ", ".join(GameState.found_items) if not GameState.found_items.is_empty() else "None"
-	inventory_value.text = "S: %s\nF: %s" % [start_items_text, found_items_text]
+	inventory_value.text = "Start: %s\nFound: %s" % [start_items_text, found_items_text]
 	hook_value.text = GameState.hook_state
