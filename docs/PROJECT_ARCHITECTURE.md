@@ -24,6 +24,7 @@ If a change only touches `scripts/` or `data/`, you do **not** need to rebuild t
   - `controllers/main.gd`
   - `controllers/title_menu.gd`
   - `ui/page_player.gd`
+  - `ui/page_image_entry.gd` (Inspector resource for per-page image overrides)
   - `acts/act_wrapper.gd`
   - `tools/validate_story_data.py` (data + file-structure validation)
 - `data/story_pages.json` (authoritative story/page content)
@@ -55,3 +56,8 @@ Each page object uses deterministic fields only:
   - `next_page_id` (string)
 
 No random fields are used, and all progression is explicit through requirements/effects.
+
+
+## Visual assignment workflow (no per-page scenes)
+
+Use `PagePlayer` Inspector `image_overrides` to map `page_id -> image` for any page. This lets you attach visuals page-by-page in Godot without creating one scene per page.

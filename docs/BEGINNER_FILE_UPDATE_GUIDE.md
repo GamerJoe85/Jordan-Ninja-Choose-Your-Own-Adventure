@@ -53,3 +53,18 @@ python scripts/tools/validate_story_data.py
 ```
 
 If both pass, your story data and required file structure are valid.
+
+
+## How to assign a picture to every story page in Godot
+
+You can now set per-page images directly on the `PagePlayer` node in the Inspector:
+
+1. Open `scenes/Main.tscn`.
+2. Click the `PagePlayer` node.
+3. In Inspector, find **Image Overrides**.
+4. Increase array size and add one entry per page.
+5. For each entry:
+   - set `page_id` to the exact page id from `data/story_pages.json` (example: `act2_roof_a1`),
+   - assign the `image` texture you want.
+
+At runtime, `PagePlayer` uses your Inspector override image first. If no override exists, it falls back to `image_path` from JSON.

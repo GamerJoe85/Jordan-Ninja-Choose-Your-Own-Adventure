@@ -5,6 +5,8 @@ signal page_changed(page_id: String, act_id: String)
 
 const STORY_PATH: String = "res://data/story_pages.json"
 
+@export var image_overrides: Array[PageImageEntry] = []
+
 @onready var background_rect: TextureRect = %BackgroundImage
 @onready var story_text_label: RichTextLabel = %StoryText
 @onready var choice_container: VBoxContainer = %ChoiceContainer
@@ -14,9 +16,11 @@ const STORY_PATH: String = "res://data/story_pages.json"
 @onready var hook_value: Label = %HookValue
 
 var pages: Dictionary = {}
+var image_override_map: Dictionary = {}
 
 func _ready() -> void:
 	load_story_data()
+	build_image_override_map()
 	refresh_hud()
 
 func load_story_data() -> void:
@@ -35,6 +39,16 @@ func load_story_data() -> void:
 		var page_id: String = str(page.get("page_id", ""))
 		pages[page_id] = page
 
+func build_image_override_map() -> void:
+	image_override_map.clear()
+	for entry in image_overrides:
+		if entry == null:
+			continue
+		var override_page_id: String = entry.page_id.strip_edges()
+		if override_page_id.is_empty() or entry.image == null:
+			continue
+		image_override_map[override_page_id] = entry.image
+
 func play_page(page_id: String) -> void:
 	if not pages.has(page_id):
 		push_error("Missing page_id: %s" % page_id)
@@ -42,12 +56,15 @@ func play_page(page_id: String) -> void:
 	var page: Dictionary = pages[page_id]
 	GameState.current_page_id = page_id
 	emit_signal("page_changed", page_id, str(page.get("act_id", "")))
-	apply_image(str(page.get("image_path", "")))
+	apply_image(page_id, str(page.get("image_path", "")))
 	story_text_label.text = str(page.get("story_text", ""))
 	build_choices(page.get("choices", []) as Array)
 	refresh_hud()
 
-func apply_image(image_path: String) -> void:
+func apply_image(page_id: String, image_path: String) -> void:
+	if image_override_map.has(page_id):
+		background_rect.texture = image_override_map[page_id]
+		return
 	if image_path.is_empty() or not ResourceLoader.exists(image_path):
 		background_rect.texture = null
 		return
