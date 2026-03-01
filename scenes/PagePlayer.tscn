@@ -41,16 +41,16 @@ theme_override_constants/separation = 20
 
 [node name="StoryText" type="RichTextLabel" parent="MarginContainer/MainVBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 520)
+custom_minimum_size = Vector2(0, 340)
 layout_mode = 2
 bbcode_enabled = false
 fit_content = true
-theme_override_font_sizes/normal_font_size = 52
+theme_override_font_sizes/normal_font_size = 30
 
 [node name="ChoiceContainer" type="VBoxContainer" parent="MarginContainer/MainVBox"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_constants/separation = 24
+theme_override_constants/separation = 14
 
 [node name="HUDPanel" type="PanelContainer" parent="MarginContainer/MainVBox"]
 layout_mode = 2
@@ -63,44 +63,44 @@ theme_override_constants/v_separation = 12
 
 [node name="HealthLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 text = "Condition"
 
 [node name="HealthValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 text = "Prime"
 
 [node name="DisciplineLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 text = "Discipline"
 
 [node name="DisciplineValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 text = "Unselected"
 
 [node name="InventoryLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 text = "Inventory"
 
 [node name="InventoryValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 34
+theme_override_font_sizes/font_size = 22
 text = "Starting: None\nFound: None"
 
 [node name="HookLabel" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 text = "Hook State"
 
 [node name="HookValue" type="Label" parent="MarginContainer/MainVBox/HUDPanel/HUDGrid"]
 unique_name_in_owner = true
 layout_mode = 2
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 24
 text = "Good"

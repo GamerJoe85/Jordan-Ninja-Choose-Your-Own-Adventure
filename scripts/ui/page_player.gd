@@ -66,8 +66,8 @@ func build_choices(choices: Array) -> void:
 		var button: Button = Button.new()
 		button.text = str(choice.get("label", "Continue"))
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		button.custom_minimum_size = Vector2(0, 140)
-		button.add_theme_font_size_override("font_size", 44)
+		button.custom_minimum_size = Vector2(0, 88)
+		button.add_theme_font_size_override("font_size", 28)
 		button.pressed.connect(_on_choice_selected.bind(choice))
 		choice_container.add_child(button)
 		shown += 1
