@@ -10,7 +10,7 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_choice"]
-bg_color = Color(0, 0, 0, 0.45)
+bg_color = Color(0, 0, 0, 0.5)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -56,21 +56,24 @@ theme_override_constants/separation = 12
 
 [node name="StoryPanel" type="PanelContainer" parent="MarginContainer/MainVBox"]
 layout_mode = 2
+size_flags_vertical = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_story")
 
 [node name="StoryText" type="RichTextLabel" parent="MarginContainer/MainVBox/StoryPanel"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 300)
+custom_minimum_size = Vector2(0, 260)
 layout_mode = 2
 bbcode_enabled = false
-fit_content = false
+fit_content = true
+scroll_active = false
 theme_override_colors/default_color = Color(1, 1, 1, 1)
 theme_override_constants/outline_size = 2
 theme_override_colors/font_outline_color = Color(0, 0, 0, 0.95)
-theme_override_font_sizes/normal_font_size = 36
+theme_override_font_sizes/normal_font_size = 32
 
 [node name="ChoicePanel" type="PanelContainer" parent="MarginContainer/MainVBox"]
 layout_mode = 2
+size_flags_vertical = 1
 theme_override_styles/panel = SubResource("StyleBoxFlat_choice")
 
 [node name="ChoiceContainer" type="VBoxContainer" parent="MarginContainer/MainVBox/ChoicePanel"]
