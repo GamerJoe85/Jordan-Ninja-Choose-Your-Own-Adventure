@@ -87,3 +87,8 @@ What this means:
 - Landscape: same layout is preserved with side bars instead of stretching/cropping the UI layout.
 
 So gameplay UI stays consistent across rotation.
+
+
+### No-crop image mode
+
+`PagePlayer` background uses keep-aspect-centered mode so the full image stays visible (no cropping). On screens with a different shape, you may see empty bars on sides or top/bottom.
