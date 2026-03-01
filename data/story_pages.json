@@ -3,166 +3,272 @@
     {
       "page_id": "act1_start",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_scar.png",
-      "story_text": "Jordan kneels in the cold ash, the Fire Clan ruins glowing behind him. Dawn breaks over the ridge, and he makes a silent vow to train until the truth is exposed.",
+      "image_path": "res://assets/images/act1_scene1_overlook.png",
+      "story_text": "Jordan stands on a jagged volcanic ridge, seen from behind as the Fire Clan village burns with controlled power below. Lava veins glow under stone streets, torches line rooftops, and guards patrol the walls beneath a red-orange sky.",
       "choices": [
         {
-          "label": "Begin the forge of discipline",
+          "label": "Steady your breath and focus",
           "effects": {},
-          "next_page_id": "act2_start"
+          "next_page_id": "act1_scene2_eyes"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene2_eyes",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene2_eyes.png",
+      "story_text": "An extreme close-up fills the screen with Jordan's eyes. Firelight flickers in his pupils, edges blur, and a different village shape appears in the reflection\u2014rounder, calmer, familiar.",
+      "choices": [
+        {
+          "label": "Let the memory surface",
+          "effects": {},
+          "next_page_id": "act1_scene3_first_flame"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene3_first_flame",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene3_first_flame.png",
+      "story_text": "The memory opens on Jordan's clan village: circular buildings, flowing elemental carvings, and rooftops swallowed by fire. Silhouettes move at the edge of smoke while villagers run through ash-choked streets.",
+      "choices": [
+        {
+          "label": "Search for who was left behind",
+          "effects": {},
+          "next_page_id": "act1_scene4_too_late"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene4_too_late",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene4_too_late.png",
+      "story_text": "Young Jordan drops to his knees in falling ash. Buildings burn around him, the clan symbol stone lies cracked at his side, and no attacker remains in sight.",
+      "choices": [
+        {
+          "label": "Rise",
+          "effects": {},
+          "next_page_id": "act1_scene5_vow"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene5_vow",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene5_vow.png",
+      "story_text": "A low angle frames Jordan standing through smoke and backlight. He clenches his fist over broken stone, eyes hardened into a vow that will not bend.",
+      "choices": [
+        {
+          "label": "Enter the Discipline Hall",
+          "effects": {},
+          "next_page_id": "act1_scene6_discipline_hall"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene6_discipline_hall",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene6_discipline_hall.png",
+      "story_text": "Inside the dojo, four banners hang under torchlight while Jordan stands centered among long shadows. Choose the discipline that defines his path.",
+      "choices": [
+        {
+          "label": "Reflex",
+          "effects": {
+            "set_discipline": "Reflex"
+          },
+          "next_page_id": "act1_scene7_reflex"
+        },
+        {
+          "label": "Focus",
+          "effects": {
+            "set_discipline": "Focus"
+          },
+          "next_page_id": "act1_scene7_focus"
+        },
+        {
+          "label": "Steel",
+          "effects": {
+            "set_discipline": "Steel"
+          },
+          "next_page_id": "act1_scene7_steel"
+        },
+        {
+          "label": "Shadow",
+          "effects": {
+            "set_discipline": "Shadow"
+          },
+          "next_page_id": "act1_scene7_shadow"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene7_reflex",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene7_reflex.png",
+      "story_text": "Reflex training explodes into motion. Strikes blur, sweat sprays from sharp pivots, and an instructor's blade passes within a breath of Jordan's cheek.",
+      "choices": [
+        {
+          "label": "Move to equipment selection",
+          "effects": {},
+          "next_page_id": "act1_scene8_equipment"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene7_focus",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene7_focus.png",
+      "story_text": "Focus training holds stillness under pressure. Jordan meditates beneath pounding water, every breath steady while the world crashes around him.",
+      "choices": [
+        {
+          "label": "Move to equipment selection",
+          "effects": {},
+          "next_page_id": "act1_scene8_equipment"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene7_steel",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene7_steel.png",
+      "story_text": "Steel training is endurance without retreat. Jordan absorbs repeated strikes, bruises darkening on his arms while his jaw locks and posture never breaks.",
+      "choices": [
+        {
+          "label": "Move to equipment selection",
+          "effects": {},
+          "next_page_id": "act1_scene8_equipment"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene7_shadow",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene7_shadow.png",
+      "story_text": "Shadow training turns the hall into a maze. Jordan vanishes between pillars while an instructor searches, hearing only silent footsteps that never linger.",
+      "choices": [
+        {
+          "label": "Move to equipment selection",
+          "effects": {},
+          "next_page_id": "act1_scene8_equipment"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene8_equipment",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene8_equipment.png",
+      "story_text": "Tools are laid out on a torchlit mat: coiled rope, smoke bombs, blow dart, herb pouch, bandage wraps, oil flask, and throwing blades. Choose one deterministic set of three starting items.",
+      "choices": [
+        {
+          "label": "Set A: Grappling Hook & Line, Smoke Bomb, Throwing Knives",
+          "effects": {
+            "add_starting_items": [
+              "Grappling Hook & Line",
+              "Smoke Bomb",
+              "Throwing Knives"
+            ]
+          },
+          "next_page_id": "act1_scene9_return_present"
+        },
+        {
+          "label": "Set B: Grappling Hook & Line, Oil Flask, Weighted Chain",
+          "effects": {
+            "add_starting_items": [
+              "Grappling Hook & Line",
+              "Oil Flask",
+              "Weighted Chain"
+            ]
+          },
+          "next_page_id": "act1_scene9_return_present"
+        },
+        {
+          "label": "Set C: Grappling Hook & Line, Health Herb, Clean Bandage",
+          "effects": {
+            "add_starting_items": [
+              "Grappling Hook & Line",
+              "Health Herb",
+              "Clean Bandage"
+            ]
+          },
+          "next_page_id": "act1_scene9_return_present"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene9_return_present",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene9_return_present.png",
+      "story_text": "The memory breaks, returning to the same overlook as before. Jordan now stands equipped, cloak shifting in stronger wind while the Fire Clan village still glows below.",
+      "choices": [
+        {
+          "label": "Study the village approach",
+          "effects": {},
+          "next_page_id": "act1_scene10_study_village"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_scene10_study_village",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_scene10_routes.png",
+      "story_text": "From above, three clear infiltration paths split the village: rooftops to the left, torch-lit shadow streets at center, and a steam-fed drainage channel to the right.",
+      "choices": [
+        {
+          "label": "Rooftops",
+          "effects": {
+            "set_hook_state": "Damaged",
+            "set_flag": {
+              "detected": true,
+              "route_rooftops": true
+            }
+          },
+          "next_page_id": "act4_start"
+        },
+        {
+          "label": "Shadows (ground level)",
+          "effects": {
+            "add_found_item": "Reinforced Line Segment",
+            "set_flag": {
+              "route_shadows": true
+            }
+          },
+          "next_page_id": "act4_start"
+        },
+        {
+          "label": "Drainage Channel",
+          "effects": {
+            "change_health": -1,
+            "set_flag": {
+              "cavern_found": true,
+              "route_drainage": true
+            }
+          },
+          "next_page_id": "act4_start"
         }
       ]
     },
     {
       "page_id": "act2_start",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_forge.png",
-      "story_text": "Training scars the body and sharpens intent. Choose Jordan's discipline before returning to the present.",
+      "image_path": "res://assets/images/act2_bridge.png",
+      "story_text": "Act II placeholder bridge: infiltration consequences tighten as Jordan closes on the Fire Master.",
       "choices": [
         {
-          "label": "Reflex discipline",
-          "effects": {
-            "set_discipline": "Reflex"
-          },
-          "next_page_id": "act2_items"
-        },
-        {
-          "label": "Focus discipline",
-          "effects": {
-            "set_discipline": "Focus"
-          },
-          "next_page_id": "act2_items"
-        },
-        {
-          "label": "Steel discipline",
-          "effects": {
-            "set_discipline": "Steel"
-          },
-          "next_page_id": "act2_items"
-        },
-        {
-          "label": "Shadow discipline",
-          "effects": {
-            "set_discipline": "Shadow"
-          },
-          "next_page_id": "act2_items"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_items",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_prep.png",
-      "story_text": "Jordan packs exactly three starting items. This prototype uses deterministic loadouts that map to Bible-compliant items.",
-      "choices": [
-        {
-          "label": "Loadout A: Grappling Hook & Line, Smoke Bomb, Throwing Knives",
-          "effects": {
-            "add_starting_item": "Grappling Hook & Line"
-          },
-          "next_page_id": "act2_items_hook"
-        },
-        {
-          "label": "Loadout B: Grappling Hook & Line, Oil Flask, Weighted Chain",
-          "effects": {
-            "add_starting_item": "Grappling Hook & Line"
-          },
-          "next_page_id": "act2_items_chain"
-        },
-        {
-          "label": "Loadout C: Grappling Hook & Line, Health Herb, Clean Bandage",
-          "effects": {
-            "add_starting_item": "Grappling Hook & Line"
-          },
-          "next_page_id": "act2_items_recovery"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_items_hook",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_prep.png",
-      "story_text": "Jordan fastens stealth tools for silent movement.",
-      "choices": [
-        {
-          "label": "Continue to infiltration",
-          "effects": {
-            "add_starting_items": [
-              "Smoke Bomb",
-              "Throwing Knives"
-            ]
-          },
-          "next_page_id": "act3_start"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_items_chain",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_prep.png",
-      "story_text": "Jordan braces for direct control of terrain and balance.",
-      "choices": [
-        {
-          "label": "Continue to infiltration",
-          "effects": {
-            "add_starting_items": [
-              "Oil Flask",
-              "Weighted Chain"
-            ]
-          },
-          "next_page_id": "act3_start"
-        }
-      ]
-    },
-    {
-      "page_id": "act2_items_recovery",
-      "act_id": "act_2",
-      "image_path": "res://assets/images/act2_prep.png",
-      "story_text": "Jordan chooses survival medicine for long pursuit.",
-      "choices": [
-        {
-          "label": "Continue to infiltration",
-          "effects": {
-            "add_starting_items": [
-              "Health Herb",
-              "Clean Bandage"
-            ]
-          },
-          "next_page_id": "act3_start"
+          "label": "Continue to duel setup",
+          "effects": {},
+          "next_page_id": "act4_start"
         }
       ]
     },
     {
       "page_id": "act3_start",
       "act_id": "act_3",
-      "image_path": "res://assets/images/act3_village.png",
-      "story_text": "The Fire Clan village rises in angular basalt tiers with glowing heat veins beneath the stone. Jordan chooses his point of infiltration.",
+      "image_path": "res://assets/images/act3_bridge.png",
+      "story_text": "Act III placeholder bridge: village pressure escalates and forces a direct confrontation.",
       "choices": [
         {
-          "label": "Rooftops (high risk mobility)",
-          "effects": {
-            "set_hook_state": "Damaged",
-            "set_flag": {
-              "detected": true
-            }
-          },
-          "next_page_id": "act4_start"
-        },
-        {
-          "label": "Shadow streets (stealth route)",
-          "effects": {
-            "add_found_item": "Reinforced Line Segment"
-          },
-          "next_page_id": "act4_start"
-        },
-        {
-          "label": "Sewer channels (hazard route)",
-          "effects": {
-            "change_health": -1,
-            "set_flag": {
-              "cavern_found": true
-            }
-          },
+          "label": "Continue to duel setup",
+          "effects": {},
           "next_page_id": "act4_start"
         }
       ]
