@@ -47,6 +47,37 @@ If a commit changes only:
 
 Then you only update those two files locally.
 
+
+## If game still shows old pages after reopening Godot
+
+Run these in your project folder:
+
+```bash
+pwd
+git log --oneline -n 5
+git pull
+git log --oneline -n 5
+```
+
+Then fully close and reopen Godot on the same folder (the one containing `project.godot`).
+
+Quick check for the Exile flow in current data:
+
+```bash
+python - <<'PY2'
+import json
+from pathlib import Path
+j=json.loads(Path("data/story_pages.json").read_text())
+by={p["page_id"]:p for p in j["pages"]}
+print("Page 5 ->", by["act1_p05_turning"]["choices"][0]["next_page_id"])
+print("Page 6 title:", by["act1_p06_discipline"]["story_text"].split("\n")[0])
+PY2
+```
+
+Expected output includes:
+- `Page 5 -> act1_p06_discipline`
+- `Page 6 title: Page 6 — The Frozen Peaks`
+
 ## Safety check before opening Godot
 
 ```bash
