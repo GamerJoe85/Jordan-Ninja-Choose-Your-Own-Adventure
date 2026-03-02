@@ -6,6 +6,8 @@ Short answer: **No**. Only changed files need to be updated.
 
 Need a full reset walkthrough? See `docs/START_HERE_NOOB.md`.
 
+If updates seem unchanged, see `docs/SYNC_TROUBLESHOOTING.md`.
+
 ## Easiest workflow (recommended)
 
 1. Keep one project folder on your computer.
