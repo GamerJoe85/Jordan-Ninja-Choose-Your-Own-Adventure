@@ -126,7 +126,20 @@
         {
           "label": "Seek the Exile",
           "effects": {},
-          "next_page_id": "act1_p06_frozen"
+          "next_page_id": "act1_p06_discipline"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p06_discipline",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p06_frozen.png",
+      "story_text": "Page 6 \u2014 The Frozen Peaks\n\nJordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
+      "choices": [
+        {
+          "label": "Enter the Cave",
+          "effects": {},
+          "next_page_id": "act1_p07_meeting"
         }
       ]
     },
