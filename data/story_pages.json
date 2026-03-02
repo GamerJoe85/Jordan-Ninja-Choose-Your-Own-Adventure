@@ -16,21 +16,21 @@
     {
       "page_id": "act2_start",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_start.png",
-      "story_text": "Act II begins. Jordan must infiltrate the Fire Clan village.",
+      "image_path": "res://assets/images/act2_p18a_climb.png",
+      "story_text": "Act II begins: The Rooftops path.",
       "choices": [
         {
           "label": "Continue",
           "effects": {},
-          "next_page_id": "act2_p11a_climb"
+          "next_page_id": "act2_p18a_climb"
         }
       ]
     },
     {
       "page_id": "act3_start",
       "act_id": "act_3",
-      "image_path": "res://assets/images/act3_start.png",
-      "story_text": "Act III begins at the Village Core.",
+      "image_path": "res://assets/images/act3_p25_confrontation.png",
+      "story_text": "Act III begins at the Village Core confrontation.",
       "choices": [
         {
           "label": "Continue",
@@ -42,7 +42,7 @@
     {
       "page_id": "act4_start",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_start.png",
+      "image_path": "res://assets/images/act4_p30_paths.png",
       "story_text": "Act IV begins at the mountain ascent.",
       "choices": [
         {
@@ -55,8 +55,8 @@
     {
       "page_id": "act5_start",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_start.png",
-      "story_text": "Act V begins in the volcanic sanctum.",
+      "image_path": "res://assets/images/act5_p37_sanctum.png",
+      "story_text": "Act V begins in the Sanctum of the Unbound.",
       "choices": [
         {
           "label": "Continue",
@@ -67,9 +67,9 @@
     },
     {
       "page_id": "act6_start",
-      "act_id": "act_6",
-      "image_path": "res://assets/images/act6_start.png",
-      "story_text": "Act VI alias. Continue to final sanctum.",
+      "act_id": "act_5",
+      "image_path": "res://assets/images/act5_p37_sanctum.png",
+      "story_text": "Act VI alias routes to the final sanctum content.",
       "choices": [
         {
           "label": "Continue",
@@ -126,535 +126,535 @@
         {
           "label": "Seek the Exile",
           "effects": {},
-          "next_page_id": "act1_p051_frozen"
+          "next_page_id": "act1_p06_frozen"
         }
       ]
     },
     {
-      "page_id": "act1_p051_frozen",
+      "page_id": "act1_p06_frozen",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p051_frozen.png",
+      "image_path": "res://assets/images/act1_p06_frozen.png",
       "story_text": "Jordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
       "choices": [
         {
           "label": "Enter the Cave",
           "effects": {},
-          "next_page_id": "act1_p052_meeting"
+          "next_page_id": "act1_p07_meeting"
         }
       ]
     },
     {
-      "page_id": "act1_p052_meeting",
+      "page_id": "act1_p07_meeting",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p052_meeting.png",
+      "image_path": "res://assets/images/act1_p07_meeting.png",
       "story_text": "Inside the cave, a man sat by a small, flickering fire. His face was covered in scars, and his eyes were as sharp as flint. \"Who are you to wake an old ghost?\" the Exile growled, reaching for a heavy wooden staff.",
       "choices": [
         {
           "label": "Speak to Him",
           "effects": {},
-          "next_page_id": "act1_p053_story"
+          "next_page_id": "act1_p08_story"
         }
       ]
     },
     {
-      "page_id": "act1_p053_story",
+      "page_id": "act1_p08_story",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p053_story.png",
+      "image_path": "res://assets/images/act1_p08_story.png",
       "story_text": "Jordan did not flinch. \"My name is Jordan,\" he said, his voice steady. \"The Fire Clan took everything from me. They burned my home and scattered my people into the wind. I have spent years looking for a way to stop them.\"",
       "choices": [
         {
           "label": "Continue",
           "effects": {},
-          "next_page_id": "act1_p054_request"
+          "next_page_id": "act1_p09_request"
         }
       ]
     },
     {
-      "page_id": "act1_p054_request",
+      "page_id": "act1_p09_request",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p054_request.png",
+      "image_path": "res://assets/images/act1_p09_request.png",
       "story_text": "The Exile looked at Jordan's hands and saw the fire of revenge in his eyes. \"I know the darkness of that clan better than anyone,\" the Exile whispered. \"If you want to defeat them, you must learn to fight like them. Are you ready for years of pain?\"",
       "choices": [
         {
           "label": "I am Ready",
           "effects": {},
-          "next_page_id": "act1_p06_discipline"
+          "next_page_id": "act1_p10_discipline"
         }
       ]
     },
     {
-      "page_id": "act1_p06_discipline",
+      "page_id": "act1_p10_discipline",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p06_discipline.png",
+      "image_path": "res://assets/images/act1_p10_discipline.png",
       "story_text": "The Exile nodded slowly. \"Then we begin,\" he said. \"The Fire Clan has many secrets. Which path do you wish to master so you can survive the journey ahead?\"",
       "choices": [
         {
-          "label": "Reflex",
+          "label": "Reflex (Go to Page 11-Reflex)",
           "effects": {
             "set_discipline": "Reflex"
           },
-          "next_page_id": "act1_p07_reflex"
+          "next_page_id": "act1_p11_reflex"
         },
         {
-          "label": "Focus",
+          "label": "Focus (Go to Page 11-Focus)",
           "effects": {
             "set_discipline": "Focus"
           },
-          "next_page_id": "act1_p07_focus"
+          "next_page_id": "act1_p11_focus"
         },
         {
-          "label": "Steel",
+          "label": "Steel (Go to Page 11-Steel)",
           "effects": {
             "set_discipline": "Steel"
           },
-          "next_page_id": "act1_p07_steel"
+          "next_page_id": "act1_p11_steel"
         },
         {
-          "label": "Shadow",
+          "label": "Shadow (Go to Page 11-Shadow)",
           "effects": {
             "set_discipline": "Shadow"
           },
-          "next_page_id": "act1_p07_shadow"
+          "next_page_id": "act1_p11_shadow"
         }
       ]
     },
     {
-      "page_id": "act1_p07_reflex",
+      "page_id": "act1_p11_reflex",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p07_reflex.png",
+      "image_path": "res://assets/images/act1_p11_reflex.png",
       "story_text": "The Exile stood on a high rock and began to throw small stones at Jordan. At first, Jordan was too slow and felt the sting of every impact. \"Your eyes are too slow,\" the Exile barked.",
       "choices": [
         {
           "label": "Keep Practicing",
           "effects": {},
-          "next_page_id": "act1_p08_reflex"
+          "next_page_id": "act1_p12_reflex"
         }
       ]
     },
     {
-      "page_id": "act1_p08_reflex",
+      "page_id": "act1_p12_reflex",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p08_reflex.png",
-      "story_text": "For years, Jordan practiced with a blindfold tied tight over his eyes. He stopped trying to see the stones and began to feel the air move. His body began to react before his mind even realized the danger.",
+      "image_path": "res://assets/images/act1_p12_reflex.png",
+      "story_text": "For years, Jordan practiced with a blindfold tied tight over his eyes. He stopped trying to \"see\" the stones and began to \"feel\" the air move. His body began to react before his mind even realized the danger.",
       "choices": [
         {
           "label": "Continue Training",
           "effects": {},
-          "next_page_id": "act1_p09_reflex"
+          "next_page_id": "act1_p13_reflex"
         }
       ]
     },
     {
-      "page_id": "act1_p09_reflex",
+      "page_id": "act1_p13_reflex",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p09_reflex.png",
+      "image_path": "res://assets/images/act1_p13_reflex.png",
       "story_text": "In his final test, the Exile swung a wooden blade at Jordan\u2019s neck with full force. Jordan did not think; he simply moved, his body a blur of motion. He was now faster than the strike of a cobra.",
       "choices": [
         {
-          "label": "Go to Page 10 \u2014 Preparing the Journey",
+          "label": "Go to Page 14 \u2014 Preparing the Journey",
           "effects": {},
-          "next_page_id": "act1_p10_prepare"
+          "next_page_id": "act1_p14_prepare"
         }
       ]
     },
     {
-      "page_id": "act1_p07_focus",
+      "page_id": "act1_p11_focus",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p07_focus.png",
+      "image_path": "res://assets/images/act1_p11_focus.png",
       "story_text": "Jordan sat beneath a freezing mountain waterfall, the heavy water crashing onto his shoulders. The cold was like thousands of tiny needles. \"If you cannot control your breath, you cannot control the battle,\" the Exile warned.",
       "choices": [
         {
           "label": "Stay Still",
           "effects": {},
-          "next_page_id": "act1_p08_focus"
+          "next_page_id": "act1_p12_focus"
         }
       ]
     },
     {
-      "page_id": "act1_p08_focus",
+      "page_id": "act1_p12_focus",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p08_focus.png",
-      "story_text": "For years, Jordan spent his nights sitting in total silence, even as the wind howled and the mountain shook. He learned to lock away fear and anger. Nothing could break his concentration.",
+      "image_path": "res://assets/images/act1_p12_focus.png",
+      "story_text": "For years, Jordan spent his nights sitting in total silence, even as the wind howled and the mountain shook. He learned to lock away his fear and his anger in a small box in his mind. Nothing could break his concentration.",
       "choices": [
         {
           "label": "Continue Training",
           "effects": {},
-          "next_page_id": "act1_p09_focus"
+          "next_page_id": "act1_p13_focus"
         }
       ]
     },
     {
-      "page_id": "act1_p09_focus",
+      "page_id": "act1_p13_focus",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p09_focus.png",
-      "story_text": "The Exile lit a circle of fire around Jordan and told him to wait. As the flames roared, Jordan remained as still as stone. His heart beat slow and steady, even in the face of death.",
+      "image_path": "res://assets/images/act1_p13_focus.png",
+      "story_text": "The Exile lit a circle of fire around Jordan and told him to wait. As the flames roared, Jordan remained as still as a stone statue. His heart beat slow and steady, even in the face of death.",
       "choices": [
         {
-          "label": "Go to Page 10 \u2014 Preparing the Journey",
+          "label": "Go to Page 14 \u2014 Preparing the Journey",
           "effects": {},
-          "next_page_id": "act1_p10_prepare"
+          "next_page_id": "act1_p14_prepare"
         }
       ]
     },
     {
-      "page_id": "act1_p07_steel",
+      "page_id": "act1_p11_steel",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p07_steel.png",
-      "story_text": "The Exile led Jordan to a forest of frozen bamboo and told him to strike it with his bare hands. Each hit sent pain through his arms. \"To break your enemy, you must first be unbreakable,\" the Exile said.",
+      "image_path": "res://assets/images/act1_p11_steel.png",
+      "story_text": "The Exile led Jordan to a forest of frozen bamboo and told him to strike it with his bare hands. Each hit sent a shock of pain through his arms. \"To break your enemy, you must first be unbreakable,\" the Exile said.",
       "choices": [
         {
           "label": "Strike Again",
           "effects": {},
-          "next_page_id": "act1_p08_steel"
+          "next_page_id": "act1_p12_steel"
         }
       ]
     },
     {
-      "page_id": "act1_p08_steel",
+      "page_id": "act1_p12_steel",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p08_steel.png",
-      "story_text": "For years, Jordan conditioned his body against the harshest elements. He climbed jagged rocks barefoot and carried heavy stones up mountain peaks. His bones became as strong as iron beams.",
+      "image_path": "res://assets/images/act1_p12_steel.png",
+      "story_text": "For years, Jordan conditioned his body against the harshest elements. He climbed jagged rocks without shoes and carried heavy stones up the mountain peaks. His skin grew thick, and his bones became as strong as iron beams.",
       "choices": [
         {
           "label": "Continue Training",
           "effects": {},
-          "next_page_id": "act1_p09_steel"
+          "next_page_id": "act1_p13_steel"
         }
       ]
     },
     {
-      "page_id": "act1_p09_steel",
+      "page_id": "act1_p13_steel",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p09_steel.png",
+      "image_path": "res://assets/images/act1_p13_steel.png",
       "story_text": "In the final trial, the Exile struck Jordan with a heavy wooden staff. The wood snapped in two against Jordan\u2019s chest, but he did not move an inch. He was now a living shield.",
       "choices": [
         {
-          "label": "Go to Page 10 \u2014 Preparing the Journey",
+          "label": "Go to Page 14 \u2014 Preparing the Journey",
           "effects": {},
-          "next_page_id": "act1_p10_prepare"
+          "next_page_id": "act1_p14_prepare"
         }
       ]
     },
     {
-      "page_id": "act1_p07_shadow",
+      "page_id": "act1_p11_shadow",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p07_shadow.png",
+      "image_path": "res://assets/images/act1_p11_shadow.png",
       "story_text": "The Exile hung hundreds of tiny bells from the ceiling of a dark room. Jordan\u2019s task was to walk across without making a single sound. \"If they hear you, you are already dead,\" the Exile whispered.",
       "choices": [
         {
           "label": "Move Softly",
           "effects": {},
-          "next_page_id": "act1_p08_shadow"
+          "next_page_id": "act1_p12_shadow"
         }
       ]
     },
     {
-      "page_id": "act1_p08_shadow",
+      "page_id": "act1_p12_shadow",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p08_shadow.png",
-      "story_text": "For years, Jordan practiced moving through shadows in total silence. He learned to step only when the wind blew and to hide in shadows thinner than a blade. He became a ghost.",
+      "image_path": "res://assets/images/act1_p12_shadow.png",
+      "story_text": "For years, Jordan practiced moving through the shadows in total silence. He learned to step only when the wind blew and to hide in shadows thinner than a blade. He became a ghost that the world forgot.",
       "choices": [
         {
           "label": "Continue Training",
           "effects": {},
-          "next_page_id": "act1_p09_shadow"
+          "next_page_id": "act1_p13_shadow"
         }
       ]
     },
     {
-      "page_id": "act1_p09_shadow",
+      "page_id": "act1_p13_shadow",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p09_shadow.png",
-      "story_text": "The Exile tracked Jordan through a thick forest for an entire night. Even with sharp eyes, he could not find a footprint. Jordan had become one with the darkness.",
+      "image_path": "res://assets/images/act1_p13_shadow.png",
+      "story_text": "The Exile tried to track Jordan through a thick forest for an entire night. Even with his master\u2019s sharp eyes, the Exile could not find a single footprint. Jordan had become one with the darkness.",
       "choices": [
         {
-          "label": "Go to Page 10 \u2014 Preparing the Journey",
+          "label": "Go to Page 14 \u2014 Preparing the Journey",
           "effects": {},
-          "next_page_id": "act1_p10_prepare"
+          "next_page_id": "act1_p14_prepare"
         }
       ]
     },
     {
-      "page_id": "act1_p10_prepare",
+      "page_id": "act1_p14_prepare",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p10_prepare.png",
-      "story_text": "With training complete, Jordan returned to the Exile's small hut. It was time to leave the mountains behind. He spent his final night sharpening blades and checking straps.",
+      "image_path": "res://assets/images/act1_p14_prepare.png",
+      "story_text": "With his training complete, Jordan returned to the Exile's small hut. It was time to leave the mountains behind. He spent his final night sharpening his blades and checking his straps.",
       "choices": [
         {
           "label": "Check Gear",
           "effects": {},
-          "next_page_id": "act1_p11_pick1a"
+          "next_page_id": "act1_p15_pick1a"
         }
       ]
     },
     {
-      "page_id": "act1_p11_pick1a",
+      "page_id": "act1_p15_pick1a",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p11_pick1a.png",
-      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 1 of 3.",
-      "choices": [
-        {
-          "label": "Rope",
-          "effects": {
-            "add_starting_item": "Rope"
-          },
-          "next_page_id": "act1_p11_pick2a"
-        },
-        {
-          "label": "Smoke Bomb",
-          "effects": {
-            "add_starting_item": "Smoke Bomb"
-          },
-          "next_page_id": "act1_p11_pick2a"
-        },
-        {
-          "label": "Blow Dart",
-          "effects": {
-            "add_starting_item": "Blow Dart"
-          },
-          "next_page_id": "act1_p11_pick2a"
-        },
-        {
-          "label": "More items",
-          "effects": {},
-          "next_page_id": "act1_p11_pick1b"
-        }
-      ]
-    },
-    {
-      "page_id": "act1_p11_pick1b",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p11_pick1b.png",
-      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 1 of 3.",
-      "choices": [
-        {
-          "label": "Oil Flask",
-          "effects": {
-            "add_starting_item": "Oil Flask"
-          },
-          "next_page_id": "act1_p11_pick2a"
-        },
-        {
-          "label": "Bandage",
-          "effects": {
-            "add_starting_item": "Bandage"
-          },
-          "next_page_id": "act1_p11_pick2a"
-        },
-        {
-          "label": "Throwing Stars",
-          "effects": {
-            "add_starting_item": "Throwing Stars"
-          },
-          "next_page_id": "act1_p11_pick2a"
-        },
-        {
-          "label": "Health Herb",
-          "effects": {
-            "add_starting_item": "Health Herb"
-          },
-          "next_page_id": "act1_p11_pick2a"
-        }
-      ]
-    },
-    {
-      "page_id": "act1_p11_pick2a",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p11_pick2a.png",
-      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 2 of 3.",
-      "choices": [
-        {
-          "label": "Rope",
-          "effects": {
-            "add_starting_item": "Rope"
-          },
-          "next_page_id": "act1_p11_pick3a",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        },
-        {
-          "label": "Smoke Bomb",
-          "effects": {
-            "add_starting_item": "Smoke Bomb"
-          },
-          "next_page_id": "act1_p11_pick3a",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        },
-        {
-          "label": "Blow Dart",
-          "effects": {
-            "add_starting_item": "Blow Dart"
-          },
-          "next_page_id": "act1_p11_pick3a",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        },
-        {
-          "label": "More items",
-          "effects": {},
-          "next_page_id": "act1_p11_pick2b",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        }
-      ]
-    },
-    {
-      "page_id": "act1_p11_pick2b",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p11_pick2b.png",
-      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 2 of 3.",
-      "choices": [
-        {
-          "label": "Oil Flask",
-          "effects": {
-            "add_starting_item": "Oil Flask"
-          },
-          "next_page_id": "act1_p11_pick3a",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        },
-        {
-          "label": "Bandage",
-          "effects": {
-            "add_starting_item": "Bandage"
-          },
-          "next_page_id": "act1_p11_pick3a",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        },
-        {
-          "label": "Throwing Stars",
-          "effects": {
-            "add_starting_item": "Throwing Stars"
-          },
-          "next_page_id": "act1_p11_pick3a",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        },
-        {
-          "label": "Health Herb",
-          "effects": {
-            "add_starting_item": "Health Herb"
-          },
-          "next_page_id": "act1_p11_pick3a",
-          "requirements": {
-            "starting_items_count": 1
-          }
-        }
-      ]
-    },
-    {
-      "page_id": "act1_p11_pick3a",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p11_pick3a.png",
-      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 3 of 3.",
-      "choices": [
-        {
-          "label": "Rope",
-          "effects": {
-            "add_starting_item": "Rope"
-          },
-          "next_page_id": "act1_p11_confirm",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        },
-        {
-          "label": "Smoke Bomb",
-          "effects": {
-            "add_starting_item": "Smoke Bomb"
-          },
-          "next_page_id": "act1_p11_confirm",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        },
-        {
-          "label": "Blow Dart",
-          "effects": {
-            "add_starting_item": "Blow Dart"
-          },
-          "next_page_id": "act1_p11_confirm",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        },
-        {
-          "label": "More items",
-          "effects": {},
-          "next_page_id": "act1_p11_pick3b",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        }
-      ]
-    },
-    {
-      "page_id": "act1_p11_pick3b",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p11_pick3b.png",
-      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.\n\nChoose item 3 of 3.",
-      "choices": [
-        {
-          "label": "Oil Flask",
-          "effects": {
-            "add_starting_item": "Oil Flask"
-          },
-          "next_page_id": "act1_p11_confirm",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        },
-        {
-          "label": "Bandage",
-          "effects": {
-            "add_starting_item": "Bandage"
-          },
-          "next_page_id": "act1_p11_confirm",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        },
-        {
-          "label": "Throwing Stars",
-          "effects": {
-            "add_starting_item": "Throwing Stars"
-          },
-          "next_page_id": "act1_p11_confirm",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        },
-        {
-          "label": "Health Herb",
-          "effects": {
-            "add_starting_item": "Health Herb"
-          },
-          "next_page_id": "act1_p11_confirm",
-          "requirements": {
-            "starting_items_count": 2
-          }
-        }
-      ]
-    },
-    {
-      "page_id": "act1_p11_confirm",
-      "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p11_confirm.png",
+      "image_path": "res://assets/images/act1_p15_pick1a.png",
       "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.",
+      "choices": [
+        {
+          "label": "Rope",
+          "effects": {
+            "add_starting_item": "Rope"
+          },
+          "next_page_id": "act1_p15_pick2a"
+        },
+        {
+          "label": "Smoke Bomb",
+          "effects": {
+            "add_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act1_p15_pick2a"
+        },
+        {
+          "label": "Blow Dart",
+          "effects": {
+            "add_starting_item": "Blow Dart"
+          },
+          "next_page_id": "act1_p15_pick2a"
+        },
+        {
+          "label": "More Items",
+          "effects": {},
+          "next_page_id": "act1_p15_pick1b"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p15_pick1b",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p15_pick1b.png",
+      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.",
+      "choices": [
+        {
+          "label": "Oil Flask",
+          "effects": {
+            "add_starting_item": "Oil Flask"
+          },
+          "next_page_id": "act1_p15_pick2a"
+        },
+        {
+          "label": "Bandage",
+          "effects": {
+            "add_starting_item": "Bandage"
+          },
+          "next_page_id": "act1_p15_pick2a"
+        },
+        {
+          "label": "Throwing Stars",
+          "effects": {
+            "add_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act1_p15_pick2a"
+        },
+        {
+          "label": "Health Herb",
+          "effects": {
+            "add_starting_item": "Health Herb"
+          },
+          "next_page_id": "act1_p15_pick2a"
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p15_pick2a",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p15_pick2a.png",
+      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.",
+      "choices": [
+        {
+          "label": "Rope",
+          "effects": {
+            "add_starting_item": "Rope"
+          },
+          "next_page_id": "act1_p15_pick3a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Smoke Bomb",
+          "effects": {
+            "add_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act1_p15_pick3a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Blow Dart",
+          "effects": {
+            "add_starting_item": "Blow Dart"
+          },
+          "next_page_id": "act1_p15_pick3a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "More Items",
+          "effects": {},
+          "next_page_id": "act1_p15_pick2b",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p15_pick2b",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p15_pick2b.png",
+      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.",
+      "choices": [
+        {
+          "label": "Oil Flask",
+          "effects": {
+            "add_starting_item": "Oil Flask"
+          },
+          "next_page_id": "act1_p15_pick3a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Bandage",
+          "effects": {
+            "add_starting_item": "Bandage"
+          },
+          "next_page_id": "act1_p15_pick3a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Throwing Stars",
+          "effects": {
+            "add_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act1_p15_pick3a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        },
+        {
+          "label": "Health Herb",
+          "effects": {
+            "add_starting_item": "Health Herb"
+          },
+          "next_page_id": "act1_p15_pick3a",
+          "requirements": {
+            "starting_items_count": 1
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p15_pick3a",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p15_pick3a.png",
+      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.",
+      "choices": [
+        {
+          "label": "Rope",
+          "effects": {
+            "add_starting_item": "Rope"
+          },
+          "next_page_id": "act1_p15_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Smoke Bomb",
+          "effects": {
+            "add_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act1_p15_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Blow Dart",
+          "effects": {
+            "add_starting_item": "Blow Dart"
+          },
+          "next_page_id": "act1_p15_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "More Items",
+          "effects": {},
+          "next_page_id": "act1_p15_pick3b",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p15_pick3b",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p15_pick3b.png",
+      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully.",
+      "choices": [
+        {
+          "label": "Oil Flask",
+          "effects": {
+            "add_starting_item": "Oil Flask"
+          },
+          "next_page_id": "act1_p15_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Bandage",
+          "effects": {
+            "add_starting_item": "Bandage"
+          },
+          "next_page_id": "act1_p15_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Throwing Stars",
+          "effects": {
+            "add_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act1_p15_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        },
+        {
+          "label": "Health Herb",
+          "effects": {
+            "add_starting_item": "Health Herb"
+          },
+          "next_page_id": "act1_p15_confirm",
+          "requirements": {
+            "starting_items_count": 2
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act1_p15_confirm",
+      "act_id": "act_1",
+      "image_path": "res://assets/images/act1_p15_confirm.png",
+      "story_text": "(Choose 3 Individually: Rope, Smoke Bomb, Blow Dart, Oil Flask, Bandage, Throwing Stars, or Health Herb).",
       "choices": [
         {
           "label": "Confirm Loadout",
           "effects": {},
-          "next_page_id": "act1_p12_return",
+          "next_page_id": "act1_p16_return",
           "requirements": {
             "starting_items_count": 3
           }
@@ -662,134 +662,124 @@
       ]
     },
     {
-      "page_id": "act1_p12_return",
+      "page_id": "act1_p16_return",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p12_return.png",
+      "image_path": "res://assets/images/act1_p16_return.png",
       "story_text": "Jordan snapped back to the present day. He was back on the cliff, the weight of his gear feeling familiar. He looked at his hands\u2014they were strong now. The boy from the ash was gone.",
       "choices": [
         {
           "label": "Study the Village",
           "effects": {},
-          "next_page_id": "act1_p13_route"
+          "next_page_id": "act1_p17_route"
         }
       ]
     },
     {
-      "page_id": "act1_p13_route",
+      "page_id": "act1_p17_route",
       "act_id": "act_1",
-      "image_path": "res://assets/images/act1_p13_route.png",
+      "image_path": "res://assets/images/act1_p17_route.png",
       "story_text": "The fires were bright, and guards patrolled every corner. Jordan had to choose his path carefully. One mistake would alert the entire clan. How should he enter?",
       "choices": [
         {
-          "label": "A) The Rooftops",
+          "label": "A) The Rooftops: High above the guards.",
           "effects": {},
-          "next_page_id": "act2_p11a_climb"
+          "next_page_id": "act2_p18a_climb"
         },
         {
-          "label": "B) The Streets",
+          "label": "B) The Streets: Fast but dangerous.",
           "effects": {},
-          "next_page_id": "act2_p11b_streets"
+          "next_page_id": "act2_p18b_shadowwalk"
         },
         {
-          "label": "C) The Sewers",
+          "label": "C) The Sewers: Dirty, dark, and hidden.",
           "effects": {},
-          "next_page_id": "act2_p11c_sewer"
+          "next_page_id": "act2_p18c_sludge"
         }
       ]
     },
     {
-      "page_id": "act2_p11a_climb",
+      "page_id": "act2_p18a_climb",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p11a_climb.png",
-      "story_text": "Jordan stood at the base of the village wall and looked up toward the wooden walkways above the guards.",
+      "image_path": "res://assets/images/act2_p18a_climb.png",
+      "story_text": "Jordan stood at the base of the village wall. He looked up at the jagged stone reaching toward the smoky sky. To get inside, he had to reach the wooden walkways high above the guards.",
       "choices": [
         {
-          "label": "Use Rope to climb safely",
+          "label": "Rope climb (Safe)",
           "effects": {},
-          "next_page_id": "act2_p12a_walk",
+          "next_page_id": "act2_p19a_walk",
           "requirements": {
             "has_item": "Rope"
           }
         },
         {
-          "label": "Climb with Steel strength",
+          "label": "Steel climb (Safe)",
           "effects": {},
-          "next_page_id": "act2_p12a_walk",
+          "next_page_id": "act2_p19a_walk",
           "requirements": {
             "discipline_is": "Steel"
           }
         },
         {
-          "label": "Free-climb the freezing wall",
+          "label": "Bare climb (Health drops 1 tier)",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act2_p12a_walk"
+          "next_page_id": "act2_p19a_walk"
         }
       ]
     },
     {
-      "page_id": "act2_p12a_walk",
+      "page_id": "act2_p19a_walk",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p12a_walk.png",
-      "story_text": "The air was thinner up here. Jordan moved across clay tiles while soldiers laughed below, unaware a ghost watched from above.",
+      "image_path": "res://assets/images/act2_p19a_walk.png",
+      "story_text": "The air was thinner up here. Jordan moved across the clay tiles, his heart thumping against his ribs. Below him, Fire Clan soldiers laughed around their pits, unaware a ghost watched from above.",
       "choices": [
         {
           "label": "Keep Moving",
           "effects": {},
-          "next_page_id": "act2_p13a_beam"
+          "next_page_id": "act2_p20a_beam"
         }
       ]
     },
     {
-      "page_id": "act2_p13a_beam",
+      "page_id": "act2_p20a_beam",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p13a_beam.png",
-      "story_text": "A guard blocked the narrow beam path.",
+      "image_path": "res://assets/images/act2_p20a_beam.png",
+      "story_text": "A single guard stood on a narrow wooden beam. He was yawning, but his spear blocked the only path forward.",
       "choices": [
         {
-          "label": "Slip past like a shadow",
+          "label": "Shadow slip (Safe)",
           "effects": {},
-          "next_page_id": "act2_p14a_skybox",
+          "next_page_id": "act2_p21a_lockbox",
           "requirements": {
             "discipline_is": "Shadow"
           }
         },
         {
-          "label": "Use Blow Dart",
+          "label": "Use Blow Dart (Safe)",
           "effects": {},
-          "next_page_id": "act2_p14a_skybox",
+          "next_page_id": "act2_p21a_lockbox",
           "requirements": {
             "has_item": "Blow Dart"
           }
         },
         {
-          "label": "Force your way through",
+          "label": "Fight through (Hook Damaged)",
           "effects": {
             "set_hook_state": "Damaged"
           },
-          "next_page_id": "act2_p14a_skybox"
+          "next_page_id": "act2_p21a_lockbox"
         }
       ]
     },
     {
-      "page_id": "act2_p14a_skybox",
+      "page_id": "act2_p21a_lockbox",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p14a_skybox.png",
-      "story_text": "Near a chimney, Jordan spotted a locked sky-box with the Fire Master seal.",
+      "image_path": "res://assets/images/act2_p21a_lockbox.png",
+      "story_text": "Near a chimney, Jordan spotted a small iron chest marked with the Fire Master seal.",
       "choices": [
         {
-          "label": "Open it with lock tools",
-          "effects": {
-            "add_found_item": "Reinforced Line"
-          },
-          "next_page_id": "act3_p25_confrontation",
-          "requirements": {
-            "has_item": "Blow Dart"
-          }
-        },
-        {
-          "label": "Melt it with acid vial",
+          "label": "Open with Vial of Acid / lock trick",
           "effects": {
             "add_found_item": "Reinforced Line"
           },
@@ -799,58 +789,49 @@
           }
         },
         {
-          "label": "Leave it and enter core",
+          "label": "Leave it behind",
           "effects": {},
           "next_page_id": "act3_p25_confrontation"
         }
       ]
     },
     {
-      "page_id": "act2_p11b_streets",
+      "page_id": "act2_p18b_shadowwalk",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p11b_streets.png",
-      "story_text": "Jordan stepped into the main street as torches cast long shadows across the cobbles.",
+      "image_path": "res://assets/images/act2_p18b_shadowwalk.png",
+      "story_text": "Jordan stepped into the main street. The village smelled of roasted meat and sulfur. Torches cast long shadows across the cobbles.",
       "choices": [
         {
-          "label": "Blend into shadows",
+          "label": "Shadow discipline (Safe)",
           "effects": {},
-          "next_page_id": "act2_p12b_scout",
+          "next_page_id": "act2_p19b_scout",
           "requirements": {
             "discipline_is": "Shadow"
           }
         },
         {
-          "label": "Move carefully but get spotted",
+          "label": "Move and get detected",
           "effects": {
             "set_flag": {
               "detected": true
             }
           },
-          "next_page_id": "act2_p12b_scout"
-        },
-        {
-          "label": "Rush the street and get spotted",
-          "effects": {
-            "set_flag": {
-              "detected": true
-            }
-          },
-          "next_page_id": "act2_p12b_scout"
+          "next_page_id": "act2_p19b_scout"
         }
       ]
     },
     {
-      "page_id": "act2_p12b_scout",
+      "page_id": "act2_p19b_scout",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p12b_scout.png",
-      "story_text": "In a side alley, Jordan found a dying Fire Clan scout clutching a wound.",
+      "image_path": "res://assets/images/act2_p19b_scout.png",
+      "story_text": "In a narrow side alley, Jordan found a man slumped against a crate in Fire Clan colors, bleeding badly.",
       "choices": [
         {
           "label": "Help with Bandage",
           "effects": {
             "add_found_item": "Cavern Clue"
           },
-          "next_page_id": "act2_p13b_gate",
+          "next_page_id": "act2_p20b_gate",
           "requirements": {
             "has_item": "Bandage"
           }
@@ -860,7 +841,7 @@
           "effects": {
             "add_found_item": "Cavern Clue"
           },
-          "next_page_id": "act2_p13b_gate",
+          "next_page_id": "act2_p20b_gate",
           "requirements": {
             "has_item": "Health Herb"
           }
@@ -868,18 +849,18 @@
         {
           "label": "Leave him and move on",
           "effects": {},
-          "next_page_id": "act2_p13b_gate"
+          "next_page_id": "act2_p20b_gate"
         }
       ]
     },
     {
-      "page_id": "act2_p13b_gate",
+      "page_id": "act2_p20b_gate",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p13b_gate.png",
-      "story_text": "A massive iron gate blocked the inner square.",
+      "image_path": "res://assets/images/act2_p20b_gate.png",
+      "story_text": "A massive iron gate stood between Jordan and the inner square. Two guards waited with spears.",
       "choices": [
         {
-          "label": "Slip through while undetected",
+          "label": "Slip through undetected (Safe)",
           "effects": {},
           "next_page_id": "act3_p25_confrontation",
           "requirements": {
@@ -887,7 +868,7 @@
           }
         },
         {
-          "label": "Use Oil Flask on detected guards",
+          "label": "Detected: use Oil Flask (Safe)",
           "effects": {},
           "next_page_id": "act3_p25_confrontation",
           "requirements": {
@@ -896,7 +877,7 @@
           }
         },
         {
-          "label": "Fight through the gate",
+          "label": "Detected: fight through (Health -1)",
           "effects": {
             "change_health": -1
           },
@@ -908,78 +889,78 @@
       ]
     },
     {
-      "page_id": "act2_p11c_sewer",
+      "page_id": "act2_p18c_sludge",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p11c_sewer.png",
-      "story_text": "The sewer air was thick and hot. Jordan slipped in sludge and heard his gear snap against stone.",
+      "image_path": "res://assets/images/act2_p18c_sludge.png",
+      "story_text": "The air in the sewers was thick and hot. Jordan stepped into murky water. He slipped on a mossy pipe and crashed into the muck; his gear snapped against stone.",
       "choices": [
         {
           "label": "Continue",
           "effects": {
             "set_hook_state": "Damaged"
           },
-          "next_page_id": "act2_p12c_creature"
+          "next_page_id": "act2_p19c_creature"
         }
       ]
     },
     {
-      "page_id": "act2_p12c_creature",
+      "page_id": "act2_p19c_creature",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p12c_creature.png",
-      "story_text": "A mutated fire-lizard lunged from the water.",
+      "image_path": "res://assets/images/act2_p19c_creature.png",
+      "story_text": "A mutated fire-lizard lunged from the dark water.",
       "choices": [
         {
-          "label": "Reflex counter slash",
+          "label": "Reflex kill (Safe)",
           "effects": {},
-          "next_page_id": "act2_p13c_choice",
+          "next_page_id": "act2_p20c_dirty",
           "requirements": {
             "discipline_is": "Reflex"
           }
         },
         {
-          "label": "Steel absorbs damage but bleeding starts",
+          "label": "Steel resists but Bleeding",
           "effects": {
             "set_flag": {
               "bleeding": true
             }
           },
-          "next_page_id": "act2_p13c_choice",
+          "next_page_id": "act2_p20c_dirty",
           "requirements": {
             "discipline_is": "Steel"
           }
         },
         {
-          "label": "Take the bite",
+          "label": "Take bite (Health -1, Bleeding)",
           "effects": {
             "change_health": -1,
             "set_flag": {
               "bleeding": true
             }
           },
-          "next_page_id": "act2_p13c_choice"
+          "next_page_id": "act2_p20c_dirty"
         }
       ]
     },
     {
-      "page_id": "act2_p13c_choice",
+      "page_id": "act2_p20c_dirty",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p13c_choice.png",
-      "story_text": "Near the exit ladder, Jordan found a Dirty Bandage beside a dead scout.",
+      "image_path": "res://assets/images/act2_p20c_dirty.png",
+      "story_text": "Jordan reached the exit ladder with his arm pulsing in pain. A fallen scout held a Dirty Bandage nearby.",
       "choices": [
         {
-          "label": "Use your clean Bandage",
+          "label": "Use own Bandage (Bleeding Stops)",
           "effects": {
             "set_flag": {
               "bleeding": false
             }
           },
-          "next_page_id": "act2_p14c_lock",
+          "next_page_id": "act2_p21c_lock",
           "requirements": {
             "has_item": "Bandage"
           }
         },
         {
-          "label": "Use Dirty Bandage",
+          "label": "Use Dirty Bandage (Health -1, Infected)",
           "effects": {
             "change_health": -1,
             "set_flag": {
@@ -988,23 +969,23 @@
             },
             "add_found_item": "Dirty Bandage"
           },
-          "next_page_id": "act2_p14c_lock"
+          "next_page_id": "act2_p21c_lock"
         },
         {
-          "label": "Ignore it and keep climbing",
+          "label": "Leave it (Still Bleeding)",
           "effects": {},
-          "next_page_id": "act2_p14c_lock"
+          "next_page_id": "act2_p21c_lock"
         }
       ]
     },
     {
-      "page_id": "act2_p14c_lock",
+      "page_id": "act2_p21c_lock",
       "act_id": "act_2",
-      "image_path": "res://assets/images/act2_p14c_lock.png",
-      "story_text": "A rusted grate blocked the sewer exit.",
+      "image_path": "res://assets/images/act2_p21c_lock.png",
+      "story_text": "A rusted iron grate blocked the sewer exit.",
       "choices": [
         {
-          "label": "Melt hinges with Acid",
+          "label": "Melt hinges with Vial of Acid (Safe)",
           "effects": {},
           "next_page_id": "act3_p25_confrontation",
           "requirements": {
@@ -1012,7 +993,7 @@
           }
         },
         {
-          "label": "Kick it open with Steel",
+          "label": "Steel kick (Safe)",
           "effects": {},
           "next_page_id": "act3_p25_confrontation",
           "requirements": {
@@ -1020,7 +1001,7 @@
           }
         },
         {
-          "label": "Force it open the hard way",
+          "label": "Force it open (Health -1)",
           "effects": {
             "change_health": -1
           },
@@ -1032,28 +1013,28 @@
       "page_id": "act3_p25_confrontation",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p25_confrontation.png",
-      "story_text": "Jordan stepped into the village square. The Fire Master flicked a kunai toward Jordan\u2019s heart.",
+      "story_text": "Jordan stepped into the center of the village square. The Fire Master stood waiting and flicked a kunai toward Jordan\u2019s heart.",
       "choices": [
         {
           "label": "Deflect",
           "effects": {},
-          "next_page_id": "act3_p26_dirty"
+          "next_page_id": "act3_p26_dirty_trick"
         },
         {
           "label": "Dodge",
           "effects": {},
-          "next_page_id": "act3_p26_dirty"
+          "next_page_id": "act3_p26_dirty_trick"
         }
       ]
     },
     {
-      "page_id": "act3_p26_dirty",
+      "page_id": "act3_p26_dirty_trick",
       "act_id": "act_3",
-      "image_path": "res://assets/images/act3_p26_dirty.png",
-      "story_text": "The Master kicked burning ash into Jordan\u2019s face and lunged with a fast blade.",
+      "image_path": "res://assets/images/act3_p26_dirty_trick.png",
+      "story_text": "The Master kicked a cloud of burning ash into Jordan\u2019s face and lunged with a lightning-fast sword strike.",
       "choices": [
         {
-          "label": "Reflex reads movement through ash",
+          "label": "Reflex discipline: counter and injure Master",
           "effects": {},
           "next_page_id": "act3_p27_final",
           "requirements": {
@@ -1061,7 +1042,7 @@
           }
         },
         {
-          "label": "Block and get pushed back",
+          "label": "Standard clash through sparks",
           "effects": {},
           "next_page_id": "act3_p27_final"
         }
@@ -1071,10 +1052,10 @@
       "page_id": "act3_p27_final",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p27_final.png",
-      "story_text": "The Master charged with a red-hot heavy strike.",
+      "story_text": "The Master charged with a glowing red strike powerful enough to shatter defenses.",
       "choices": [
         {
-          "label": "Use Oil Flask opening",
+          "label": "Oil Flask opening (Victory)",
           "effects": {},
           "next_page_id": "act3_p28_flight",
           "requirements": {
@@ -1082,7 +1063,7 @@
           }
         },
         {
-          "label": "Steel stand and counter",
+          "label": "Steel stand and counter (Victory)",
           "effects": {},
           "next_page_id": "act3_p28_flight",
           "requirements": {
@@ -1090,7 +1071,7 @@
           }
         },
         {
-          "label": "Take the hit and survive",
+          "label": "Take hit and retreat (Health -1)",
           "effects": {
             "change_health": -1
           },
@@ -1102,7 +1083,7 @@
       "page_id": "act3_p28_flight",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p28_flight.png",
-      "story_text": "Wounded and furious, the Fire Master vanished in red smoke and fled toward the volcano.",
+      "story_text": "The Master, wounded and breathing hard, vanished in a cloud of red smoke and fled toward the volcano.",
       "choices": [
         {
           "label": "Pursue Him",
@@ -1115,22 +1096,22 @@
       "page_id": "act3_p29_base",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p29_base.png",
-      "story_text": "At the mountain base, three paths cut into the darkness.",
+      "story_text": "Jordan reached the mountain base. Three paths led into the darkness.",
       "choices": [
         {
           "label": "A) The Cliffside",
           "effects": {},
-          "next_page_id": "act4_p31a_wall"
+          "next_page_id": "act4_p30_paths"
         },
         {
           "label": "B) The Ash Forest",
           "effects": {},
-          "next_page_id": "act4_p31b_ambush"
+          "next_page_id": "act4_p30_paths"
         },
         {
           "label": "C) The Hidden Tunnel",
           "effects": {},
-          "next_page_id": "act4_p31c_crow",
+          "next_page_id": "act4_p30_paths",
           "requirements": {
             "has_item": "Cavern Clue"
           }
@@ -1141,7 +1122,7 @@
       "page_id": "act4_p30_paths",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p30_paths.png",
-      "story_text": "Jordan stood at the volcano base and faced three path options.",
+      "story_text": "Jordan stood at the base of the volcano. Sulfur filled the air and the ground hummed as he weighed three paths.",
       "choices": [
         {
           "label": "A) The Cliffside",
@@ -1167,10 +1148,10 @@
       "page_id": "act4_p31a_wall",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31a_wall.png",
-      "story_text": "A vertical wall blocked the route to the summit.",
+      "story_text": "The trail ended at a massive cliff face.",
       "choices": [
         {
-          "label": "Manual climb with Steel",
+          "label": "Manual climb with Steel (Safe)",
           "effects": {},
           "next_page_id": "act4_p32_bridge",
           "requirements": {
@@ -1178,20 +1159,31 @@
           }
         },
         {
-          "label": "Use grappling hook",
-          "effects": {},
-          "next_page_id": "act4_p32_bridge",
-          "requirements": {
-            "has_item": "Rope",
-            "hook_state_is": "Good"
-          }
-        },
-        {
-          "label": "Hard climb / bad rope outcome",
+          "label": "Manual climb hard (Health -1)",
           "effects": {
             "change_health": -1
           },
           "next_page_id": "act4_p32_bridge"
+        },
+        {
+          "label": "Use grappling hook (Good hook safe)",
+          "effects": {},
+          "next_page_id": "act4_p32_bridge",
+          "requirements": {
+            "hook_state_is": "Good",
+            "has_item": "Rope"
+          }
+        },
+        {
+          "label": "Use grappling hook (Damaged hook: Health -1)",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act4_p32_bridge",
+          "requirements": {
+            "hook_state_is": "Damaged",
+            "has_item": "Rope"
+          }
         }
       ]
     },
@@ -1199,10 +1191,10 @@
       "page_id": "act4_p31b_ambush",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31b_ambush.png",
-      "story_text": "Two Fire Clan ninjas dropped from ash-covered trees.",
+      "story_text": "In the ash forest, two Fire Clan ninjas dropped from the branches.",
       "choices": [
         {
-          "label": "Use Smoke Bomb",
+          "label": "Use Smoke Bomb (Safe)",
           "effects": {},
           "next_page_id": "act4_p32_bridge",
           "requirements": {
@@ -1210,7 +1202,7 @@
           }
         },
         {
-          "label": "Reflex counter-fight",
+          "label": "Reflex counter (Safe)",
           "effects": {},
           "next_page_id": "act4_p32_bridge",
           "requirements": {
@@ -1218,7 +1210,7 @@
           }
         },
         {
-          "label": "Win but get slashed",
+          "label": "Win but get slashed (Health -1)",
           "effects": {
             "change_health": -1
           },
@@ -1230,7 +1222,7 @@
       "page_id": "act4_p31c_crow",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31c_crow.png",
-      "story_text": "Because Jordan showed mercy earlier, he found the Crow mark and opened a hidden tunnel.",
+      "story_text": "Because Jordan showed mercy to the scout, he found the hidden Crow lever and entered a safe tunnel.",
       "choices": [
         {
           "label": "Continue",
@@ -1243,36 +1235,36 @@
       "page_id": "act4_p32_bridge",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p32_bridge.png",
-      "story_text": "All paths converged at a narrow bridge over flowing lava.",
+      "story_text": "The paths converged at a narrow stone bridge over flowing lava.",
       "choices": [
         {
-          "label": "Melt supports with acid vial",
+          "label": "Use Vial of Acid (Safe)",
           "effects": {},
-          "next_page_id": "act4_p33_cross",
+          "next_page_id": "act4_p33_crossing",
           "requirements": {
             "has_item": "Oil Flask"
           }
         },
         {
-          "label": "Fight elite guard on bridge",
+          "label": "Fight Elite guard (Health -1)",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act4_p33_cross"
+          "next_page_id": "act4_p33_crossing"
         }
       ]
     },
     {
-      "page_id": "act4_p33_cross",
+      "page_id": "act4_p33_crossing",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_p33_cross.png",
-      "story_text": "A massive crack split the final ledge. Jordan had one chance to cross.",
+      "image_path": "res://assets/images/act4_p33_crossing.png",
+      "story_text": "A massive crack split the ledge outside the Master\u2019s sanctum.",
       "choices": [
         {
-          "label": "Take the Narrow Ledge",
+          "label": "The Narrow Ledge",
           "effects": {
             "set_flag": {
-              "ledge_crossing": true
+              "cross_ledge": true
             }
           },
           "next_page_id": "act4_p34a_offering"
@@ -1281,7 +1273,7 @@
           "label": "Swing with Grappling Hook",
           "effects": {
             "set_flag": {
-              "swing_crossing": true
+              "cross_swing": true
             }
           },
           "next_page_id": "act4_p34a_offering"
@@ -1292,7 +1284,7 @@
       "page_id": "act4_p34a_offering",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p34a_offering.png",
-      "story_text": "Deep in the Volcano Core, the Fire Master offered his shattered helm to an ancient spirit of flame.",
+      "story_text": "The Fire Master stood over magma and roared: \"Ancient Spirit of the Flame, I offer my soul!\"",
       "choices": [
         {
           "label": "The Spirit Awakens",
@@ -1305,20 +1297,20 @@
       "page_id": "act4_p34b_fusion",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p34b_fusion.png",
-      "story_text": "A spectral fire-serpent coiled around him. His screams became a thunderous laugh as he transformed.",
+      "story_text": "A spectral white-fire entity coiled around the Master. His screams became an otherworldly laugh as his form transformed.",
       "choices": [
         {
           "label": "The Mountain Shakes",
           "effects": {},
-          "next_page_id": "act4_p34c_shock"
+          "next_page_id": "act4_p34c_shockwave"
         }
       ]
     },
     {
-      "page_id": "act4_p34c_shock",
+      "page_id": "act4_p34c_shockwave",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_p34c_shock.png",
-      "story_text": "The spirit pulse shattered pillars and ripped through the mountain toward Jordan\u2019s crossing point.",
+      "image_path": "res://assets/images/act4_p34c_shockwave.png",
+      "story_text": "The spirit pulse shattered pillars. A massive shockwave ripped through the volcano toward Jordan\u2019s crossing.",
       "choices": [
         {
           "label": "The Quake Hits",
@@ -1331,47 +1323,43 @@
       "page_id": "act4_p35_quake",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35_quake.png",
-      "story_text": "The mountain groaned as the quake struck.",
+      "story_text": "The mountain groaned as the shockwave hit.",
       "choices": [
         {
-          "label": "Swing path holds (good hook)",
+          "label": "Swing + Good Hook: safe landing",
           "effects": {},
           "next_page_id": "act5_p37_sanctum",
           "requirements": {
-            "flag_true": "swing_crossing",
+            "flag_true": "cross_swing",
             "hook_state_is": "Good"
           }
         },
         {
-          "label": "Swing path snaps (damaged hook)",
-          "effects": {
-            "set_flag": {
-              "ending": "rope_snap"
-            }
-          },
+          "label": "Swing + Damaged Hook: GAME OVER",
+          "effects": {},
           "next_page_id": "act_end_game_over",
           "requirements": {
-            "flag_true": "swing_crossing",
+            "flag_true": "cross_swing",
             "hook_state_is": "Damaged"
           }
         },
         {
-          "label": "Ledge fall with Reflex",
+          "label": "Ledge + Reflex: safe cavern fall",
           "effects": {},
           "next_page_id": "act4_p36_cavern",
           "requirements": {
-            "flag_true": "ledge_crossing",
+            "flag_true": "cross_ledge",
             "discipline_is": "Reflex"
           }
         },
         {
-          "label": "Ledge fall hard",
+          "label": "Ledge + non-Reflex: crash (Health -1)",
           "effects": {
             "change_health": -1
           },
           "next_page_id": "act4_p36_cavern",
           "requirements": {
-            "flag_true": "ledge_crossing"
+            "flag_true": "cross_ledge"
           }
         }
       ]
@@ -1380,10 +1368,10 @@
       "page_id": "act4_p36_cavern",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p36_cavern.png",
-      "story_text": "Jordan landed in a hidden cavern with a Healing Spring and an ancient altar.",
+      "story_text": "Jordan stood in a secret chamber with a glowing Healing Spring. On an altar rested the Frost-Bitten Dagger.",
       "choices": [
         {
-          "label": "Drink spring + take Frost-Bitten Dagger",
+          "label": "Drink + take Frost-Bitten Dagger",
           "effects": {
             "set_health": "Prime",
             "set_flag": {
@@ -1395,7 +1383,7 @@
           "next_page_id": "act5_p37_sanctum"
         },
         {
-          "label": "Take only Frost-Bitten Dagger",
+          "label": "Take Frost-Bitten Dagger only",
           "effects": {
             "add_found_item": "Frost-Bitten Dagger"
           },
@@ -1407,7 +1395,7 @@
       "page_id": "act5_p37_sanctum",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p37_sanctum.png",
-      "story_text": "Jordan entered the sanctum. The Fire Master now towered as swirling white flame and cracked obsidian.",
+      "story_text": "Jordan stepped into the heart of the volcano. A ten-foot entity of white flame and obsidian stood where the Fire Master had been. \"I am the storm that chooses where lightning falls,\" it boomed.",
       "choices": [
         {
           "label": "Assume the Guardian Stance",
@@ -1420,10 +1408,10 @@
       "page_id": "act5_p38_strike",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p38_strike.png",
-      "story_text": "The Master glitched through space, striking from three angles at once.",
+      "story_text": "The Master appeared in three places at once, obsidian blades whistling toward Jordan\u2019s neck.",
       "choices": [
         {
-          "label": "Steel: catch the true blade",
+          "label": "Steel catch the true blade",
           "effects": {},
           "next_page_id": "act5_p39_exchange",
           "requirements": {
@@ -1431,7 +1419,7 @@
           }
         },
         {
-          "label": "Reflex: flow between strikes",
+          "label": "Reflex flow between strikes",
           "effects": {},
           "next_page_id": "act5_p39_exchange",
           "requirements": {
@@ -1439,7 +1427,7 @@
           }
         },
         {
-          "label": "Focus: strike the heartbeat shadow",
+          "label": "Focus strike the heartbeat shadow",
           "effects": {},
           "next_page_id": "act5_p39_exchange",
           "requirements": {
@@ -1447,7 +1435,7 @@
           }
         },
         {
-          "label": "Standard deflect and lose health",
+          "label": "Standard deflect (Health -1)",
           "effects": {
             "change_health": -1
           },
@@ -1459,7 +1447,7 @@
       "page_id": "act5_p39_exchange",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p39_exchange.png",
-      "story_text": "Jordan steadied his breath in the heat. The Master hissed as both prepared for the next exchange.",
+      "story_text": "Jordan held his stance in the heat. \"Your chaos is just loud noise,\" he said. \"I am the silence that follows.\"",
       "choices": [
         {
           "label": "Continue",
@@ -1472,10 +1460,10 @@
       "page_id": "act5_p40_pillars",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p40_pillars.png",
-      "story_text": "Obsidian pillars rose in overlapping patterns to crush Jordan.",
+      "story_text": "The Master raised jagged obsidian pillars in an overlapping trap.",
       "choices": [
         {
-          "label": "Grapple through maze",
+          "label": "Grappling Hook path through maze",
           "effects": {},
           "next_page_id": "act5_p41_history",
           "requirements": {
@@ -1484,7 +1472,7 @@
           }
         },
         {
-          "label": "Shadow drift through blind spots",
+          "label": "Shadow drift through blind spot",
           "effects": {},
           "next_page_id": "act5_p41_history",
           "requirements": {
@@ -1492,7 +1480,7 @@
           }
         },
         {
-          "label": "Melt central pillar",
+          "label": "Vial of Acid collapse central pillar",
           "effects": {},
           "next_page_id": "act5_p41_history",
           "requirements": {
@@ -1500,7 +1488,7 @@
           }
         },
         {
-          "label": "Scramble and get pierced",
+          "label": "Scramble and get pierced (Health -1)",
           "effects": {
             "change_health": -1
           },
@@ -1512,7 +1500,7 @@
       "page_id": "act5_p41_history",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p41_history.png",
-      "story_text": "Jordan called out the truth of fear and false discipline. The Master\u2019s white light flared.",
+      "story_text": "Jordan challenged the Master: fear is why the clans followed you. The Master flared with white fire.",
       "choices": [
         {
           "label": "Continue",
@@ -1525,62 +1513,62 @@
       "page_id": "act5_p42_whip",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p42_whip.png",
-      "story_text": "The Master\u2019s arm became a plasma whip that carved voids in the air.",
+      "story_text": "The Master\u2019s arm became a plasma whip that carved voids in the air, pulling at Jordan\u2019s movement.",
       "choices": [
         {
-          "label": "Use Frost-Bitten Dagger",
+          "label": "Frost-Bitten Dagger stabilizes voids",
           "effects": {},
-          "next_page_id": "act5_p43_break",
+          "next_page_id": "act5_p43_breaking",
           "requirements": {
             "has_item": "Frost-Bitten Dagger"
           }
         },
         {
-          "label": "Reflex outruns the void locks",
+          "label": "Reflex outruns void lock",
           "effects": {},
-          "next_page_id": "act5_p43_break",
+          "next_page_id": "act5_p43_breaking",
           "requirements": {
             "discipline_is": "Reflex"
           }
         },
         {
-          "label": "Throwing Stars plug the voids",
+          "label": "Throwing Stars plug voids",
           "effects": {},
-          "next_page_id": "act5_p43_break",
+          "next_page_id": "act5_p43_breaking",
           "requirements": {
             "has_item": "Throwing Stars"
           }
         },
         {
-          "label": "Standard roll and get burned",
+          "label": "Standard roll seared by entropy (Health -1)",
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act5_p43_break"
+          "next_page_id": "act5_p43_breaking"
         }
       ]
     },
     {
-      "page_id": "act5_p43_break",
+      "page_id": "act5_p43_breaking",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_p43_break.png",
-      "story_text": "Obsidian skin flaked from the Master. Human fear showed beneath the fire.",
+      "image_path": "res://assets/images/act5_p43_breaking.png",
+      "story_text": "The voids collapsed inward. Obsidian skin flaked from the Master, revealing terrified human eyes beneath.",
       "choices": [
         {
           "label": "Continue",
           "effects": {},
-          "next_page_id": "act5_p44_laststand"
+          "next_page_id": "act5_p44_last_stand"
         }
       ]
     },
     {
-      "page_id": "act5_p44_laststand",
+      "page_id": "act5_p44_last_stand",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_p44_laststand.png",
-      "story_text": "The Master collapsed reality into a white-hot vacuum.",
+      "image_path": "res://assets/images/act5_p44_last_stand.png",
+      "story_text": "The Master surrendered physical form. The volcano core compressed into a white-hot vacuum.",
       "choices": [
         {
-          "label": "Steel anchor stance",
+          "label": "Steel anchor against collapse",
           "effects": {},
           "next_page_id": "act5_p45_breath",
           "requirements": {
@@ -1596,7 +1584,7 @@
           }
         },
         {
-          "label": "Focus finds eye of storm",
+          "label": "Focus strike eye of storm",
           "effects": {},
           "next_page_id": "act5_p45_breath",
           "requirements": {
@@ -1604,7 +1592,7 @@
           }
         },
         {
-          "label": "Standard resist and take damage",
+          "label": "Standard resist and suffer (Health -1)",
           "effects": {
             "change_health": -1
           },
@@ -1616,10 +1604,10 @@
       "page_id": "act5_p45_breath",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p45_breath.png",
-      "story_text": "The vacuum broke. The Master, now a withered husk, warned of Wind and Earth waiting ahead.",
+      "story_text": "The vacuum broke. The withered Master wheezed: \"Wind. Earth. They will fight you with the world itself.\"",
       "choices": [
         {
-          "label": "Deliver the final strike",
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act5_p46_inheritance"
         }
@@ -1629,10 +1617,10 @@
       "page_id": "act5_p46_inheritance",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p46_inheritance.png",
-      "story_text": "Jordan struck true. Disciplined chaos surged into him as controlled crimson flame.",
+      "story_text": "Jordan delivered the final strike. White fire surged into him, then settled as controlled crimson flame. \"The Fire Clan ends with you,\" he whispered.",
       "choices": [
         {
-          "label": "Run for the exit",
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act5_p47_escape"
         }
@@ -1642,23 +1630,23 @@
       "page_id": "act5_p47_escape",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p47_escape.png",
-      "story_text": "The volcano collapsed as Jordan sprinted through breaking tunnels and burst into open air.",
+      "story_text": "The volcano groaned. Jordan sprinted through collapsing tunnels and burst out as the peak shattered into the ocean.",
       "choices": [
         {
           "label": "Continue",
           "effects": {},
-          "next_page_id": "act5_p48_newflame"
+          "next_page_id": "act5_p48_new_flame"
         }
       ]
     },
     {
-      "page_id": "act5_p48_newflame",
+      "page_id": "act5_p48_new_flame",
       "act_id": "act_5",
-      "image_path": "res://assets/images/act5_p48_newflame.png",
-      "story_text": "On black sand, Jordan summoned a balanced flame above his palm. In the distance, a Wind Dragon and Earth Golem watched in silence. [THE END... FOR NOW]",
+      "image_path": "res://assets/images/act5_p48_new_flame.png",
+      "story_text": "Jordan stood on black sand and raised a small Balanced Flame above his palm. Far away, a Wind Clan Dragon and Earth Clan Golem watched from a ridge. [THE END... FOR NOW]",
       "choices": [
         {
-          "label": "Restart Adventure",
+          "label": "THE END... FOR NOW",
           "effects": {},
           "next_page_id": "act1_start"
         }
@@ -1668,7 +1656,7 @@
       "page_id": "act_end_game_over",
       "act_id": "act_5",
       "image_path": "res://assets/images/act_end_game_over.png",
-      "story_text": "Jordan was consumed by the mountain before reaching the sanctum. The path ends here.",
+      "story_text": "Jordan vanished into the lava below. His journey ended in the mountain.",
       "choices": [
         {
           "label": "Restart",
