@@ -11,3 +11,5 @@ This folder contains the latest project files to copy into your Godot project.
 ## Verify bundle integrity
 
 Use `MANIFEST.sha256` to confirm file hashes if needed.
+
+Read `BUNDLE_VERSION.txt` to confirm which commit this bundle came from.

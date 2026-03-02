@@ -3,6 +3,8 @@ from __future__ import annotations
 
 import hashlib
 import shutil
+import subprocess
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -37,6 +39,13 @@ INCLUDE = [
 ]
 
 
+
+def current_commit() -> str:
+    try:
+        return subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=ROOT, text=True).strip()
+    except Exception:
+        return "unknown"
+
 def sha256_file(path: Path) -> str:
     h = hashlib.sha256()
     h.update(path.read_bytes())
@@ -59,6 +68,13 @@ def main() -> None:
         manifest_lines.append(f"{sha256_file(src)}  {rel.as_posix()}")
 
     (OUT / "MANIFEST.sha256").write_text("\n".join(manifest_lines) + "\n", encoding="utf-8")
+
+    version_text = (
+        f"source_commit={current_commit()}\n"
+        f"generated_utc={datetime.now(timezone.utc).isoformat()}\n"
+        f"files_in_bundle={len(INCLUDE)}\n"
+    )
+    (OUT / "BUNDLE_VERSION.txt").write_text(version_text, encoding="utf-8")
     (OUT / "README.md").write_text(
         "# Update Bundle\n\n"
         "This folder contains the latest project files to copy into your Godot project.\n\n"
@@ -67,7 +83,8 @@ def main() -> None:
         "2. Overwrite existing files when prompted.\n"
         "3. Open Godot and run the project.\n\n"
         "## Verify bundle integrity\n\n"
-        "Use `MANIFEST.sha256` to confirm file hashes if needed.\n",
+        "Use `MANIFEST.sha256` to confirm file hashes if needed.\n\n"
+        "Read `BUNDLE_VERSION.txt` to confirm which commit this bundle came from.\n",
         encoding="utf-8",
     )
     print(f"Wrote bundle to: {OUT}")
