@@ -4,7 +4,7 @@
       "page_id": "act1_start",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p01_overlook.png",
-      "story_text": "Jordan knelt on the jagged cliff. Below him, the Fire Clan village glowed like a bed of angry embers. It had taken years of searching, but he had finally found them.",
+      "story_text": "Page 1 \u2014 The Overlook\n\nJordan knelt on the jagged cliff. Below him, the Fire Clan village glowed like a bed of angry embers. It had taken years of searching, but he had finally found them.",
       "choices": [
         {
           "label": "Continue",
@@ -82,7 +82,7 @@
       "page_id": "act1_p02_memory",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p02_memory.png",
-      "story_text": "He narrowed his eyes as the wind kicked up hot ash. The scent of woodsmoke filled the air. To anyone else, it was just a fire, but to Jordan, it was the smell of the night his world ended.",
+      "story_text": "Page 2 \u2014 The Memory (Close-up on Eyes)\n\nHe narrowed his eyes as the wind kicked up hot ash. The scent of woodsmoke filled the air. To anyone else, it was just a fire, but to Jordan, it was the smell of the night his world ended.",
       "choices": [
         {
           "label": "Remember",
@@ -95,7 +95,7 @@
       "page_id": "act1_p03_burning",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p03_burning.png",
-      "story_text": "The orange glow in his eyes blurred into a memory of his own home. He saw the red banners of the Fire Clan waving through the sparks. He saw his people scattered and his village turned to gray dust.",
+      "story_text": "Page 3 \u2014 The Village Burning (Flashback Image)\n\nThe orange glow in his eyes blurred into a memory of his own home. He saw the red banners of the Fire Clan waving through the sparks. He saw his people scattered and his village turned to gray dust.",
       "choices": [
         {
           "label": "Continue",
@@ -108,7 +108,7 @@
       "page_id": "act1_p04_ash",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p04_ash.png",
-      "story_text": "A younger Jordan knelt in the ruins of his home. The heat was unbearable, but his heart felt cold. In that moment, surrounded by smoke, he made a silent promise to find the people who did this.",
+      "story_text": "Page 4 \u2014 Kneeling in Ash (Flashback Image)\n\nA younger Jordan knelt in the ruins of his home. The heat was unbearable, but his heart felt cold. In that moment, surrounded by smoke, he made a silent promise to find the people who did this.",
       "choices": [
         {
           "label": "The Vow",
@@ -121,7 +121,7 @@
       "page_id": "act1_p05_turning",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p05_turning.png",
-      "story_text": "Jordan stood up from the ash. He knew that to get justice, he could not stay a frightened child. He sought out a mysterious hermit living in the frozen peaks\u2014a man who had been exiled from the Fire Clan long ago.",
+      "story_text": "Page 5 \u2014 The Turning Point\n\nJordan stood up from the ash. He knew that to get justice, he could not stay a frightened child. He sought out a mysterious hermit living in the frozen peaks\u2014a man who had been exiled from the Fire Clan long ago.",
       "choices": [
         {
           "label": "Seek the Exile",
@@ -134,7 +134,7 @@
       "page_id": "act1_p06_frozen",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p06_frozen.png",
-      "story_text": "Jordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
+      "story_text": "Page 6 \u2014 The Frozen Peaks\n\nJordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
       "choices": [
         {
           "label": "Enter the Cave",
@@ -147,7 +147,7 @@
       "page_id": "act1_p07_meeting",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p07_meeting.png",
-      "story_text": "Inside the cave, a man sat by a small, flickering fire. His face was covered in scars, and his eyes were as sharp as flint. \"Who are you to wake an old ghost?\" the Exile growled, reaching for a heavy wooden staff.",
+      "story_text": "Page 7 \u2014 The Meeting\n\nInside the cave, a man sat by a small, flickering fire. His face was covered in scars, and his eyes were as sharp as flint. \"Who are you to wake an old ghost?\" the Exile growled, reaching for a heavy wooden staff.",
       "choices": [
         {
           "label": "Speak to Him",
@@ -160,7 +160,7 @@
       "page_id": "act1_p08_story",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_story.png",
-      "story_text": "Jordan did not flinch. \"My name is Jordan,\" he said, his voice steady. \"The Fire Clan took everything from me. They burned my home and scattered my people into the wind. I have spent years looking for a way to stop them.\"",
+      "story_text": "Page 8 \u2014 Jordan's Story\n\nJordan did not flinch. \"My name is Jordan,\" he said, his voice steady. \"The Fire Clan took everything from me. They burned my home and scattered my people into the wind. I have spent years looking for a way to stop them.\"",
       "choices": [
         {
           "label": "Continue",
@@ -173,7 +173,7 @@
       "page_id": "act1_p09_request",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p09_request.png",
-      "story_text": "The Exile looked at Jordan's hands and saw the fire of revenge in his eyes. \"I know the darkness of that clan better than anyone,\" the Exile whispered. \"If you want to defeat them, you must learn to fight like them. Are you ready for years of pain?\"",
+      "story_text": "Page 9 \u2014 The Request\n\nThe Exile looked at Jordan's hands and saw the fire of revenge in his eyes. \"I know the darkness of that clan better than anyone,\" the Exile whispered. \"If you want to defeat them, you must learn to fight like them. Are you ready for years of pain?\"",
       "choices": [
         {
           "label": "I am Ready",
@@ -186,7 +186,7 @@
       "page_id": "act1_p10_discipline",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p10_discipline.png",
-      "story_text": "The Exile nodded slowly. \"Then we begin,\" he said. \"The Fire Clan has many secrets. Which path do you wish to master so you can survive the journey ahead?\"",
+      "story_text": "Page 10 \u2014 Choose Your Discipline\n\nThe Exile nodded slowly. \"Then we begin,\" he said. \"The Fire Clan has many secrets. Which path do you wish to master so you can survive the journey ahead?\"",
       "choices": [
         {
           "label": "Reflex (Go to Page 11-Reflex)",
@@ -222,7 +222,7 @@
       "page_id": "act1_p11_reflex",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_reflex.png",
-      "story_text": "The Exile stood on a high rock and began to throw small stones at Jordan. At first, Jordan was too slow and felt the sting of every impact. \"Your eyes are too slow,\" the Exile barked.",
+      "story_text": "Page 11-Reflex \u2014 The First Stone\n\nThe Exile stood on a high rock and began to throw small stones at Jordan. At first, Jordan was too slow and felt the sting of every impact. \"Your eyes are too slow,\" the Exile barked.",
       "choices": [
         {
           "label": "Keep Practicing",
@@ -235,7 +235,7 @@
       "page_id": "act1_p12_reflex",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_reflex.png",
-      "story_text": "For years, Jordan practiced with a blindfold tied tight over his eyes. He stopped trying to \"see\" the stones and began to \"feel\" the air move. His body began to react before his mind even realized the danger.",
+      "story_text": "Page 12-Reflex \u2014 Blindfolded Days\n\nFor years, Jordan practiced with a blindfold tied tight over his eyes. He stopped trying to \"see\" the stones and began to \"feel\" the air move. His body began to react before his mind even realized the danger.",
       "choices": [
         {
           "label": "Continue Training",
@@ -248,7 +248,7 @@
       "page_id": "act1_p13_reflex",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_reflex.png",
-      "story_text": "In his final test, the Exile swung a wooden blade at Jordan\u2019s neck with full force. Jordan did not think; he simply moved, his body a blur of motion. He was now faster than the strike of a cobra.",
+      "story_text": "Page 13-Reflex \u2014 Like Lightning\n\nIn his final test, the Exile swung a wooden blade at Jordan\u2019s neck with full force. Jordan didn't think; he simply moved, his body a blur of motion. He was now faster than the strike of a cobra.",
       "choices": [
         {
           "label": "Go to Page 14 \u2014 Preparing the Journey",
@@ -261,7 +261,7 @@
       "page_id": "act1_p11_focus",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_focus.png",
-      "story_text": "Jordan sat beneath a freezing mountain waterfall, the heavy water crashing onto his shoulders. The cold was like thousands of tiny needles. \"If you cannot control your breath, you cannot control the battle,\" the Exile warned.",
+      "story_text": "Page 11-Focus \u2014 The Icy Fall\n\nJordan sat beneath a freezing mountain waterfall, the heavy water crashing onto his shoulders. The cold was like thousands of tiny needles. \"If you cannot control your breath, you cannot control the battle,\" the Exile warned.",
       "choices": [
         {
           "label": "Stay Still",
@@ -274,7 +274,7 @@
       "page_id": "act1_p12_focus",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_focus.png",
-      "story_text": "For years, Jordan spent his nights sitting in total silence, even as the wind howled and the mountain shook. He learned to lock away his fear and his anger in a small box in his mind. Nothing could break his concentration.",
+      "story_text": "Page 12-Focus \u2014 The Temple of Silence\n\nFor years, Jordan spent his nights sitting in total silence, even as the wind howled and the mountain shook. He learned to lock away his fear and his anger in a small box in his mind. Nothing could break his concentration.",
       "choices": [
         {
           "label": "Continue Training",
@@ -287,7 +287,7 @@
       "page_id": "act1_p13_focus",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_focus.png",
-      "story_text": "The Exile lit a circle of fire around Jordan and told him to wait. As the flames roared, Jordan remained as still as a stone statue. His heart beat slow and steady, even in the face of death.",
+      "story_text": "Page 13-Focus \u2014 The Eye of the Storm\n\nThe Exile lit a circle of fire around Jordan and told him to wait. As the flames roared, Jordan remained as still as a stone statue. His heart beat slow and steady, even in the face of death.",
       "choices": [
         {
           "label": "Go to Page 14 \u2014 Preparing the Journey",
@@ -300,7 +300,7 @@
       "page_id": "act1_p11_steel",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_steel.png",
-      "story_text": "The Exile led Jordan to a forest of frozen bamboo and told him to strike it with his bare hands. Each hit sent a shock of pain through his arms. \"To break your enemy, you must first be unbreakable,\" the Exile said.",
+      "story_text": "Page 11-Steel \u2014 The Hard Road\n\nThe Exile led Jordan to a forest of frozen bamboo and told him to strike it with his bare hands. Each hit sent a shock of pain through his arms. \"To break your enemy, you must first be unbreakable,\" the Exile said.",
       "choices": [
         {
           "label": "Strike Again",
@@ -313,7 +313,7 @@
       "page_id": "act1_p12_steel",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_steel.png",
-      "story_text": "For years, Jordan conditioned his body against the harshest elements. He climbed jagged rocks without shoes and carried heavy stones up the mountain peaks. His skin grew thick, and his bones became as strong as iron beams.",
+      "story_text": "Page 12-Steel \u2014 Forged in Pain\n\nFor years, Jordan conditioned his body against the harshest elements. He climbed jagged rocks without shoes and carried heavy stones up the mountain peaks. His skin grew thick, and his bones became as strong as iron beams.",
       "choices": [
         {
           "label": "Continue Training",
@@ -326,7 +326,7 @@
       "page_id": "act1_p13_steel",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_steel.png",
-      "story_text": "In the final trial, the Exile struck Jordan with a heavy wooden staff. The wood snapped in two against Jordan\u2019s chest, but he did not move an inch. He was now a living shield.",
+      "story_text": "Page 13-Steel \u2014 The Unyielding Warrior\n\nIn the final trial, the Exile struck Jordan with a heavy wooden staff. The wood snapped in two against Jordan\u2019s chest, but he did not move an inch. He was now a living shield.",
       "choices": [
         {
           "label": "Go to Page 14 \u2014 Preparing the Journey",
@@ -339,7 +339,7 @@
       "page_id": "act1_p11_shadow",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_shadow.png",
-      "story_text": "The Exile hung hundreds of tiny bells from the ceiling of a dark room. Jordan\u2019s task was to walk across without making a single sound. \"If they hear you, you are already dead,\" the Exile whispered.",
+      "story_text": "Page 11-Shadow \u2014 The Bell Room\n\nThe Exile hung hundreds of tiny bells from the ceiling of a dark room. Jordan\u2019s task was to walk across without making a single sound. \"If they hear you, you are already dead,\" the Exile whispered.",
       "choices": [
         {
           "label": "Move Softly",
@@ -352,7 +352,7 @@
       "page_id": "act1_p12_shadow",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_shadow.png",
-      "story_text": "For years, Jordan practiced moving through the shadows in total silence. He learned to step only when the wind blew and to hide in shadows thinner than a blade. He became a ghost that the world forgot.",
+      "story_text": "Page 12-Shadow \u2014 Becoming the Dark\n\nFor years, Jordan practiced moving through the shadows in total silence. He learned to step only when the wind blew and to hide in shadows thinner than a blade. He became a ghost that the world forgot.",
       "choices": [
         {
           "label": "Continue Training",
@@ -365,7 +365,7 @@
       "page_id": "act1_p13_shadow",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_shadow.png",
-      "story_text": "The Exile tried to track Jordan through a thick forest for an entire night. Even with his master\u2019s sharp eyes, the Exile could not find a single footprint. Jordan had become one with the darkness.",
+      "story_text": "Page 13-Shadow \u2014 Vanishing Act\n\nThe Exile tried to track Jordan through a thick forest for an entire night. Even with his master\u2019s sharp eyes, the Exile could not find a single footprint. Jordan had become one with the darkness.",
       "choices": [
         {
           "label": "Go to Page 14 \u2014 Preparing the Journey",
@@ -378,7 +378,7 @@
       "page_id": "act1_p14_prepare",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p14_prepare.png",
-      "story_text": "With his training complete, Jordan returned to the Exile's small hut. It was time to leave the mountains behind. He spent his final night sharpening his blades and checking his straps.",
+      "story_text": "Page 14 \u2014 Preparing the Journey\n\nWith his training complete, Jordan returned to the Exile's small hut. It was time to leave the mountains behind. He spent his final night sharpening his blades and checking his straps.",
       "choices": [
         {
           "label": "Check Gear",
@@ -649,7 +649,7 @@
       "page_id": "act1_p15_confirm",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p15_confirm.png",
-      "story_text": "Before leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully:\n\n(Choose 3 Individually: Rope, Smoke Bomb, Blow Dart, Oil Flask, Bandage, Throwing Stars, or Health Herb).",
+      "story_text": "Page 15 \u2014 Equipment Selection\n\nBefore leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully:\n\n(Choose 3 Individually: Rope, Smoke Bomb, Blow Dart, Oil Flask, Bandage, Throwing Stars, or Health Herb).",
       "choices": [
         {
           "label": "Confirm Loadout",
@@ -665,7 +665,7 @@
       "page_id": "act1_p16_return",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p16_return.png",
-      "story_text": "Jordan snapped back to the present day. He was back on the cliff, the weight of his gear feeling familiar. He looked at his hands\u2014they were strong now. The boy from the ash was gone.",
+      "story_text": "Page 16 \u2014 Return to the Present\n\nJordan snapped back to the present day. He was back on the cliff, the weight of his gear feeling familiar. He looked at his hands\u2014they were strong now. The boy from the ash was gone.",
       "choices": [
         {
           "label": "Study the Village",
@@ -678,7 +678,7 @@
       "page_id": "act1_p17_route",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p17_route.png",
-      "story_text": "The fires were bright, and guards patrolled every corner. Jordan had to choose his path carefully. One mistake would alert the entire clan. How should he enter?",
+      "story_text": "Page 17 \u2014 The Infiltration Route\n\nThe fires were bright, and guards patrolled every corner. Jordan had to choose his path carefully. One mistake would alert the entire clan. How should he enter?",
       "choices": [
         {
           "label": "A) The Rooftops: High above the guards.",
