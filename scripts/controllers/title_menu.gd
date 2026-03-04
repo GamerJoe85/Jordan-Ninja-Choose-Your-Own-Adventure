@@ -2,13 +2,13 @@ extends Control
 
 const MAIN_SCENE_PATH: String = "res://scenes/Main.tscn"
 
-@onready var start_button: Button = get_node_or_null("CenterContainer/Margin/VBox/Start") as Button
+@onready var start_button: Button = get_node_or_null("CenterContainer/VBox/Start") as Button
 
 var _start_requested: bool = false
 
 func _ready() -> void:
 	if start_button == null:
-		push_error("TitleMenu is missing Start button at path CenterContainer/Margin/VBox/Start")
+		push_error("TitleMenu is missing Start button at path CenterContainer/VBox/Start")
 		return
 	if not start_button.pressed.is_connected(_on_start_pressed):
 		start_button.pressed.connect(_on_start_pressed)
