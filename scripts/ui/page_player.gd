@@ -187,6 +187,8 @@ func _on_choice_selected(choice: Dictionary) -> void:
 	refresh_hud()
 	var next_page_id: String = str(choice.get("next_page_id", ""))
 	if not next_page_id.is_empty():
+		if next_page_id == "act1_start" and GameState.current_page_id != "":
+			GameState.reset()
 		play_page(next_page_id)
 
 func apply_effects(effects: Dictionary) -> void:
