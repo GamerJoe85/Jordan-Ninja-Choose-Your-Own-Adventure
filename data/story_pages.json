@@ -765,11 +765,27 @@
       "page_id": "act2_p18b_shadowwalk",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p18b_shadowwalk.png",
-      "story_text": "Page 18B — The Shadow Walk\n\nJordan stepped into the main street. The village smelled of roasted meat and sulfur. Torches lined the walls, casting long, dancing shadows across the cobbles.\n\nIf Shadow Discipline: Jordan became part of the darkness. Even as guards walked past, they saw nothing but empty air. (Safe).\nElse: A glint of light hit Jordan’s blade. \"Who goes there?\" a voice shouted from the gloom. (Flag: Detected).",
+      "story_text": "Page 18B — The Shadow Walk\n\nJordan stepped into the main street. The village smelled of roasted meat and sulfur. Torches lined the walls, casting long, dancing shadows across the cobbles.\n\nJordan had to decide whether to rely on stealth training or force a quick push through the patrol line.",
       "choices": [
         {
-          "label": "Move Forward",
-          "effects": {},
+          "label": "Melt into the shadows",
+          "effects": {
+            "set_flag": {
+              "detected": false
+            }
+          },
+          "next_page_id": "act2_p19b_scout",
+          "requirements": {
+            "discipline_is": "Shadow"
+          }
+        },
+        {
+          "label": "Push through the main street",
+          "effects": {
+            "set_flag": {
+              "detected": true
+            }
+          },
           "next_page_id": "act2_p19b_scout"
         }
       ]
@@ -781,10 +797,30 @@
       "story_text": "Page 19B — The Dying Scout\n\nIn a narrow side alley, Jordan found a man slumped against a crate. He wore the red colors of the Fire Clan, but he was holding a deep wound in his side.\n\nChoice: Help him?\nIf Use Bandage OR Health Herb: Jordan knelt and patched the man's wound. The scout gasped, \"You have a kind heart for an enemy... the Master flees to the Hidden Tunnel... look for the mark of the crow.\" (Gained: Cavern Clue).\nElse: Jordan looked into the man's eyes and saw the face of his enemy. He turned and kept moving, leaving the scout to the cold.",
       "choices": [
         {
-          "label": "Continue",
+          "label": "Use a Bandage",
           "effects": {
-            "add_found_item": "Cavern Clue"
+            "add_found_item": "Cavern Clue",
+            "remove_starting_item": "Bandage"
           },
+          "next_page_id": "act2_p20b_gate",
+          "requirements": {
+            "has_item": "Bandage"
+          }
+        },
+        {
+          "label": "Use a Health Herb",
+          "effects": {
+            "add_found_item": "Cavern Clue",
+            "remove_starting_item": "Health Herb"
+          },
+          "next_page_id": "act2_p20b_gate",
+          "requirements": {
+            "has_item": "Health Herb"
+          }
+        },
+        {
+          "label": "Leave him and keep moving",
+          "effects": {},
           "next_page_id": "act2_p20b_gate"
         }
       ]
@@ -793,12 +829,48 @@
       "page_id": "act2_p20b_gate",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p20b_gate.png",
-      "story_text": "Page 20B — The Patrol Gate\n\nA massive iron gate stood between Jordan and the inner square. Two guards stood at attention with long spears.\n\nIf Not Detected: Jordan waited for the guards to turn their heads. He rolled through the gap just as the gate began to close. (Safe).\nIf Detected: The guards lowered their spears.\nIf Oil Flask: Jordan smashed the flask on the floor. The guards slipped on the black oil, sliding into the wall. Jordan dashed past. (Safe).\nElse: Jordan had to fight. If Jordan has Steel Discipline or Bracers, he takes the hit but remains Healthy. Otherwise, Health drops 1 tier.",
+      "story_text": "Page 20B — The Patrol Gate\n\nA massive iron gate stood between Jordan and the inner square. Two guards stood at attention with long spears.\n\nIf Jordan stayed unseen, timing alone could get him through. If the alarm was up, he needed a direct answer to the guard line.",
       "choices": [
         {
-          "label": "Enter Village Core",
+          "label": "Slip through while they look away",
           "effects": {},
-          "next_page_id": "act3_p25_confrontation"
+          "next_page_id": "act3_p25_confrontation",
+          "requirements": {
+            "flag_false": "detected"
+          }
+        },
+        {
+          "label": "Use Oil Flask to break the line",
+          "effects": {
+            "remove_starting_item": "Oil Flask",
+            "set_flag": {
+              "detected": false
+            }
+          },
+          "next_page_id": "act3_p25_confrontation",
+          "requirements": {
+            "flag_true": "detected",
+            "has_item": "Oil Flask"
+          }
+        },
+        {
+          "label": "Drive straight through the guards",
+          "effects": {},
+          "next_page_id": "act3_p25_confrontation",
+          "requirements": {
+            "flag_true": "detected",
+            "discipline_is": "Steel"
+          }
+        },
+        {
+          "label": "Force your way through under pressure",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act3_p25_confrontation",
+          "requirements": {
+            "flag_true": "detected"
+          }
         }
       ]
     },
@@ -867,13 +939,21 @@
       "story_text": "Page 25 — The Confrontation\n\nJordan stepped into the center of the village square. The Fire Master stood waiting, his red cloak snapping in the wind. He didn't speak a word. He simply flicked his wrist, sending a sharp kunai whistling toward Jordan's heart.",
       "choices": [
         {
-          "label": "Deflect",
-          "effects": {},
+          "label": "Deflect the kunai",
+          "effects": {
+            "set_flag": {
+              "opening_move": "deflect"
+            }
+          },
           "next_page_id": "act3_p26_dirty_trick"
         },
         {
-          "label": "Dodge",
-          "effects": {},
+          "label": "Dodge to the flank",
+          "effects": {
+            "set_flag": {
+              "opening_move": "dodge"
+            }
+          },
           "next_page_id": "act3_p26_dirty_trick"
         }
       ]
@@ -885,8 +965,34 @@
       "story_text": "Page 26 — The Dirty Trick\n\nAs Jordan moved to counter the kunai, the Master suddenly kicked a massive cloud of burning ash into Jordan's face! Through the grey haze, the Master lunged forward with a lightning-fast sword strike aimed at Jordan's shoulder.\n\nIf Reflex Discipline: Jordan’s training took over. He sensed the Master's movement through the ash. He ducked low and sliced the Master’s arm as the blade passed over him. (Outcome: Master Injured).\nElse: Jordan barely raised his sword in time. The blades clashed with a shower of sparks, but the force of the strike pushed Jordan back. The Master was still unharmed.",
       "choices": [
         {
-          "label": "Continue",
-          "effects": {},
+          "label": "Read his movement through the ash",
+          "effects": {
+            "set_flag": {
+              "master_injured": true
+            }
+          },
+          "next_page_id": "act3_p27_final",
+          "requirements": {
+            "discipline_is": "Reflex"
+          }
+        },
+        {
+          "label": "Counter with a tight high guard",
+          "effects": {
+            "set_flag": {
+              "master_injured": false
+            }
+          },
+          "next_page_id": "act3_p27_final"
+        },
+        {
+          "label": "Retreat and reset your stance",
+          "effects": {
+            "set_flag": {
+              "master_injured": false
+            },
+            "change_health": -1
+          },
           "next_page_id": "act3_p27_final"
         }
       ]
@@ -898,8 +1004,51 @@
       "story_text": "Page 27 — The Final Exchange\n\nThe Fire Master grew frustrated. His blade began to glow a bright, angry red as he gathered his heat. He charged forward, swinging a strike so powerful it threatened to shatter any defense.\n\nIf Oil Flask: Jordan smashed the flask at the Master's feet. The Master’s boots hit the slippery oil, and he went sliding across the square. Jordan didn't miss the opening and landed a deep strike. (Victory: Master Defeated).\nIf Steel Discipline OR Steel Bracers: Jordan stood his ground. He caught the glowing red blade between his metal bracers or his iron-tough arms. With a grunt, he twisted the weapon and delivered a powerful counter-punch to the Master's chest. (Victory: Master Defeated).\nIf NONE of the above: Jordan had no way to block the heavy heat of the strike. He took a painful hit as he scrambled away. (Health drops 1 tier). He had to use a Smoke Bomb or Throwing Stars just to create enough space to breathe.",
       "choices": [
         {
-          "label": "Continue",
-          "effects": {},
+          "label": "Kick Oil Flask under his footing",
+          "effects": {
+            "remove_starting_item": "Oil Flask",
+            "set_flag": {
+              "master_defeated": true
+            }
+          },
+          "next_page_id": "act3_p28_flight",
+          "requirements": {
+            "has_item": "Oil Flask"
+          }
+        },
+        {
+          "label": "Catch the blade and counter",
+          "effects": {
+            "set_flag": {
+              "master_defeated": true
+            }
+          },
+          "next_page_id": "act3_p28_flight",
+          "requirements": {
+            "discipline_is": "Steel"
+          }
+        },
+        {
+          "label": "Break his rhythm with Throwing Stars",
+          "effects": {
+            "remove_starting_item": "Throwing Stars",
+            "set_flag": {
+              "master_defeated": false
+            }
+          },
+          "next_page_id": "act3_p28_flight",
+          "requirements": {
+            "has_item": "Throwing Stars"
+          }
+        },
+        {
+          "label": "Hold your ground and trade strikes",
+          "effects": {
+            "change_health": -1,
+            "set_flag": {
+              "master_defeated": false
+            }
+          },
           "next_page_id": "act3_p28_flight"
         }
       ]
@@ -921,7 +1070,7 @@
       "page_id": "act3_p29_base",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p29_base.png",
-      "story_text": "Page 29 — The Mountain Base\n\nJordan reached the edge of the village, where the ground began to slope upward toward the smoking peak. Three paths led into the darkness of the mountain.\n\nA) The Cliffside: High, narrow, and steep.\nB) The Ash Forest: A thick woods choked with grey dust.\nC) The Hidden Tunnel: (Only available if Jordan has the Cavern Clue from the dying scout).\n\nAct 3 Status Check\nHealth Check: If Jordan entered this fight Infected or Bleeding, did he survive the final exchange?\nItem Check: If Jordan used his Oil Flask or Bracers, they are still with him, but his Oil Flask is now empty.\nHook Check: If his hook was Damaged in Act 2, it is still sitting in his pack.",
+      "story_text": "Page 29 — The Mountain Base\n\nJordan reached the edge of the village, where the ground began to slope upward toward the smoking peak. Two visible routes led toward the mountain.\n\nA) The Cliffside: High, narrow, and steep.\nB) The Ash Forest: A thick woods choked with grey dust.\n\nJordan remembered the dying scout's warning about a crow mark hidden somewhere along the cliffside approach.",
       "choices": [
         {
           "label": "A) The Cliffside",
@@ -930,16 +1079,12 @@
         },
         {
           "label": "B) The Ash Forest",
-          "effects": {},
+          "effects": {
+            "set_flag": {
+              "skip_hidden_tunnel": true
+            }
+          },
           "next_page_id": "act4_p30_paths"
-        },
-        {
-          "label": "C) The Hidden Tunnel",
-          "effects": {},
-          "next_page_id": "act4_p30_paths",
-          "requirements": {
-            "has_item": "Cavern Clue"
-          }
         }
       ]
     },
@@ -947,7 +1092,7 @@
       "page_id": "act4_p30_paths",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p30_paths.png",
-      "story_text": "Page 30 — The Three Paths\n\nJordan stood at the base of the volcano. The air was thick with the smell of sulfur, and the ground hummed with a deep, low vibration. He looked at the choices ahead.\n\nA) The Cliffside: A vertical wall of rock that leads straight up the mountain.\nB) The Ash Forest: A path through the grey trees where the Fire Clan ninjas like to hide.\nC) The Hidden Tunnel: (Only available if Jordan helped the dying scout in Act II).",
+      "story_text": "Page 30 — The Three Paths\n\nJordan stood at the base of the volcano. The air was thick with the smell of sulfur, and the ground hummed with a deep, low vibration.\n\nA) The Cliffside: A vertical wall of rock that leads straight up the mountain.\nB) The Ash Forest: A path through the grey trees where the Fire Clan ninjas like to hide.",
       "choices": [
         {
           "label": "A) The Cliffside",
@@ -958,14 +1103,6 @@
           "label": "B) The Ash Forest",
           "effects": {},
           "next_page_id": "act4_p31b_ambush"
-        },
-        {
-          "label": "C) The Hidden Tunnel",
-          "effects": {},
-          "next_page_id": "act4_p31c_crow",
-          "requirements": {
-            "has_item": "Cavern Clue"
-          }
         }
       ]
     },
@@ -973,11 +1110,37 @@
       "page_id": "act4_p31a_wall",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31a_wall.png",
-      "story_text": "Page 31A — The Vertical Wall\n\nThe trail ended at a massive cliff face. To reach the top, Jordan had to scale the rock.\n\nChoice 1: Manually Climb. Jordan put away his gear and climbed using only his hands.\nIf Steel Discipline OR Steel Bracers: His grip was like iron, and his muscles didn't tire. (Safe).\nElse: The climb was slow and draining. Health Tier drops by 1 from exhaustion.\nChoice 2: Use the Grappling Hook.\nIf Hook is Good: Jordan tossed his hook and scaled the cliff safely. (Safe).\nIf Hook is Damaged: The rope emitted a loud snap halfway up. Jordan plummeted onto the rocks below. Health Tier drops by 1.",
+      "story_text": "Page 31A — The Vertical Wall\n\nThe trail ended at a massive cliff face. To reach the top, Jordan had to scale the rock.\n\nChoice 1: Climb by hand.\nChoice 2: Use the grappling hook.\nIf Jordan had the dying scout's clue, this cliffside was also where he could search for the crow mark.",
       "choices": [
         {
-          "label": "Continue",
+          "label": "Climb by hand",
           "effects": {},
+          "next_page_id": "act4_p32_bridge",
+          "requirements": {
+            "discipline_is": "Steel"
+          }
+        },
+        {
+          "label": "Use the grappling hook",
+          "effects": {},
+          "next_page_id": "act4_p32_bridge",
+          "requirements": {
+            "hook_state_is": "Good"
+          }
+        },
+        {
+          "label": "Search for the crow-mark passage",
+          "effects": {},
+          "next_page_id": "act4_p31c_crow",
+          "requirements": {
+            "has_item": "Cavern Clue"
+          }
+        },
+        {
+          "label": "Climb by hand anyway",
+          "effects": {
+            "change_health": -1
+          },
           "next_page_id": "act4_p32_bridge"
         }
       ]
@@ -999,7 +1162,7 @@
       "page_id": "act4_p31c_crow",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31c_crow.png",
-      "story_text": "Page 31C — The Crow’s Mark\n\nBecause Jordan showed mercy to the scout, he found the hidden lever behind the mark of the crow. A section of the rock slid away, revealing a cool, dark tunnel that led straight through the heart of the mountain. (Safe).",
+      "story_text": "Page 31C — The Crow’s Mark\n\nUsing the clue from the dying scout, Jordan found the hidden lever behind the mark of the crow. A section of rock slid aside, revealing a cool tunnel that cut deeper into the mountain.",
       "choices": [
         {
           "label": "Continue",
@@ -1028,10 +1191,21 @@
       "story_text": "Page 33 — The Final Crossing\n\nJordan reached the high ledge outside the Master’s sanctum. A massive crack opened in the stone, separating him from the final door.\n\nChoice 1: The Narrow Ledge. Jordan spotted a thin, jagged strip of stone clinging to the wall.\nChoice 2: Swing with the Grappling Hook. Jordan looked for a sturdy volcanic pillar to anchor his line.",
       "choices": [
         {
-          "label": "Make Your Choice",
+          "label": "Swing across the lava pit",
           "effects": {
             "set_flag": {
-              "cross_ledge": true
+              "cross_swing": true,
+              "cross_ledge": false
+            }
+          },
+          "next_page_id": "act4_p34a_offering"
+        },
+        {
+          "label": "Take the narrow ledge deeper inside",
+          "effects": {
+            "set_flag": {
+              "cross_ledge": true,
+              "cross_swing": false
             }
           },
           "next_page_id": "act4_p34a_offering"
@@ -1084,9 +1258,41 @@
       "story_text": "Page 35 — The Great Quake\n\nThe mountain groaned as the shockwave hit.\nIf Jordan chose to Swing:\nIf Hook is Good: The rope went taut. Jordan held on tight and landed safe on the far side. (Safe).\nIf Hook is Damaged: The shockwave snapped the rope. Jordan vanished into the lava below. (GAME OVER).\nIf Jordan chose the Ledge:\nThe ledge shattered under Jordan's feet. He plummeted into a deep crevice.\nIf Reflex Discipline: Jordan twisted in mid-air and slid down a steep ash-slope into a hidden chamber. (Safe).\nElse: Jordan crashed through rock outcroppings before hitting the floor. Health Tier drops by 1.",
       "choices": [
         {
-          "label": "Continue",
+          "label": "Keep hold and land across the pit",
           "effects": {},
-          "next_page_id": "act5_p37_sanctum"
+          "next_page_id": "act5_p37_sanctum",
+          "requirements": {
+            "flag_true": "cross_swing",
+            "hook_state_is": "Good"
+          }
+        },
+        {
+          "label": "Try to recover as the line snaps",
+          "effects": {},
+          "next_page_id": "act_end_game_over",
+          "requirements": {
+            "flag_true": "cross_swing",
+            "hook_state_is": "Damaged"
+          }
+        },
+        {
+          "label": "Ride the collapse into the hidden chamber",
+          "effects": {},
+          "next_page_id": "act4_p36_cavern",
+          "requirements": {
+            "flag_true": "cross_ledge",
+            "discipline_is": "Reflex"
+          }
+        },
+        {
+          "label": "Crash through and force your way onward",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act5_p37_sanctum",
+          "requirements": {
+            "flag_true": "cross_ledge"
+          }
         }
       ]
     },
@@ -1130,8 +1336,49 @@
       "story_text": "Page 38 — The Shattered Strike\n\nThe Master lunged. He didn't just swing his blade; he moved through a \"glitch\" in space, appearing in three places at once. Three obsidian blades whistled toward Jordan’s neck from three different angles.\n\nChoice 1: [REQUIRES Steel Discipline OR Steel Bracers] Plant your feet and catch the true blade. Let the \"chaos-echoes\" shatter against your resolve.\nChoice 2: [REQUIRES Reflex Discipline] Flow between the strikes. Use the Master's own momentum to spin behind the primary form.\nChoice 3: [REQUIRES Focus Discipline] Close your eyes to the visual noise. Strike the one shadow that casts a heartbeat.\nChoice 4: [Standard] Deflect the blow. You survive, but the force of the strike pushes you back. (Health Tier drops by 1).",
       "choices": [
         {
-          "label": "Continue",
-          "effects": {},
+          "label": "Plant and catch the true blade",
+          "effects": {
+            "set_flag": {
+              "qte1": "win"
+            }
+          },
+          "next_page_id": "act5_p39_exchange",
+          "requirements": {
+            "discipline_is": "Steel"
+          }
+        },
+        {
+          "label": "Flow between the echo strikes",
+          "effects": {
+            "set_flag": {
+              "qte1": "win"
+            }
+          },
+          "next_page_id": "act5_p39_exchange",
+          "requirements": {
+            "discipline_is": "Reflex"
+          }
+        },
+        {
+          "label": "Ignore the echoes and strike the source",
+          "effects": {
+            "set_flag": {
+              "qte1": "win"
+            }
+          },
+          "next_page_id": "act5_p39_exchange",
+          "requirements": {
+            "discipline_is": "Focus"
+          }
+        },
+        {
+          "label": "Guard and absorb the hit",
+          "effects": {
+            "set_flag": {
+              "qte1": "countered"
+            },
+            "change_health": -1
+          },
           "next_page_id": "act5_p39_exchange"
         }
       ]
@@ -1156,8 +1403,50 @@
       "story_text": "Page 40 — The Rising Pillars\n\nThe Master slammed a hand into the ground. He turned the floor into a series of jagged, obsidian pillars that rose in a complex, overlapping pattern designed to trap Jordan and crush him against the ceiling.\n\nChoice 1: [REQUIRES Grappling Hook - MUST NOT BE DAMAGED] Use the rising pillars as anchors. Swing through the shifting \"maze\" to stay above the crushing stone.\nChoice 2: [REQUIRES Shadow Discipline] Become the smoke. Let the pillars pass through your intangible form as you drift toward the Master’s blind spot.\nChoice 3: [REQUIRES Vial of Acid] Melt the base of the central pillar, causing the entire \"trap\" to collapse under its own weight.\nChoice 4: [Standard] Scramble for safety. You escape being crushed, but a jagged shard pierces your leg. (Health Tier drops by 1).",
       "choices": [
         {
-          "label": "Continue",
-          "effects": {},
+          "label": "Anchor and swing through the pillars",
+          "effects": {
+            "set_flag": {
+              "qte2": "win"
+            }
+          },
+          "next_page_id": "act5_p41_history",
+          "requirements": {
+            "hook_state_is": "Good"
+          }
+        },
+        {
+          "label": "Phase through the collapsing maze",
+          "effects": {
+            "set_flag": {
+              "qte2": "win"
+            }
+          },
+          "next_page_id": "act5_p41_history",
+          "requirements": {
+            "discipline_is": "Shadow"
+          }
+        },
+        {
+          "label": "Melt the central support",
+          "effects": {
+            "set_flag": {
+              "qte2": "win"
+            },
+            "remove_starting_item": "Oil Flask"
+          },
+          "next_page_id": "act5_p41_history",
+          "requirements": {
+            "has_item": "Oil Flask"
+          }
+        },
+        {
+          "label": "Scramble out of the crush zone",
+          "effects": {
+            "set_flag": {
+              "qte2": "countered"
+            },
+            "change_health": -1
+          },
           "next_page_id": "act5_p41_history"
         }
       ]
@@ -1182,8 +1471,50 @@
       "story_text": "Page 42 — The Singularity Whip\n\nThe Master’s arm extended into a whip of white plasma. It carved \"voids\" into the air that stayed active, pulling at Jordan's gear and slowing his movements through sheer gravitational chaos.\n\nChoice 1: [REQUIRES Frost-Bitten Dagger - FOUND IN HIDDEN CAVERN] Use the dagger’s ancient cold to stabilize the voids and cut the Master's tether to the spirit realm.\nChoice 2: [REQUIRES Reflex Discipline] Speed is your armor. Move so fast the voids cannot \"lock\" onto your physical position.\nChoice 3: [REQUIRES Throwing Stars] Imbue the stars with your own balanced energy to \"plug\" the voids, turning the Master's own energy against him.\nChoice 4: [Standard] Attempt to roll away. The void pulls you in, searing your skin with raw entropy. (Health Tier drops by 1).",
       "choices": [
         {
-          "label": "Continue",
-          "effects": {},
+          "label": "Sever the tether with Frost-Bitten Dagger",
+          "effects": {
+            "set_flag": {
+              "qte3": "win"
+            }
+          },
+          "next_page_id": "act5_p43_breaking",
+          "requirements": {
+            "has_item": "Frost-Bitten Dagger"
+          }
+        },
+        {
+          "label": "Outrun the void locks",
+          "effects": {
+            "set_flag": {
+              "qte3": "win"
+            }
+          },
+          "next_page_id": "act5_p43_breaking",
+          "requirements": {
+            "discipline_is": "Reflex"
+          }
+        },
+        {
+          "label": "Pin the voids with Throwing Stars",
+          "effects": {
+            "set_flag": {
+              "qte3": "win"
+            },
+            "remove_starting_item": "Throwing Stars"
+          },
+          "next_page_id": "act5_p43_breaking",
+          "requirements": {
+            "has_item": "Throwing Stars"
+          }
+        },
+        {
+          "label": "Roll clear and reset",
+          "effects": {
+            "set_flag": {
+              "qte3": "countered"
+            },
+            "change_health": -1
+          },
           "next_page_id": "act5_p43_breaking"
         }
       ]
@@ -1208,8 +1539,50 @@
       "story_text": "Page 44 — The Master’s Last Stand\n\nThe Master surrendered his physical form entirely. The volcano’s core began to compress toward him, creating a vacuum of white-hot chaos. The very laws of physics began to fail.\n\nChoice 1: [REQUIRES Steel Discipline] Anchor yourself to the earth. Use your balance to remain the one stable point in a world falling apart.\nChoice 2: [REQUIRES Smoke Bomb] Use the explosion to propel yourself into the vacuum, using the Master's own pull to deliver a high-velocity strike.\nChoice 3: [REQUIRES Focus Discipline] Find the \"eye of the storm\"—the one point of balance within the Master’s chaos—and strike it with everything you have.\nChoice 4: [Standard] Try to resist the pull. You are nearly sucked into the Master's core, taking massive damage before he tires. (Health Tier drops by 1).",
       "choices": [
         {
-          "label": "Continue",
-          "effects": {},
+          "label": "Anchor to the stone and advance",
+          "effects": {
+            "set_flag": {
+              "qte4": "win"
+            }
+          },
+          "next_page_id": "act5_p45_breath",
+          "requirements": {
+            "discipline_is": "Steel"
+          }
+        },
+        {
+          "label": "Blast forward with Smoke Bomb recoil",
+          "effects": {
+            "set_flag": {
+              "qte4": "win"
+            },
+            "remove_starting_item": "Smoke Bomb"
+          },
+          "next_page_id": "act5_p45_breath",
+          "requirements": {
+            "has_item": "Smoke Bomb"
+          }
+        },
+        {
+          "label": "Find the eye of balance and strike",
+          "effects": {
+            "set_flag": {
+              "qte4": "win"
+            }
+          },
+          "next_page_id": "act5_p45_breath",
+          "requirements": {
+            "discipline_is": "Focus"
+          }
+        },
+        {
+          "label": "Resist the pull head-on",
+          "effects": {
+            "set_flag": {
+              "qte4": "countered"
+            },
+            "change_health": -1
+          },
           "next_page_id": "act5_p45_breath"
         }
       ]
