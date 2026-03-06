@@ -82,6 +82,27 @@ layout_mode = 2
 size_flags_vertical = 1
 theme_override_constants/separation = 10
 
+
+[node name="EventNotice" type="Label" parent="MarginContainer/MainVBox"]
+unique_name_in_owner = true
+layout_mode = 2
+visible = false
+theme_override_font_sizes/font_size = 28
+theme_override_colors/font_color = Color(1, 0.85, 0.35, 1)
+horizontal_alignment = 1
+text = ""
+
+[node name="QuickActions" type="HBoxContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="UseHealthHerbButton" type="Button" parent="MarginContainer/MainVBox/QuickActions"]
+unique_name_in_owner = true
+layout_mode = 2
+visible = false
+theme_override_font_sizes/font_size = 24
+text = "Use Health Herb"
+
 [node name="Spacer" type="Control" parent="MarginContainer/MainVBox"]
 layout_mode = 2
 size_flags_vertical = 3
