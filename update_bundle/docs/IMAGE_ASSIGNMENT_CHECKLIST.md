@@ -2,12 +2,11 @@
 
 Use this checklist to map every story page to an image file.
 
-
 How to use:
-1. Put your files in `assets/images/`.
+1. Put your files in `assets/images/.`
 2. For each row below, create/add the file shown in **Expected JSON image_path** OR set an Inspector override for that `page_id`.
 3. Mark the checkbox when done.
-4. Copy only the `res://...png` path value (not the table formatting).
+4. Copy only the `res://...png` path value (not table formatting).
 
 | Done | page_id | act_id | Expected JSON image_path |
 |---|---|---|---|
@@ -70,6 +69,7 @@ How to use:
 | ☐ | `act4_p31b_ambush` | `act_4` | `res://assets/images/act4_p31b_ambush.png` |
 | ☐ | `act4_p31c_crow` | `act_4` | `res://assets/images/act4_p31c_crow.png` |
 | ☐ | `act4_p32_bridge` | `act_4` | `res://assets/images/act4_p32_bridge.png` |
+| ☐ | `act4_p32b_elite_fight` | `act_4` | `res://assets/images/act4_p32b_elite_fight.png` |
 | ☐ | `act4_p33_crossing` | `act_4` | `res://assets/images/act4_p33_crossing.png` |
 | ☐ | `act4_p34a_offering` | `act_4` | `res://assets/images/act4_p34a_offering.png` |
 | ☐ | `act4_p34b_fusion` | `act_4` | `res://assets/images/act4_p34b_fusion.png` |

@@ -264,7 +264,7 @@
       "story_text": "Page 13-Reflex — Like Lightning\n\nIn his final test, the Exile swung a wooden blade at Jordan’s neck with full force. Jordan didn't think; he simply moved, his body a blur of motion. He was now faster than the strike of a cobra.",
       "choices": [
         {
-          "label": "Go to Page 14 — Preparing the Journey",
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act1_p14_prepare"
         }
@@ -303,7 +303,7 @@
       "story_text": "Page 13-Focus — The Eye of the Storm\n\nThe Exile lit a circle of fire around Jordan and told him to wait. As the flames roared, Jordan remained as still as a stone statue. His heart beat slow and steady, even in the face of death.",
       "choices": [
         {
-          "label": "Go to Page 14 — Preparing the Journey",
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act1_p14_prepare"
         }
@@ -342,7 +342,7 @@
       "story_text": "Page 13-Steel — The Unyielding Warrior\n\nIn the final trial, the Exile struck Jordan with a heavy wooden staff. The wood snapped in two against Jordan’s chest, but he did not move an inch. He was now a living shield.",
       "choices": [
         {
-          "label": "Go to Page 14 — Preparing the Journey",
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act1_p14_prepare"
         }
@@ -381,7 +381,7 @@
       "story_text": "Page 13-Shadow — Vanishing Act\n\nThe Exile tried to track Jordan through a thick forest for an entire night. Even with his master’s sharp eyes, the Exile could not find a single footprint. Jordan had become one with the darkness.",
       "choices": [
         {
-          "label": "Go to Page 14 — Preparing the Journey",
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act1_p14_prepare"
         }
@@ -794,7 +794,7 @@
       "page_id": "act2_p19b_scout",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19b_scout.png",
-      "story_text": "Page 19B — The Dying Scout\n\nIn a narrow side alley, Jordan found a man slumped against a crate. He wore the red colors of the Fire Clan, but he was holding a deep wound in his side.\n\nChoice: Help him?\nIf Use Bandage OR Health Herb: Jordan knelt and patched the man's wound. The scout gasped, \"You have a kind heart for an enemy... the Master flees to the Hidden Tunnel... look for the mark of the crow.\" (Gained: Cavern Clue).\nElse: Jordan looked into the man's eyes and saw the face of his enemy. He turned and kept moving, leaving the scout to the cold.",
+      "story_text": "Page 19B — The Dying Scout\\n\\nIn a narrow side alley, Jordan found a wounded Fire Clan scout slumped against a crate. The man gripped his side and looked up through pain, waiting to see whether Jordan would help or walk away.",
       "choices": [
         {
           "label": "Use a Bandage",
@@ -1266,14 +1266,14 @@
         {
           "label": "Cross the bridge under fire",
           "effects": {},
-          "next_page_id": "act4_p32_elite_fight"
+          "next_page_id": "act4_p32b_elite_fight"
         }
       ]
     },
     {
-      "page_id": "act4_p32_elite_fight",
+      "page_id": "act4_p32b_elite_fight",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_p32_elite_fight.png",
+      "image_path": "res://assets/images/act4_p32b_elite_fight.png",
       "story_text": "Page 32B — Duel on the Bridge\n\nA Fire Clan Elite blocked the far side of the bridge and drove forward with a long spear. Sparks burst as Jordan met the strike over the lava.",
       "story_text_variants": [
         {
@@ -1401,10 +1401,10 @@
       "page_id": "act4_p35_quake",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35_quake.png",
-      "story_text": "Page 35 — The Great Quake\n\nThe mountain groaned as the shockwave hit.\nIf Jordan chose to Swing:\nIf Hook is Good: The rope went taut. Jordan held on tight and landed safe on the far side. (Safe).\nIf Hook is Damaged: The shockwave snapped the rope. Jordan vanished into the lava below. (GAME OVER).\nIf Jordan chose the Ledge:\nThe ledge shattered under Jordan's feet. He plummeted into a deep crevice.\nIf Reflex Discipline: Jordan twisted in mid-air and slid down a steep ash-slope into a hidden chamber. (Safe).\nElse: Jordan crashed through rock outcroppings before hitting the floor. Health Tier drops by 1.",
+      "story_text": "Page 35 — The Great Quake\\n\\nThe mountain groaned as the shockwave ripped through the crossing. Jordan either fought to stay on the rope swing or tried to survive the collapsing ledge.",
       "choices": [
         {
-          "label": "Keep hold and land across the pit",
+          "label": "Hold the swing and land",
           "effects": {},
           "next_page_id": "act5_p37_sanctum",
           "requirements": {
@@ -1413,7 +1413,7 @@
           }
         },
         {
-          "label": "Try to recover as the line snaps",
+          "label": "The rope gives out",
           "effects": {},
           "next_page_id": "act_end_game_over",
           "requirements": {
@@ -1422,7 +1422,7 @@
           }
         },
         {
-          "label": "Ride the collapse into the hidden chamber",
+          "label": "Follow the fall into the hidden cavern",
           "effects": {},
           "next_page_id": "act4_p36_cavern",
           "requirements": {
@@ -1431,7 +1431,7 @@
           }
         },
         {
-          "label": "Crash through and force your way onward",
+          "label": "Climb out and push toward the sanctum",
           "effects": {
             "change_health": -1
           },
@@ -1439,6 +1439,35 @@
           "requirements": {
             "flag_true": "cross_ledge"
           }
+        }
+      ],
+      "story_text_variants": [
+        {
+          "requirements": {
+            "flag_true": "cross_swing",
+            "hook_state_is": "Good"
+          },
+          "text": "Page 35 — The Great Quake\\n\\nThe rope snapped tight in Jordan's hands and he swung through the blast, landing hard but alive on the far side."
+        },
+        {
+          "requirements": {
+            "flag_true": "cross_swing",
+            "hook_state_is": "Damaged"
+          },
+          "text": "Page 35 — The Great Quake\\n\\nThe damaged rope failed mid-swing. Jordan dropped into the lava below before he could recover."
+        },
+        {
+          "requirements": {
+            "flag_true": "cross_ledge",
+            "discipline_is": "Reflex"
+          },
+          "text": "Page 35 — The Great Quake\\n\\nThe ledge shattered, but Jordan twisted with the fall and slid into a hidden ash chute that dropped him into an unknown cavern."
+        },
+        {
+          "requirements": {
+            "flag_true": "cross_ledge"
+          },
+          "text": "Page 35 — The Great Quake\\n\\nThe ledge gave way beneath Jordan. He slammed through volcanic stone, recovered his footing, and forced his way toward the sanctum."
         }
       ]
     },

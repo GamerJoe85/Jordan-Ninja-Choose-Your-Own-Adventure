@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=5 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/page_player.gd" id="1"]
 
@@ -11,6 +11,13 @@ corner_radius_bottom_left = 8
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_choice"]
 bg_color = Color(0, 0, 0, 0.5)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_notice"]
+bg_color = Color(0, 0, 0, 0.45)
 corner_radius_top_left = 8
 corner_radius_top_right = 8
 corner_radius_bottom_right = 8
@@ -82,8 +89,12 @@ layout_mode = 2
 size_flags_vertical = 1
 theme_override_constants/separation = 10
 
+[node name="EventNoticePanel" type="PanelContainer" parent="MarginContainer/MainVBox"]
+layout_mode = 2
+visible = false
+theme_override_styles/panel = SubResource("StyleBoxFlat_notice")
 
-[node name="EventNotice" type="Label" parent="MarginContainer/MainVBox"]
+[node name="EventNotice" type="Label" parent="MarginContainer/MainVBox/EventNoticePanel"]
 unique_name_in_owner = true
 layout_mode = 2
 visible = false

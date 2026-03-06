@@ -61,6 +61,11 @@ func play_page(page_id: String) -> void:
 	GameState.current_page_id = page_id
 	emit_signal("page_changed", page_id, str(page.get("act_id", "")))
 	apply_image(page_id, str(page.get("image_path", "")))
+	if event_notice != null:
+		event_notice.text = ""
+		event_notice.visible = false
+		if event_notice.get_parent() is CanvasItem:
+			(event_notice.get_parent() as CanvasItem).visible = false
 	story_text_label.text = resolve_story_text(page)
 	build_choices(page.get("choices", []) as Array)
 	refresh_hud()
@@ -282,3 +287,5 @@ func show_notice(message: String) -> void:
 		return
 	event_notice.text = message
 	event_notice.visible = true
+	if event_notice.get_parent() is CanvasItem:
+		(event_notice.get_parent() as CanvasItem).visible = true
