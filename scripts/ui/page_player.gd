@@ -217,9 +217,15 @@ func requirements_met(requirements: Dictionary) -> bool:
 
 func _on_choice_selected(choice: Dictionary) -> void:
 	var previous_health: String = GameState.health_tier
-	apply_effects(choice.get("effects", {}) as Dictionary)
+	var effects: Dictionary = choice.get("effects", {}) as Dictionary
+	apply_effects(effects)
+	var custom_notice: String = str(effects.get("notice_message", "")).strip_edges()
+	if not custom_notice.is_empty():
+		show_notice(custom_notice)
 	if previous_health != GameState.health_tier:
-		if GameState.health_at_least(previous_health):
+		if not custom_notice.is_empty():
+			pass
+		elif GameState.health_at_least(previous_health):
 			show_notice("Health restored: %s" % GameState.health_tier)
 		else:
 			show_notice("Health dropped to %s" % GameState.health_tier)

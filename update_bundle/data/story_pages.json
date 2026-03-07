@@ -4,7 +4,7 @@
       "page_id": "act1_start",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p01_overlook.png",
-      "story_text": "Page 1 — The Overlook\n\nJordan knelt on the jagged cliff. Below him, the Fire Clan village glowed like a bed of angry embers. It had taken years of searching, but he had finally found them.",
+      "story_text": "Page 1 \u2014 The Overlook\n\nJordan knelt on the jagged cliff. Below him, the Fire Clan village glowed like a bed of angry embers. It had taken years of searching, but he had finally found them.",
       "choices": [
         {
           "label": "Continue",
@@ -82,7 +82,7 @@
       "page_id": "act1_p02_memory",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p02_memory.png",
-      "story_text": "Page 2 — The Memory (Close-up on Eyes)\n\nHe narrowed his eyes as the wind kicked up hot ash. The scent of woodsmoke filled the air. To anyone else, it was just a fire, but to Jordan, it was the smell of the night his world ended.",
+      "story_text": "Page 2 \u2014 The Memory (Close-up on Eyes)\n\nHe narrowed his eyes as the wind kicked up hot ash. The scent of woodsmoke filled the air. To anyone else, it was just a fire, but to Jordan, it was the smell of the night his world ended.",
       "choices": [
         {
           "label": "Remember",
@@ -95,7 +95,7 @@
       "page_id": "act1_p03_burning",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p03_burning.png",
-      "story_text": "Page 3 — The Village Burning (Flashback Image)\n\nThe orange glow in his eyes blurred into a memory of his own home. He saw the red banners of the Fire Clan waving through the sparks. He saw his people scattered and his village turned to gray dust.",
+      "story_text": "Page 3 \u2014 The Village Burning (Flashback Image)\n\nThe orange glow in his eyes blurred into a memory of his own home. He saw the red banners of the Fire Clan waving through the sparks. He saw his people scattered and his village turned to gray dust.",
       "choices": [
         {
           "label": "Continue",
@@ -108,7 +108,7 @@
       "page_id": "act1_p04_ash",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p04_ash.png",
-      "story_text": "Page 4 — Kneeling in Ash (Flashback Image)\n\nA younger Jordan knelt in the ruins of his home. The heat was unbearable, but his heart felt cold. In that moment, surrounded by smoke, he made a silent promise to find the people who did this.",
+      "story_text": "Page 4 \u2014 Kneeling in Ash (Flashback Image)\n\nA younger Jordan knelt in the ruins of his home. The heat was unbearable, but his heart felt cold. In that moment, surrounded by smoke, he made a silent promise to find the people who did this.",
       "choices": [
         {
           "label": "The Vow",
@@ -121,7 +121,7 @@
       "page_id": "act1_p05_turning",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p05_turning.png",
-      "story_text": "Page 5 — The Turning Point\n\nJordan stood up from the ash. He knew that to get justice, he could not stay a frightened child. He sought out a mysterious hermit living in the frozen peaks—a man who had been exiled from the Fire Clan long ago.",
+      "story_text": "Page 5 \u2014 The Turning Point\n\nJordan stood up from the ash. He knew that to get justice, he could not stay a frightened child. He sought out a mysterious hermit living in the frozen peaks\u2014a man who had been exiled from the Fire Clan long ago.",
       "choices": [
         {
           "label": "Seek the Exile",
@@ -134,7 +134,7 @@
       "page_id": "act1_p06_discipline",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p06_frozen.png",
-      "story_text": "Page 6 — The Frozen Peaks\n\nJordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
+      "story_text": "Page 6 \u2014 The Frozen Peaks\n\nJordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
       "choices": [
         {
           "label": "Enter the Cave",
@@ -147,7 +147,7 @@
       "page_id": "act1_p06_frozen",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p06_frozen.png",
-      "story_text": "Page 6 — The Frozen Peaks\n\nJordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
+      "story_text": "Page 6 \u2014 The Frozen Peaks\n\nJordan climbed into the highest mountains, where the air was thin and the wind bit like a cold blade. He had heard stories of a hermit who lived in a cave made of blue ice. This man was once a great warrior of the Fire Clan before he was cast out.",
       "choices": [
         {
           "label": "Enter the Cave",
@@ -160,7 +160,7 @@
       "page_id": "act1_p07_meeting",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p07_meeting.png",
-      "story_text": "Page 7 — The Meeting\n\nInside the cave, a man sat by a small, flickering fire. His face was covered in scars, and his eyes were as sharp as flint. \"Who are you to wake an old ghost?\" the Exile growled, reaching for a heavy wooden staff.",
+      "story_text": "Page 7 \u2014 The Meeting\n\nInside the cave, a man sat by a small, flickering fire. His face was covered in scars, and his eyes were as sharp as flint. \"Who are you to wake an old ghost?\" the Exile growled, reaching for a heavy wooden staff.",
       "choices": [
         {
           "label": "Speak to Him",
@@ -173,7 +173,7 @@
       "page_id": "act1_p08_story",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p08_story.png",
-      "story_text": "Page 8 — Jordan's Story\n\nJordan did not flinch. \"My name is Jordan,\" he said, his voice steady. \"The Fire Clan took everything from me. They burned my home and scattered my people into the wind. I have spent years looking for a way to stop them.\"",
+      "story_text": "Page 8 \u2014 Jordan's Story\n\nJordan did not flinch. \"My name is Jordan,\" he said, his voice steady. \"The Fire Clan took everything from me. They burned my home and scattered my people into the wind. I have spent years looking for a way to stop them.\"",
       "choices": [
         {
           "label": "Continue",
@@ -186,7 +186,7 @@
       "page_id": "act1_p09_request",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p09_request.png",
-      "story_text": "Page 9 — The Request\n\nThe Exile looked at Jordan's hands and saw the fire of revenge in his eyes. \"I know the darkness of that clan better than anyone,\" the Exile whispered. \"If you want to defeat them, you must learn to fight like them. Are you ready for years of pain?\"",
+      "story_text": "Page 9 \u2014 The Request\n\nThe Exile looked at Jordan's hands and saw the fire of revenge in his eyes. \"I know the darkness of that clan better than anyone,\" the Exile whispered. \"If you want to defeat them, you must learn to fight like them. Are you ready for years of pain?\"",
       "choices": [
         {
           "label": "I am Ready",
@@ -199,7 +199,7 @@
       "page_id": "act1_p10_discipline",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p10_discipline.png",
-      "story_text": "Page 10 — Choose Your Discipline\n\nThe Exile nodded slowly. \"Then we begin,\" he said. \"The Fire Clan has many secrets. Which path do you wish to master so you can survive the journey ahead?\"",
+      "story_text": "Page 10 \u2014 Choose Your Discipline\n\nThe Exile nodded slowly. \"Then we begin,\" he said. \"The Fire Clan has many secrets. Which path do you wish to master so you can survive the journey ahead?\"",
       "choices": [
         {
           "label": "Reflex",
@@ -235,7 +235,7 @@
       "page_id": "act1_p11_reflex",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_reflex.png",
-      "story_text": "Page 11-Reflex — The First Stone\n\nThe Exile stood on a high rock and began to throw small stones at Jordan. At first, Jordan was too slow and felt the sting of every impact. \"Your eyes are too slow,\" the Exile barked.",
+      "story_text": "Page 11-Reflex \u2014 The First Stone\n\nThe Exile stood on a high rock and began to throw small stones at Jordan. At first, Jordan was too slow and felt the sting of every impact. \"Your eyes are too slow,\" the Exile barked.",
       "choices": [
         {
           "label": "Keep Practicing",
@@ -248,7 +248,7 @@
       "page_id": "act1_p12_reflex",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_reflex.png",
-      "story_text": "Page 12-Reflex — Blindfolded Days\n\nFor years, Jordan practiced with a blindfold tied tight over his eyes. He stopped trying to \"see\" the stones and began to \"feel\" the air move. His body began to react before his mind even realized the danger.",
+      "story_text": "Page 12-Reflex \u2014 Blindfolded Days\n\nFor years, Jordan practiced with a blindfold tied tight over his eyes. He stopped trying to \"see\" the stones and began to \"feel\" the air move. His body began to react before his mind even realized the danger.",
       "choices": [
         {
           "label": "Continue Training",
@@ -261,7 +261,7 @@
       "page_id": "act1_p13_reflex",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_reflex.png",
-      "story_text": "Page 13-Reflex — Like Lightning\n\nIn his final test, the Exile swung a wooden blade at Jordan’s neck with full force. Jordan didn't think; he simply moved, his body a blur of motion. He was now faster than the strike of a cobra.",
+      "story_text": "Page 13-Reflex \u2014 Like Lightning\n\nIn his final test, the Exile swung a wooden blade at Jordan\u2019s neck with full force. Jordan didn't think; he simply moved, his body a blur of motion. He was now faster than the strike of a cobra.",
       "choices": [
         {
           "label": "Continue",
@@ -274,7 +274,7 @@
       "page_id": "act1_p11_focus",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_focus.png",
-      "story_text": "Page 11-Focus — The Icy Fall\n\nJordan sat beneath a freezing mountain waterfall, the heavy water crashing onto his shoulders. The cold was like thousands of tiny needles. \"If you cannot control your breath, you cannot control the battle,\" the Exile warned.",
+      "story_text": "Page 11-Focus \u2014 The Icy Fall\n\nJordan sat beneath a freezing mountain waterfall, the heavy water crashing onto his shoulders. The cold was like thousands of tiny needles. \"If you cannot control your breath, you cannot control the battle,\" the Exile warned.",
       "choices": [
         {
           "label": "Stay Still",
@@ -287,7 +287,7 @@
       "page_id": "act1_p12_focus",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_focus.png",
-      "story_text": "Page 12-Focus — The Temple of Silence\n\nFor years, Jordan spent his nights sitting in total silence, even as the wind howled and the mountain shook. He learned to lock away his fear and his anger in a small box in his mind. Nothing could break his concentration.",
+      "story_text": "Page 12-Focus \u2014 The Temple of Silence\n\nFor years, Jordan spent his nights sitting in total silence, even as the wind howled and the mountain shook. He learned to lock away his fear and his anger in a small box in his mind. Nothing could break his concentration.",
       "choices": [
         {
           "label": "Continue Training",
@@ -300,7 +300,7 @@
       "page_id": "act1_p13_focus",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_focus.png",
-      "story_text": "Page 13-Focus — The Eye of the Storm\n\nThe Exile lit a circle of fire around Jordan and told him to wait. As the flames roared, Jordan remained as still as a stone statue. His heart beat slow and steady, even in the face of death.",
+      "story_text": "Page 13-Focus \u2014 The Eye of the Storm\n\nThe Exile lit a circle of fire around Jordan and told him to wait. As the flames roared, Jordan remained as still as a stone statue. His heart beat slow and steady, even in the face of death.",
       "choices": [
         {
           "label": "Continue",
@@ -313,7 +313,7 @@
       "page_id": "act1_p11_steel",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_steel.png",
-      "story_text": "Page 11-Steel — The Hard Road\n\nThe Exile led Jordan to a forest of frozen bamboo and told him to strike it with his bare hands. Each hit sent a shock of pain through his arms. \"To break your enemy, you must first be unbreakable,\" the Exile said.",
+      "story_text": "Page 11-Steel \u2014 The Hard Road\n\nThe Exile led Jordan to a forest of frozen bamboo and told him to strike it with his bare hands. Each hit sent a shock of pain through his arms. \"To break your enemy, you must first be unbreakable,\" the Exile said.",
       "choices": [
         {
           "label": "Strike Again",
@@ -326,7 +326,7 @@
       "page_id": "act1_p12_steel",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_steel.png",
-      "story_text": "Page 12-Steel — Forged in Pain\n\nFor years, Jordan conditioned his body against the harshest elements. He climbed jagged rocks without shoes and carried heavy stones up the mountain peaks. His skin grew thick, and his bones became as strong as iron beams.",
+      "story_text": "Page 12-Steel \u2014 Forged in Pain\n\nFor years, Jordan conditioned his body against the harshest elements. He climbed jagged rocks without shoes and carried heavy stones up the mountain peaks. His skin grew thick, and his bones became as strong as iron beams.",
       "choices": [
         {
           "label": "Continue Training",
@@ -339,7 +339,7 @@
       "page_id": "act1_p13_steel",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_steel.png",
-      "story_text": "Page 13-Steel — The Unyielding Warrior\n\nIn the final trial, the Exile struck Jordan with a heavy wooden staff. The wood snapped in two against Jordan’s chest, but he did not move an inch. He was now a living shield.",
+      "story_text": "Page 13-Steel \u2014 The Unyielding Warrior\n\nIn the final trial, the Exile struck Jordan with a heavy wooden staff. The wood snapped in two against Jordan\u2019s chest, but he did not move an inch. He was now a living shield.",
       "choices": [
         {
           "label": "Continue",
@@ -352,7 +352,7 @@
       "page_id": "act1_p11_shadow",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p11_shadow.png",
-      "story_text": "Page 11-Shadow — The Bell Room\n\nThe Exile hung hundreds of tiny bells from the ceiling of a dark room. Jordan’s task was to walk across without making a single sound. \"If they hear you, you are already dead,\" the Exile whispered.",
+      "story_text": "Page 11-Shadow \u2014 The Bell Room\n\nThe Exile hung hundreds of tiny bells from the ceiling of a dark room. Jordan\u2019s task was to walk across without making a single sound. \"If they hear you, you are already dead,\" the Exile whispered.",
       "choices": [
         {
           "label": "Move Softly",
@@ -365,7 +365,7 @@
       "page_id": "act1_p12_shadow",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p12_shadow.png",
-      "story_text": "Page 12-Shadow — Becoming the Dark\n\nFor years, Jordan practiced moving through the shadows in total silence. He learned to step only when the wind blew and to hide in shadows thinner than a blade. He became a ghost that the world forgot.",
+      "story_text": "Page 12-Shadow \u2014 Becoming the Dark\n\nFor years, Jordan practiced moving through the shadows in total silence. He learned to step only when the wind blew and to hide in shadows thinner than a blade. He became a ghost that the world forgot.",
       "choices": [
         {
           "label": "Continue Training",
@@ -378,7 +378,7 @@
       "page_id": "act1_p13_shadow",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p13_shadow.png",
-      "story_text": "Page 13-Shadow — Vanishing Act\n\nThe Exile tried to track Jordan through a thick forest for an entire night. Even with his master’s sharp eyes, the Exile could not find a single footprint. Jordan had become one with the darkness.",
+      "story_text": "Page 13-Shadow \u2014 Vanishing Act\n\nThe Exile tried to track Jordan through a thick forest for an entire night. Even with his master\u2019s sharp eyes, the Exile could not find a single footprint. Jordan had become one with the darkness.",
       "choices": [
         {
           "label": "Continue",
@@ -391,7 +391,7 @@
       "page_id": "act1_p14_prepare",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p14_prepare.png",
-      "story_text": "Page 14 — Preparing the Journey\n\nWith his training complete, Jordan returned to the Exile's small hut. It was time to leave the mountains behind. He spent his final night sharpening his blades and checking his straps.",
+      "story_text": "Page 14 \u2014 Preparing the Journey\n\nWith his training complete, Jordan returned to the Exile's small hut. It was time to leave the mountains behind. He spent his final night sharpening his blades and checking his straps.",
       "choices": [
         {
           "label": "Check Gear",
@@ -662,7 +662,7 @@
       "page_id": "act1_p15_confirm",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p15_confirm.png",
-      "story_text": "Page 15 — Equipment Selection\n\nJordan locked in his three-item loadout and tightened every strap on his kit. He was ready to move.",
+      "story_text": "Page 15 \u2014 Equipment Selection\n\nJordan locked in his three-item loadout and tightened every strap on his kit. He was ready to move.",
       "choices": [
         {
           "label": "Continue",
@@ -675,7 +675,7 @@
       "page_id": "act1_p16_return",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p16_return.png",
-      "story_text": "Page 16 — Return to the Present\n\nJordan snapped back to the present day. He was back on the cliff, the weight of his gear feeling familiar. He looked at his hands—they were strong now. The boy from the ash was gone.",
+      "story_text": "Page 16 \u2014 Return to the Present\n\nJordan snapped back to the present day. He was back on the cliff, the weight of his gear feeling familiar. He looked at his hands\u2014they were strong now. The boy from the ash was gone.",
       "choices": [
         {
           "label": "Study the Village",
@@ -688,7 +688,7 @@
       "page_id": "act1_p17_route",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p17_route.png",
-      "story_text": "Page 17 — The Infiltration Route\n\nThe fires were bright, and guards patrolled every corner. Jordan had to choose his path carefully. One mistake would alert the entire clan. How should he enter?",
+      "story_text": "Page 17 \u2014 The Infiltration Route\n\nThe fires were bright, and guards patrolled every corner. Jordan had to choose his path carefully. One mistake would alert the entire clan. How should he enter?",
       "choices": [
         {
           "label": "A) The Rooftops",
@@ -711,7 +711,7 @@
       "page_id": "act2_p18a_climb",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p18a_climb.png",
-      "story_text": "Page 18 — The High Climb\n\nJordan reached the base of the village wall and chose how to get up to the rooftops before the patrols noticed.",
+      "story_text": "Page 18 \u2014 The High Climb\n\nJordan reached the base of the village wall and chose how to get up to the rooftops before the patrols noticed.",
       "choices": [
         {
           "label": "Use Rope to scale the wall",
@@ -742,7 +742,7 @@
       "page_id": "act2_p19a_walk",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19a_walk.png",
-      "story_text": "Page 19 — The Silent Walk\n\nJordan crossed the rooftops above the guards, keeping low while watching for the next patrol ahead.",
+      "story_text": "Page 19 \u2014 The Silent Walk\n\nJordan crossed the rooftops above the guards, keeping low while watching for the next patrol ahead.",
       "choices": [
         {
           "label": "Keep Moving",
@@ -755,7 +755,7 @@
       "page_id": "act2_p20a_beam",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p20a_beam.png",
-      "story_text": "Page 20 — The Beam Patrol\n\nA lone guard blocked the narrow beam route. Jordan had to choose whether to slip by or force his way through.",
+      "story_text": "Page 20 \u2014 The Beam Patrol\n\nA lone guard blocked the narrow beam route. Jordan had to choose whether to slip by or force his way through.",
       "choices": [
         {
           "label": "Slip past in the shadows",
@@ -788,7 +788,7 @@
       "page_id": "act2_p21a_lockbox",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p21a_lockbox.png",
-      "story_text": "Page 21 — The Locked Sky-Box\n\nNear a chimney, Jordan found an iron chest marked with the Fire Master’s seal.",
+      "story_text": "Page 21 \u2014 The Locked Sky-Box\n\nNear a chimney, Jordan found an iron chest marked with the Fire Master\u2019s seal.",
       "choices": [
         {
           "label": "Open it with Vial of Acid",
@@ -812,7 +812,7 @@
       "page_id": "act2_p18b_shadowwalk",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p18b_shadowwalk.png",
-      "story_text": "Page 18 — The Shadow Walk\n\nJordan stepped into the streets and moved toward the inner district.",
+      "story_text": "Page 18 \u2014 The Shadow Walk\n\nJordan stepped into the streets and moved toward the inner district.",
       "choices": [
         {
           "label": "Move through the dark alleys",
@@ -846,7 +846,7 @@
       "page_id": "act2_p19b_streetfight",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19b_streetfight.png",
-      "story_text": "Page 19 — Street Ambush\n\nWithout full shadow cover, Jordan was spotted and attacked in a tight alley fight. He escaped, but not without taking a hit.",
+      "story_text": "Page 19 \u2014 Street Ambush\n\nWithout full shadow cover, Jordan was spotted and attacked in a tight alley fight. He escaped, but not without taking a hit.",
       "choices": [
         {
           "label": "Regroup and move forward",
@@ -861,7 +861,7 @@
       "page_id": "act2_p19b_scout",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19b_scout.png",
-      "story_text": "Page 19 — The Dying Scout\n\nJordan found a wounded Fire Clan scout slumped against a crate, barely conscious.",
+      "story_text": "Page 19 \u2014 The Dying Scout\n\nJordan found a wounded Fire Clan scout slumped against a crate, barely conscious.",
       "choices": [
         {
           "label": "Use a Bandage",
@@ -896,7 +896,7 @@
       "page_id": "act2_p20b_gate",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p20b_gate.png",
-      "story_text": "Page 20B — The Patrol Gate\n\nA massive iron gate stood between Jordan and the inner square. Two guards stood at attention with long spears.\n\nIf Jordan stayed unseen, timing alone could get him through. If the alarm was up, he needed a direct answer to the guard line.",
+      "story_text": "Page 20B \u2014 The Patrol Gate\n\nA massive iron gate stood between Jordan and the inner square. Two guards stood at attention with long spears.\n\nIf Jordan stayed unseen, timing alone could get him through. If the alarm was up, he needed a direct answer to the guard line.",
       "choices": [
         {
           "label": "Slip through while they look away",
@@ -945,13 +945,14 @@
       "page_id": "act2_p18c_sludge",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p18c_sludge.png",
-      "story_text": "Page 18 — The Sludge Tunnel\n\nThe sewer route stank of sulfur and rot. Jordan decided whether to rush through or move with caution.",
+      "story_text": "Page 18 \u2014 The Sludge Tunnel\n\nThe sewer route stank of sulfur and rot. Jordan decided whether to rush through or move with caution.",
       "choices": [
         {
           "label": "Rush through the tunnel",
           "effects": {
             "set_hook_state": "Damaged",
-            "change_health": -1
+            "change_health": -1,
+            "notice_message": "You rushed, slipped in the sludge, lost health, and your rope was damaged."
           },
           "next_page_id": "act2_p19c_creature"
         },
@@ -966,7 +967,7 @@
       "page_id": "act2_p19c_creature",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19c_creature.png",
-      "story_text": "Page 19 — The Sewer Creature\n\nA fire-lizard burst from the water and lunged at Jordan in the dark tunnel.",
+      "story_text": "Page 19 \u2014 The Sewer Creature\n\nA fire-lizard burst from the water and lunged at Jordan in the dark tunnel.",
       "choices": [
         {
           "label": "Continue to the exit",
@@ -1010,13 +1011,13 @@
           "requirements": {
             "discipline_is": "Reflex"
           },
-          "text": "Page 19 — The Sewer Creature\n\nJordan reacted instantly, cutting across the creature’s arc and driving it back into the water."
+          "text": "Page 19 \u2014 The Sewer Creature\n\nJordan reacted instantly, cutting across the creature\u2019s arc and driving it back into the water."
         },
         {
           "requirements": {
             "discipline_is": "Steel"
           },
-          "text": "Page 19 — The Sewer Creature\n\nJordan braced for impact, overpowered the lizard at close range, and forced it off the path."
+          "text": "Page 19 \u2014 The Sewer Creature\n\nJordan braced for impact, overpowered the lizard at close range, and forced it off the path."
         },
         {
           "requirements": {
@@ -1025,7 +1026,7 @@
               "Steel"
             ]
           },
-          "text": "Page 19 — The Sewer Creature\n\nJordan fought the lizard in a desperate struggle, eventually forcing it away and pressing forward through the tunnel."
+          "text": "Page 19 \u2014 The Sewer Creature\n\nJordan fought the lizard in a desperate struggle, eventually forcing it away and pressing forward through the tunnel."
         }
       ]
     },
@@ -1033,7 +1034,7 @@
       "page_id": "act2_p20c_dirty",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p20c_dirty.png",
-      "story_text": "Page 20C — The Dirty Choice\n\nJordan reached the exit ladder with his arm pulsing in pain. A clean bandage in his kit could seal the wound fast, but a filthy strip from a fallen scout was the only backup.",
+      "story_text": "Page 20C \u2014 The Dirty Choice\n\nJordan reached the exit ladder with his arm pulsing in pain. A clean bandage in his kit could seal the wound fast, but a filthy strip from a fallen scout was the only backup.",
       "choices": [
         {
           "label": "Use your clean bandage",
@@ -1055,7 +1056,8 @@
               "bleeding": false,
               "infected": true
             },
-            "change_health": -1
+            "change_health": -1,
+            "notice_message": "The dirty bandage stopped the bleeding but caused infection and health loss."
           },
           "next_page_id": "act2_p21c_lock",
           "requirements": {
@@ -1064,7 +1066,10 @@
         },
         {
           "label": "Ignore the wound and climb",
-          "effects": {},
+          "effects": {
+            "change_health": -1,
+            "notice_message": "You ignored the bleeding wound and lost health while climbing."
+          },
           "next_page_id": "act2_p21c_lock"
         }
       ]
@@ -1073,7 +1078,7 @@
       "page_id": "act2_p21c_lock",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p21c_lock.png",
-      "story_text": "Page 21 — The Acidic Lock\n\nA rusted iron grate blocked the sewer exit into the village core.",
+      "story_text": "Page 21 \u2014 The Acidic Lock\n\nA rusted iron grate blocked the sewer exit into the village core.",
       "choices": [
         {
           "label": "Melt the hinges with Vial of Acid",
@@ -1106,7 +1111,7 @@
       "page_id": "act2_p22_rooftop_exit",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p22_rooftop_exit.png",
-      "story_text": "Page 22 — Into the Inner Ring\n\nJordan dropped from the rooftops into the inner ring of the village, where the Fire Master’s guards were already mobilizing.",
+      "story_text": "Page 22 \u2014 Into the Inner Ring\n\nJordan dropped from the rooftops into the inner ring of the village, where the Fire Master\u2019s guards were already mobilizing.",
       "choices": [
         {
           "label": "Keep moving toward the square",
@@ -1119,7 +1124,7 @@
       "page_id": "act2_p22_street_exit",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p22_street_exit.png",
-      "story_text": "Page 22 — Through the Gate\n\nJordan slipped beyond the patrol gate and into the inner district, where the air was hotter and patrols thicker.",
+      "story_text": "Page 22 \u2014 Through the Gate\n\nJordan slipped beyond the patrol gate and into the inner district, where the air was hotter and patrols thicker.",
       "choices": [
         {
           "label": "Push toward the central square",
@@ -1132,7 +1137,7 @@
       "page_id": "act2_p22_sewer_exit",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p22_sewer_exit.png",
-      "story_text": "Page 22 — Sewer Breakout\n\nJordan climbed from the sewer into the inner village, wiping grime from his blade as alarms echoed in the distance.",
+      "story_text": "Page 22 \u2014 Sewer Breakout\n\nJordan climbed from the sewer into the inner village, wiping grime from his blade as alarms echoed in the distance.",
       "choices": [
         {
           "label": "Move toward the central square",
@@ -1145,10 +1150,10 @@
       "page_id": "act2_p23_inner_ring",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p23_inner_ring.png",
-      "story_text": "Page 23 — Inner Ring Pressure\n\nFire Clan elites tightened a perimeter around the plaza. Jordan used every shadow and corner he could find to close the distance.",
+      "story_text": "Page 23 \u2014 Inner Ring Pressure\n\nFire Clan elites tightened a perimeter around the plaza. Jordan used every shadow and corner he could find to close the distance.",
       "choices": [
         {
-          "label": "Close in on the Master’s platform",
+          "label": "Close in on the Master\u2019s platform",
           "effects": {},
           "next_page_id": "act2_p24_final_steps"
         }
@@ -1158,7 +1163,7 @@
       "page_id": "act2_p24_final_steps",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p24_final_steps.png",
-      "story_text": "Page 24 — Final Steps\n\nJordan stepped into the center lane of the village square. Heat rolled from braziers as the Fire Master emerged to face him.",
+      "story_text": "Page 24 \u2014 Final Steps\n\nJordan stepped into the center lane of the village square. Heat rolled from braziers as the Fire Master emerged to face him.",
       "choices": [
         {
           "label": "Face the Fire Master",
@@ -1171,7 +1176,7 @@
       "page_id": "act3_p25_confrontation",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p25_confrontation.png",
-      "story_text": "Page 25 — The Confrontation\n\nJordan stepped into the center of the village square. The Fire Master stood waiting, his red cloak snapping in the wind. He didn't speak a word. He simply flicked his wrist, sending a sharp kunai whistling toward Jordan's heart.",
+      "story_text": "Page 25 \u2014 The Confrontation\n\nJordan stepped into the center of the village square. The Fire Master stood waiting, his red cloak snapping in the wind. He didn't speak a word. He simply flicked his wrist, sending a sharp kunai whistling toward Jordan's heart.",
       "choices": [
         {
           "label": "Deflect the kunai",
@@ -1197,7 +1202,7 @@
       "page_id": "act3_p26_dirty_trick",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p26_dirty_trick.png",
-      "story_text": "Page 26 — The Dirty Trick\n\nThe Master blasted burning ash into Jordan’s face and lunged through the haze, forcing an immediate reaction.",
+      "story_text": "Page 26 \u2014 The Dirty Trick\n\nThe Master blasted burning ash into Jordan\u2019s face and lunged through the haze, forcing an immediate reaction.",
       "choices": [
         {
           "label": "Read his movement through the ash",
@@ -1236,7 +1241,7 @@
       "page_id": "act3_p27_final",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p27_final.png",
-      "story_text": "Page 27 — The Final Exchange\n\nThe Master’s blade flared red as he launched a crushing finishing strike. Jordan committed to one final counter.",
+      "story_text": "Page 27 \u2014 The Final Exchange\n\nThe Master\u2019s blade flared red as he launched a crushing finishing strike. Jordan committed to one final counter.",
       "choices": [
         {
           "label": "Kick Vial of Acid under his footing",
@@ -1292,7 +1297,7 @@
       "page_id": "act3_p28_flight",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p28_flight.png",
-      "story_text": "Page 28 — The Master’s Flight\n\nThe Master was wounded and breathing hard. He realized he had underestimated the seeker. \"You have learned well from the Exile,\" the Master hissed, \"but you will not survive the mountain.\" He threw a flash-powder bomb and vanished into a cloud of red smoke, fleeing toward the volcano.",
+      "story_text": "Page 28 \u2014 The Master\u2019s Flight\n\nThe Master was wounded and breathing hard. He realized he had underestimated the seeker. \"You have learned well from the Exile,\" the Master hissed, \"but you will not survive the mountain.\" He threw a flash-powder bomb and vanished into a cloud of red smoke, fleeing toward the volcano.",
       "choices": [
         {
           "label": "Pursue Him",
@@ -1305,7 +1310,7 @@
       "page_id": "act3_p29_base",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p29_base.png",
-      "story_text": "Page 29 — The Mountain Base\n\nJordan reached the edge of the village, where the ground began to slope upward toward the smoking peak. He studied the two routes ahead and steadied his breathing before the ascent.",
+      "story_text": "Page 29 \u2014 The Mountain Base\n\nJordan reached the edge of the village, where the ground began to slope upward toward the smoking peak. He studied the two routes ahead and steadied his breathing before the ascent.",
       "choices": [
         {
           "label": "Choose the mountain approach",
@@ -1318,7 +1323,7 @@
           "requirements": {
             "has_item": "Cavern Clue"
           },
-          "text": "Page 29 — The Mountain Base\n\nJordan reached the edge of the village, where the ground began to slope upward toward the smoking peak. As he watched the cliffside, he remembered the scout's warning about a crow mark hidden along that wall."
+          "text": "Page 29 \u2014 The Mountain Base\n\nJordan reached the edge of the village, where the ground began to slope upward toward the smoking peak. As he watched the cliffside, he remembered the scout's warning about a crow mark hidden along that wall."
         }
       ]
     },
@@ -1326,7 +1331,7 @@
       "page_id": "act4_p30_paths",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p30_paths.png",
-      "story_text": "Page 30 — The Mountain Paths\n\nJordan stood at the base of the volcano. The air was thick with sulfur, and the ground hummed beneath his feet.\n\nA) The Cliffside: A vertical wall of rock leading straight toward the high ledges.\nB) The Ash Forest: A route through grey trees where Fire Clan patrols hide.",
+      "story_text": "Page 30 \u2014 The Mountain Paths\n\nJordan stood at the base of the volcano. The air was thick with sulfur, and the ground hummed beneath his feet.\n\nA) The Cliffside: A vertical wall of rock leading straight toward the high ledges.\nB) The Ash Forest: A route through grey trees where Fire Clan patrols hide.",
       "choices": [
         {
           "label": "A) The Cliffside",
@@ -1344,7 +1349,7 @@
       "page_id": "act4_p31a_wall",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31a_wall.png",
-      "story_text": "Page 31A — The Vertical Wall\n\nThe trail ended at a massive cliff face. To reach the top, Jordan had to choose how he would climb before the patrols spotted him.",
+      "story_text": "Page 31A \u2014 The Vertical Wall\n\nThe trail ended at a massive cliff face. To reach the top, Jordan had to choose how he would climb before the patrols spotted him.",
       "choices": [
         {
           "label": "Climb by hand",
@@ -1383,7 +1388,7 @@
       "page_id": "act4_p31b_ambush",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31b_ambush.png",
-      "story_text": "Page 31B — The Shadow Ambush\n\nThe forest was silent, the trees covered in a thick layer of grey ash. Suddenly, two Fire Clan ninjas dropped from the branches.\n\nUse Smoke Bomb: Jordan vanished before they could strike. (Safe).\nReflex Discipline: Jordan countered their first strikes and fought his way through. (Safe).\nOther: Jordan won the fight, but was slashed across the ribs. Health Tier drops by 1.",
+      "story_text": "Page 31B \u2014 The Shadow Ambush\n\nThe forest was silent, the trees covered in a thick layer of grey ash. Suddenly, two Fire Clan ninjas dropped from the branches.\n\nUse Smoke Bomb: Jordan vanished before they could strike. (Safe).\nReflex Discipline: Jordan countered their first strikes and fought his way through. (Safe).\nOther: Jordan won the fight, but was slashed across the ribs. Health Tier drops by 1.",
       "choices": [
         {
           "label": "Continue",
@@ -1396,11 +1401,14 @@
       "page_id": "act4_p31c_crow",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31c_crow.png",
-      "story_text": "Page 31C — The Crow’s Mark\n\nUsing the clue from the dying scout, Jordan found the hidden lever behind the mark of the crow. A section of rock slid aside, revealing a cool tunnel that cut deeper into the mountain.",
+      "story_text": "Page 31C \u2014 Ambush in the Crow Tunnel\n\nTwo Fire Clan scouts dropped from above and attacked at once. Jordan fought through the 2v1 ambush, took a hard hit, and forced his way forward to the bridge.",
       "choices": [
         {
           "label": "Continue",
-          "effects": {},
+          "effects": {
+            "change_health": -1,
+            "notice_message": "Two scouts ambushed you in a 2v1 fight. You won, but lost health."
+          },
           "next_page_id": "act4_p32_bridge"
         }
       ]
@@ -1409,7 +1417,7 @@
       "page_id": "act4_p32_bridge",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p32_bridge.png",
-      "story_text": "Page 32 — The Bridge of Fire\n\nJordan reached a narrow stone bridge over a river of lava. He could sabotage the crossing if he had acid. Without it, a Fire Clan Elite would catch him on the span.",
+      "story_text": "Page 32 \u2014 The Bridge of Fire\n\nJordan reached a narrow stone bridge over a river of lava. He could sabotage the crossing if he had acid. Without it, a Fire Clan Elite would catch him on the span.",
       "choices": [
         {
           "label": "Melt the bridge supports with Vial of Acid",
@@ -1432,19 +1440,19 @@
       "page_id": "act4_p32b_elite_fight",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p32b_elite_fight.png",
-      "story_text": "Page 32B — Duel on the Bridge\n\nA Fire Clan Elite blocked the far side of the bridge and drove forward with a long spear. Sparks burst as Jordan met the strike over the lava.",
+      "story_text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan Elite blocked the far side of the bridge and drove forward with a long spear. Sparks burst as Jordan met the strike over the lava.",
       "story_text_variants": [
         {
           "requirements": {
             "discipline_is": "Reflex"
           },
-          "text": "Page 32B — Duel on the Bridge\n\nJordan slipped past the spearpoint and ended the duel with a clean counter across the Elite's shoulder. He took the far side of the bridge unharmed."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan slipped past the spearpoint and ended the duel with a clean counter across the Elite's shoulder. He took the far side of the bridge unharmed."
         },
         {
           "requirements": {
             "discipline_is": "Steel"
           },
-          "text": "Page 32B — Duel on the Bridge\n\nJordan absorbed the first impact, broke the Elite's stance with raw power, and threw him off balance into the stone rail."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan absorbed the first impact, broke the Elite's stance with raw power, and threw him off balance into the stone rail."
         },
         {
           "requirements": {
@@ -1453,7 +1461,7 @@
               "Steel"
             ]
           },
-          "text": "Page 32B — Duel on the Bridge\n\nJordan won the duel, but the spear cut deep across his side before he disarmed the Elite and forced his way to the far ledge."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan won the duel, but the spear cut deep across his side before he disarmed the Elite and forced his way to the far ledge."
         }
       ],
       "choices": [
@@ -1492,24 +1500,70 @@
       "page_id": "act4_p33_crossing",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p33_crossing.png",
-      "story_text": "Page 33 — The Final Crossing\n\nJordan reached the high ledge outside the Master’s sanctum. A massive crack split the stone, and he had seconds to choose how to cross before the mountain shook again.",
+      "story_text": "Page 33 \u2014 The Final Crossing\n\nJordan reached the high ledge outside the Master\u2019s sanctum. A massive crack split the stone, and he had seconds to choose how to cross before the mountain shook again.",
       "choices": [
         {
           "label": "Swing across the lava pit",
+          "requirements": {
+            "has_item": "Rope"
+          },
           "effects": {
             "set_flag": {
               "cross_swing": true,
-              "cross_ledge": false
+              "cross_ledge": false,
+              "ledge_secure": false,
+              "cross_ledge_secure": false
             }
           },
           "next_page_id": "act4_p34a_offering"
         },
         {
           "label": "Take the narrow ledge deeper inside",
+          "requirements": {
+            "discipline_is": "Reflex"
+          },
           "effects": {
             "set_flag": {
               "cross_ledge": true,
-              "cross_swing": false
+              "cross_swing": false,
+              "ledge_secure": true,
+              "cross_ledge_secure": true
+            }
+          },
+          "next_page_id": "act4_p34a_offering"
+        },
+        {
+          "label": "Take the narrow ledge deeper inside",
+          "requirements": {
+            "has_item": "Rope",
+            "discipline_not_in": [
+              "Reflex"
+            ]
+          },
+          "effects": {
+            "set_flag": {
+              "cross_ledge": true,
+              "cross_swing": false,
+              "ledge_secure": true,
+              "cross_ledge_secure": true
+            }
+          },
+          "next_page_id": "act4_p34a_offering"
+        },
+        {
+          "label": "Take the narrow ledge deeper inside",
+          "requirements": {
+            "lacks_item": "Rope",
+            "discipline_not_in": [
+              "Reflex"
+            ]
+          },
+          "effects": {
+            "set_flag": {
+              "cross_ledge": true,
+              "cross_swing": false,
+              "ledge_secure": false,
+              "cross_ledge_secure": false
             }
           },
           "next_page_id": "act4_p34a_offering"
@@ -1520,7 +1574,7 @@
       "page_id": "act4_p34a_offering",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p34a_offering.png",
-      "story_text": "Page 34A — The Offering\n\nThe camera cuts deep into the Volcano Core. The Fire Master stood upon a pedestal of obsidian, surrounding by white-hot magma. He cast his shattered helmet into the fire. \"Ancient Spirit of the Flame, I offer my soul!\" he roared.",
+      "story_text": "Page 34A \u2014 The Offering\n\nThe camera cuts deep into the Volcano Core. The Fire Master stood upon a pedestal of obsidian, surrounding by white-hot magma. He cast his shattered helmet into the fire. \"Ancient Spirit of the Flame, I offer my soul!\" he roared.",
       "choices": [
         {
           "label": "The Spirit Awakens",
@@ -1533,7 +1587,7 @@
       "page_id": "act4_p34b_fusion",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p34b_fusion.png",
-      "story_text": "Page 34B — The Fusion\n\nA massive, spectral entity made of pure white fire emerged from the lava, coiling around the Master like a giant serpent. Jordan, mid-crossing, could hear the Master’s screams turn into a thunderous, otherworldly laugh. The Master’s body grew and shifted into a terrifying avatar of rage.",
+      "story_text": "Page 34B \u2014 The Fusion\n\nA massive, spectral entity made of pure white fire emerged from the lava, coiling around the Master like a giant serpent. Jordan, mid-crossing, could hear the Master\u2019s screams turn into a thunderous, otherworldly laugh. The Master\u2019s body grew and shifted into a terrifying avatar of rage.",
       "choices": [
         {
           "label": "The Mountain Shakes",
@@ -1546,7 +1600,7 @@
       "page_id": "act4_p34c_shockwave",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p34c_shockwave.png",
-      "story_text": "Page 34C — The Shockwave\n\nThe transformation was complete. The new Spirit Form let out a pulse of energy so powerful it shattered the stone pillars. A massive shockwave ripped through the volcano, reaching the outer ledges where Jordan was mid-crossing.",
+      "story_text": "Page 34C \u2014 The Shockwave\n\nThe transformation was complete. The new Spirit Form let out a pulse of energy so powerful it shattered the stone pillars. A massive shockwave ripped through the volcano, reaching the outer ledges where Jordan was mid-crossing.",
       "choices": [
         {
           "label": "The Quake Hits",
@@ -1559,42 +1613,74 @@
       "page_id": "act4_p35_quake",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35_quake.png",
-      "story_text": "Page 35 — The Great Quake\n\nThe shockwave tore through Jordan’s crossing route. In that instant, the outcome depended on whether he was on the rope swing or the ledge.",
+      "story_text": "Page 35 \u2014 The Great Quake\n\nThe mountain exploded with a violent shockwave, and Jordan reacted on instinct.",
       "choices": [
         {
-          "label": "Rope holds through the blast",
-          "effects": {},
-          "next_page_id": "act4_p35a_swing_hold",
-          "requirements": {
-            "flag_true": "cross_swing",
-            "hook_state_is": "Good"
-          }
-        },
-        {
-          "label": "Rope snaps over the lava",
-          "effects": {},
-          "next_page_id": "act4_p35b_swing_snap",
+          "label": "Continue",
           "requirements": {
             "flag_true": "cross_swing",
             "hook_state_is": "Damaged"
-          }
+          },
+          "effects": {},
+          "next_page_id": "act4_p35b_swing_snap"
         },
         {
-          "label": "Ledge collapse into a hidden chute",
+          "label": "Continue",
+          "requirements": {
+            "flag_true": "cross_swing",
+            "hook_state_is": "Intact"
+          },
           "effects": {},
-          "next_page_id": "act4_p35c_ledge_reflex",
+          "next_page_id": "act4_p35a_swing_hold"
+        },
+        {
+          "label": "Continue",
+          "requirements": {
+            "flag_true": "cross_ledge_secure"
+          },
+          "effects": {},
+          "next_page_id": "act4_p35c_ledge_reflex"
+        },
+        {
+          "label": "Continue",
           "requirements": {
             "flag_true": "cross_ledge",
-            "discipline_is": "Reflex"
-          }
+            "flag_false": "cross_ledge_secure"
+          },
+          "effects": {
+            "change_health": -1,
+            "notice_message": "You fell into open rock during the ledge collapse and lost health."
+          },
+          "next_page_id": "act4_p35d_ledge_recover"
+        }
+      ],
+      "story_text_variants": [
+        {
+          "requirements": {
+            "flag_true": "cross_swing",
+            "hook_state_is": "Damaged"
+          },
+          "text": "Page 35 \u2014 Rope Snap\n\nJordan was on the rope when the blast hit. The damaged line snapped and he dropped into the lava below."
         },
         {
-          "label": "Ledge collapse into open rock",
-          "effects": {},
-          "next_page_id": "act4_p35d_ledge_recover",
           "requirements": {
-            "flag_true": "cross_ledge"
-          }
+            "flag_true": "cross_swing",
+            "hook_state_is": "Intact"
+          },
+          "text": "Page 35 \u2014 Rope Hold\n\nJordan was on the rope when the blast hit. He held firm, slammed onto solid ground, and stayed alive."
+        },
+        {
+          "requirements": {
+            "flag_true": "cross_ledge_secure"
+          },
+          "text": "Page 35 \u2014 Hidden Chute\n\nAs the ledge collapsed, Jordan controlled the fall and dropped into a hidden chute."
+        },
+        {
+          "requirements": {
+            "flag_true": "cross_ledge",
+            "flag_false": "cross_ledge_secure"
+          },
+          "text": "Page 35 \u2014 Hard Landing\n\nThe ledge collapsed under Jordan. Without enough control, he crashed into open rock below."
         }
       ]
     },
@@ -1602,7 +1688,7 @@
       "page_id": "act4_p35a_swing_hold",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35a_swing_hold.png",
-      "story_text": "Page 35A — Rope Hold\n\nJordan kept both hands on the line and swung through the blast, slamming onto the far side but staying alive.",
+      "story_text": "Page 35A \u2014 Rope Hold\n\nJordan kept both hands on the line and swung through the blast, slamming onto the far side but staying alive.",
       "choices": [
         {
           "label": "Push into the sanctum",
@@ -1615,7 +1701,7 @@
       "page_id": "act4_p35b_swing_snap",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35b_swing_snap.png",
-      "story_text": "Page 35B — Rope Snap\n\nThe damaged line failed mid-swing. Jordan dropped into the lava before he could recover his grip.",
+      "story_text": "Page 35B \u2014 Rope Snap\n\nThe damaged line failed mid-swing. Jordan dropped into the lava before he could recover his grip.",
       "choices": [
         {
           "label": "Game Over",
@@ -1628,7 +1714,7 @@
       "page_id": "act4_p35c_ledge_reflex",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35c_ledge_reflex.png",
-      "story_text": "Page 35C — Reflex Descent\n\nThe ledge shattered, but Jordan twisted with the fall and rode a hidden ash chute into a sealed cavern below.",
+      "story_text": "Page 35C \u2014 Reflex Descent\n\nThe ledge shattered, but Jordan twisted with the fall and rode a hidden ash chute into a sealed cavern below.",
       "choices": [
         {
           "label": "Enter the hidden cavern",
@@ -1641,7 +1727,7 @@
       "page_id": "act4_p35d_ledge_recover",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35d_ledge_recover.png",
-      "story_text": "Page 35D — Hard Landing\n\nThe ledge gave way beneath Jordan. He crashed through volcanic stone, recovered, and forced his way toward the sanctum with injuries.",
+      "story_text": "Page 35D \u2014 Hard Landing\n\nThe ledge gave way beneath Jordan. He crashed through volcanic stone, recovered, and forced his way toward the sanctum with injuries.",
       "choices": [
         {
           "label": "Continue to the sanctum",
@@ -1656,7 +1742,7 @@
       "page_id": "act4_p36_cavern",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p36_cavern.png",
-      "story_text": "Page 36 — The Hidden Cavern\n\nJordan stood up in a secret chamber. A small pool of glowing blue water bubbled in the center—the Healing Spring.\n\nThe Healing Spring: Jordan drank the water. (Heals 2 Health Tiers / Cures Infection & Bleeding).\nThe Discovery: On an ancient altar, Jordan found the Frost-Bitten Dagger.\nEffect: This blade deals double damage to the Master in his Fire Spirit Form.",
+      "story_text": "Page 36 \u2014 The Hidden Cavern\n\nJordan stood up in a secret chamber. A small pool of glowing blue water bubbled in the center\u2014the Healing Spring.\n\nThe Healing Spring: Jordan drank the water. (Heals 2 Health Tiers / Cures Infection & Bleeding).\nThe Discovery: On an ancient altar, Jordan found the Frost-Bitten Dagger.\nEffect: This blade deals double damage to the Master in his Fire Spirit Form.",
       "choices": [
         {
           "label": "Continue",
@@ -1676,7 +1762,7 @@
       "page_id": "act5_p37_sanctum",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p37_sanctum.png",
-      "story_text": "Page 37 — The Sanctum of the Unbound\n\nJordan stepped into the heart of the volcano. The Fire Master was gone, replaced by a ten-foot-tall entity of swirling white flame and cracked obsidian. The air didn't just burn; it hummed with a violent, rhythmic energy.\n\n\"The Guardians taught you that discipline is a cage for the elements,\" the Master’s voice boomed. \"But I have taught the chaos to obey me. I am the storm that chooses where the lightning falls. You are merely a survivor of a failed philosophy.\"",
+      "story_text": "Page 37 \u2014 The Sanctum of the Unbound\n\nJordan stepped into the heart of the volcano. The Fire Master was gone, replaced by a ten-foot-tall entity of swirling white flame and cracked obsidian. The air didn't just burn; it hummed with a violent, rhythmic energy.\n\n\"The Guardians taught you that discipline is a cage for the elements,\" the Master\u2019s voice boomed. \"But I have taught the chaos to obey me. I am the storm that chooses where the lightning falls. You are merely a survivor of a failed philosophy.\"",
       "choices": [
         {
           "label": "Assume the Guardian Stance",
@@ -1689,7 +1775,7 @@
       "page_id": "act5_p38_strike",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p38_strike.png",
-      "story_text": "Page 38 — The Shattered Strike\n\nThe Master lunged through a glitch in space, appearing in three places at once. Jordan had one instant to pick the right response before the blades converged.",
+      "story_text": "Page 38 \u2014 The Shattered Strike\n\nThe Master lunged through a glitch in space, appearing in three places at once. Jordan had one instant to pick the right response before the blades converged.",
       "choices": [
         {
           "label": "Plant and catch the true blade",
@@ -1743,7 +1829,7 @@
       "page_id": "act5_p39_exchange",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p39_exchange.png",
-      "story_text": "Page 39 — The Disciplined Exchange (Bridge Page)\n\nJordan’s counter-move worked, but the heat singed his cloak. The Master recoiled, his movements jagged but precise. \"You move with the grace of the dead,\" he hissed. Jordan breathed through the heat. \"My ancestors didn't teach me to hide from the flame. They taught me to walk through it. Your chaos is just a loud noise. I am the silence that follows.\"",
+      "story_text": "Page 39 \u2014 The Disciplined Exchange (Bridge Page)\n\nJordan\u2019s counter-move worked, but the heat singed his cloak. The Master recoiled, his movements jagged but precise. \"You move with the grace of the dead,\" he hissed. Jordan breathed through the heat. \"My ancestors didn't teach me to hide from the flame. They taught me to walk through it. Your chaos is just a loud noise. I am the silence that follows.\"",
       "choices": [
         {
           "label": "Continue",
@@ -1756,7 +1842,7 @@
       "page_id": "act5_p40_pillars",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p40_pillars.png",
-      "story_text": "Page 40 — The Rising Pillars\n\nThe Master drove his palm into the floor. Jagged pillars erupted upward in a shifting maze meant to crush Jordan against the ceiling.",
+      "story_text": "Page 40 \u2014 The Rising Pillars\n\nThe Master drove his palm into the floor. Jagged pillars erupted upward in a shifting maze meant to crush Jordan against the ceiling.",
       "choices": [
         {
           "label": "Anchor and swing through the pillars",
@@ -1811,7 +1897,7 @@
       "page_id": "act5_p41_history",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p41_history.png",
-      "story_text": "Page 41 — The Weight of History (Bridge Page)\n\nJordan stood atop a fallen pillar, looking down at the Master. \"The Wind and Earth clans didn't join you because they believed in your chaos,\" Jordan said. \"They joined you because they were afraid of our order. They feared what a Guardian could do.\" The Master’s white light flared. \"Fear is the only discipline that matters!\"",
+      "story_text": "Page 41 \u2014 The Weight of History (Bridge Page)\n\nJordan stood atop a fallen pillar, looking down at the Master. \"The Wind and Earth clans didn't join you because they believed in your chaos,\" Jordan said. \"They joined you because they were afraid of our order. They feared what a Guardian could do.\" The Master\u2019s white light flared. \"Fear is the only discipline that matters!\"",
       "choices": [
         {
           "label": "Continue",
@@ -1824,7 +1910,7 @@
       "page_id": "act5_p42_whip",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p42_whip.png",
-      "story_text": "Page 42 — The Singularity Whip\n\nThe Master's arm unfurled into a whip of white plasma, carving voids into the air that pulled at Jordan's body and gear.",
+      "story_text": "Page 42 \u2014 The Singularity Whip\n\nThe Master's arm unfurled into a whip of white plasma, carving voids into the air that pulled at Jordan's body and gear.",
       "choices": [
         {
           "label": "Use the Frost-Bitten Dagger",
@@ -1870,7 +1956,7 @@
       "page_id": "act5_p43_breaking",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p43_breaking.png",
-      "story_text": "Page 43 — The Breaking Point (Bridge Page)\n\nThe Master let out a shriek as the voids collapsed inward. His obsidian skin began to flake away, revealing the terrified human eyes beneath the fire. \"I was promised eternity!\" he roared. Jordan gripped his hilt with both hands. \"You were promised a grave. You just had to dig it yourself.\"",
+      "story_text": "Page 43 \u2014 The Breaking Point (Bridge Page)\n\nThe Master let out a shriek as the voids collapsed inward. His obsidian skin began to flake away, revealing the terrified human eyes beneath the fire. \"I was promised eternity!\" he roared. Jordan gripped his hilt with both hands. \"You were promised a grave. You just had to dig it yourself.\"",
       "choices": [
         {
           "label": "Continue",
@@ -1883,7 +1969,7 @@
       "page_id": "act5_p44_last_stand",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p44_last_stand.png",
-      "story_text": "Page 44 — The Master’s Last Stand\n\nThe Master abandoned his body and compressed the volcano core into a white-hot vacuum. The arena bent inward as Jordan fought to stay in control.",
+      "story_text": "Page 44 \u2014 The Master\u2019s Last Stand\n\nThe Master abandoned his body and compressed the volcano core into a white-hot vacuum. The arena bent inward as Jordan fought to stay in control.",
       "choices": [
         {
           "label": "Anchor to the stone and advance",
@@ -1938,7 +2024,7 @@
       "page_id": "act5_p45_breath",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p45_breath.png",
-      "story_text": "Page 45 — The Final Breath (Bridge Page)\n\nThe vacuum broke. Jordan and the Master stood face-to-face in the center of a dying volcano. The Master was a withered husk, his white fire fading into grey smoke. \"They are... waiting for you,\" the Master wheezed. \"Wind. Earth. They won't fight you with fire. They will fight you with the world itself.\"",
+      "story_text": "Page 45 \u2014 The Final Breath (Bridge Page)\n\nThe vacuum broke. Jordan and the Master stood face-to-face in the center of a dying volcano. The Master was a withered husk, his white fire fading into grey smoke. \"They are... waiting for you,\" the Master wheezed. \"Wind. Earth. They won't fight you with fire. They will fight you with the world itself.\"",
       "choices": [
         {
           "label": "Continue",
@@ -1951,7 +2037,7 @@
       "page_id": "act5_p46_inheritance",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p46_inheritance.png",
-      "story_text": "Page 46 — The Guardian’s Inheritance\n\nJordan delivered the final strike. As the steel pierced the Master’s core, the white fire didn't vanish—it surged.\nThe Absorption: The raw energy flowed up the blade, coiling around Jordan's arms. Jordan screamed as the Disciplined Chaos seared into his veins. Because of his Balanced Discipline, he survived the intake. The white fire turned to a steady, deep crimson within him.\n\n\"The Fire Clan ends with you,\" Jordan whispered, his eyes now glowing with a controlled flame. \"But your power belongs to me now.\"",
+      "story_text": "Page 46 \u2014 The Guardian\u2019s Inheritance\n\nJordan delivered the final strike. As the steel pierced the Master\u2019s core, the white fire didn't vanish\u2014it surged.\nThe Absorption: The raw energy flowed up the blade, coiling around Jordan's arms. Jordan screamed as the Disciplined Chaos seared into his veins. Because of his Balanced Discipline, he survived the intake. The white fire turned to a steady, deep crimson within him.\n\n\"The Fire Clan ends with you,\" Jordan whispered, his eyes now glowing with a controlled flame. \"But your power belongs to me now.\"",
       "choices": [
         {
           "label": "Continue",
@@ -1964,7 +2050,7 @@
       "page_id": "act5_p47_escape",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p47_escape.png",
-      "story_text": "Page 47 — The Revelation & Escape\n\nThe volcano let out a final, rattling groan. Jordan sprinted through the collapsing tunnels, his movements now trailed by sparks of intense heat. He burst through the entrance just as the mountain's peak shattered into the ocean.",
+      "story_text": "Page 47 \u2014 The Revelation & Escape\n\nThe volcano let out a final, rattling groan. Jordan sprinted through the collapsing tunnels, his movements now trailed by sparks of intense heat. He burst through the entrance just as the mountain's peak shattered into the ocean.",
       "choices": [
         {
           "label": "Continue",
@@ -1977,7 +2063,7 @@
       "page_id": "act5_p48_new_flame",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p48_new_flame.png",
-      "story_text": "Page 48 — The New Flame\n\nJordan stood on the black sand beach. He raised his hand, and a small, intense whorl of flame danced above his palm—not the wild chaos of the Master, but a Balanced Flame.\n\nHe looked toward the distant horizon. Two massive shadows waited atop a ridge: a Wind Clan Dragon and an Earth Clan Golem. They had watched the fire go out. Jordan closed his fist, snuffing the spark. He turned his back on the ruins and began the long walk toward the Wind Clan's borders.",
+      "story_text": "Page 48 \u2014 The New Flame\n\nJordan stood on the black sand beach. He raised his hand, and a small, intense whorl of flame danced above his palm\u2014not the wild chaos of the Master, but a Balanced Flame.\n\nHe looked toward the distant horizon. Two massive shadows waited atop a ridge: a Wind Clan Dragon and an Earth Clan Golem. They had watched the fire go out. Jordan closed his fist, snuffing the spark. He turned his back on the ruins and began the long walk toward the Wind Clan's borders.",
       "choices": [
         {
           "label": "THE END... FOR NOW",
