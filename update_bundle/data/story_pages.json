@@ -1186,7 +1186,7 @@
       "page_id": "act4_p31a_wall",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31a_wall.png",
-      "story_text": "Page 31A — The Vertical Wall\n\nThe trail ended at a massive cliff face. To reach the top, Jordan had to scale the rock.\n\nChoice 1: Climb by hand.\nChoice 2: Use the grappling hook.\nIf Jordan had the dying scout's clue, this cliffside was also where he could search for the crow mark.",
+      "story_text": "Page 31A — The Vertical Wall\n\nThe trail ended at a massive cliff face. To reach the top, Jordan had to choose how he would climb before the patrols spotted him.",
       "choices": [
         {
           "label": "Climb by hand",
@@ -1334,7 +1334,7 @@
       "page_id": "act4_p33_crossing",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p33_crossing.png",
-      "story_text": "Page 33 — The Final Crossing\n\nJordan reached the high ledge outside the Master’s sanctum. A massive crack opened in the stone, separating him from the final door.\n\nChoice 1: The Narrow Ledge. Jordan spotted a thin, jagged strip of stone clinging to the wall.\nChoice 2: Swing with the Grappling Hook. Jordan looked for a sturdy volcanic pillar to anchor his line.",
+      "story_text": "Page 33 — The Final Crossing\n\nJordan reached the high ledge outside the Master’s sanctum. A massive crack split the stone, and he had seconds to choose how to cross before the mountain shook again.",
       "choices": [
         {
           "label": "Swing across the lava pit",
@@ -1401,73 +1401,96 @@
       "page_id": "act4_p35_quake",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35_quake.png",
-      "story_text": "Page 35 — The Great Quake\\n\\nThe mountain groaned as the shockwave ripped through the crossing. Jordan either fought to stay on the rope swing or tried to survive the collapsing ledge.",
+      "story_text": "Page 35 — The Great Quake\n\nThe shockwave tore through Jordan’s crossing route. In that instant, the outcome depended on whether he was on the rope swing or the ledge.",
       "choices": [
         {
-          "label": "Hold the swing and land",
+          "label": "Rope holds through the blast",
           "effects": {},
-          "next_page_id": "act5_p37_sanctum",
+          "next_page_id": "act4_p35a_swing_hold",
           "requirements": {
             "flag_true": "cross_swing",
             "hook_state_is": "Good"
           }
         },
         {
-          "label": "The rope gives out",
+          "label": "Rope snaps over the lava",
           "effects": {},
-          "next_page_id": "act_end_game_over",
+          "next_page_id": "act4_p35b_swing_snap",
           "requirements": {
             "flag_true": "cross_swing",
             "hook_state_is": "Damaged"
           }
         },
         {
-          "label": "Follow the fall into the hidden cavern",
+          "label": "Ledge collapse into a hidden chute",
           "effects": {},
-          "next_page_id": "act4_p36_cavern",
+          "next_page_id": "act4_p35c_ledge_reflex",
           "requirements": {
             "flag_true": "cross_ledge",
             "discipline_is": "Reflex"
           }
         },
         {
-          "label": "Climb out and push toward the sanctum",
-          "effects": {
-            "change_health": -1
-          },
-          "next_page_id": "act5_p37_sanctum",
+          "label": "Ledge collapse into open rock",
+          "effects": {},
+          "next_page_id": "act4_p35d_ledge_recover",
           "requirements": {
             "flag_true": "cross_ledge"
           }
         }
-      ],
-      "story_text_variants": [
+      ]
+    },
+    {
+      "page_id": "act4_p35a_swing_hold",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p35a_swing_hold.png",
+      "story_text": "Page 35A — Rope Hold\n\nJordan kept both hands on the line and swung through the blast, slamming onto the far side but staying alive.",
+      "choices": [
         {
-          "requirements": {
-            "flag_true": "cross_swing",
-            "hook_state_is": "Good"
-          },
-          "text": "Page 35 — The Great Quake\\n\\nThe rope snapped tight in Jordan's hands and he swung through the blast, landing hard but alive on the far side."
-        },
+          "label": "Push into the sanctum",
+          "effects": {},
+          "next_page_id": "act5_p37_sanctum"
+        }
+      ]
+    },
+    {
+      "page_id": "act4_p35b_swing_snap",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p35b_swing_snap.png",
+      "story_text": "Page 35B — Rope Snap\n\nThe damaged line failed mid-swing. Jordan dropped into the lava before he could recover his grip.",
+      "choices": [
         {
-          "requirements": {
-            "flag_true": "cross_swing",
-            "hook_state_is": "Damaged"
-          },
-          "text": "Page 35 — The Great Quake\\n\\nThe damaged rope failed mid-swing. Jordan dropped into the lava below before he could recover."
-        },
+          "label": "Game Over",
+          "effects": {},
+          "next_page_id": "act_end_game_over"
+        }
+      ]
+    },
+    {
+      "page_id": "act4_p35c_ledge_reflex",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p35c_ledge_reflex.png",
+      "story_text": "Page 35C — Reflex Descent\n\nThe ledge shattered, but Jordan twisted with the fall and rode a hidden ash chute into a sealed cavern below.",
+      "choices": [
         {
-          "requirements": {
-            "flag_true": "cross_ledge",
-            "discipline_is": "Reflex"
-          },
-          "text": "Page 35 — The Great Quake\\n\\nThe ledge shattered, but Jordan twisted with the fall and slid into a hidden ash chute that dropped him into an unknown cavern."
-        },
+          "label": "Enter the hidden cavern",
+          "effects": {},
+          "next_page_id": "act4_p36_cavern"
+        }
+      ]
+    },
+    {
+      "page_id": "act4_p35d_ledge_recover",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p35d_ledge_recover.png",
+      "story_text": "Page 35D — Hard Landing\n\nThe ledge gave way beneath Jordan. He crashed through volcanic stone, recovered, and forced his way toward the sanctum with injuries.",
+      "choices": [
         {
-          "requirements": {
-            "flag_true": "cross_ledge"
+          "label": "Continue to the sanctum",
+          "effects": {
+            "change_health": -1
           },
-          "text": "Page 35 — The Great Quake\\n\\nThe ledge gave way beneath Jordan. He slammed through volcanic stone, recovered his footing, and forced his way toward the sanctum."
+          "next_page_id": "act5_p37_sanctum"
         }
       ]
     },
@@ -1508,7 +1531,7 @@
       "page_id": "act5_p38_strike",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p38_strike.png",
-      "story_text": "Page 38 — The Shattered Strike\n\nThe Master lunged. He didn't just swing his blade; he moved through a \"glitch\" in space, appearing in three places at once. Three obsidian blades whistled toward Jordan’s neck from three different angles.\n\nChoice 1: [REQUIRES Steel Discipline OR Steel Bracers] Plant your feet and catch the true blade. Let the \"chaos-echoes\" shatter against your resolve.\nChoice 2: [REQUIRES Reflex Discipline] Flow between the strikes. Use the Master's own momentum to spin behind the primary form.\nChoice 3: [REQUIRES Focus Discipline] Close your eyes to the visual noise. Strike the one shadow that casts a heartbeat.\nChoice 4: [Standard] Deflect the blow. You survive, but the force of the strike pushes you back. (Health Tier drops by 1).",
+      "story_text": "Page 38 — The Shattered Strike\n\nThe Master lunged through a glitch in space, appearing in three places at once. Jordan had one instant to pick the right response before the blades converged.",
       "choices": [
         {
           "label": "Plant and catch the true blade",
@@ -1575,7 +1598,7 @@
       "page_id": "act5_p40_pillars",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p40_pillars.png",
-      "story_text": "Page 40 — The Rising Pillars\n\nThe Master slammed a hand into the ground. He turned the floor into a series of jagged, obsidian pillars that rose in a complex, overlapping pattern designed to trap Jordan and crush him against the ceiling.\n\nChoice 1: [REQUIRES Grappling Hook - MUST NOT BE DAMAGED] Use the rising pillars as anchors. Swing through the shifting \"maze\" to stay above the crushing stone.\nChoice 2: [REQUIRES Shadow Discipline] Become the smoke. Let the pillars pass through your intangible form as you drift toward the Master’s blind spot.\nChoice 3: [REQUIRES Vial of Acid] Melt the base of the central pillar, causing the entire \"trap\" to collapse under its own weight.\nChoice 4: [Standard] Scramble for safety. You escape being crushed, but a jagged shard pierces your leg. (Health Tier drops by 1).",
+      "story_text": "Page 40 — The Rising Pillars\n\nThe Master drove his palm into the floor. Jagged pillars erupted upward in a shifting maze meant to crush Jordan against the ceiling.",
       "choices": [
         {
           "label": "Anchor and swing through the pillars",
@@ -1643,47 +1666,38 @@
       "page_id": "act5_p42_whip",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p42_whip.png",
-      "story_text": "Page 42 — The Singularity Whip\n\nThe Master’s arm extended into a whip of white plasma. It carved \"voids\" into the air that stayed active, pulling at Jordan's gear and slowing his movements through sheer gravitational chaos.\n\nChoice 1: [REQUIRES Frost-Bitten Dagger - FOUND IN HIDDEN CAVERN] Use the dagger’s ancient cold to stabilize the voids and cut the Master's tether to the spirit realm.\nChoice 2: [REQUIRES Reflex Discipline] Speed is your armor. Move so fast the voids cannot \"lock\" onto your physical position.\nChoice 3: [REQUIRES Throwing Stars] Imbue the stars with your own balanced energy to \"plug\" the voids, turning the Master's own energy against him.\nChoice 4: [Standard] Attempt to roll away. The void pulls you in, searing your skin with raw entropy. (Health Tier drops by 1).",
+      "story_text": "Page 42 — The Singularity Whip\n\nThe Master's arm unfurled into a whip of white plasma, carving voids into the air that pulled at Jordan's body and gear.",
       "choices": [
         {
-          "label": "Sever the tether with Frost-Bitten Dagger",
+          "label": "Use the Frost-Bitten Dagger",
           "effects": {
             "set_flag": {
               "qte3": "win"
             }
           },
-          "next_page_id": "act5_p43_breaking",
-          "requirements": {
-            "has_item": "Frost-Bitten Dagger"
-          }
+          "next_page_id": "act5_p43_breaking"
         },
         {
-          "label": "Outrun the void locks",
+          "label": "Outrun the void pull",
           "effects": {
             "set_flag": {
               "qte3": "win"
             }
           },
-          "next_page_id": "act5_p43_breaking",
-          "requirements": {
-            "discipline_is": "Reflex"
-          }
+          "next_page_id": "act5_p43_breaking"
         },
         {
-          "label": "Pin the voids with Throwing Stars",
+          "label": "Throw stars into the voids",
           "effects": {
             "set_flag": {
               "qte3": "win"
             },
             "remove_starting_item": "Throwing Stars"
           },
-          "next_page_id": "act5_p43_breaking",
-          "requirements": {
-            "has_item": "Throwing Stars"
-          }
+          "next_page_id": "act5_p43_breaking"
         },
         {
-          "label": "Roll clear and reset",
+          "label": "Roll clear and recover",
           "effects": {
             "set_flag": {
               "qte3": "countered"
@@ -1711,7 +1725,7 @@
       "page_id": "act5_p44_last_stand",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p44_last_stand.png",
-      "story_text": "Page 44 — The Master’s Last Stand\n\nThe Master surrendered his physical form entirely. The volcano’s core began to compress toward him, creating a vacuum of white-hot chaos. The very laws of physics began to fail.\n\nChoice 1: [REQUIRES Steel Discipline] Anchor yourself to the earth. Use your balance to remain the one stable point in a world falling apart.\nChoice 2: [REQUIRES Smoke Bomb] Use the explosion to propel yourself into the vacuum, using the Master's own pull to deliver a high-velocity strike.\nChoice 3: [REQUIRES Focus Discipline] Find the \"eye of the storm\"—the one point of balance within the Master’s chaos—and strike it with everything you have.\nChoice 4: [Standard] Try to resist the pull. You are nearly sucked into the Master's core, taking massive damage before he tires. (Health Tier drops by 1).",
+      "story_text": "Page 44 — The Master’s Last Stand\n\nThe Master abandoned his body and compressed the volcano core into a white-hot vacuum. The arena bent inward as Jordan fought to stay in control.",
       "choices": [
         {
           "label": "Anchor to the stone and advance",

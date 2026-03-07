@@ -22,25 +22,25 @@ grow_vertical = 2
 [node name="VBox" type="VBoxContainer" parent="CenterContainer"]
 layout_mode = 2
 theme_override_constants/separation = 24
-custom_minimum_size = Vector2(900, 0)
+custom_minimum_size = Vector2(820, 0)
 
 [node name="Title" type="Label" parent="CenterContainer/VBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 54
+theme_override_font_sizes/font_size = 46
 horizontal_alignment = 1
 text = "ELEMENTAL BALANCE: FIRE CHAPTER"
 
 [node name="Subtitle" type="Label" parent="CenterContainer/VBox"]
 layout_mode = 2
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 20
 horizontal_alignment = 1
 text = "Choose your path and begin the adventure"
 
 [node name="Start" type="Button" parent="CenterContainer/VBox"]
 unique_name_in_owner = true
 layout_mode = 2
-custom_minimum_size = Vector2(460, 100)
-theme_override_font_sizes/font_size = 40
+custom_minimum_size = Vector2(420, 88)
+theme_override_font_sizes/font_size = 34
 text = "Start Adventure"
 
 [connection signal="pressed" from="CenterContainer/VBox/Start" to="." method="_on_start_pressed"]

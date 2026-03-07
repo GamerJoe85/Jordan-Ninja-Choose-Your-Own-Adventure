@@ -3,10 +3,10 @@
 Use this checklist to map every story page to an image file.
 
 How to use:
-1. Put your files in `assets/images/.`
+1. Put your files in `assets/images/`.
 2. For each row below, create/add the file shown in **Expected JSON image_path** OR set an Inspector override for that `page_id`.
 3. Mark the checkbox when done.
-4. Copy only the `res://...png` path value (not table formatting).
+4. Copy only the `res://...` path value (not table formatting).
 
 | Done | page_id | act_id | Expected JSON image_path |
 |---|---|---|---|
@@ -75,6 +75,10 @@ How to use:
 | ☐ | `act4_p34b_fusion` | `act_4` | `res://assets/images/act4_p34b_fusion.png` |
 | ☐ | `act4_p34c_shockwave` | `act_4` | `res://assets/images/act4_p34c_shockwave.png` |
 | ☐ | `act4_p35_quake` | `act_4` | `res://assets/images/act4_p35_quake.png` |
+| ☐ | `act4_p35a_swing_hold` | `act_4` | `res://assets/images/act4_p35a_swing_hold.png` |
+| ☐ | `act4_p35b_swing_snap` | `act_4` | `res://assets/images/act4_p35b_swing_snap.png` |
+| ☐ | `act4_p35c_ledge_reflex` | `act_4` | `res://assets/images/act4_p35c_ledge_reflex.png` |
+| ☐ | `act4_p35d_ledge_recover` | `act_4` | `res://assets/images/act4_p35d_ledge_recover.png` |
 | ☐ | `act4_p36_cavern` | `act_4` | `res://assets/images/act4_p36_cavern.png` |
 | ☐ | `act5_p37_sanctum` | `act_5` | `res://assets/images/act5_p37_sanctum.png` |
 | ☐ | `act5_p38_strike` | `act_5` | `res://assets/images/act5_p38_strike.png` |
@@ -89,6 +93,12 @@ How to use:
 | ☐ | `act5_p47_escape` | `act_5` | `res://assets/images/act5_p47_escape.png` |
 | ☐ | `act5_p48_new_flame` | `act_5` | `res://assets/images/act5_p48_new_flame.png` |
 | ☐ | `act_end_game_over` | `act_5` | `res://assets/images/act_end_game_over.png` |
+
+## Non-story screens (optional image assets)
+
+| Done | screen | Suggested asset path | Notes |
+|---|---|---|---|
+| ☐ | `title_screen` | `res://assets/images/title_screen.png` | Optional background image for `scenes/TitleMenu.tscn` if you add a TextureRect. |
 
 ## Inspector override option (recommended)
 If you do not want to edit JSON paths, open `scenes/Main.tscn` -> `PagePlayer` -> **Image Overrides** and add:
