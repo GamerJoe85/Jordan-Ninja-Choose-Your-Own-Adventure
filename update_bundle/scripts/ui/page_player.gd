@@ -236,7 +236,7 @@ func _on_choice_selected(choice: Dictionary) -> void:
 	refresh_hud()
 	var next_page_id: String = str(choice.get("next_page_id", ""))
 	if took_damage_at_dying:
-		next_page_id = "act_end_game_over"
+		next_page_id = "act_end_universal_death"
 	if not next_page_id.is_empty():
 		if next_page_id == "act1_start" and GameState.current_page_id != "":
 			GameState.reset()

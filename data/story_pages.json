@@ -2084,6 +2084,19 @@
           "next_page_id": "act1_start"
         }
       ]
+    },
+    {
+      "page_id": "act_end_universal_death",
+      "act_id": "act_end",
+      "image_path": "res://assets/images/act_end_universal_death.png",
+      "story_text": "Jordan fell in battle before reaching the end of his mission. His journey ends here.",
+      "choices": [
+        {
+          "label": "Restart Adventure",
+          "effects": {},
+          "next_page_id": "act1_start"
+        }
+      ]
     }
   ]
 }
