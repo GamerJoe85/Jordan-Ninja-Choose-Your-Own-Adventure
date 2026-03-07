@@ -98,7 +98,7 @@ How to use:
 
 | Done | screen | Suggested asset path | Notes |
 |---|---|---|---|
-| ☐ | `title_screen` | `res://assets/images/title_screen.png` | Optional background image for `scenes/TitleMenu.tscn` if you add a TextureRect. |
+| ☐ | `title_screen` | `res://assets/images/title_screen.png` | Used automatically by `scenes/TitleMenu.tscn` as the title background when this file exists. |
 
 ## Inspector override option (recommended)
 If you do not want to edit JSON paths, open `scenes/Main.tscn` -> `PagePlayer` -> **Image Overrides** and add:
