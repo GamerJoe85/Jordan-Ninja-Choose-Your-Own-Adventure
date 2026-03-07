@@ -222,6 +222,10 @@ func _on_choice_selected(choice: Dictionary) -> void:
 	var custom_notice: String = str(effects.get("notice_message", "")).strip_edges()
 	if not custom_notice.is_empty():
 		show_notice(custom_notice)
+	var took_damage_at_dying: bool = (
+		previous_health == "Dying"
+		and int(effects.get("change_health", 0)) < 0
+	)
 	if previous_health != GameState.health_tier:
 		if not custom_notice.is_empty():
 			pass
@@ -231,6 +235,8 @@ func _on_choice_selected(choice: Dictionary) -> void:
 			show_notice("Health dropped to %s" % GameState.health_tier)
 	refresh_hud()
 	var next_page_id: String = str(choice.get("next_page_id", ""))
+	if took_damage_at_dying:
+		next_page_id = "act_end_game_over"
 	if not next_page_id.is_empty():
 		if next_page_id == "act1_start" and GameState.current_page_id != "":
 			GameState.reset()

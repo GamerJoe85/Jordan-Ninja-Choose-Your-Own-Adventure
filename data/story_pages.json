@@ -967,7 +967,7 @@
       "page_id": "act2_p19c_creature",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19c_creature.png",
-      "story_text": "Page 19 \u2014 The Sewer Creature\n\nA fire-lizard burst from the water and lunged at Jordan in the dark tunnel.",
+      "story_text": "Page 19 \u2014 The Sewer Creature\n\nA fire-lizard erupted from the sewer water and lunged at Jordan.",
       "choices": [
         {
           "label": "Continue to the exit",
@@ -1011,13 +1011,13 @@
           "requirements": {
             "discipline_is": "Reflex"
           },
-          "text": "Page 19 \u2014 The Sewer Creature\n\nJordan reacted instantly, cutting across the creature\u2019s arc and driving it back into the water."
+          "text": "Page 19 \u2014 The Sewer Creature\n\nA fire-lizard erupted from the sewer water. Jordan reacted instantly, stepped inside its leap, and cut it down before it could bite."
         },
         {
           "requirements": {
             "discipline_is": "Steel"
           },
-          "text": "Page 19 \u2014 The Sewer Creature\n\nJordan braced for impact, overpowered the lizard at close range, and forced it off the path."
+          "text": "Page 19 \u2014 The Sewer Creature\n\nA fire-lizard erupted from the sewer water. Jordan took the impact, overpowered it in close quarters, and drove it back into the channel."
         },
         {
           "requirements": {
@@ -1026,7 +1026,7 @@
               "Steel"
             ]
           },
-          "text": "Page 19 \u2014 The Sewer Creature\n\nJordan fought the lizard in a desperate struggle, eventually forcing it away and pressing forward through the tunnel."
+          "text": "Page 19 \u2014 The Sewer Creature\n\nA fire-lizard erupted from the sewer water. Jordan wrestled it off in a brutal struggle and escaped, but not before taking a painful hit."
         }
       ]
     },
@@ -1034,7 +1034,7 @@
       "page_id": "act2_p20c_dirty",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p20c_dirty.png",
-      "story_text": "Page 20C \u2014 The Dirty Choice\n\nJordan reached the exit ladder with his arm pulsing in pain. A clean bandage in his kit could seal the wound fast, but a filthy strip from a fallen scout was the only backup.",
+      "story_text": "Page 20C \u2014 The Dirty Choice\n\nJordan pushed deeper through the sewer, arm throbbing from the fight. A clean bandage in his kit could seal the wound, and a dirty bandage floated past in the runoff as a risky backup.",
       "choices": [
         {
           "label": "Use your clean bandage",
@@ -1747,7 +1747,7 @@
         {
           "label": "Continue",
           "effects": {
-            "set_health": "Prime",
+            "change_health": 2,
             "set_flag": {
               "bleeding": false,
               "infected": false
