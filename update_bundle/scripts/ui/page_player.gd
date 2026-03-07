@@ -64,8 +64,9 @@ func play_page(page_id: String) -> void:
 	if event_notice != null:
 		event_notice.text = ""
 		event_notice.visible = false
-		if event_notice.get_parent() is CanvasItem:
-			(event_notice.get_parent() as CanvasItem).visible = false
+		var notice_parent: CanvasItem = event_notice.get_parent() as CanvasItem
+		if notice_parent != null:
+			notice_parent.visible = false
 	story_text_label.text = resolve_story_text(page)
 	build_choices(page.get("choices", []) as Array)
 	refresh_hud()
@@ -287,5 +288,6 @@ func show_notice(message: String) -> void:
 		return
 	event_notice.text = message
 	event_notice.visible = true
-	if event_notice.get_parent() is CanvasItem:
-		(event_notice.get_parent() as CanvasItem).visible = true
+	var notice_parent: CanvasItem = event_notice.get_parent() as CanvasItem
+	if notice_parent != null:
+		notice_parent.visible = true
