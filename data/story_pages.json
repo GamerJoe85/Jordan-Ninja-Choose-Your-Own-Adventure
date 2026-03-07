@@ -662,10 +662,10 @@
       "page_id": "act1_p15_confirm",
       "act_id": "act_1",
       "image_path": "res://assets/images/act1_p15_confirm.png",
-      "story_text": "Page 15 — Equipment Selection\n\nBefore leaving, Jordan checked his tool kit. He could only carry three items for the long road ahead. Choose each item carefully:\n\n(Choose 3 Individually: Rope, Smoke Bomb, Blow Dart, Vial of Acid, Bandage, Throwing Stars, or Health Herb).",
+      "story_text": "Page 15 — Equipment Selection\n\nJordan locked in his three-item loadout and tightened every strap on his kit. He was ready to move.",
       "choices": [
         {
-          "label": "Confirm Loadout",
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act1_p16_return"
         }
@@ -711,11 +711,29 @@
       "page_id": "act2_p18a_climb",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p18a_climb.png",
-      "story_text": "Page 18A — The High Climb\n\nJordan stood at the base of the village wall. He looked up at the jagged stone reaching toward the smoky sky. To get inside, he had to reach the wooden walkways high above the guards.\n\nIf Jordan has Rope: He tossed his hook. It bit into the wood with a solid thud. He scaled the wall like a mountain cat. (Safe).\nIf Steel Discipline OR Steel Bracers: Jordan dug his fingers into the freezing rock. While the stone was sharp, his grip was like iron. He hauled himself up the cliff without feeling the sting of the cold. (Safe).\nElse: Jordan had to find tiny finger-holds in the freezing rock. By the time he reached the top, his muscles screamed in pain and his hands were bleeding. (Health drops 1 tier).",
+      "story_text": "Page 18 — The High Climb\n\nJordan reached the base of the village wall and chose how to get up to the rooftops before the patrols noticed.",
       "choices": [
         {
-          "label": "Continue",
+          "label": "Use Rope to scale the wall",
           "effects": {},
+          "next_page_id": "act2_p19a_walk",
+          "requirements": {
+            "has_item": "Rope"
+          }
+        },
+        {
+          "label": "Climb with raw strength",
+          "effects": {},
+          "next_page_id": "act2_p19a_walk",
+          "requirements": {
+            "discipline_is": "Steel"
+          }
+        },
+        {
+          "label": "Climb carefully by hand",
+          "effects": {
+            "change_health": -1
+          },
           "next_page_id": "act2_p19a_walk"
         }
       ]
@@ -724,7 +742,7 @@
       "page_id": "act2_p19a_walk",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19a_walk.png",
-      "story_text": "Page 19A — The Silent Walk (Bridge Page)\n\nThe air was thinner up here. Jordan moved across the clay tiles, his heart thumping against his ribs. Below him, the Fire Clan soldiers laughed around their pits, unaware that a ghost was watching them from above.",
+      "story_text": "Page 19 — The Silent Walk\n\nJordan crossed the rooftops above the guards, keeping low while watching for the next patrol ahead.",
       "choices": [
         {
           "label": "Keep Moving",
@@ -737,11 +755,31 @@
       "page_id": "act2_p20a_beam",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p20a_beam.png",
-      "story_text": "Page 20A — The Beam Patrol\n\nA single guard stood on a narrow wooden beam. He was yawning, but his spear blocked the only path forward.\n\nIf Shadow Discipline OR Blow Dart: Jordan waited for a cloud to cover the moon. He moved like a shadow, slipping past the guard without a sound. (Safe).\nElse: Jordan lunged forward. The guard barked a warning before Jordan tackled him. They struggled on the edge of the roof. Jordan won, but he heard a sharp crack from his gear. (Hook is Damaged).",
+      "story_text": "Page 20 — The Beam Patrol\n\nA lone guard blocked the narrow beam route. Jordan had to choose whether to slip by or force his way through.",
       "choices": [
         {
-          "label": "Continue",
+          "label": "Slip past in the shadows",
           "effects": {},
+          "next_page_id": "act2_p21a_lockbox",
+          "requirements": {
+            "discipline_is": "Shadow"
+          }
+        },
+        {
+          "label": "Use Blow Dart from cover",
+          "effects": {
+            "remove_starting_item": "Blow Dart"
+          },
+          "next_page_id": "act2_p21a_lockbox",
+          "requirements": {
+            "has_item": "Blow Dart"
+          }
+        },
+        {
+          "label": "Rush the guard head-on",
+          "effects": {
+            "set_hook_state": "Damaged"
+          },
           "next_page_id": "act2_p21a_lockbox"
         }
       ]
@@ -750,14 +788,23 @@
       "page_id": "act2_p21a_lockbox",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p21a_lockbox.png",
-      "story_text": "Page 21A — The Locked Sky-Box\n\nNear a chimney, Jordan spotted a small iron chest. It was marked with the seal of the Fire Master.\n\nIf Lockpick OR Vial of Acid: Jordan went to work. The lock clicked open, revealing a spool of Reinforced Line. \"This will save me later,\" he whispered. (Gained: Reinforced Line).\nElse: The lock was too heavy. Jordan didn't have the tools to break it silently. He had to leave the treasure behind.",
+      "story_text": "Page 21 — The Locked Sky-Box\n\nNear a chimney, Jordan found an iron chest marked with the Fire Master’s seal.",
       "choices": [
         {
-          "label": "Enter Village Core",
+          "label": "Open it with Vial of Acid",
           "effects": {
-            "add_found_item": "Reinforced Line"
+            "add_found_item": "Reinforced Line",
+            "remove_starting_item": "Vial of Acid"
           },
-          "next_page_id": "act3_p25_confrontation"
+          "next_page_id": "act2_p22_rooftop_exit",
+          "requirements": {
+            "has_item": "Vial of Acid"
+          }
+        },
+        {
+          "label": "Leave the chest and move on",
+          "effects": {},
+          "next_page_id": "act2_p22_rooftop_exit"
         }
       ]
     },
@@ -765,10 +812,10 @@
       "page_id": "act2_p18b_shadowwalk",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p18b_shadowwalk.png",
-      "story_text": "Page 18B — The Shadow Walk\n\nJordan stepped into the main street. The village smelled of roasted meat and sulfur. Torches lined the walls, casting long, dancing shadows across the cobbles.\n\nJordan had to decide whether to rely on stealth training or force a quick push through the patrol line.",
+      "story_text": "Page 18 — The Shadow Walk\n\nJordan stepped into the streets and moved toward the inner district.",
       "choices": [
         {
-          "label": "Melt into the shadows",
+          "label": "Move through the dark alleys",
           "effects": {
             "set_flag": {
               "detected": false
@@ -780,13 +827,33 @@
           }
         },
         {
-          "label": "Push through the main street",
+          "label": "Move through the open street",
           "effects": {
             "set_flag": {
               "detected": true
             }
           },
-          "next_page_id": "act2_p19b_scout"
+          "next_page_id": "act2_p19b_streetfight",
+          "requirements": {
+            "discipline_not_in": [
+              "Shadow"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p19b_streetfight",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p19b_streetfight.png",
+      "story_text": "Page 19 — Street Ambush\n\nWithout full shadow cover, Jordan was spotted and attacked in a tight alley fight. He escaped, but not without taking a hit.",
+      "choices": [
+        {
+          "label": "Regroup and move forward",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act2_p20b_gate"
         }
       ]
     },
@@ -794,7 +861,7 @@
       "page_id": "act2_p19b_scout",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19b_scout.png",
-      "story_text": "Page 19B — The Dying Scout\\n\\nIn a narrow side alley, Jordan found a wounded Fire Clan scout slumped against a crate. The man gripped his side and looked up through pain, waiting to see whether Jordan would help or walk away.",
+      "story_text": "Page 19 — The Dying Scout\n\nJordan found a wounded Fire Clan scout slumped against a crate, barely conscious.",
       "choices": [
         {
           "label": "Use a Bandage",
@@ -834,7 +901,7 @@
         {
           "label": "Slip through while they look away",
           "effects": {},
-          "next_page_id": "act3_p25_confrontation",
+          "next_page_id": "act2_p22_street_exit",
           "requirements": {
             "flag_false": "detected"
           }
@@ -847,7 +914,7 @@
               "detected": false
             }
           },
-          "next_page_id": "act3_p25_confrontation",
+          "next_page_id": "act2_p22_street_exit",
           "requirements": {
             "flag_true": "detected",
             "has_item": "Vial of Acid"
@@ -856,7 +923,7 @@
         {
           "label": "Drive straight through the guards",
           "effects": {},
-          "next_page_id": "act3_p25_confrontation",
+          "next_page_id": "act2_p22_street_exit",
           "requirements": {
             "flag_true": "detected",
             "discipline_is": "Steel"
@@ -867,7 +934,7 @@
           "effects": {
             "change_health": -1
           },
-          "next_page_id": "act3_p25_confrontation",
+          "next_page_id": "act2_p22_street_exit",
           "requirements": {
             "flag_true": "detected"
           }
@@ -878,13 +945,19 @@
       "page_id": "act2_p18c_sludge",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p18c_sludge.png",
-      "story_text": "Page 18C — The Sludge Tunnel\n\nThe air in the sewers was thick and hot. Jordan stepped into the green, murky water. It reached his knees, pulling at him like heavy mud.\n\nThe Slip: Jordan rushed to get away from the terrible smell. He slipped on a mossy pipe and crashed into the muck. He was okay, but he felt his gear hit the stone with a sickening snap. (Hook is Damaged).",
+      "story_text": "Page 18 — The Sludge Tunnel\n\nThe sewer route stank of sulfur and rot. Jordan decided whether to rush through or move with caution.",
       "choices": [
         {
-          "label": "Continue",
+          "label": "Rush through the tunnel",
           "effects": {
-            "set_hook_state": "Damaged"
+            "set_hook_state": "Damaged",
+            "change_health": -1
           },
+          "next_page_id": "act2_p19c_creature"
+        },
+        {
+          "label": "Move carefully through the tunnel",
+          "effects": {},
           "next_page_id": "act2_p19c_creature"
         }
       ]
@@ -893,10 +966,10 @@
       "page_id": "act2_p19c_creature",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p19c_creature.png",
-      "story_text": "Page 19C — The Sewer Creature",
+      "story_text": "Page 19 — The Sewer Creature\n\nA fire-lizard burst from the water and lunged at Jordan in the dark tunnel.",
       "choices": [
         {
-          "label": "Move to the sewer exit",
+          "label": "Continue to the exit",
           "effects": {},
           "next_page_id": "act2_p20c_dirty",
           "requirements": {
@@ -904,7 +977,7 @@
           }
         },
         {
-          "label": "Move to the sewer exit",
+          "label": "Continue to the exit",
           "effects": {
             "set_flag": {
               "bleeding": true
@@ -916,7 +989,7 @@
           }
         },
         {
-          "label": "Move to the sewer exit",
+          "label": "Continue to the exit",
           "effects": {
             "set_flag": {
               "bleeding": true
@@ -937,13 +1010,13 @@
           "requirements": {
             "discipline_is": "Reflex"
           },
-          "text": "Page 19C — The Sewer Creature\n\nThe fire-lizard lunged from the water. Jordan moved before thought, slicing through the creature mid-air and landing light on the pipe beside it."
+          "text": "Page 19 — The Sewer Creature\n\nJordan reacted instantly, cutting across the creature’s arc and driving it back into the water."
         },
         {
           "requirements": {
             "discipline_is": "Steel"
           },
-          "text": "Page 19C — The Sewer Creature\n\nThe creature slammed into Jordan's arm, but his hardened conditioning held. He shook it off and kept moving, blood trailing down his sleeve."
+          "text": "Page 19 — The Sewer Creature\n\nJordan braced for impact, overpowered the lizard at close range, and forced it off the path."
         },
         {
           "requirements": {
@@ -952,7 +1025,7 @@
               "Steel"
             ]
           },
-          "text": "Page 19C — The Sewer Creature\n\nThe creature's fangs sank deep before Jordan could throw it off. He forced it away and pressed onward, wounded and bleeding in the dark tunnel."
+          "text": "Page 19 — The Sewer Creature\n\nJordan fought the lizard in a desperate struggle, eventually forcing it away and pressing forward through the tunnel."
         }
       ]
     },
@@ -1000,10 +1073,95 @@
       "page_id": "act2_p21c_lock",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p21c_lock.png",
-      "story_text": "Page 21C — The Acidic Lock\n\nA rusted iron grate blocked the way out.\n\nIf Vial of Acid: Jordan poured the liquid on the hinges. The metal hissed and melted into nothing. (Safe).\nElse: Jordan had to kick the gate.\nIf Steel Discipline OR Steel Bracers: Jordan’s kick was like a battering ram. The rusted hinges snapped instantly, and he walked through unharmed. (Safe).\nElse: It took five heavy strikes before the rusted metal gave way. (Health drops 1 tier).",
+      "story_text": "Page 21 — The Acidic Lock\n\nA rusted iron grate blocked the sewer exit into the village core.",
       "choices": [
         {
-          "label": "Enter Village Core",
+          "label": "Melt the hinges with Vial of Acid",
+          "effects": {
+            "remove_starting_item": "Vial of Acid"
+          },
+          "next_page_id": "act2_p22_sewer_exit",
+          "requirements": {
+            "has_item": "Vial of Acid"
+          }
+        },
+        {
+          "label": "Kick the grate open",
+          "effects": {},
+          "next_page_id": "act2_p22_sewer_exit",
+          "requirements": {
+            "discipline_is": "Steel"
+          }
+        },
+        {
+          "label": "Force the grate open",
+          "effects": {
+            "change_health": -1
+          },
+          "next_page_id": "act2_p22_sewer_exit"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p22_rooftop_exit",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p22_rooftop_exit.png",
+      "story_text": "Page 22 — Into the Inner Ring\n\nJordan dropped from the rooftops into the inner ring of the village, where the Fire Master’s guards were already mobilizing.",
+      "choices": [
+        {
+          "label": "Keep moving toward the square",
+          "effects": {},
+          "next_page_id": "act2_p23_inner_ring"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p22_street_exit",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p22_street_exit.png",
+      "story_text": "Page 22 — Through the Gate\n\nJordan slipped beyond the patrol gate and into the inner district, where the air was hotter and patrols thicker.",
+      "choices": [
+        {
+          "label": "Push toward the central square",
+          "effects": {},
+          "next_page_id": "act2_p23_inner_ring"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p22_sewer_exit",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p22_sewer_exit.png",
+      "story_text": "Page 22 — Sewer Breakout\n\nJordan climbed from the sewer into the inner village, wiping grime from his blade as alarms echoed in the distance.",
+      "choices": [
+        {
+          "label": "Move toward the central square",
+          "effects": {},
+          "next_page_id": "act2_p23_inner_ring"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p23_inner_ring",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p23_inner_ring.png",
+      "story_text": "Page 23 — Inner Ring Pressure\n\nFire Clan elites tightened a perimeter around the plaza. Jordan used every shadow and corner he could find to close the distance.",
+      "choices": [
+        {
+          "label": "Close in on the Master’s platform",
+          "effects": {},
+          "next_page_id": "act2_p24_final_steps"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p24_final_steps",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p24_final_steps.png",
+      "story_text": "Page 24 — Final Steps\n\nJordan stepped into the center lane of the village square. Heat rolled from braziers as the Fire Master emerged to face him.",
+      "choices": [
+        {
+          "label": "Face the Fire Master",
           "effects": {},
           "next_page_id": "act3_p25_confrontation"
         }
@@ -1039,7 +1197,7 @@
       "page_id": "act3_p26_dirty_trick",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p26_dirty_trick.png",
-      "story_text": "Page 26 — The Dirty Trick\n\nAs Jordan moved to counter the kunai, the Master suddenly kicked a massive cloud of burning ash into Jordan's face! Through the grey haze, the Master lunged forward with a lightning-fast sword strike aimed at Jordan's shoulder.\n\nIf Reflex Discipline: Jordan’s training took over. He sensed the Master's movement through the ash. He ducked low and sliced the Master’s arm as the blade passed over him. (Outcome: Master Injured).\nElse: Jordan barely raised his sword in time. The blades clashed with a shower of sparks, but the force of the strike pushed Jordan back. The Master was still unharmed.",
+      "story_text": "Page 26 — The Dirty Trick\n\nThe Master blasted burning ash into Jordan’s face and lunged through the haze, forcing an immediate reaction.",
       "choices": [
         {
           "label": "Read his movement through the ash",
@@ -1078,7 +1236,7 @@
       "page_id": "act3_p27_final",
       "act_id": "act_3",
       "image_path": "res://assets/images/act3_p27_final.png",
-      "story_text": "Page 27 — The Final Exchange\n\nThe Fire Master grew frustrated. His blade began to glow a bright, angry red as he gathered his heat. He charged forward, swinging a strike so powerful it threatened to shatter any defense.\n\nIf Vial of Acid: Jordan smashed the flask at the Master's feet. The Master’s boots hit the slippery oil, and he went sliding across the square. Jordan didn't miss the opening and landed a deep strike. (Victory: Master Defeated).\nIf Steel Discipline OR Steel Bracers: Jordan stood his ground. He caught the glowing red blade between his metal bracers or his iron-tough arms. With a grunt, he twisted the weapon and delivered a powerful counter-punch to the Master's chest. (Victory: Master Defeated).\nIf NONE of the above: Jordan had no way to block the heavy heat of the strike. He took a painful hit as he scrambled away. (Health drops 1 tier). He had to use a Smoke Bomb or Throwing Stars just to create enough space to breathe.",
+      "story_text": "Page 27 — The Final Exchange\n\nThe Master’s blade flared red as he launched a crushing finishing strike. Jordan committed to one final counter.",
       "choices": [
         {
           "label": "Kick Vial of Acid under his footing",

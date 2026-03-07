@@ -4,14 +4,14 @@ const MAIN_SCENE_PATH: String = "res://scenes/Main.tscn"
 const TITLE_IMAGE_PATH: String = "res://assets/images/title_screen.png"
 
 @onready var title_background: TextureRect = get_node_or_null("TitleBackground") as TextureRect
-@onready var start_button: Button = get_node_or_null("CenterContainer/VBox/Start") as Button
+@onready var start_button: Button = get_node_or_null("CenterContainer/TitleBox/VBox/Start") as Button
 
 var _start_requested: bool = false
 
 func _ready() -> void:
 	_apply_title_background()
 	if start_button == null:
-		push_error("TitleMenu is missing Start button at path CenterContainer/VBox/Start")
+		push_error("TitleMenu is missing Start button at path CenterContainer/TitleBox/VBox/Start")
 		return
 	if not start_button.pressed.is_connected(_on_start_pressed):
 		start_button.pressed.connect(_on_start_pressed)
