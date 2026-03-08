@@ -731,9 +731,7 @@
         },
         {
           "label": "Climb carefully by hand",
-          "effects": {
-            "change_health": -1
-          },
+          "effects": {},
           "next_page_id": "act2_p19a_walk"
         }
       ]
@@ -1467,15 +1465,12 @@
       "page_id": "act4_p31c_crow",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p31c_crow.png",
-      "story_text": "Page 31C \u2014 Ambush in the Crow Tunnel\n\nTwo Fire Clan scouts dropped from above and attacked at once. Jordan fought through the 2v1 ambush, took a hard hit, and forced his way forward to the bridge.",
+      "story_text": "Page 31C \u2014 The Forgotten Passage\n\nJordan found the crow-marked seam in the cliff and pressed through into a forgotten passage. The corridor was unnaturally still\u2014an uneasy calm that felt almost peaceful compared with the battle outside. He moved through without resistance and reached the hidden cavern approach.",
       "choices": [
         {
           "label": "Continue",
-          "effects": {
-            "change_health": -1,
-            "notice_message": "Two scouts ambushed you in a 2v1 fight. You won, but lost health."
-          },
-          "next_page_id": "act4_p32_bridge"
+          "effects": {},
+          "next_page_id": "act4_p36_cavern"
         }
       ]
     },
@@ -1671,20 +1666,10 @@
         {
           "label": "Continue",
           "requirements": {
-            "flag_true": "cross_swing",
-            "hook_state_is": "Good"
+            "flag_true": "cross_swing"
           },
           "effects": {},
-          "next_page_id": "act4_p35a_swing_hold"
-        },
-        {
-          "label": "Continue",
-          "requirements": {
-            "flag_true": "cross_swing",
-            "hook_state_is": "Damaged"
-          },
-          "effects": {},
-          "next_page_id": "act4_p35b_swing_snap"
+          "next_page_id": "act4_p35_quake"
         },
         {
           "label": "Continue",
@@ -1740,12 +1725,11 @@
       "page_id": "act4_p35_quake",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p35_quake.png",
-      "story_text": "Page 35 \u2014 The Great Quake\n\nThe mountain exploded with a violent shockwave, and Jordan reacted on instinct.",
+      "story_text": "Page 35 \u2014 The Great Quake\n\nJordan was mid-swing above the lava when the shockwave from the sanctum slammed him into a jagged rock wall.",
       "choices": [
         {
           "label": "Continue",
           "requirements": {
-            "flag_true": "cross_swing",
             "hook_state_is": "Damaged"
           },
           "effects": {},
@@ -1754,60 +1738,24 @@
         {
           "label": "Continue",
           "requirements": {
-            "flag_true": "cross_swing",
             "hook_state_is": "Good"
           },
           "effects": {},
           "next_page_id": "act4_p35a_swing_hold"
-        },
-        {
-          "label": "Continue",
-          "requirements": {
-            "flag_true": "cross_ledge_secure"
-          },
-          "effects": {},
-          "next_page_id": "act4_p35c_ledge_reflex"
-        },
-        {
-          "label": "Continue",
-          "requirements": {
-            "flag_true": "cross_ledge",
-            "flag_false": "cross_ledge_secure"
-          },
-          "effects": {
-            "change_health": -1,
-            "notice_message": "You fell into open rock during the ledge collapse and lost health."
-          },
-          "next_page_id": "act4_p35d_ledge_recover"
         }
       ],
       "story_text_variants": [
         {
           "requirements": {
-            "flag_true": "cross_swing",
             "hook_state_is": "Damaged"
           },
-          "text": "Page 35 \u2014 Rope Snap\n\nJordan was on the rope when the blast hit. The damaged line snapped and he dropped into the lava below."
+          "text": "Page 35 \u2014 The Great Quake\n\nThe impact tore through Jordan's damaged line. The rope snapped over open lava."
         },
         {
           "requirements": {
-            "flag_true": "cross_swing",
             "hook_state_is": "Good"
           },
-          "text": "Page 35 \u2014 Rope Hold\n\nJordan was on the rope when the blast hit. He held firm, slammed onto solid ground, and stayed alive."
-        },
-        {
-          "requirements": {
-            "flag_true": "cross_ledge_secure"
-          },
-          "text": "Page 35 \u2014 Hidden Chute\n\nAs the ledge collapsed, Jordan controlled the fall and dropped into a hidden chute."
-        },
-        {
-          "requirements": {
-            "flag_true": "cross_ledge",
-            "flag_false": "cross_ledge_secure"
-          },
-          "text": "Page 35 \u2014 Hard Landing\n\nThe ledge collapsed under Jordan. Without enough control, he crashed into open rock below."
+          "text": "Page 35 \u2014 The Great Quake\n\nThe impact rattled Jordan, but his rope held. He kicked off the rock and completed the swing."
         }
       ]
     },
