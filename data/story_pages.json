@@ -778,7 +778,8 @@
         {
           "label": "Rush the guard head-on",
           "effects": {
-            "set_hook_state": "Damaged"
+            "change_health": -1,
+            "notice_message": "You took the guard out, but got clipped in the fight and lost health."
           },
           "next_page_id": "act2_p21a_lockbox"
         }
@@ -797,13 +798,26 @@
             "remove_starting_item": "Vial of Acid",
             "notice_message": "Inside the lockbox, Jordan found Reinforced Line."
           },
-          "next_page_id": "act2_p22_rooftop_exit",
+          "next_page_id": "act2_p21a_lockbox_opened",
           "requirements": {
             "has_item": "Vial of Acid"
           }
         },
         {
           "label": "Leave the chest and move on",
+          "effects": {},
+          "next_page_id": "act2_p22_rooftop_exit"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p21a_lockbox_opened",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p21a_lockbox.png",
+      "story_text": "Page 21 \u2014 Lockbox Prize\n\nThe acid hissed through the seal. Inside, Jordan found a Reinforced Line and secured it to his belt before moving on.",
+      "choices": [
+        {
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act2_p22_rooftop_exit"
         }
@@ -1183,8 +1197,11 @@
           "label": "Dodge to the flank",
           "effects": {
             "set_flag": {
-              "opening_move": "dodge"
-            }
+              "opening_move": "dodge",
+              "master_fight_took_hit": true
+            },
+            "change_health": -1,
+            "notice_message": "Jordan dodged late and took a cut from the kunai, losing health."
           },
           "next_page_id": "act3_p26_dirty_trick"
         }
@@ -1200,8 +1217,7 @@
           "label": "Read his movement through the ash",
           "effects": {
             "set_flag": {
-              "master_injured": true,
-              "master_fight_took_hit": false
+              "master_injured": true
             }
           },
           "next_page_id": "act3_p27_final",
@@ -1214,20 +1230,38 @@
           "effects": {
             "set_flag": {
               "master_injured": false,
-              "master_fight_took_hit": false
-            }
+              "master_fight_took_hit": true
+            },
+            "change_health": -1,
+            "notice_message": "The high guard held, but the impact still hurt you. You lost health."
           },
-          "next_page_id": "act3_p27_final"
+          "next_page_id": "act3_p27_final",
+          "requirements": {
+            "flag_false": "master_fight_took_hit"
+          }
         },
         {
-          "label": "Retreat and reset your stance",
+          "label": "Counter with a tight high guard",
           "effects": {
             "set_flag": {
               "master_injured": false,
               "master_fight_took_hit": true
             },
             "change_health": -1,
-            "notice_message": "The Master clipped you during the retreat. You lost health."
+            "set_hook_state": "Damaged",
+            "notice_message": "That second heavy hit damaged your rope. You also lost health."
+          },
+          "next_page_id": "act3_p27_final",
+          "requirements": {
+            "flag_true": "master_fight_took_hit"
+          }
+        },
+        {
+          "label": "Retreat and reset your stance",
+          "effects": {
+            "set_flag": {
+              "master_injured": false
+            }
           },
           "next_page_id": "act3_p27_final"
         }
@@ -1393,7 +1427,33 @@
       "story_text": "Page 31B \u2014 The Shadow Ambush\n\nThe forest was silent, the trees covered in a thick layer of grey ash. Suddenly, two Fire Clan ninjas dropped from the branches.\n\nUse Smoke Bomb: Jordan vanished before they could strike. (Safe).\nReflex Discipline: Jordan countered their first strikes and fought his way through. (Safe).\nOther: Jordan won the fight, but was slashed across the ribs. Health Tier drops by 1.",
       "choices": [
         {
+          "label": "Continue through the ash forest",
+          "effects": {},
+          "next_page_id": "act4_p31d_ash_glade"
+        }
+      ]
+    },
+    {
+      "page_id": "act4_p31d_ash_glade",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p31b_ambush.png",
+      "story_text": "Page 31D \u2014 Ash Glade\n\nBeyond the ambush, Jordan crossed a dead ash grove where the ground whispered with heat vents. He moved carefully to avoid noisy cracks in the crust.",
+      "choices": [
+        {
           "label": "Continue",
+          "effects": {},
+          "next_page_id": "act4_p31e_ash_ridge"
+        }
+      ]
+    },
+    {
+      "page_id": "act4_p31e_ash_ridge",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p31b_ambush.png",
+      "story_text": "Page 31E \u2014 Ridge of Cinders\n\nJordan climbed a cinder ridge and watched patrol torches sweep below. Timing the gaps, he descended unseen and rejoined the route toward the bridge.",
+      "choices": [
+        {
+          "label": "Continue to the bridge",
           "effects": {},
           "next_page_id": "act4_p32_bridge"
         }
@@ -1442,19 +1502,19 @@
       "page_id": "act4_p32b_elite_fight",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p32b_elite_fight.png",
-      "story_text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan Elite blocked the far side of the bridge and drove forward with a long spear. Sparks burst as Jordan met the strike over the lava.",
+      "story_text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan ninja elite burst from the smoke and attacked Jordan with a long spear on the lava bridge.",
       "story_text_variants": [
         {
           "requirements": {
             "discipline_is": "Reflex"
           },
-          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan slipped past the spearpoint and ended the duel with a clean counter across the Elite's shoulder. He took the far side of the bridge unharmed."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan slipped past the spearpoint and ended the duel with a clean counter across the ninja Elite's shoulder. He took the far side of the bridge unharmed."
         },
         {
           "requirements": {
             "discipline_is": "Steel"
           },
-          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan absorbed the first impact, broke the Elite's stance with raw power, and threw him off balance into the stone rail."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan absorbed the first impact, broke the ninja Elite's stance with raw power, and threw him off balance into the stone rail."
         },
         {
           "requirements": {
@@ -1463,7 +1523,7 @@
               "Steel"
             ]
           },
-          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan won the duel, but the spear cut deep across his side before he disarmed the Elite and forced his way to the far ledge."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan won the duel, but the spear cut deep across his side before he disarmed the ninja Elite and forced his way to the far ledge."
         }
       ],
       "choices": [
@@ -1605,9 +1665,39 @@
       "story_text": "Page 34C \u2014 The Shockwave\n\nThe transformation was complete. The new Spirit Form let out a pulse of energy so powerful it shattered the stone pillars. A massive shockwave ripped through the volcano, reaching the outer ledges where Jordan was mid-crossing.",
       "choices": [
         {
-          "label": "The Quake Hits",
+          "label": "Continue",
+          "requirements": {
+            "discipline_is": "Reflex"
+          },
           "effects": {},
-          "next_page_id": "act4_p35_quake"
+          "next_page_id": "act4_p35c_ledge_reflex"
+        },
+        {
+          "label": "Continue",
+          "requirements": {
+            "discipline_is": "Focus"
+          },
+          "effects": {},
+          "next_page_id": "act4_p35c_ledge_reflex"
+        },
+        {
+          "label": "Continue",
+          "requirements": {
+            "discipline_is": "Steel"
+          },
+          "effects": {},
+          "next_page_id": "act5_p37_sanctum"
+        },
+        {
+          "label": "Continue",
+          "requirements": {
+            "discipline_is": "Shadow"
+          },
+          "effects": {
+            "change_health": -1,
+            "notice_message": "You fell hard during the descent and lost health."
+          },
+          "next_page_id": "act5_p37_sanctum"
         }
       ]
     },
@@ -1777,7 +1867,7 @@
       "page_id": "act5_p38_strike",
       "act_id": "act_5",
       "image_path": "res://assets/images/act5_p38_strike.png",
-      "story_text": "Page 38 \u2014 The Shattered Strike\n\nThe Master lunged through a glitch in space, appearing in three places at once. Jordan had one instant to pick the right response before the blades converged.",
+      "story_text": "Page 38 \u2014 The Shattered Strike\n\nThe Master moved so fast it looked like he was in three places at once. Jordan had one instant to pick the right response before the blades converged.",
       "choices": [
         {
           "label": "Plant and catch the true blade",
@@ -1792,7 +1882,7 @@
           }
         },
         {
-          "label": "Flow between the echo strikes",
+          "label": "Flow through the strikes",
           "effects": {
             "set_flag": {
               "qte1": "win"
@@ -1916,6 +2006,9 @@
       "choices": [
         {
           "label": "Use the Frost-Bitten Dagger",
+          "requirements": {
+            "has_item": "Frost-Bitten Dagger"
+          },
           "effects": {
             "set_flag": {
               "qte3": "win"
@@ -1924,31 +2017,39 @@
           "next_page_id": "act5_p43_breaking"
         },
         {
-          "label": "Outrun the void pull",
-          "effects": {
-            "set_flag": {
-              "qte3": "win"
-            }
-          },
-          "next_page_id": "act5_p43_breaking"
-        },
-        {
-          "label": "Throw stars into the voids",
-          "effects": {
-            "set_flag": {
-              "qte3": "win"
-            },
-            "remove_starting_item": "Throwing Stars"
-          },
-          "next_page_id": "act5_p43_breaking"
-        },
-        {
-          "label": "Roll clear and recover",
+          "label": "Attack into the void head-on",
           "effects": {
             "set_flag": {
               "qte3": "countered"
             },
-            "change_health": -1
+            "change_health": -1,
+            "notice_message": "You charged into the void pull and lost health."
+          },
+          "next_page_id": "act5_p43_breaking"
+        },
+        {
+          "label": "Throw stars into the void",
+          "requirements": {
+            "has_item": "Throwing Stars"
+          },
+          "effects": {
+            "set_flag": {
+              "qte3": "win"
+            },
+            "remove_starting_item": "Throwing Stars",
+            "consume_found_item": "Throwing Stars"
+          },
+          "next_page_id": "act5_p43_breaking"
+        },
+        {
+          "label": "Anchor with your rope and break free",
+          "requirements": {
+            "has_item": "Rope"
+          },
+          "effects": {
+            "set_flag": {
+              "qte3": "win"
+            }
           },
           "next_page_id": "act5_p43_breaking"
         }

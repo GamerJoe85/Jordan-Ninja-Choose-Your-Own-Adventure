@@ -223,11 +223,19 @@ func _on_choice_selected(choice: Dictionary) -> void:
 	var custom_notice: String = str(effects.get("notice_message", "")).strip_edges()
 	if not custom_notice.is_empty():
 		show_notice(custom_notice)
+	var auto_used_herb: bool = false
+	if GameState.health_tier == "Dying" and GameState.has_item("Health Herb"):
+		GameState.starting_items.erase("Health Herb")
+		GameState.found_items.erase("Health Herb")
+		GameState.change_health_tier(1)
+		auto_used_herb = true
+		show_notice("Auto-used Health Herb to keep Jordan alive.")
 	var took_damage_at_dying: bool = (
 		previous_health == "Dying"
 		and int(effects.get("change_health", 0)) < 0
+		and not auto_used_herb
 	)
-	if previous_health != GameState.health_tier:
+	if previous_health != GameState.health_tier or auto_used_herb:
 		if not custom_notice.is_empty():
 			pass
 		elif GameState.health_at_least(previous_health):
