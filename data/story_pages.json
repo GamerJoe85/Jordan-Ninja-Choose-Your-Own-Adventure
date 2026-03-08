@@ -1409,30 +1409,6 @@
           "requirements": {
             "discipline_is": "Steel"
           }
-        },
-        {
-          "label": "Use the grappling hook",
-          "effects": {},
-          "next_page_id": "act4_p32_bridge",
-          "requirements": {
-            "hook_state_is": "Good",
-            "has_item": "Rope"
-          }
-        },
-        {
-          "label": "Search for the crow-mark passage",
-          "effects": {},
-          "next_page_id": "act4_p31c_crow",
-          "requirements": {
-            "has_item": "Cavern Clue"
-          }
-        },
-        {
-          "label": "Climb by hand anyway",
-          "effects": {
-            "change_health": -1
-          },
-          "next_page_id": "act4_p32_bridge"
         }
       ]
     },
@@ -1680,17 +1656,7 @@
         {
           "label": "Continue",
           "requirements": {
-            "flag_true": "cross_swing",
-            "hook_state_is": "Good"
-          },
-          "effects": {},
-          "next_page_id": "act4_p35_quake"
-        },
-        {
-          "label": "Continue",
-          "requirements": {
-            "flag_true": "cross_swing",
-            "hook_state_is": "Damaged"
+            "flag_true": "cross_swing"
           },
           "effects": {},
           "next_page_id": "act4_p35_quake"
@@ -1699,16 +1665,25 @@
           "label": "Continue",
           "requirements": {
             "flag_true": "cross_ledge",
-            "discipline_is": "Shadow"
+            "discipline_is": "Reflex"
           },
-          "effects": {
-            "change_health": -1,
-            "notice_message": "You hit the stone hard during the fall and lost health."
-          },
-          "next_page_id": "act4_p34d_ledge_crash"
+          "effects": {},
+          "next_page_id": "act4_p35c_ledge_reflex"
         },
         {
           "label": "Continue",
+          "requirements": {
+            "flag_true": "cross_ledge",
+            "discipline_is": "Focus"
+          },
+          "effects": {},
+          "next_page_id": "act4_p35c_ledge_reflex"
+        },
+        {
+          "label": "Continue",
+          "requirements": {
+            "flag_true": "cross_ledge"
+          },
           "effects": {},
           "next_page_id": "act4_p34d_ledge_crash"
         }
