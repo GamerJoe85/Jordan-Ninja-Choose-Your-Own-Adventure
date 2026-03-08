@@ -896,13 +896,27 @@
             "add_found_item": "Cavern Clue",
             "remove_starting_item": "Health Herb"
           },
-          "next_page_id": "act2_p20b_gate",
+          "next_page_id": "act2_p19b_herb_reward",
           "requirements": {
             "has_item": "Health Herb"
           }
         },
         {
           "label": "Leave him and keep moving",
+          "effects": {},
+          "next_page_id": "act2_p20b_gate"
+        }
+      ]
+    },
+    {
+      "page_id": "act2_p19b_herb_reward",
+      "act_id": "act_2",
+      "image_path": "res://assets/images/act2_p19b_scout.png",
+      "story_text": "Page 19B \u2014 A Grateful Warning\n\nJordan pressed the herb into the scout's hand. The scout steadied his breathing and whispered about a hidden crow-mark passage through the mountain before slipping away.",
+      "notice_message": "Received item: Cavern Clue",
+      "choices": [
+        {
+          "label": "Continue",
           "effects": {},
           "next_page_id": "act2_p20b_gate"
         }

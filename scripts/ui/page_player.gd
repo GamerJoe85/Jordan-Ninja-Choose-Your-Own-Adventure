@@ -69,6 +69,9 @@ func play_page(page_id: String) -> void:
 			notice_parent.visible = false
 	story_text_label.text = resolve_story_text(page)
 	build_choices(page.get("choices", []) as Array)
+	var page_notice: String = str(page.get("notice_message", "")).strip_edges()
+	if not page_notice.is_empty():
+		show_notice(page_notice)
 	refresh_hud()
 
 func apply_image(page_id: String, image_path: String) -> void:
