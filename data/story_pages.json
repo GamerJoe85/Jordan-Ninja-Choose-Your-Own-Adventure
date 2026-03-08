@@ -1409,6 +1409,14 @@
           "requirements": {
             "discipline_is": "Steel"
           }
+        },
+        {
+          "label": "Force your way up the wall",
+          "effects": {
+            "change_health": -1,
+            "notice_message": "The climb was rough and you lost health, but you reached the top."
+          },
+          "next_page_id": "act4_p32_bridge"
         }
       ]
     },
