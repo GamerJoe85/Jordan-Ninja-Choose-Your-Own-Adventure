@@ -263,6 +263,9 @@ func apply_effects(effects: Dictionary) -> void:
 			GameState.add_starting_item(str(item_name_variant))
 	if effects.has("add_found_item"):
 		GameState.add_found_item(str(effects["add_found_item"]))
+	if effects.has("add_found_items"):
+		for found_item_variant in effects["add_found_items"]:
+			GameState.add_found_item(str(found_item_variant))
 	if effects.has("change_health"):
 		GameState.change_health_tier(int(effects["change_health"]))
 	if effects.has("set_health"):

@@ -74,12 +74,15 @@ How to use:
 | ☐ | `act4_p31a_wall` | `act_4` | `res://assets/images/act4_p31a_wall.png` |
 | ☐ | `act4_p31b_ambush` | `act_4` | `res://assets/images/act4_p31b_ambush.png` |
 | ☐ | `act4_p31c_crow` | `act_4` | `res://assets/images/act4_p31c_crow.png` |
+| ☐ | `act4_p31d_ash_glade` | `act_4` | `res://assets/images/act4_p31d_ash_glade.png` |
+| ☐ | `act4_p31e_ash_ridge` | `act_4` | `res://assets/images/act4_p31e_ash_ridge.png` |
 | ☐ | `act4_p32_bridge` | `act_4` | `res://assets/images/act4_p32_bridge.png` |
 | ☐ | `act4_p32b_elite_fight` | `act_4` | `res://assets/images/act4_p32b_elite_fight.png` |
 | ☐ | `act4_p33_crossing` | `act_4` | `res://assets/images/act4_p33_crossing.png` |
 | ☐ | `act4_p34a_offering` | `act_4` | `res://assets/images/act4_p34a_offering.png` |
 | ☐ | `act4_p34b_fusion` | `act_4` | `res://assets/images/act4_p34b_fusion.png` |
 | ☐ | `act4_p34c_shockwave` | `act_4` | `res://assets/images/act4_p34c_shockwave.png` |
+| ☐ | `act4_p34d_ledge_crash` | `act_4` | `res://assets/images/act4_p34d_ledge_crash.png` |
 | ☐ | `act4_p35_quake` | `act_4` | `res://assets/images/act4_p35_quake.png` |
 | ☐ | `act4_p35a_swing_hold` | `act_4` | `res://assets/images/act4_p35a_swing_hold.png` |
 | ☐ | `act4_p35b_swing_snap` | `act_4` | `res://assets/images/act4_p35b_swing_snap.png` |

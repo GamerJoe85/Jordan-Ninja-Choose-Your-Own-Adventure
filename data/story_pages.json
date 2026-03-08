@@ -794,9 +794,12 @@
         {
           "label": "Open it with Vial of Acid",
           "effects": {
-            "add_found_item": "Reinforced Line",
+            "add_found_items": [
+              "Reinforced Line",
+              "Cavern Clue"
+            ],
             "remove_starting_item": "Vial of Acid",
-            "notice_message": "Inside the lockbox, Jordan found Reinforced Line."
+            "notice_message": "Inside the lockbox, Jordan found Reinforced Line and a Crow-mark clue."
           },
           "next_page_id": "act2_p21a_lockbox_opened",
           "requirements": {
@@ -814,7 +817,7 @@
       "page_id": "act2_p21a_lockbox_opened",
       "act_id": "act_2",
       "image_path": "res://assets/images/act2_p21a_lockbox.png",
-      "story_text": "Page 21 \u2014 Lockbox Prize\n\nThe acid hissed through the seal. Inside, Jordan found a Reinforced Line and secured it to his belt before moving on.",
+      "story_text": "Page 21 \u2014 Lockbox Prize\n\nThe acid hissed through the seal. Inside, Jordan found a Reinforced Line and a wax-sealed note describing a crow mark passage near the cliffside.",
       "choices": [
         {
           "label": "Continue",
@@ -1400,7 +1403,8 @@
           "effects": {},
           "next_page_id": "act4_p32_bridge",
           "requirements": {
-            "hook_state_is": "Good"
+            "hook_state_is": "Good",
+            "has_item": "Rope"
           }
         },
         {
@@ -1436,7 +1440,7 @@
     {
       "page_id": "act4_p31d_ash_glade",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_p31b_ambush.png",
+      "image_path": "res://assets/images/act4_p31d_ash_glade.png",
       "story_text": "Page 31D \u2014 Ash Glade\n\nBeyond the ambush, Jordan crossed a dead ash grove where the ground whispered with heat vents. He moved carefully to avoid noisy cracks in the crust.",
       "choices": [
         {
@@ -1449,7 +1453,7 @@
     {
       "page_id": "act4_p31e_ash_ridge",
       "act_id": "act_4",
-      "image_path": "res://assets/images/act4_p31b_ambush.png",
+      "image_path": "res://assets/images/act4_p31e_ash_ridge.png",
       "story_text": "Page 31E \u2014 Ridge of Cinders\n\nJordan climbed a cinder ridge and watched patrol torches sweep below. Timing the gaps, he descended unseen and rejoined the route toward the bridge.",
       "choices": [
         {
@@ -1502,19 +1506,19 @@
       "page_id": "act4_p32b_elite_fight",
       "act_id": "act_4",
       "image_path": "res://assets/images/act4_p32b_elite_fight.png",
-      "story_text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan ninja elite burst from the smoke and attacked Jordan with a long spear on the lava bridge.",
+      "story_text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan scout attacked Jordan with a long spear on the lava bridge.",
       "story_text_variants": [
         {
           "requirements": {
             "discipline_is": "Reflex"
           },
-          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan slipped past the spearpoint and ended the duel with a clean counter across the ninja Elite's shoulder. He took the far side of the bridge unharmed."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan scout thrust a spear at Jordan, but Jordan slipped past the spearpoint and countered cleanly to take the upper ledge."
         },
         {
           "requirements": {
             "discipline_is": "Steel"
           },
-          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan absorbed the first impact, broke the ninja Elite's stance with raw power, and threw him off balance into the stone rail."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan scout drove in with a spear. Jordan absorbed the impact, broke the scout\u2019s stance, and forced his way to the upper ledge."
         },
         {
           "requirements": {
@@ -1523,7 +1527,7 @@
               "Steel"
             ]
           },
-          "text": "Page 32B \u2014 Duel on the Bridge\n\nJordan won the duel, but the spear cut deep across his side before he disarmed the ninja Elite and forced his way to the far ledge."
+          "text": "Page 32B \u2014 Duel on the Bridge\n\nA Fire Clan scout attacked with a spear. Jordan slipped past the point at the last second, won the duel, and reached the upper ledge hurt."
         }
       ],
       "choices": [
@@ -1667,36 +1671,67 @@
         {
           "label": "Continue",
           "requirements": {
-            "discipline_is": "Reflex"
+            "flag_true": "cross_swing",
+            "hook_state_is": "Good"
           },
           "effects": {},
-          "next_page_id": "act4_p35c_ledge_reflex"
+          "next_page_id": "act4_p35a_swing_hold"
         },
         {
           "label": "Continue",
           "requirements": {
-            "discipline_is": "Focus"
+            "flag_true": "cross_swing",
+            "hook_state_is": "Damaged"
           },
           "effects": {},
-          "next_page_id": "act4_p35c_ledge_reflex"
+          "next_page_id": "act4_p35b_swing_snap"
         },
         {
           "label": "Continue",
           "requirements": {
+            "flag_true": "cross_ledge",
             "discipline_is": "Steel"
           },
           "effects": {},
-          "next_page_id": "act5_p37_sanctum"
+          "next_page_id": "act4_p34d_ledge_crash"
         },
         {
           "label": "Continue",
           "requirements": {
+            "flag_true": "cross_ledge",
             "discipline_is": "Shadow"
           },
           "effects": {
             "change_health": -1,
-            "notice_message": "You fell hard during the descent and lost health."
+            "notice_message": "You hit the stone hard during the fall and lost health."
           },
+          "next_page_id": "act4_p34d_ledge_crash"
+        }
+      ]
+    },
+    {
+      "page_id": "act4_p34d_ledge_crash",
+      "act_id": "act_4",
+      "image_path": "res://assets/images/act4_p34d_ledge_crash.png",
+      "story_text": "Page 34D \u2014 Ledge Collapse\n\nThe ledge split apart under Jordan. He crashed through volcanic stone and dropped into the Sanctum level below, face-to-face with the fused Master.",
+      "story_text_variants": [
+        {
+          "requirements": {
+            "discipline_is": "Steel"
+          },
+          "text": "Page 34D \u2014 Ledge Collapse\n\nThe ledge split apart under Jordan. He braced through the fall, smashed into the Sanctum floor, and rose without losing ground against the fused Master."
+        },
+        {
+          "requirements": {
+            "discipline_is": "Shadow"
+          },
+          "text": "Page 34D \u2014 Ledge Collapse\n\nThe ledge split apart under Jordan. He twisted through the debris and crashed into the Sanctum floor, hurt but still in the fight against the fused Master."
+        }
+      ],
+      "choices": [
+        {
+          "label": "Enter the Sanctum",
+          "effects": {},
           "next_page_id": "act5_p37_sanctum"
         }
       ]
