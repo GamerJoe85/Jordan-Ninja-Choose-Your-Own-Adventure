@@ -1680,7 +1680,8 @@
         {
           "label": "Continue",
           "requirements": {
-            "flag_true": "cross_swing"
+            "flag_true": "cross_swing",
+            "hook_state_is": "Good"
           },
           "effects": {},
           "next_page_id": "act4_p35_quake"
@@ -1688,11 +1689,11 @@
         {
           "label": "Continue",
           "requirements": {
-            "flag_true": "cross_ledge",
-            "discipline_is": "Steel"
+            "flag_true": "cross_swing",
+            "hook_state_is": "Damaged"
           },
           "effects": {},
-          "next_page_id": "act4_p34d_ledge_crash"
+          "next_page_id": "act4_p35_quake"
         },
         {
           "label": "Continue",
@@ -1704,6 +1705,11 @@
             "change_health": -1,
             "notice_message": "You hit the stone hard during the fall and lost health."
           },
+          "next_page_id": "act4_p34d_ledge_crash"
+        },
+        {
+          "label": "Continue",
+          "effects": {},
           "next_page_id": "act4_p34d_ledge_crash"
         }
       ]
