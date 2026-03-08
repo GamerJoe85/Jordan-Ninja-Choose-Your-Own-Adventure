@@ -217,6 +217,7 @@ func requirements_met(requirements: Dictionary) -> bool:
 
 func _on_choice_selected(choice: Dictionary) -> void:
 	var previous_health: String = GameState.health_tier
+	var previous_hook_state: String = GameState.hook_state
 	var effects: Dictionary = choice.get("effects", {}) as Dictionary
 	apply_effects(effects)
 	var custom_notice: String = str(effects.get("notice_message", "")).strip_edges()
@@ -233,6 +234,8 @@ func _on_choice_selected(choice: Dictionary) -> void:
 			show_notice("Health restored: %s" % GameState.health_tier)
 		else:
 			show_notice("Health dropped to %s" % GameState.health_tier)
+	if previous_hook_state != GameState.hook_state and GameState.hook_state == "Damaged" and custom_notice.is_empty():
+		show_notice("Your rope was damaged.")
 	refresh_hud()
 	var next_page_id: String = str(choice.get("next_page_id", ""))
 	if took_damage_at_dying:
