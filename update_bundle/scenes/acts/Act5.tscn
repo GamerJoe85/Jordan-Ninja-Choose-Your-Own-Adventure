@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/acts/act_wrapper.gd" id="1"]
+
+[node name="Act5" type="Node"]
+script = ExtResource("1")
+act_id = "act_5"
+start_page_id = "act5_start"
+ambience_note = "Act 5 ambience placeholder"
