@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://cm8b2v5k4x1p3"]
+
+[ext_resource type="Script" uid="uid://bfhl38yrsbb28" path="res://scripts/controllers/title_menu.gd" id="1_w7rly"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_title_box"]
+bg_color = Color(0, 0, 0, 0.42)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="TitleMenu" type="Control" unique_id=76450894]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w7rly")
+
+[node name="TitleBackground" type="TextureRect" parent="." unique_id=242146311]
+unique_name_in_owner = true
+modulate = Color(1, 1, 1, 0.9)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=217249970]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TitleBox" type="PanelContainer" parent="CenterContainer" unique_id=1075564189]
+custom_minimum_size = Vector2(860, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_title_box")
+
+[node name="VBox" type="VBoxContainer" parent="CenterContainer/TitleBox" unique_id=143963457]
+custom_minimum_size = Vector2(820, 0)
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Title" type="Label" parent="CenterContainer/TitleBox/VBox" unique_id=33229400]
+layout_mode = 2
+theme_override_font_sizes/font_size = 46
+text = "ELEMENTAL BALANCE: FIRE CHAPTER"
+horizontal_alignment = 1
+
+[node name="Start" type="Button" parent="CenterContainer/TitleBox/VBox" unique_id=2059087220]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(420, 88)
+layout_mode = 2
+theme_override_font_sizes/font_size = 34
+text = "Start Adventure"
+
+[connection signal="pressed" from="CenterContainer/TitleBox/VBox/Start" to="." method="_on_start_pressed"]
