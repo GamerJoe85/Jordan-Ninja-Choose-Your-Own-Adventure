@@ -55,7 +55,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 1
+mouse_filter = 0
 color = Color(0, 0, 0, 0.45)
 
 [node name="NoticeCenter" type="CenterContainer" parent="EventNoticeOverlay" unique_id=980712440]

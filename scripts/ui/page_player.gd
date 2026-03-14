@@ -70,6 +70,7 @@ func play_page(page_id: String) -> void:
 	_hide_notice_overlay()
 	story_text_label.text = resolve_story_text(page)
 	build_choices(page.get("choices", []) as Array)
+	_set_choices_interactable(true)
 	refresh_hud()
 
 func apply_image(page_id: String, image_path: String) -> void:
@@ -323,6 +324,7 @@ func show_next_notice() -> void:
 		return
 	if event_notice == null:
 		return
+	_set_choices_interactable(false)
 	event_notice.text = pending_notices[0]
 	event_notice.visible = true
 	if event_notice_overlay != null:
@@ -365,3 +367,13 @@ func _hide_notice_overlay() -> void:
 		event_notice.visible = false
 	if event_notice_overlay != null:
 		event_notice_overlay.visible = false
+	_set_choices_interactable(true)
+
+
+func _set_choices_interactable(interactable: bool) -> void:
+	if choice_container == null:
+		return
+	for child in choice_container.get_children():
+		var button: Button = child as Button
+		if button != null:
+			button.disabled = not interactable
