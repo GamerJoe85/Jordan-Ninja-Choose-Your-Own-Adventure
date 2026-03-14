@@ -218,6 +218,10 @@ func requirements_met(requirements: Dictionary) -> bool:
 	return true
 
 func _on_choice_selected(choice: Dictionary) -> void:
+	if event_notice_overlay != null and event_notice_overlay.visible:
+		return
+	if not pending_notices.is_empty():
+		return
 	var previous_health: String = GameState.health_tier
 	var previous_hook_state: String = GameState.hook_state
 	var effects: Dictionary = choice.get("effects", {}) as Dictionary
@@ -328,6 +332,9 @@ func show_next_notice() -> void:
 	event_notice.text = pending_notices[0]
 	event_notice.visible = true
 	if event_notice_overlay != null:
+		var overlay_control: Control = event_notice_overlay as Control
+		if overlay_control != null:
+			overlay_control.move_to_front()
 		event_notice_overlay.visible = true
 
 
