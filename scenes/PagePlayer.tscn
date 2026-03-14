@@ -67,8 +67,10 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="EventNoticePanel" type="PanelContainer" parent="EventNoticeOverlay/NoticeCenter" unique_id=411439718]
-custom_minimum_size = Vector2(1200, 340)
+custom_minimum_size = Vector2(1300, 460)
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_styles/panel = SubResource("StyleBoxFlat_notice")
 
 [node name="NoticeVBox" type="VBoxContainer" parent="EventNoticeOverlay/NoticeCenter/EventNoticePanel" unique_id=1020033917]
@@ -77,19 +79,22 @@ theme_override_constants/separation = 20
 
 [node name="EventNotice" type="Label" parent="EventNoticeOverlay/NoticeCenter/EventNoticePanel/NoticeVBox" unique_id=1005733529]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 220)
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 0.85, 0.35, 1)
-theme_override_font_sizes/font_size = 34
+theme_override_font_sizes/font_size = 30
 autowrap_mode = 2
 horizontal_alignment = 0
+vertical_alignment = 1
 
 [node name="EventNoticeContinueButton" type="Button" parent="EventNoticeOverlay/NoticeCenter/EventNoticePanel/NoticeVBox" unique_id=1178110292]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 78)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 34
+theme_override_font_sizes/font_size = 30
 text = "Continue"
 
 [node name="UseHealthHerbButton" type="Button" parent="." unique_id=545736110]
