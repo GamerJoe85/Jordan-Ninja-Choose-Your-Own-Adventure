@@ -855,11 +855,10 @@
 		  "label": "Open it with Vial of Acid",
 		  "effects": {
 			"add_found_items": [
-			  "Reinforced Line",
-              "Cavern Clue"
+			  "Cavern Clue"
 			],
 			"remove_starting_item": "Vial of Acid",
-			"notice_message": "Inside the lockbox, Jordan found Reinforced Line and a Crow-mark clue."
+			"notice_message": "Inside the lockbox, Jordan found a Crow-mark clue."
 		  },
 		  "next_page_id": "act2_p21a_lockbox_opened",
 		  "requirements": {
@@ -877,7 +876,7 @@
 	  "page_id": "act2_p21a_lockbox_opened",
 	  "act_id": "act_2",
 	  "image_path": "res://assets/images/act2_p21a_lockbox.png",
-	  "story_text": "Page 21 \u2014 Lockbox Prize\n\nThe acid hissed through the seal. Inside, Jordan found a Reinforced Line and a wax-sealed note describing a crow mark passage near the cliffside.",
+	  "story_text": "Page 21 \u2014 Lockbox Prize\n\nThe acid hissed through the seal. Inside, Jordan found a wax-sealed note describing a crow mark passage near the cliffside.",
 	  "choices": [
 		{
 		  "label": "Continue",
