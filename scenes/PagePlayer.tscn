@@ -48,6 +48,7 @@ stretch_mode = 6
 [node name="EventNoticeOverlay" type="ColorRect" parent="." unique_id=212340198]
 unique_name_in_owner = true
 visible = false
+z_index = 100
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -66,7 +67,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="EventNoticePanel" type="PanelContainer" parent="EventNoticeOverlay/NoticeCenter" unique_id=411439718]
-custom_minimum_size = Vector2(980, 260)
+custom_minimum_size = Vector2(1200, 340)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_notice")
 
@@ -79,14 +80,16 @@ unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(1, 0.85, 0.35, 1)
-theme_override_font_sizes/font_size = 28
+theme_override_font_sizes/font_size = 34
 autowrap_mode = 2
 horizontal_alignment = 0
 
 [node name="EventNoticeContinueButton" type="Button" parent="EventNoticeOverlay/NoticeCenter/EventNoticePanel/NoticeVBox" unique_id=1178110292]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 78)
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 34
 text = "Continue"
 
 [node name="UseHealthHerbButton" type="Button" parent="." unique_id=545736110]
