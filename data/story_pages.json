@@ -833,9 +833,15 @@
 		  "label": "Rush the guard head-on",
 		  "effects": {
 			"change_health": -1,
+			"set_flag": {
+			  "beam_guard_rushed": true
+			},
 			"notice_message": "You took the guard out, but got clipped in the fight and lost health."
 		  },
-		  "next_page_id": "act2_p21a_lockbox"
+		  "next_page_id": "act2_p21a_lockbox",
+		  "requirements": {
+			"flag_false": "beam_guard_rushed"
+		  }
 		}
 	  ]
 	},
