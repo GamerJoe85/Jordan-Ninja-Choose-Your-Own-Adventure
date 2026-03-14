@@ -15,16 +15,22 @@ const STORY_PATH: String = "res://data/story_pages.json"
 @onready var inventory_value: Label = %InventoryValue
 @onready var hook_value: Label = %HookValue
 @onready var event_notice: Label = %EventNotice
+@onready var event_notice_overlay: CanvasItem = %EventNoticeOverlay
+@onready var event_notice_continue_button: Button = %EventNoticeContinueButton
 @onready var use_health_herb_button: Button = %UseHealthHerbButton
 
 var pages: Dictionary = {}
 var image_override_map: Dictionary = {}
+var pending_next_page_id: String = ""
+var pending_notices: Array[String] = []
 
 func _ready() -> void:
 	load_story_data()
 	build_image_override_map()
 	if use_health_herb_button != null and not use_health_herb_button.pressed.is_connected(_on_use_health_herb_pressed):
 		use_health_herb_button.pressed.connect(_on_use_health_herb_pressed)
+	if event_notice_continue_button != null and not event_notice_continue_button.pressed.is_connected(_on_notice_continue_pressed):
+		event_notice_continue_button.pressed.connect(_on_notice_continue_pressed)
 	refresh_hud()
 
 func load_story_data() -> void:
@@ -61,12 +67,7 @@ func play_page(page_id: String) -> void:
 	GameState.current_page_id = page_id
 	emit_signal("page_changed", page_id, str(page.get("act_id", "")))
 	apply_image(page_id, str(page.get("image_path", "")))
-	if event_notice != null:
-		event_notice.text = ""
-		event_notice.visible = false
-		var notice_parent: CanvasItem = event_notice.get_parent() as CanvasItem
-		if notice_parent != null:
-			notice_parent.visible = false
+	_hide_notice_overlay()
 	story_text_label.text = resolve_story_text(page)
 	build_choices(page.get("choices", []) as Array)
 	refresh_hud()
@@ -222,14 +223,14 @@ func _on_choice_selected(choice: Dictionary) -> void:
 	apply_effects(effects)
 	var custom_notice: String = str(effects.get("notice_message", "")).strip_edges()
 	if not custom_notice.is_empty():
-		show_notice(custom_notice)
+		queue_notice(custom_notice)
 	var auto_used_herb: bool = false
 	if GameState.health_tier == "Dying" and GameState.has_item("Health Herb"):
 		GameState.starting_items.erase("Health Herb")
 		GameState.found_items.erase("Health Herb")
 		GameState.change_health_tier(1)
 		auto_used_herb = true
-		show_notice("Auto-used Health Herb to keep Jordan alive.")
+		queue_notice("Auto-used Health Herb to keep Jordan alive.")
 	var took_damage_at_dying: bool = (
 		previous_health == "Dying"
 		and int(effects.get("change_health", 0)) < 0
@@ -239,19 +240,16 @@ func _on_choice_selected(choice: Dictionary) -> void:
 		if not custom_notice.is_empty():
 			pass
 		elif GameState.health_at_least(previous_health):
-			show_notice("Health restored: %s" % GameState.health_tier)
+			queue_notice("Health restored: %s" % GameState.health_tier)
 		else:
-			show_notice("Health dropped to %s" % GameState.health_tier)
+			queue_notice("Health dropped to %s" % GameState.health_tier)
 	if previous_hook_state != GameState.hook_state and GameState.hook_state == "Damaged" and custom_notice.is_empty():
-		show_notice("Your rope was damaged.")
+		queue_notice("Your rope was damaged.")
 	refresh_hud()
 	var next_page_id: String = str(choice.get("next_page_id", ""))
 	if took_damage_at_dying:
 		next_page_id = "act_end_universal_death"
-	if not next_page_id.is_empty():
-		if next_page_id == "act1_start" and GameState.current_page_id != "":
-			GameState.reset()
-		play_page(next_page_id)
+	navigate_to_next_page(next_page_id)
 
 func apply_effects(effects: Dictionary) -> void:
 	if effects.has("set_discipline"):
@@ -297,23 +295,73 @@ func refresh_hud() -> void:
 
 func _on_use_health_herb_pressed() -> void:
 	if not GameState.has_item("Health Herb"):
-		show_notice("No Health Herb available.")
+		queue_notice("No Health Herb available.")
+		show_next_notice()
 		return
 	if GameState.health_tier == "Prime":
-		show_notice("Health is already at maximum.")
+		queue_notice("Health is already at maximum.")
+		show_next_notice()
 		return
 	GameState.starting_items.erase("Health Herb")
 	GameState.found_items.erase("Health Herb")
 	GameState.change_health_tier(1)
-	show_notice("Used Health Herb. Health restored to %s" % GameState.health_tier)
+	queue_notice("Used Health Herb. Health restored to %s" % GameState.health_tier)
+	show_next_notice()
 	refresh_hud()
 
 
-func show_notice(message: String) -> void:
+func queue_notice(message: String) -> void:
+	var cleaned_message: String = message.strip_edges()
+	if cleaned_message.is_empty():
+		return
+	pending_notices.append(cleaned_message)
+
+
+func show_next_notice() -> void:
+	if pending_notices.is_empty():
+		_hide_notice_overlay()
+		return
 	if event_notice == null:
 		return
-	event_notice.text = message
+	event_notice.text = pending_notices[0]
 	event_notice.visible = true
-	var notice_parent: CanvasItem = event_notice.get_parent() as CanvasItem
-	if notice_parent != null:
-		notice_parent.visible = true
+	if event_notice_overlay != null:
+		event_notice_overlay.visible = true
+
+
+func navigate_to_next_page(next_page_id: String) -> void:
+	if next_page_id.is_empty():
+		show_next_notice()
+		return
+	if pending_notices.is_empty():
+		go_to_page(next_page_id)
+		return
+	pending_next_page_id = next_page_id
+	show_next_notice()
+
+
+func go_to_page(next_page_id: String) -> void:
+	if next_page_id == "act1_start" and GameState.current_page_id != "":
+		GameState.reset()
+	play_page(next_page_id)
+
+
+func _on_notice_continue_pressed() -> void:
+	if not pending_notices.is_empty():
+		pending_notices.remove_at(0)
+	if not pending_notices.is_empty():
+		show_next_notice()
+		return
+	_hide_notice_overlay()
+	if not pending_next_page_id.is_empty():
+		var target_page: String = pending_next_page_id
+		pending_next_page_id = ""
+		go_to_page(target_page)
+
+
+func _hide_notice_overlay() -> void:
+	if event_notice != null:
+		event_notice.text = ""
+		event_notice.visible = false
+	if event_notice_overlay != null:
+		event_notice_overlay.visible = false

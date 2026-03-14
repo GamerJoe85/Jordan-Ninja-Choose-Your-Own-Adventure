@@ -408,6 +408,9 @@
 	  "choices": [
 		{
 		  "label": "Rope",
+		  "requirements": {
+			"lacks_item": "Rope"
+		  },
 		  "effects": {
 			"add_starting_item": "Rope"
 		  },
@@ -415,6 +418,9 @@
 		},
 		{
 		  "label": "Smoke Bomb",
+		  "requirements": {
+			"lacks_item": "Smoke Bomb"
+		  },
 		  "effects": {
 			"add_starting_item": "Smoke Bomb"
 		  },
@@ -422,6 +428,9 @@
 		},
 		{
 		  "label": "Blow Dart",
+		  "requirements": {
+			"lacks_item": "Blow Dart"
+		  },
 		  "effects": {
 			"add_starting_item": "Blow Dart"
 		  },
@@ -442,6 +451,9 @@
 	  "choices": [
 		{
 		  "label": "Vial of Acid",
+		  "requirements": {
+			"lacks_item": "Vial of Acid"
+		  },
 		  "effects": {
 			"add_starting_item": "Vial of Acid"
 		  },
@@ -449,6 +461,9 @@
 		},
 		{
 		  "label": "Bandage",
+		  "requirements": {
+			"lacks_item": "Bandage"
+		  },
 		  "effects": {
 			"add_starting_item": "Bandage"
 		  },
@@ -456,6 +471,9 @@
 		},
 		{
 		  "label": "Throwing Stars",
+		  "requirements": {
+			"lacks_item": "Throwing Stars"
+		  },
 		  "effects": {
 			"add_starting_item": "Throwing Stars"
 		  },
@@ -463,10 +481,18 @@
 		},
 		{
 		  "label": "Health Herb",
+		  "requirements": {
+			"lacks_item": "Health Herb"
+		  },
 		  "effects": {
 			"add_starting_item": "Health Herb"
 		  },
 		  "next_page_id": "act1_p15_pick2a"
+		},
+		{
+		  "label": "Back",
+		  "effects": {},
+		  "next_page_id": "act1_p15_pick1a"
 		}
 	  ]
 	},
@@ -483,7 +509,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Rope"
 		  }
 		},
 		{
@@ -493,7 +520,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Smoke Bomb"
 		  }
 		},
 		{
@@ -503,7 +531,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Blow Dart"
 		  }
 		},
 		{
@@ -529,7 +558,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Vial of Acid"
 		  }
 		},
 		{
@@ -539,7 +569,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Bandage"
 		  }
 		},
 		{
@@ -549,7 +580,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Throwing Stars"
 		  }
 		},
 		{
@@ -558,6 +590,15 @@
 			"add_starting_item": "Health Herb"
 		  },
 		  "next_page_id": "act1_p15_pick3a",
+		  "requirements": {
+			"starting_items_count": 1,
+			"lacks_item": "Health Herb"
+		  }
+		},
+		{
+		  "label": "Back",
+		  "effects": {},
+		  "next_page_id": "act1_p15_pick2a",
 		  "requirements": {
 			"starting_items_count": 1
 		  }
@@ -577,7 +618,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Rope"
 		  }
 		},
 		{
@@ -587,7 +629,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Smoke Bomb"
 		  }
 		},
 		{
@@ -597,7 +640,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Blow Dart"
 		  }
 		},
 		{
@@ -623,7 +667,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Vial of Acid"
 		  }
 		},
 		{
@@ -633,7 +678,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Bandage"
 		  }
 		},
 		{
@@ -643,7 +689,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Throwing Stars"
 		  }
 		},
 		{
@@ -652,6 +699,15 @@
 			"add_starting_item": "Health Herb"
 		  },
 		  "next_page_id": "act1_p15_confirm",
+		  "requirements": {
+			"starting_items_count": 2,
+			"lacks_item": "Health Herb"
+		  }
+		},
+		{
+		  "label": "Back",
+		  "effects": {},
+		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
 			"starting_items_count": 2
 		  }
@@ -2014,7 +2070,7 @@
 			  "qte3": "win"
 			}
 		  },
-		  "next_page_id": "act5_p43_breaking"
+		  "next_page_id": "act5_p45_breath"
 		},
 		{
 		  "label": "Attack into the void head-on",
