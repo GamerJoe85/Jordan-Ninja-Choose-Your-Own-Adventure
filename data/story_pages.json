@@ -955,7 +955,8 @@
 		  "label": "Use a Health Herb",
 		  "effects": {
 			"add_found_item": "Cavern Clue",
-			"remove_starting_item": "Health Herb"
+			"remove_starting_item": "Health Herb",
+			"notice_message": "The scout thanked you and gave you a clue to find the hidden cavern."
 		  },
 		  "next_page_id": "act2_p20b_gate",
 		  "requirements": {
