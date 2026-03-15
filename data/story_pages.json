@@ -975,19 +975,33 @@
 	  "image_path": "res://assets/images/act2_p20b_gate.png",
 	  "story_text": "Page 21 \u2014 The Patrol Gate\n\nTwo Fire Clan guards blocked the iron gate into the inner square. Jordan had to remove them fast and pass through.",
 	  "choices": [
-		{
-		  "label": "Slip through during their blind spot",
-		  "effects": {},
-		  "next_page_id": "act2_p22_street_exit",
-		  "requirements": {
-			"flag_false": "detected"
-		  }
-		},
-		{
-		  "label": "Break the first guard and disarm the second",
-		  "effects": {
-			"set_flag": {
-			  "detected": false
+        {
+          "label": "Slip through during their blind spot",
+          "effects": {},
+          "next_page_id": "act2_p22_street_exit",
+          "requirements": {
+            "flag_false": "detected"
+          }
+        },
+        {
+          "label": "Use Blow Dart to take out the gate guards",
+          "effects": {
+            "remove_starting_item": "Blow Dart",
+            "consume_found_item": "Blow Dart",
+            "set_flag": {
+              "detected": false
+            }
+          },
+          "next_page_id": "act2_p22_street_exit",
+          "requirements": {
+            "has_item": "Blow Dart"
+          }
+        },
+        {
+          "label": "Break the first guard and disarm the second",
+          "effects": {
+            "set_flag": {
+              "detected": false
 			}
 		  },
 		  "next_page_id": "act2_p22_street_exit",
