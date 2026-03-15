@@ -408,6 +408,9 @@
 	  "choices": [
 		{
 		  "label": "Rope",
+		  "requirements": {
+			"lacks_item": "Rope"
+		  },
 		  "effects": {
 			"add_starting_item": "Rope"
 		  },
@@ -415,6 +418,9 @@
 		},
 		{
 		  "label": "Smoke Bomb",
+		  "requirements": {
+			"lacks_item": "Smoke Bomb"
+		  },
 		  "effects": {
 			"add_starting_item": "Smoke Bomb"
 		  },
@@ -422,6 +428,9 @@
 		},
 		{
 		  "label": "Blow Dart",
+		  "requirements": {
+			"lacks_item": "Blow Dart"
+		  },
 		  "effects": {
 			"add_starting_item": "Blow Dart"
 		  },
@@ -442,6 +451,9 @@
 	  "choices": [
 		{
 		  "label": "Vial of Acid",
+		  "requirements": {
+			"lacks_item": "Vial of Acid"
+		  },
 		  "effects": {
 			"add_starting_item": "Vial of Acid"
 		  },
@@ -449,6 +461,9 @@
 		},
 		{
 		  "label": "Bandage",
+		  "requirements": {
+			"lacks_item": "Bandage"
+		  },
 		  "effects": {
 			"add_starting_item": "Bandage"
 		  },
@@ -456,6 +471,9 @@
 		},
 		{
 		  "label": "Throwing Stars",
+		  "requirements": {
+			"lacks_item": "Throwing Stars"
+		  },
 		  "effects": {
 			"add_starting_item": "Throwing Stars"
 		  },
@@ -463,10 +481,18 @@
 		},
 		{
 		  "label": "Health Herb",
+		  "requirements": {
+			"lacks_item": "Health Herb"
+		  },
 		  "effects": {
 			"add_starting_item": "Health Herb"
 		  },
 		  "next_page_id": "act1_p15_pick2a"
+		},
+		{
+		  "label": "Back",
+		  "effects": {},
+		  "next_page_id": "act1_p15_pick1a"
 		}
 	  ]
 	},
@@ -483,7 +509,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Rope"
 		  }
 		},
 		{
@@ -493,7 +520,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Smoke Bomb"
 		  }
 		},
 		{
@@ -503,7 +531,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Blow Dart"
 		  }
 		},
 		{
@@ -529,7 +558,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Vial of Acid"
 		  }
 		},
 		{
@@ -539,7 +569,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Bandage"
 		  }
 		},
 		{
@@ -549,7 +580,8 @@
 		  },
 		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
-			"starting_items_count": 1
+			"starting_items_count": 1,
+			"lacks_item": "Throwing Stars"
 		  }
 		},
 		{
@@ -558,6 +590,15 @@
 			"add_starting_item": "Health Herb"
 		  },
 		  "next_page_id": "act1_p15_pick3a",
+		  "requirements": {
+			"starting_items_count": 1,
+			"lacks_item": "Health Herb"
+		  }
+		},
+		{
+		  "label": "Back",
+		  "effects": {},
+		  "next_page_id": "act1_p15_pick2a",
 		  "requirements": {
 			"starting_items_count": 1
 		  }
@@ -577,7 +618,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Rope"
 		  }
 		},
 		{
@@ -587,7 +629,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Smoke Bomb"
 		  }
 		},
 		{
@@ -597,7 +640,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Blow Dart"
 		  }
 		},
 		{
@@ -623,7 +667,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Vial of Acid"
 		  }
 		},
 		{
@@ -633,7 +678,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Bandage"
 		  }
 		},
 		{
@@ -643,7 +689,8 @@
 		  },
 		  "next_page_id": "act1_p15_confirm",
 		  "requirements": {
-			"starting_items_count": 2
+			"starting_items_count": 2,
+			"lacks_item": "Throwing Stars"
 		  }
 		},
 		{
@@ -652,6 +699,15 @@
 			"add_starting_item": "Health Herb"
 		  },
 		  "next_page_id": "act1_p15_confirm",
+		  "requirements": {
+			"starting_items_count": 2,
+			"lacks_item": "Health Herb"
+		  }
+		},
+		{
+		  "label": "Back",
+		  "effects": {},
+		  "next_page_id": "act1_p15_pick3a",
 		  "requirements": {
 			"starting_items_count": 2
 		  }
@@ -777,9 +833,15 @@
 		  "label": "Rush the guard head-on",
 		  "effects": {
 			"change_health": -1,
+			"set_flag": {
+			  "beam_guard_rushed": true
+			},
 			"notice_message": "You took the guard out, but got clipped in the fight and lost health."
 		  },
-		  "next_page_id": "act2_p21a_lockbox"
+		  "next_page_id": "act2_p21a_lockbox",
+		  "requirements": {
+			"flag_false": "beam_guard_rushed"
+		  }
 		}
 	  ]
 	},
@@ -793,11 +855,10 @@
 		  "label": "Open it with Vial of Acid",
 		  "effects": {
 			"add_found_items": [
-			  "Reinforced Line",
-              "Cavern Clue"
+			  "Cavern Clue"
 			],
 			"remove_starting_item": "Vial of Acid",
-			"notice_message": "Inside the lockbox, Jordan found Reinforced Line and a Crow-mark clue."
+			"notice_message": "Inside the lockbox, Jordan found a Crow-mark clue."
 		  },
 		  "next_page_id": "act2_p21a_lockbox_opened",
 		  "requirements": {
@@ -815,7 +876,7 @@
 	  "page_id": "act2_p21a_lockbox_opened",
 	  "act_id": "act_2",
 	  "image_path": "res://assets/images/act2_p21a_lockbox.png",
-	  "story_text": "Page 21 \u2014 Lockbox Prize\n\nThe acid hissed through the seal. Inside, Jordan found a Reinforced Line and a wax-sealed note describing a crow mark passage near the cliffside.",
+	  "story_text": "Page 21 \u2014 Lockbox Prize\n\nThe acid hissed through the seal. Inside, Jordan found a wax-sealed note describing a crow mark passage near the cliffside.",
 	  "choices": [
 		{
 		  "label": "Continue",
@@ -894,7 +955,8 @@
 		  "label": "Use a Health Herb",
 		  "effects": {
 			"add_found_item": "Cavern Clue",
-			"remove_starting_item": "Health Herb"
+			"remove_starting_item": "Health Herb",
+			"notice_message": "The scout thanked you and gave you a clue to find the hidden cavern."
 		  },
 		  "next_page_id": "act2_p20b_gate",
 		  "requirements": {
@@ -914,19 +976,33 @@
 	  "image_path": "res://assets/images/act2_p20b_gate.png",
 	  "story_text": "Page 21 \u2014 The Patrol Gate\n\nTwo Fire Clan guards blocked the iron gate into the inner square. Jordan had to remove them fast and pass through.",
 	  "choices": [
-		{
-		  "label": "Slip through during their blind spot",
-		  "effects": {},
-		  "next_page_id": "act2_p22_street_exit",
-		  "requirements": {
-			"flag_false": "detected"
-		  }
-		},
-		{
-		  "label": "Break the first guard and disarm the second",
-		  "effects": {
-			"set_flag": {
-			  "detected": false
+        {
+          "label": "Slip through during their blind spot",
+          "effects": {},
+          "next_page_id": "act2_p22_street_exit",
+          "requirements": {
+            "flag_false": "detected"
+          }
+        },
+        {
+          "label": "Use Blow Dart to take out the gate guards",
+          "effects": {
+            "remove_starting_item": "Blow Dart",
+            "consume_found_item": "Blow Dart",
+            "set_flag": {
+              "detected": false
+            }
+          },
+          "next_page_id": "act2_p22_street_exit",
+          "requirements": {
+            "has_item": "Blow Dart"
+          }
+        },
+        {
+          "label": "Break the first guard and disarm the second",
+          "effects": {
+            "set_flag": {
+              "detected": false
 			}
 		  },
 		  "next_page_id": "act2_p22_street_exit",
@@ -2014,7 +2090,7 @@
 			  "qte3": "win"
 			}
 		  },
-		  "next_page_id": "act5_p43_breaking"
+		  "next_page_id": "act5_p45_breath"
 		},
 		{
 		  "label": "Attack into the void head-on",

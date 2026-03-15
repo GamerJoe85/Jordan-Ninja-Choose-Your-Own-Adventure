@@ -15,17 +15,76 @@ const STORY_PATH: String = "res://data/story_pages.json"
 @onready var inventory_value: Label = %InventoryValue
 @onready var hook_value: Label = %HookValue
 @onready var event_notice: Label = %EventNotice
+@onready var event_notice_overlay: CanvasItem = %EventNoticeOverlay
+@onready var event_notice_continue_button: Button = %EventNoticeContinueButton
 @onready var use_health_herb_button: Button = %UseHealthHerbButton
+@onready var content_margin_container: MarginContainer = $MarginContainer
+@onready var notice_center_container: MarginContainer = $EventNoticeOverlay/NoticeCenter
+
+const BASE_CONTENT_MARGIN_LEFT: int = 16
+const BASE_CONTENT_MARGIN_TOP: int = 72
+const BASE_CONTENT_MARGIN_RIGHT: int = 16
+const BASE_CONTENT_MARGIN_BOTTOM: int = 14
+const BASE_NOTICE_MARGIN_LEFT: int = 40
+const BASE_NOTICE_MARGIN_TOP: int = 120
+const BASE_NOTICE_MARGIN_RIGHT: int = 40
+const BASE_NOTICE_MARGIN_BOTTOM: int = 120
+const BASE_HERB_BUTTON_RIGHT_MARGIN: float = 24.0
 
 var pages: Dictionary = {}
 var image_override_map: Dictionary = {}
+var pending_next_page_id: String = ""
+var pending_notices: Array[String] = []
 
 func _ready() -> void:
 	load_story_data()
 	build_image_override_map()
+	if get_viewport() != null and not get_viewport().size_changed.is_connected(_apply_safe_area_layout):
+		get_viewport().size_changed.connect(_apply_safe_area_layout)
+	_apply_safe_area_layout()
 	if use_health_herb_button != null and not use_health_herb_button.pressed.is_connected(_on_use_health_herb_pressed):
 		use_health_herb_button.pressed.connect(_on_use_health_herb_pressed)
+	if event_notice_continue_button != null and not event_notice_continue_button.pressed.is_connected(_on_notice_continue_pressed):
+		event_notice_continue_button.pressed.connect(_on_notice_continue_pressed)
 	refresh_hud()
+
+
+func _apply_safe_area_layout() -> void:
+	var safe_insets: Dictionary = _get_safe_area_insets()
+	var inset_left: int = int(safe_insets.get("left", 0))
+	var inset_top: int = int(safe_insets.get("top", 0))
+	var inset_right: int = int(safe_insets.get("right", 0))
+	var inset_bottom: int = int(safe_insets.get("bottom", 0))
+
+	if content_margin_container != null:
+		content_margin_container.add_theme_constant_override("margin_left", BASE_CONTENT_MARGIN_LEFT + inset_left)
+		content_margin_container.add_theme_constant_override("margin_top", BASE_CONTENT_MARGIN_TOP + inset_top)
+		content_margin_container.add_theme_constant_override("margin_right", BASE_CONTENT_MARGIN_RIGHT + inset_right)
+		content_margin_container.add_theme_constant_override("margin_bottom", BASE_CONTENT_MARGIN_BOTTOM + inset_bottom)
+
+	if notice_center_container != null:
+		notice_center_container.add_theme_constant_override("margin_left", BASE_NOTICE_MARGIN_LEFT + inset_left)
+		notice_center_container.add_theme_constant_override("margin_top", BASE_NOTICE_MARGIN_TOP + inset_top)
+		notice_center_container.add_theme_constant_override("margin_right", BASE_NOTICE_MARGIN_RIGHT + inset_right)
+		notice_center_container.add_theme_constant_override("margin_bottom", BASE_NOTICE_MARGIN_BOTTOM + inset_bottom)
+
+	if use_health_herb_button != null:
+		use_health_herb_button.offset_right = -(BASE_HERB_BUTTON_RIGHT_MARGIN + float(inset_right))
+
+
+func _get_safe_area_insets() -> Dictionary:
+	var viewport_rect: Rect2 = get_viewport_rect()
+	if viewport_rect.size.x <= 0.0 or viewport_rect.size.y <= 0.0:
+		return {"left": 0, "top": 0, "right": 0, "bottom": 0}
+	var safe_rect: Rect2i = DisplayServer.get_display_safe_area()
+	if safe_rect.size.x <= 0 or safe_rect.size.y <= 0:
+		return {"left": 0, "top": 0, "right": 0, "bottom": 0}
+	var viewport_size: Vector2 = viewport_rect.size
+	var left: int = max(safe_rect.position.x, 0)
+	var top: int = max(safe_rect.position.y, 0)
+	var right: int = max(int(viewport_size.x) - int(safe_rect.position.x + safe_rect.size.x), 0)
+	var bottom: int = max(int(viewport_size.y) - int(safe_rect.position.y + safe_rect.size.y), 0)
+	return {"left": left, "top": top, "right": right, "bottom": bottom}
 
 func load_story_data() -> void:
 	var file: FileAccess = FileAccess.open(STORY_PATH, FileAccess.READ)
@@ -61,14 +120,10 @@ func play_page(page_id: String) -> void:
 	GameState.current_page_id = page_id
 	emit_signal("page_changed", page_id, str(page.get("act_id", "")))
 	apply_image(page_id, str(page.get("image_path", "")))
-	if event_notice != null:
-		event_notice.text = ""
-		event_notice.visible = false
-		var notice_parent: CanvasItem = event_notice.get_parent() as CanvasItem
-		if notice_parent != null:
-			notice_parent.visible = false
+	_hide_notice_overlay()
 	story_text_label.text = resolve_story_text(page)
 	build_choices(page.get("choices", []) as Array)
+	_set_choices_interactable(true)
 	refresh_hud()
 
 func apply_image(page_id: String, image_path: String) -> void:
@@ -155,8 +210,9 @@ func build_choices(choices: Array) -> void:
 		var button: Button = Button.new()
 		button.text = str(choice.get("label", "Continue"))
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		button.custom_minimum_size = Vector2(0, 72)
-		button.add_theme_font_size_override("font_size", 30)
+		button.custom_minimum_size = Vector2(520, 104)
+		button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
+		button.add_theme_font_size_override("font_size", 35)
 		button.add_theme_color_override("font_color", Color(1, 1, 1, 1))
 		button.add_theme_color_override("font_focus_color", Color(1, 1, 1, 1))
 		button.add_theme_color_override("font_hover_color", Color(1, 1, 1, 1))
@@ -169,6 +225,8 @@ func build_choices(choices: Array) -> void:
 		normal_style.corner_radius_top_right = 6
 		normal_style.corner_radius_bottom_left = 6
 		normal_style.corner_radius_bottom_right = 6
+		normal_style.content_margin_top = 6.0
+		normal_style.content_margin_bottom = 6.0
 		var hover_style: StyleBoxFlat = normal_style.duplicate()
 		hover_style.bg_color = Color(0.08, 0.08, 0.08, 0.72)
 		var pressed_style: StyleBoxFlat = normal_style.duplicate()
@@ -216,20 +274,24 @@ func requirements_met(requirements: Dictionary) -> bool:
 	return true
 
 func _on_choice_selected(choice: Dictionary) -> void:
+	if event_notice_overlay != null and event_notice_overlay.visible:
+		return
+	if not pending_notices.is_empty():
+		return
 	var previous_health: String = GameState.health_tier
 	var previous_hook_state: String = GameState.hook_state
 	var effects: Dictionary = choice.get("effects", {}) as Dictionary
 	apply_effects(effects)
 	var custom_notice: String = str(effects.get("notice_message", "")).strip_edges()
 	if not custom_notice.is_empty():
-		show_notice(custom_notice)
+		queue_notice(custom_notice)
 	var auto_used_herb: bool = false
 	if GameState.health_tier == "Dying" and GameState.has_item("Health Herb"):
 		GameState.starting_items.erase("Health Herb")
 		GameState.found_items.erase("Health Herb")
 		GameState.change_health_tier(1)
 		auto_used_herb = true
-		show_notice("Auto-used Health Herb to keep Jordan alive.")
+		queue_notice("Auto-used Health Herb to keep Jordan alive.")
 	var took_damage_at_dying: bool = (
 		previous_health == "Dying"
 		and int(effects.get("change_health", 0)) < 0
@@ -239,19 +301,16 @@ func _on_choice_selected(choice: Dictionary) -> void:
 		if not custom_notice.is_empty():
 			pass
 		elif GameState.health_at_least(previous_health):
-			show_notice("Health restored: %s" % GameState.health_tier)
+			queue_notice("Health restored: %s" % GameState.health_tier)
 		else:
-			show_notice("Health dropped to %s" % GameState.health_tier)
+			queue_notice("Health dropped to %s" % GameState.health_tier)
 	if previous_hook_state != GameState.hook_state and GameState.hook_state == "Damaged" and custom_notice.is_empty():
-		show_notice("Your rope was damaged.")
+		queue_notice("Your rope was damaged.")
 	refresh_hud()
 	var next_page_id: String = str(choice.get("next_page_id", ""))
 	if took_damage_at_dying:
 		next_page_id = "act_end_universal_death"
-	if not next_page_id.is_empty():
-		if next_page_id == "act1_start" and GameState.current_page_id != "":
-			GameState.reset()
-		play_page(next_page_id)
+	navigate_to_next_page(next_page_id)
 
 func apply_effects(effects: Dictionary) -> void:
 	if effects.has("set_discipline"):
@@ -297,23 +356,87 @@ func refresh_hud() -> void:
 
 func _on_use_health_herb_pressed() -> void:
 	if not GameState.has_item("Health Herb"):
-		show_notice("No Health Herb available.")
+		queue_notice("No Health Herb available.")
+		show_next_notice()
 		return
 	if GameState.health_tier == "Prime":
-		show_notice("Health is already at maximum.")
+		queue_notice("Health is already at maximum.")
+		show_next_notice()
 		return
 	GameState.starting_items.erase("Health Herb")
 	GameState.found_items.erase("Health Herb")
 	GameState.change_health_tier(1)
-	show_notice("Used Health Herb. Health restored to %s" % GameState.health_tier)
+	queue_notice("Used Health Herb. Health restored to %s" % GameState.health_tier)
+	show_next_notice()
 	refresh_hud()
 
 
-func show_notice(message: String) -> void:
+func queue_notice(message: String) -> void:
+	var cleaned_message: String = message.strip_edges()
+	if cleaned_message.is_empty():
+		return
+	pending_notices.append(cleaned_message)
+
+
+func show_next_notice() -> void:
+	if pending_notices.is_empty():
+		_hide_notice_overlay()
+		return
 	if event_notice == null:
 		return
-	event_notice.text = message
+	_set_choices_interactable(false)
+	event_notice.text = pending_notices[0]
 	event_notice.visible = true
-	var notice_parent: CanvasItem = event_notice.get_parent() as CanvasItem
-	if notice_parent != null:
-		notice_parent.visible = true
+	if event_notice_overlay != null:
+		var overlay_control: Control = event_notice_overlay as Control
+		if overlay_control != null:
+			overlay_control.move_to_front()
+		event_notice_overlay.visible = true
+
+
+func navigate_to_next_page(next_page_id: String) -> void:
+	if next_page_id.is_empty():
+		show_next_notice()
+		return
+	if pending_notices.is_empty():
+		go_to_page(next_page_id)
+		return
+	pending_next_page_id = next_page_id
+	show_next_notice()
+
+
+func go_to_page(next_page_id: String) -> void:
+	if next_page_id == "act1_start" and GameState.current_page_id != "":
+		GameState.reset()
+	play_page(next_page_id)
+
+
+func _on_notice_continue_pressed() -> void:
+	if not pending_notices.is_empty():
+		pending_notices.remove_at(0)
+	if not pending_notices.is_empty():
+		show_next_notice()
+		return
+	_hide_notice_overlay()
+	if not pending_next_page_id.is_empty():
+		var target_page: String = pending_next_page_id
+		pending_next_page_id = ""
+		go_to_page(target_page)
+
+
+func _hide_notice_overlay() -> void:
+	if event_notice != null:
+		event_notice.text = ""
+		event_notice.visible = false
+	if event_notice_overlay != null:
+		event_notice_overlay.visible = false
+	_set_choices_interactable(true)
+
+
+func _set_choices_interactable(interactable: bool) -> void:
+	if choice_container == null:
+		return
+	for child in choice_container.get_children():
+		var button: Button = child as Button
+		if button != null:
+			button.disabled = not interactable
