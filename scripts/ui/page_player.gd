@@ -210,9 +210,9 @@ func build_choices(choices: Array) -> void:
 		var button: Button = Button.new()
 		button.text = str(choice.get("label", "Continue"))
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
-		button.custom_minimum_size = Vector2(520, 88)
+		button.custom_minimum_size = Vector2(520, 104)
 		button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
-		button.add_theme_font_size_override("font_size", 30)
+		button.add_theme_font_size_override("font_size", 35)
 		button.add_theme_color_override("font_color", Color(1, 1, 1, 1))
 		button.add_theme_color_override("font_focus_color", Color(1, 1, 1, 1))
 		button.add_theme_color_override("font_hover_color", Color(1, 1, 1, 1))
@@ -225,6 +225,8 @@ func build_choices(choices: Array) -> void:
 		normal_style.corner_radius_top_right = 6
 		normal_style.corner_radius_bottom_left = 6
 		normal_style.corner_radius_bottom_right = 6
+		normal_style.content_margin_top = 6.0
+		normal_style.content_margin_bottom = 6.0
 		var hover_style: StyleBoxFlat = normal_style.duplicate()
 		hover_style.bg_color = Color(0.08, 0.08, 0.08, 0.72)
 		var pressed_style: StyleBoxFlat = normal_style.duplicate()
