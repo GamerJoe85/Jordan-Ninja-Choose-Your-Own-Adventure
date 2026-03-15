@@ -18,6 +18,18 @@ const STORY_PATH: String = "res://data/story_pages.json"
 @onready var event_notice_overlay: CanvasItem = %EventNoticeOverlay
 @onready var event_notice_continue_button: Button = %EventNoticeContinueButton
 @onready var use_health_herb_button: Button = %UseHealthHerbButton
+@onready var content_margin_container: MarginContainer = $MarginContainer
+@onready var notice_center_container: MarginContainer = $EventNoticeOverlay/NoticeCenter
+
+const BASE_CONTENT_MARGIN_LEFT: int = 16
+const BASE_CONTENT_MARGIN_TOP: int = 72
+const BASE_CONTENT_MARGIN_RIGHT: int = 16
+const BASE_CONTENT_MARGIN_BOTTOM: int = 14
+const BASE_NOTICE_MARGIN_LEFT: int = 40
+const BASE_NOTICE_MARGIN_TOP: int = 120
+const BASE_NOTICE_MARGIN_RIGHT: int = 40
+const BASE_NOTICE_MARGIN_BOTTOM: int = 120
+const BASE_HERB_BUTTON_RIGHT_MARGIN: float = 24.0
 
 var pages: Dictionary = {}
 var image_override_map: Dictionary = {}
@@ -27,11 +39,52 @@ var pending_notices: Array[String] = []
 func _ready() -> void:
 	load_story_data()
 	build_image_override_map()
+	if get_viewport() != null and not get_viewport().size_changed.is_connected(_apply_safe_area_layout):
+		get_viewport().size_changed.connect(_apply_safe_area_layout)
+	_apply_safe_area_layout()
 	if use_health_herb_button != null and not use_health_herb_button.pressed.is_connected(_on_use_health_herb_pressed):
 		use_health_herb_button.pressed.connect(_on_use_health_herb_pressed)
 	if event_notice_continue_button != null and not event_notice_continue_button.pressed.is_connected(_on_notice_continue_pressed):
 		event_notice_continue_button.pressed.connect(_on_notice_continue_pressed)
 	refresh_hud()
+
+
+func _apply_safe_area_layout() -> void:
+	var safe_insets: Dictionary = _get_safe_area_insets()
+	var inset_left: int = int(safe_insets.get("left", 0))
+	var inset_top: int = int(safe_insets.get("top", 0))
+	var inset_right: int = int(safe_insets.get("right", 0))
+	var inset_bottom: int = int(safe_insets.get("bottom", 0))
+
+	if content_margin_container != null:
+		content_margin_container.add_theme_constant_override("margin_left", BASE_CONTENT_MARGIN_LEFT + inset_left)
+		content_margin_container.add_theme_constant_override("margin_top", BASE_CONTENT_MARGIN_TOP + inset_top)
+		content_margin_container.add_theme_constant_override("margin_right", BASE_CONTENT_MARGIN_RIGHT + inset_right)
+		content_margin_container.add_theme_constant_override("margin_bottom", BASE_CONTENT_MARGIN_BOTTOM + inset_bottom)
+
+	if notice_center_container != null:
+		notice_center_container.add_theme_constant_override("margin_left", BASE_NOTICE_MARGIN_LEFT + inset_left)
+		notice_center_container.add_theme_constant_override("margin_top", BASE_NOTICE_MARGIN_TOP + inset_top)
+		notice_center_container.add_theme_constant_override("margin_right", BASE_NOTICE_MARGIN_RIGHT + inset_right)
+		notice_center_container.add_theme_constant_override("margin_bottom", BASE_NOTICE_MARGIN_BOTTOM + inset_bottom)
+
+	if use_health_herb_button != null:
+		use_health_herb_button.offset_right = -(BASE_HERB_BUTTON_RIGHT_MARGIN + float(inset_right))
+
+
+func _get_safe_area_insets() -> Dictionary:
+	var viewport_rect: Rect2 = get_viewport_rect()
+	if viewport_rect.size.x <= 0.0 or viewport_rect.size.y <= 0.0:
+		return {"left": 0, "top": 0, "right": 0, "bottom": 0}
+	var safe_rect: Rect2i = DisplayServer.get_display_safe_area()
+	if safe_rect.size.x <= 0 or safe_rect.size.y <= 0:
+		return {"left": 0, "top": 0, "right": 0, "bottom": 0}
+	var viewport_size: Vector2 = viewport_rect.size
+	var left: int = max(safe_rect.position.x, 0)
+	var top: int = max(safe_rect.position.y, 0)
+	var right: int = max(int(viewport_size.x) - int(safe_rect.position.x + safe_rect.size.x), 0)
+	var bottom: int = max(int(viewport_size.y) - int(safe_rect.position.y + safe_rect.size.y), 0)
+	return {"left": left, "top": top, "right": right, "bottom": bottom}
 
 func load_story_data() -> void:
 	var file: FileAccess = FileAccess.open(STORY_PATH, FileAccess.READ)
