@@ -9,6 +9,8 @@ corner_radius_top_right = 8
 corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_choice_panel"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_notice"]
 bg_color = Color(0, 0, 0, 0.45)
 corner_radius_top_left = 8
@@ -147,6 +149,7 @@ scroll_active = false
 
 [node name="ChoicePanel" type="PanelContainer" parent="MarginContainer/MainVBox" unique_id=2028780177]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_choice_panel")
 
 [node name="ChoiceContainer" type="VBoxContainer" parent="MarginContainer/MainVBox/ChoicePanel" unique_id=1414822723]
 unique_name_in_owner = true

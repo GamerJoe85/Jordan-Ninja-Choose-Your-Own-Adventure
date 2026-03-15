@@ -219,6 +219,19 @@ func build_choices(choices: Array) -> void:
 		button.add_theme_color_override("font_pressed_color", Color(1, 1, 1, 1))
 		button.add_theme_constant_override("outline_size", 2)
 		button.add_theme_color_override("font_outline_color", Color(0, 0, 0, 0.95))
+		var normal_style: StyleBoxFlat = StyleBoxFlat.new()
+		normal_style.bg_color = Color(0, 0, 0, 0.55)
+		normal_style.corner_radius_top_left = 6
+		normal_style.corner_radius_top_right = 6
+		normal_style.corner_radius_bottom_left = 6
+		normal_style.corner_radius_bottom_right = 6
+		var hover_style: StyleBoxFlat = normal_style.duplicate()
+		hover_style.bg_color = Color(0.08, 0.08, 0.08, 0.72)
+		var pressed_style: StyleBoxFlat = normal_style.duplicate()
+		pressed_style.bg_color = Color(0.13, 0.13, 0.13, 0.78)
+		button.add_theme_stylebox_override("normal", normal_style)
+		button.add_theme_stylebox_override("hover", hover_style)
+		button.add_theme_stylebox_override("pressed", pressed_style)
 		button.pressed.connect(_on_choice_selected.bind(choice))
 		choice_container.add_child(button)
 		shown += 1
