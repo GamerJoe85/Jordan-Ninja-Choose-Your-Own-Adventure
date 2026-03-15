@@ -207,13 +207,10 @@ func build_choices(choices: Array) -> void:
 		var choice: Dictionary = choice_variant
 		if not requirements_met(choice.get("requirements", {}) as Dictionary):
 			continue
-		var choice_row: CenterContainer = CenterContainer.new()
-		choice_row.size_flags_horizontal = Control.SIZE_FILL
 		var button: Button = Button.new()
 		button.text = str(choice.get("label", "Continue"))
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		button.custom_minimum_size = Vector2(0, 88)
-		button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 		button.add_theme_font_size_override("font_size", 30)
 		button.add_theme_color_override("font_color", Color(1, 1, 1, 1))
 		button.add_theme_color_override("font_focus_color", Color(1, 1, 1, 1))
@@ -235,8 +232,7 @@ func build_choices(choices: Array) -> void:
 		button.add_theme_stylebox_override("hover", hover_style)
 		button.add_theme_stylebox_override("pressed", pressed_style)
 		button.pressed.connect(_on_choice_selected.bind(choice))
-		choice_row.add_child(button)
-		choice_container.add_child(choice_row)
+		choice_container.add_child(button)
 		shown += 1
 
 func requirements_met(requirements: Dictionary) -> bool:
@@ -437,11 +433,7 @@ func _hide_notice_overlay() -> void:
 func _set_choices_interactable(interactable: bool) -> void:
 	if choice_container == null:
 		return
-	for row_variant in choice_container.get_children():
-		var row: Node = row_variant
-		if row == null:
-			continue
-		for child_variant in row.get_children():
-			var button: Button = child_variant as Button
-			if button != null:
-				button.disabled = not interactable
+	for child in choice_container.get_children():
+		var button: Button = child as Button
+		if button != null:
+			button.disabled = not interactable
