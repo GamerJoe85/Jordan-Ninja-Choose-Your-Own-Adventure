@@ -211,6 +211,7 @@ func build_choices(choices: Array) -> void:
 		button.text = str(choice.get("label", "Continue"))
 		button.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		button.custom_minimum_size = Vector2(0, 88)
+		button.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 		button.add_theme_font_size_override("font_size", 30)
 		button.add_theme_color_override("font_color", Color(1, 1, 1, 1))
 		button.add_theme_color_override("font_focus_color", Color(1, 1, 1, 1))
